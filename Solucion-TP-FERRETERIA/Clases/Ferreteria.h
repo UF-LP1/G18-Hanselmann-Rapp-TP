@@ -12,6 +12,8 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
@@ -30,6 +32,10 @@ public:
     const string get_MetodoPago();
     
     unsigned int get_Monto();
+
+    list <string> get_ArticulosTotales();
+
+    list<int> get_CantArtTotales();
     
     /**
      * @param string
@@ -57,7 +63,11 @@ articulos dar_art(class Cliente);
  */
     bool dar_ArticuloEmpleado(class Articulo, class Empleado);
 
-    float generar_Presupuesto( Empleado emp, Articulo art, HerramientasAlquiler herr);
+    void set_ArticulosTotales(list <string> NuevoEstado);
+
+    void set_CantArtTotales(list <int> NuevoEstado);
+
+    float generar_Presupuesto( Articulo art, Cliente cli);
 
 
 private: 
@@ -67,6 +77,8 @@ private:
     const string Mail;
     string MetodoPago;
     unsigned int Monto;
+    list <string> ArticulosTotales;
+    list <int> CantArtTotales;
     float AlquilerLocal;
     float ExpensasLocal;
     float PrecioCargamento;

@@ -17,10 +17,8 @@ const string get_Direccion();
     
 MetodoPago get_Pago();
     
-string get_Articulo();
-    
-unsigned int get_CantArt();
-    
+vector <string> get_Articulos();
+        
 const string get_Foto();
     
 const string get_ArtRoto();
@@ -35,12 +33,12 @@ void set_Pago(void MetodoPago);
 /**
  * @param string
  */
-void set_Articulo(void string);
+void set_Articulos(vector <string> NuevoEstado);
     
 /**
  * @param unsigned int
  */
-void set_CantArt(void unsigned int);
+
     
 void MostrarFoto();
     
@@ -52,11 +50,11 @@ void MostrarEnvoltorioInt();
  * @param Precio
  */
 void elegir_art(void Precio);
+
 private: 
     const string Direccion;
     enumeration MetodoPago;
-    string Articulo;
-    unsigned int CantArt;
+    vector <string> Articulos;
     const string Foto;
     const string ArtRoto;
     const bool EnvoltorioIntacto;

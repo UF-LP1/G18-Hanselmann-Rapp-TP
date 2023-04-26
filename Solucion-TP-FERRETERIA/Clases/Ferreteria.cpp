@@ -51,6 +51,16 @@ unsigned int Ferreteria::get_Monto() {
     return null;
 }
 
+list <string> Ferreteria::get_ArticulosTotales()
+{
+    return this->ArticulosTotales;
+}
+
+list<int> Ferreteria::get_CantArtTotales()
+{
+    return this->CantArtTotales;
+}
+
 /**
  * @param string
  * @return void
@@ -65,6 +75,16 @@ void Ferreteria::set_MetodoPago(void string) {
  */
 void Ferreteria::set_Monto(void unsigned int) {
     return;
+}
+
+void Ferreteria::set_ArticulosTotales(list <string> NuevoEstado)
+{
+    this->ArticulosTotales = NuevoEstado;
+}
+
+void Ferreteria::set_CantArtTotales(list <int> NuevoEstado)
+{
+    this->CantArtTotales = NuevoEstado;
 }
 
 /**
@@ -93,12 +113,14 @@ bool Ferreteria::dar_ArticuloEmpleado(class Articulo, class Empleado)
     return false;
 }
 
-float Ferreteria::generar_Presupuesto(Empleado emp, Articulo art, HerramientasAlquiler herr)
+float Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
 {
-    list<float>Datos;
+    vector<int>::iterator atr;
 
-    Datos.push_back(AlquilerLocal);
-    Datos.push_back(ExpensasLocal);
-    Datos.push_back(PrecioCargamento);
-    Datos.push_back(art.PrecioArtVendido);
+    for (atr = cli.get_Articulos().begin(); atr <= cli.get_Articulos().end(); atr++)
+    {
+        //Asumimos que se le va sumando al carrito 
+
+        
+    }
 }

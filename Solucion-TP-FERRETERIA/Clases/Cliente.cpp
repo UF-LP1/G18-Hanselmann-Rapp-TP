@@ -27,16 +27,15 @@ MetodoPago Cliente::get_Pago() {
 /**
  * @return string
  */
-string Cliente::get_Articulo() {
-    return "";
+vector <string> Cliente::get_Articulos()
+{
+    return this->Articulos;
 }
 
 /**
  * @return unsigned int
  */
-unsigned int Cliente::get_CantArt() {
-    return null;
-}
+
 
 /**
  * @return const string
@@ -71,16 +70,9 @@ void Cliente::set_Pago(void MetodoPago) {
  * @param string
  * @return void
  */
-void Cliente::set_Articulo(void string) {
-    return;
-}
-
-/**
- * @param unsigned int
- * @return void
- */
-void Cliente::set_CantArt(void unsigned int) {
-    return;
+void Cliente::set_Articulos(vector <string> NuevoEstado)
+{
+    this->Articulos= NuevoEstado;
 }
 
 /**
@@ -111,3 +103,4 @@ void Cliente::MostrarEnvoltorioInt() {
 void Cliente::elegir_art(void Precio) {
     return;
 }
+
