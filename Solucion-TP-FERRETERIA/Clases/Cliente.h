@@ -9,6 +9,7 @@
 #include "Persona.h"
 #include "HerramientasAlquiler.h"
 #include "Empleado.h"
+#include "Articulo.h"
 
 class Cliente: public Persona {
 public: 
@@ -17,7 +18,7 @@ const string get_Direccion();
     
 MetodoPago get_Pago();
     
-vector <string> get_Articulos();
+vector <Articulo> get_Articulos();
         
 const string get_Foto();
     
@@ -33,7 +34,7 @@ void set_Pago(void MetodoPago);
 /**
  * @param string
  */
-void set_Articulos(vector <string> NuevoEstado);
+void set_Articulos(vector <Articulo> NuevoEstado);
     
 /**
  * @param unsigned int
@@ -54,7 +55,7 @@ void elegir_art(void Precio);
 private: 
     const string Direccion;
     enumeration MetodoPago;
-    vector <string> Articulos;
+    vector <Articulo> Articulos;
     const string Foto;
     const string ArtRoto;
     const bool EnvoltorioIntacto;

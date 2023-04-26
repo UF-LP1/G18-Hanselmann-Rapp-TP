@@ -27,7 +27,7 @@ MetodoPago Cliente::get_Pago() {
 /**
  * @return string
  */
-vector <string> Cliente::get_Articulos()
+vector <Articulo> Cliente::get_Articulos()
 {
     return this->Articulos;
 }
@@ -70,7 +70,7 @@ void Cliente::set_Pago(void MetodoPago) {
  * @param string
  * @return void
  */
-void Cliente::set_Articulos(vector <string> NuevoEstado)
+void Cliente::set_Articulos(vector <Articulo> NuevoEstado)
 {
     this->Articulos= NuevoEstado;
 }

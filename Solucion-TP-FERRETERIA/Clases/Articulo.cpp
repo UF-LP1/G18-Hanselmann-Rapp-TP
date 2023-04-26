@@ -12,8 +12,9 @@
 /**
  * @return unsigned float
  */
-unsigned float Articulo::get_Precio() {
-    return null;
+unsigned int Articulo::get_Precio() 
+{
+    return this->Precio;
 }
 
 /**
@@ -69,8 +70,9 @@ unsigned int Articulo::get_Cantidad() {
  * @param unsigned float
  * @return void
  */
-void Articulo::set_Precio(void unsigned float) {
-    return;
+void Articulo::set_Precio(unsigned int NuevoEstado) 
+{
+    this->Precio = NuevoEstado;
 }
 
 /**

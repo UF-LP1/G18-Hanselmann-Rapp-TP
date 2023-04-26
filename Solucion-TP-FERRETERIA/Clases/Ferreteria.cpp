@@ -113,14 +113,16 @@ bool Ferreteria::dar_ArticuloEmpleado(class Articulo, class Empleado)
     return false;
 }
 
-float Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
+int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
 {
-    vector<int>::iterator atr;
+    vector<Articulo>::iterator arr;
 
-    for (atr = cli.get_Articulos().begin(); atr <= cli.get_Articulos().end(); atr++)
+    float acum = 0;
+
+    for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++)
     {
-        //Asumimos que se le va sumando al carrito 
-
-        
+        acum += art.get_Precio() * art.get_Cantidad();
     }
+
+    return acum;
 }

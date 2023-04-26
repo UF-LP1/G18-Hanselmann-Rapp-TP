@@ -67,7 +67,7 @@ articulos dar_art(class Cliente);
 
     void set_CantArtTotales(list <int> NuevoEstado);
 
-    float generar_Presupuesto( Articulo art, Cliente cli);
+    int generar_Presupuesto( Articulo art, Cliente cli);
 
 
 private: 

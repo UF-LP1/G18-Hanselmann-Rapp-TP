@@ -18,7 +18,7 @@ public:
 
     Articulo(float Precio_);
     
-    float get_Precio();
+   unsigned int get_Precio();
     
     bool get_Cambio();
     
@@ -37,7 +37,7 @@ public:
     /**
      * @param unsigned float
      */
-    void set_Precio(void unsigned float);
+    void set_Precio(unsigned int NuevoEstado);
     
     /**
      * @param bool
@@ -60,7 +60,7 @@ public:
     void set_Cantidad(unsigned int);
 
 protected: 
-    float Precio;
+   unsigned int Precio;
     bool Cambio;
     string EstadoArt;
     const string TipoProducto;
