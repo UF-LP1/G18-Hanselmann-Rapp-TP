@@ -7,7 +7,8 @@
 #define _CLIENTE_H
 
 #include "Persona.h"
-
+#include "HerramientasAlquiler.h"
+#include "Empleado.h"
 
 class Cliente: public Persona {
 public: 

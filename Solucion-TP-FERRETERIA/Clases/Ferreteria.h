@@ -2,8 +2,18 @@
  * Project Untitled
  */
 
+#include "Articulo.h"
+#include "Duenio.h"
+
 #ifndef _FERRETERIA_H
 #define _FERRETERIA_H
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <list>
+
+using namespace std;
 
 class Ferreteria 
 {
@@ -34,20 +44,20 @@ void set_Monto(void unsigned int);
 /**
  * @param Horario
  */
-bool abrir(void Horario);
+bool abrir(class Horario);
     
 /**
  * @param Cliente
  */
-articulos dar_art(void Cliente);
+articulos dar_art(class Cliente);
     
 /**
  * @param Articulo
  * @param Empleado
  */
-    bool dar_ArticuloEmpleado(void Articulo, void Empleado);
+    bool dar_ArticuloEmpleado(class Articulo, class Empleado);
 
-    unsigned float generar_Presupuesto(void Empleado, void Articulo, void Herramientas);
+    float generar_Presupuesto( Empleado emp, Articulo art, HerramientasAlquiler herr);
 
 
 private: 
@@ -57,9 +67,9 @@ private:
     const string Mail;
     string MetodoPago;
     unsigned int Monto;
-    unsigned float AlquilerLocal;
-    unsigned float ExpensasLocal;
-    unsigned float PrecioCargamento;
+    float AlquilerLocal;
+    float ExpensasLocal;
+    float PrecioCargamento;
 };
 
 #endif //_FERRETERIA_H

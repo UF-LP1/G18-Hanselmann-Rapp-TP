@@ -88,6 +88,17 @@ articulos Ferreteria::dar_art(void Cliente) {
  * @param Empleado
  * @return bool
  */
-bool Ferreteria::dar_ArticuloEmpleado(void Articulo, void Empleado) {
+bool Ferreteria::dar_ArticuloEmpleado(class Articulo, class Empleado) 
+{
     return false;
+}
+
+float Ferreteria::generar_Presupuesto(Empleado emp, Articulo art, HerramientasAlquiler herr)
+{
+    list<float>Datos;
+
+    Datos.push_back(AlquilerLocal);
+    Datos.push_back(ExpensasLocal);
+    Datos.push_back(PrecioCargamento);
+    Datos.push_back(art.PrecioArtVendido);
 }

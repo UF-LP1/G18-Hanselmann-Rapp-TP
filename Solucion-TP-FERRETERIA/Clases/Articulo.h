@@ -16,9 +16,9 @@ class Articulo
 {
 public: 
 
-    Articulo(unsigned float Precio_);
+    Articulo(float Precio_);
     
-    unsigned float get_Precio();
+    float get_Precio();
     
     bool get_Cambio();
     
@@ -52,21 +52,24 @@ public:
     /**
      * @param unsigned int
      */
-    void set_Largo(void unsigned int);
+    void set_Largo(unsigned int);
         
     /**
      * @param unsigned int
      */
-    void set_Cantidad(void unsigned int);
+    void set_Cantidad(unsigned int);
+
 protected: 
-    unisgned foat Precio;
+    float Precio;
     bool Cambio;
     string EstadoArt;
     const string TipoProducto;
-    const unsigned float Alto;
-    const unsigned float Ancho;
+    const float Alto;
+    const float Ancho;
     unsigned int Largo;
     unsigned int Cantidad;
+    string ArticuloVendido;
+    float PrecioArtVendido;
 };
 
 #endif //_ARTICULO_H

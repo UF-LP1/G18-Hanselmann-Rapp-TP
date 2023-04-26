@@ -37,8 +37,9 @@ void set_DireccionCliente(void string);
  * @param time_t
  */
 void set_TiempoTrabajado(void time_t);
+
 protected: 
-    unsigned float Salario;
+    float Salario;
     string TipoTransporte;
     time_t TiempoTrabajado;
 };

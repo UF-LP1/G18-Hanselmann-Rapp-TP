@@ -7,6 +7,7 @@
 #define _DUENIO_H
 
 #include "Persona.h"
+#include "Cliente.h"
 
 
 class Duenio: public Persona {

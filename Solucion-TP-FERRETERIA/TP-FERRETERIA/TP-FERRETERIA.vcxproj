@@ -148,6 +148,7 @@
     <ClCompile Include="..\Clases\EscobillasBaño.cpp" />
     <ClCompile Include="..\Clases\Ferreteria.cpp" />
     <ClCompile Include="..\Clases\Herramientas.cpp" />
+    <ClCompile Include="..\Clases\HerramientasAlquiler.cpp" />
     <ClCompile Include="..\Clases\Horario.cpp" />
     <ClCompile Include="..\Clases\Lamparas.cpp" />
     <ClCompile Include="..\Clases\LLaves.cpp" />
@@ -185,6 +186,7 @@
     <ClInclude Include="..\Clases\EscobillasBaño.h" />
     <ClInclude Include="..\Clases\Ferreteria.h" />
     <ClInclude Include="..\Clases\Herramientas.h" />
+    <ClInclude Include="..\Clases\HerramientasAlquiler.h" />
     <ClInclude Include="..\Clases\Horario.h" />
     <ClInclude Include="..\Clases\Lamparas.h" />
     <ClInclude Include="..\Clases\LLaves.h" />

@@ -120,6 +120,9 @@
     <ClCompile Include="..\Clases\Utencillos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="..\Clases\HerramientasAlquiler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Clases\ArtFerreteria.h">
@@ -288,6 +291,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Clases\Utencillos.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Clases\HerramientasAlquiler.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
