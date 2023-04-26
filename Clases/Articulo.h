@@ -15,6 +15,8 @@ using namespace std;
 class Articulo 
 {
 public: 
+
+    Articulo(unsigned float Precio_);
     
     unsigned float get_Precio();
     

@@ -2,35 +2,42 @@
  * Project Untitled
  */
 
-
 #ifndef _PERSONA_H
 #define _PERSONA_H
 
-class Persona {
+#include <iostream>
+#include <string>
+#include <vector>
+#include <list>
+
+using namespace std;
+
+class Persona 
+{
 public: 
     
-string get_Nombre();
+    string get_Nombre();
     
-string get_Apellido();
+    string get_Apellido();
     
-const string get_DNI();
+    const string get_DNI();
     
-TipoSexo get_Sexo();
+    TipoSexo get_Sexo();
     
-/**
- * @param string
- */
-void set_Nombre(void string);
+    /**
+     * @param string
+     */
+    void set_Nombre(void string);
     
-/**
- * @param string
- */
-void set_Apellido(void string);
+    /**
+     * @param string
+     */
+    void set_Apellido(void string);
     
-/**
- * @param TipoSexo
- */
-void set_Sexo(void TipoSexo);
+    /**
+     * @param TipoSexo
+     */
+    void set_Sexo(void TipoSexo);
 protected: 
     string Nombre;
     string Apellido;

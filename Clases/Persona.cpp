@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #include "Persona.h"
 
 /**
