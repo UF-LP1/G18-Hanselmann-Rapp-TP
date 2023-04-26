@@ -9,8 +9,8 @@
 #include "Ferreteria.h"
 #include "Articulo.h"
 
-
-class ArtFerreteria: public Ferreteria, public Articulo {
+class ArtFerreteria: public Ferreteria, public Articulo
+{
 public: 
     
 string get_Material();
