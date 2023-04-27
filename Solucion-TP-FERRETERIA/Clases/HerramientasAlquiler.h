@@ -9,44 +9,51 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
-class HerramientasAlquiler {
+class HerramientasAlquiler 
+{
 public: 
     
-string get_Modelo();
+    HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_);
+    ~HerramientasAlquiler();
+
+    string get_Modelo();
     
-string get_Condicion();
+    string get_Condicion();
     
-float get_PrecioSeguro();
+    unsigned int get_PrecioSeguro();
     
-float get_PrecioAlquiler();
+    unsigned int get_PrecioAlquiler();
     
-/**
- * @param string
- */
-void set_Modelo(void string);
+    /**
+     * @param string
+     */
+    void set_Modelo(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_Condicion(void string);
+    /**
+     * @param string
+     */
+    void set_Condicion(string NuevoEstado);
     
-/**
- * @param unsigned float
- */
-void set_PrecioSeguro(void float);
+    /**
+     * @param unsigned float
+     */
+    void set_PrecioSeguro(unsigned int NuevoEstado);
     
-/**
- * @param unsigned float
- */
-void set_PrecioAlquiler(void float);
+    /**
+     * @param unsigned float
+     */
+    void set_PrecioAlquiler(unsigned int NuevoEstado);
+
 private: 
     string Modelo;
     string Condicion;
-    float PrecioSeguro;
-    float PrecioAlquiler;
+    unsigned int PrecioSeguro;
+    unsigned int PrecioAlquiler;
 };
 
 #endif //_HERRAMIENTASALQUILER_H

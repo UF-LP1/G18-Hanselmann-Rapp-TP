@@ -2,44 +2,46 @@
  * Project Untitled
  */
 
-
 #ifndef _EMPLEADO_H
 #define _EMPLEADO_H
 
 #include "Persona.h"
 
-
-class Empleado: public Persona {
+class Empleado: public Persona 
+{
 public: 
+
+    Empleado(unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_);
+    ~Empleado();
     
-unsigned float get_Salario();
+    unsigned int get_Salario();
     
-string get_TipoTransporte();
+    string get_TipoTransporte();
     
-time_t get_TiempoTrabajado();
+    time_t get_TiempoTrabajado();
     
-/**
- * @param unsigned float
- */
-void set_Salario(void unsigned float);
+    /**
+     * @param unsigned float
+     */
+    void set_Salario(unsigned int NuevoEstado);
     
-/**
- * @param string
- */
-void set_TipoTransporte(void string);
+    /**
+     * @param string
+     */
+    void set_TipoTransporte(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_DireccionCliente(void string);
+    /**
+     * @param string
+     */
+    void set_DireccionCliente(string NuevoEstado);
     
-/**
- * @param time_t
- */
-void set_TiempoTrabajado(void time_t);
+    /**
+     * @param time_t
+     */
+    void set_TiempoTrabajado(time_t NuevoEstado);
 
 protected: 
-    float Salario;
+    unsigned int Salario;
     string TipoTransporte;
     time_t TiempoTrabajado;
 };
