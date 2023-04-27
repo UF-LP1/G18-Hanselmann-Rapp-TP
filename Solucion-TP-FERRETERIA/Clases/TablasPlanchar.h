@@ -6,7 +6,7 @@
 #define _TABLASPLANCHAR_H
 
 #include "Bazar.h"
-#include "TipoTablaPlanchar"
+#include "TipoTablaPlanchar.h"
 
 class TablasPlanchar: public Bazar 
 {
@@ -16,7 +16,7 @@ public:
 
     ~TablasPlanchar();
     
-    TipoTablaPlanchar get_Planchar();
+    TipoTablasPlanchar get_Planchar();
     
     string get_Marca();
     
@@ -25,7 +25,7 @@ public:
     /**
      * @param TipoTabla
      */
-    void set_Planchar(TipoTablaPlanchar NuevoEstado);
+    void set_Planchar(TipoTablasPlanchar NuevoEstado);
     
     /**
      * @param string
@@ -38,7 +38,7 @@ public:
     void set_MaterialPlanchar(string NuevoEstado);
 
 private: 
-    TipoTablaPlanchar Planchita;
+    TipoTablasPlanchar Planchita;
     string Marca;
     string MaterialPlanchar;
 };

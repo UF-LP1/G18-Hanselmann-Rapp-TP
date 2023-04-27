@@ -20,7 +20,7 @@ public:
     
     string get_Anclajes();
     
-    string get_Disenio();
+    string get_DisenioTablIno();
     
     /**
      * @param string
@@ -30,7 +30,7 @@ public:
     /**
      * @param string
      */
-    void set_Disenio(string NuevoEstado);
+    void set_DisenioTablIno(string NuevoEstado);
     
     /**
      * @param TipoTabla
@@ -40,6 +40,6 @@ public:
 private: 
     TipoTablaInodoro Inodorito;
     string Anclajes;
-    string Disenio;
+    string DisenioTablIno;
 };
 #endif //_TAPASINODORO_H
