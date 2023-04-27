@@ -18,7 +18,7 @@ class Horario
 {
 public: 
 
-    Horario(string SemanaManiana_, string SemanaTarde_, string Sabados_);
+    Horario(string, string, string);
     ~Horario();
     
     string get_SemanaManiana();
@@ -41,6 +41,7 @@ public:
      * @param string
      */
     void set_Sabados(string NuevoEstado);
+
 private: 
     string SemanaManiana;
     string SemanaTarde;

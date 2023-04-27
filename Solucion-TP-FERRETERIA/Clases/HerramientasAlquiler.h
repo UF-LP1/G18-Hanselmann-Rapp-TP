@@ -18,7 +18,7 @@ class HerramientasAlquiler
 {
 public: 
     
-    HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_);
+    HerramientasAlquiler(string, string, unsigned int, unsigned int);
     ~HerramientasAlquiler();
 
     string get_Modelo();

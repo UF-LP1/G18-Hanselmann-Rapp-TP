@@ -8,9 +8,12 @@
  * HerramientasAlquiler implementation
  */
 
-HerramientasAlquiler::HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_): Modelo(Modelo_), Condicion(Condicion_), PrecioSeguro(PrecioSeguro_), PrecioAlquiler(PrecioAlquiler_)
+HerramientasAlquiler::HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_)
 {
-
+    this->Modelo = Modelo_;
+    this->Condicion = Condicion_;
+    this->PrecioSeguro = PrecioSeguro_;
+    this->PrecioAlquiler = PrecioAlquiler_;
 }
 
 HerramientasAlquiler::~HerramientasAlquiler()

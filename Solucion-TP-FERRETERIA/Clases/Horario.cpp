@@ -8,9 +8,11 @@
  * Horario implementation
  */
 
-Horario::Horario(string SemanaManiana_, string SemanaTarde_, string Sabados_): SemanaManiana(SemanaManiana_), SemanaTarde(SemanaTarde_), Sabados(Sabados_)
+Horario::Horario(string SemanaManiana_, string SemanaTarde_, string Sabados_)
 {
-
+    this->SemanaManiana = SemanaManiana_;
+    this->SemanaTarde = SemanaTarde_;
+    this->Sabados = Sabados_;
 }
 
 Horario::~Horario()

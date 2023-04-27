@@ -8,9 +8,14 @@
  * Ferreteria implementation
  */
 
-Ferreteria::Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, MetodoPago MetodoPagoFerreteria_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_): Nombre(Nombre_), Direccion(Direccion_), Telefono(Telefono_), Mail(Mail_), MetodoPagoFerreteria(MetodoPagoFerreteria_), ArticulosTotales(ArticulosTotales_), CantArtTotales(CantArtTotales_), AlquilerLocal(AlquilerLocal_), ExpensasLocal(Expensaslocal_), PrecioCargamento(PrecioCargamento_)
+Ferreteria::Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_)
 {
-
+    this->MetodoPagoFerreteria = MetodoPagoFerreteria_;
+    this->ArticulosTotales = ArticulosTotales_;
+    this->CantArtTotales = CantArtTotales_;
+    this->AlquilerLocal = AlquilerLocal_;
+    this->ExpensasLocal = Expensaslocal_;
+    this->PrecioCargamento = PrecioCargamento_;
 }
 
 Ferreteria::~Ferreteria() 

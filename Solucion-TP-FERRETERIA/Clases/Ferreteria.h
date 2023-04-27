@@ -13,7 +13,7 @@ class Ferreteria
 {
 public: 
 
-    Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, MetodoPago MetodoPagosFerreteria_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_);
+    Ferreteria(const string, const string, const string, const string, MetodoPago, list<string>, list<int>, unsigned int, unsigned int, unsigned int);
     ~Ferreteria();
     
     const string get_Nombre();
