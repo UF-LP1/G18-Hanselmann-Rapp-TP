@@ -13,7 +13,7 @@
 class Enchufes: public Electricidad {
 public: 
 
-    Enchufes(enum TipoEnchufe);
+    Enchufes(TipoEnchufe);
 
     ~Enchufes();
     
@@ -26,7 +26,7 @@ void set_Enchufe(TipoEnchufe NuevoEstado);
 
 private: 
 
-    enum TipoEnchufe;
+    TipoEnchufe Enchu;
 };
 
 #endif //_ENCHUFES_H

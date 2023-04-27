@@ -13,7 +13,7 @@
 class Portalamparas: public Electricidad {
 public: 
 
-    Portalamparas(enum TipoPortalamparas);
+    Portalamparas(TipoPortalamparas);
 
     ~Portalamparas();
     
@@ -25,7 +25,7 @@ public:
     void set_PortaLamparas(TipoPortalamparas NuevoEstado);
 
 private: 
-    enum TipoPortalamparas;
+    TipoPortalamparas Portalamp;
 };
 
 #endif //_PORTALAMPARAS_H

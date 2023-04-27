@@ -8,9 +8,9 @@
 /**
  * Portalamparas implementation
  */
-Portalamparas::Portalamparas(enum TipoPortalamparas TipoPortalamparas_)
+Portalamparas::Portalamparas(TipoPortalamparas TipoPortalamparas_)
 {
-    this->TipoPortalamparas = TipoPortalamparas_;
+    this->Portalamp = TipoPortalamparas_;
 }
 
 Portalamparas::~Portalamparas()
@@ -23,7 +23,7 @@ Portalamparas::~Portalamparas()
  */
 TipoPortalamparas Portalamparas::get_Portalamparas(){
 
-    return this->TipoPortalamparas;
+    return this->Portalamp;
 
 }
 
@@ -33,4 +33,4 @@ TipoPortalamparas Portalamparas::get_Portalamparas(){
  */
 void Portalamparas::set_PortaLamparas (TipoPortalamparas NuevoEstado){
 
-    this->TipoPortalamparas = NuevoEstado;
+    this->Portalamp = NuevoEstado;

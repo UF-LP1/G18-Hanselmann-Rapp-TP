@@ -8,9 +8,9 @@
 /**
  * Enchufes implementation
  */
-Enchufes::Enchufes(enum TipoEnchufe TipoEnchufe_)
+Enchufes::Enchufes(TipoEnchufe TipoEnchufe_)
 {
-    this->TipoEnchufe = TipoEnchufe_;
+    this->Enchu = TipoEnchufe_;
 }
 
 Enchufes::~Enchufes() {
@@ -22,7 +22,7 @@ Enchufes::~Enchufes() {
  */
 TipoEnchufe Enchufes::get_Enchufe() {
 
-    return this->TipoEnchufe;
+    return this->Enchu;
 
 }
 
@@ -32,6 +32,6 @@ TipoEnchufe Enchufes::get_Enchufe() {
  */
 void Enchufes::set_Enchufe(TipoEnchufe NuevoEstado){
 
-    this->TipoEnchufe = NuevoEstado;
+    this->Enchu = NuevoEstado;
 
 }
