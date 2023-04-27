@@ -13,7 +13,7 @@
 class TablasPlanchar: public Bazar {
 public: 
 
-    TablasPlanchar(enum TipoTabla, string, string);
+    TablasPlanchar(TipoTabla, string, string);
 
     ~TablasPlanchar();
     
@@ -39,7 +39,7 @@ void set_Marca(string NuevoEstado);
 void set_MaterialPlanchar(string NuevoEstado);
 
 private: 
-    enum TipoTabla;
+    TipoTabla tipotab;
     string Marca;
     string MaterialPlanchar;
 };

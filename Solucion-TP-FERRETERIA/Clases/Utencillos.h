@@ -13,7 +13,7 @@
 class Utencillos: public Cocina {
 public: 
 
-    Utencillos(enum TipoUtencillo, string);
+    Utencillos(TipoUtencillo, string);
 
     ~Utencillos();
     
@@ -32,7 +32,7 @@ void set_Utencillo(TipoUtencillo NuevoEstado);
 void set_MaterialUtencillo(string NuevoEstado);
 
 private: 
-    enum TipoUtencillo;
+    TipoUtencillo tipouten;
     string MaterialUtencillo;
 };
 

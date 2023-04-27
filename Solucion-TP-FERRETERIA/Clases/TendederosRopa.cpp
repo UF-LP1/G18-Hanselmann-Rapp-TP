@@ -8,9 +8,9 @@
 /**
  * TendederosRopa implementation
  */
-TendederosRopa::TendederosRopa(enum TipoTendedero TipoTendedero_, string MaterialTendedero_) {
+TendederosRopa::TendederosRopa(TipoTendedero TipoTendedero_, string MaterialTendedero_) {
 
-    this->TipoTendedero = TipoTendedero_;
+    this->tipoten = TipoTendedero_;
     this->MaterialTendedero = MaterialTendedero_;
 }
 
@@ -23,7 +23,7 @@ TendederosRopa::~TendederosRopa() {
  */
 TipoTendedero TendederosRopa::get_Tendedero() {
 
-    return this->TipoTendedero;
+    return this->tipoten;
 
 }
 
@@ -42,7 +42,7 @@ string TendederosRopa::get_MaterialTendedero() {
  */
 void TendederosRopa::set_Tendedero(TipoTendedero NuevoEstado){
 
-    this->TipoTendedero = NuevoEstado;
+    this->tipoten = NuevoEstado;
 
 }
 

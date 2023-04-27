@@ -13,7 +13,7 @@
 class TendederosRopa: public Bazar {
 public: 
 
-    TendederosRopa(enum TipoTendedero, string);
+    TendederosRopa(TipoTendedero, string);
 
     ~TendederosRopa();
     
@@ -32,7 +32,7 @@ void set_Tendedero(TipoTendedero NuevoEstado);
 void set_MaterialTendedero(string NuevoEstado);
 
 private: 
-    enum TipoTendedero;
+    TipoTendedero tipoten;
     string MaterialTendedero;
 };
 

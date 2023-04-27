@@ -8,9 +8,9 @@
 /**
  * Utencillos implementation
  */
-Utencillos::Utencillos(enum TipoUtencillo TipoUtencillo_, string MaterialUtencillo_)
+Utencillos::Utencillos(TipoUtencillo TipoUtencillo_, string MaterialUtencillo_)
 {
-    this->TipoUtencillo = TipoUtencillo_;
+    this->tipouten = TipoUtencillo_;
     this->MaterialUtencillo = MaterialUtencillo_;
 }
 
@@ -22,7 +22,7 @@ Utencillos::~Utencillos() {
  */
 TipoUtencillo Utencillos::get_Utencillo() {
 
-    return this->TipoUtencillo;
+    return this->tipouten;
 
 }
 
@@ -42,7 +42,7 @@ string Utencillos::get_MaterialUtencillo() {
  */
 void Utencillos::set_Utencillo(TipoUtencillo NuevoEstado){
 
-    this->TipoUtencillo = NuevoEstado; 
+    this->tipouten = NuevoEstado; 
 
 }
 

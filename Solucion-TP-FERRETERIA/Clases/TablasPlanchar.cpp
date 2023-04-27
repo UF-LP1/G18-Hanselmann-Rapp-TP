@@ -8,9 +8,9 @@
 /**
  * TablasPlanchar implementation
  */
-TablasPlanchar::TablasPlanchar(enum TipoTabla TipoTabla_, string Marca_, string MaterialPlanchar_)
+TablasPlanchar::TablasPlanchar(TipoTabla TipoTabla_, string Marca_, string MaterialPlanchar_)
 {
-    this->TipoTabla = TipoTabla_;
+    this->tipotab = TipoTabla_;
     this->Marca = Marca_;
     this->MaterialPlanchar = MaterialPlanchar_;
 }
@@ -24,7 +24,7 @@ TablasPlanchar::~TablasPlanchar()
  */
 TipoTabla TablasPlanchar::get_Planchar() {
 
-    return this->TipoTabla;
+    return this->tipotab;
 
 }
 
@@ -52,7 +52,7 @@ string TablasPlanchar::get_MaterialPlanchar() {
  */
 void TablasPlanchar::set_Planchar(TipoTabla NuevoEstado){
 
-    this->TipoTabla = NuevoEstado;
+    this->tipotab = NuevoEstado;
 
 }
 

@@ -8,9 +8,9 @@
 /**
  * Ollas implementation
  */
-Ollas::Ollas(enum TipoOlla TipoOlla_, string MaterialOlla_) {
+Ollas::Ollas(TipoOlla TipoOlla_, string MaterialOlla_) {
 
-    this->TipoOlla = TipoOlla_;
+    this->tipool = TipoOlla_;
     this->MaterialOlla = MaterialOlla_;
 }
 
@@ -24,7 +24,7 @@ Ollas::~Ollas()
  */
 TipoOlla Ollas::get_Olla() {
 
-    return this->TipoOlla;
+    return this->tipool;
 
 }
 
@@ -43,7 +43,7 @@ string Ollas::get_MaterialOlla() {
  */
 void Ollas::set_Olla(TipoOlla NuevoEstado){
 
-    this->TipoOlla = NuevoEstado;
+    this->tipool = NuevoEstado;
 
 }
 

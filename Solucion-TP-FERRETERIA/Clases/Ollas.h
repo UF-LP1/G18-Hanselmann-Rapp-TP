@@ -13,7 +13,7 @@
 class Ollas: public Cocina {
 public: 
 
-    Ollas(enum TipoOlla, string);
+    Ollas(TipoOlla, string);
 
     ~Ollas();
     
@@ -32,7 +32,7 @@ void set_Olla(TipoOlla NuevoEstado);
 void set_MaterialOlla(string NuevoEstado);
 
 private: 
-    enum TipoOlla;
+    TipoOlla tipool;
     string MaterialOlla;
 };
 

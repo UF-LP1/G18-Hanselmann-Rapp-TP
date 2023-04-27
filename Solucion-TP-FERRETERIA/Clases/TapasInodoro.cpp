@@ -10,7 +10,7 @@
  */
 TapasInodoro::TapasInodoro(enum TipoTabla TipoTabla_, string Anclajes_, string Disenio_) {
 
-    this->TipoTabla = TipoTabla_;
+    this->tipot = TipoTabla_;
     this->Anclajes = Anclajes_;
     this->Disenio = Disenio_;
 }
@@ -25,7 +25,7 @@ TapasInodoro::~TapasInodoro()
  */
 TipoTabla TapasInodoro::get_Tabla() {
 
-    return this->TipoTabla;
+    return this->tipot;
 
 }
 
@@ -72,6 +72,6 @@ void TapasInodoro::set_Disenio(string NuevoEstado){
  */
 void TapasInodoro::set_Tabla(TipoTabla NuevoEstado){
 
-  this->TipoTabla = NuevoEstado;
+  this->tipot = NuevoEstado;
 
 }

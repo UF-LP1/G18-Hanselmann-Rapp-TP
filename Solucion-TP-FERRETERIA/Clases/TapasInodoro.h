@@ -13,7 +13,7 @@
 class TapasInodoro: public Bazar {
 public: 
 
-    TapasInodoro(enum TipoTabla, string, string);
+    TapasInodoro(TipoTabla, string, string);
 
     ~TapasInodoro();
     
@@ -39,7 +39,7 @@ void set_Disenio(string NuevoEstado);
 void set_Tabla(TipoTabla NuevoEstado);
 
 private: 
-    enum TipoTabla;
+    TipoTabla tipot;
     string Anclajes;
     string Disenio;
 };
