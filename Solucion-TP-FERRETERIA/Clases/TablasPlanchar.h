@@ -7,6 +7,7 @@
 #define _TABLASPLANCHAR_H
 
 #include "Bazar.h"
+#include "TipoTabla.h"
 
 
 class TablasPlanchar: public Bazar {
@@ -21,19 +22,20 @@ string get_MaterialPlanchar();
 /**
  * @param TipoTabla
  */
-void set_Planchar(void TipoTabla);
+void set_Planchar(TipoTabla NuevoEstado);
     
 /**
  * @param string
  */
-void set_Marca(void string);
+void set_Marca(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_MaterialPlanchar(void string);
+void set_MaterialPlanchar(string NuevoEstado);
+
 private: 
-    enumeration TipoTabla;
+    enum TipoTabla;
     string Marca;
     string MaterialPlanchar;
 };

@@ -14,43 +14,54 @@
  * @return TipoTabla
  */
 TipoTabla TapasInodoro::get_Tabla() {
-    return null;
+
+    return this->TipoTabla;
+
 }
 
 /**
  * @return string
  */
 string TapasInodoro::get_Anclajes() {
-    return "";
+
+    return this->Anclajes;
+
 }
 
 /**
  * @return string
  */
 string TapasInodoro::get_Disenio() {
-    return "";
+
+    return this->Disenio;
+
 }
 
 /**
  * @param string
  * @return void
  */
-void TapasInodoro::set_Anclajes(void string) {
-    return;
+void TapasInodoro::set_Anclajes(string NuevoEstado){
+
+    this->Anclajes = NuevoEstado;
 }
 
 /**
  * @param string
  * @return void
  */
-void TapasInodoro::set_Disenio(void string) {
-    return;
+void TapasInodoro::set_Disenio(string NuevoEstado){
+
+    this->Disenio = NuevoEstado;
+
 }
 
 /**
  * @param TipoTabla
  * @return void
  */
-void TapasInodoro::set_Tabla(void TipoTabla) {
-    return;
+void TapasInodoro::set_Tabla(TipoTabla NuevoEstado){
+
+  this->TipoTabla = NuevoEstado;
+
 }

@@ -14,28 +14,36 @@
  * @return TipoTendedero
  */
 TipoTendedero TendederosRopa::get_Tendedero() {
-    return null;
+
+    return this->TipoTendedero;
+
 }
 
 /**
  * @return string
  */
 string TendederosRopa::get_MaterialTendedero() {
-    return "";
+
+    return MaterialTendedero;
+
 }
 
 /**
  * @param TipoTendedero
  * @return void
  */
-void TendederosRopa::set_Tendedero(void TipoTendedero) {
-    return;
+void TendederosRopa::set_Tendedero(TipoTendedero NuevoEstado){
+
+    this->TipoTendedero = NuevoEstado;
+
 }
 
 /**
  * @param string
  * @return void
  */
-void TendederosRopa::set_MaterialTendedero(void string) {
-    return;
+void TendederosRopa::set_MaterialTendedero (string NuevoEstado){
+
+    this->MaterialTendedero = NuevoEstado;
+
 }

@@ -7,6 +7,7 @@
 #define _TENDEDEROSROPA_H
 
 #include "Bazar.h"
+#include "TipoTendedero.h"
 
 
 class TendederosRopa: public Bazar {
@@ -19,14 +20,15 @@ string get_MaterialTendedero();
 /**
  * @param TipoTendedero
  */
-void set_Tendedero(void TipoTendedero);
+void set_Tendedero(TipoTendedero NuevoEstado);
     
 /**
  * @param string
  */
-void set_MaterialTendedero(void string);
+void set_MaterialTendedero(string NuevoEstado);
+
 private: 
-    enumeration TipoTendedero;
+    enum TipoTendedero;
     string MaterialTendedero;
 };
 
