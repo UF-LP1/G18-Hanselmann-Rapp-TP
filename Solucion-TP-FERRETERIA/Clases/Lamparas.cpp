@@ -8,9 +8,9 @@
 /**
  * Lamparas implementation
  */
-Lamparas::Lamparas(enum TipoLampara TipoLampara_, string Disenio_)
+Lamparas::Lamparas(TipoLampara TipoLampara_, string Disenio_)
 {
-    this->TipoLampara= TipoLampara_;
+    this->Lamp= TipoLampara_;
     this->Disenio = Disenio_;
 
 }
@@ -25,7 +25,7 @@ Lamparas::~Lamparas()
  */
 TipoLampara Lamparas::get_Lampara() {
 
-    return this->TipoLampara;
+    return this->Lamp;
 
 }
 
@@ -45,7 +45,7 @@ string Lamparas::get_Disenio() {
  */
 void Lamparas::set_Lampara(TipoLampara NuevoEstado){
 
-    this->TipoLampara = NuevoEstado;
+    this->Lamp = NuevoEstado;
 
 }
 

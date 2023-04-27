@@ -8,9 +8,9 @@
 /**
  * Cables implementation
  */
-Cables::Cables(enum TipoConductor TipoConductor_, string Aislamiento_, string Cubierta_)
+Cables::Cables(TipoConductor TipoConductor_, string Aislamiento_, string Cubierta_)
 {
-    this->TipoConductor = TipoConductor_;
+    this->Conduc = TipoConductor_;
     this->Aislamiento = Aislamiento_;
     this->Cubierta = Cubierta_;
 
@@ -26,7 +26,7 @@ Cables::~Cables()
  */
 TipoConductor Cables::get_Conductores() {
 
-    return this->TipoConductor;//DUDA ENUM
+    return this->Conduc;
 
 }
 
@@ -54,7 +54,7 @@ string Cables::get_Cubierta() {
  */
 void Cables::set_Conductores (TipoConductor NuevoEstado){
 
-    this->TipoConductor = NuevoEstado;//DUDA ENUM
+    this->Conduc = NuevoEstado;
 
 }
 

@@ -9,11 +9,10 @@
 #include "Electricidad.h"
 #include "TipoConductor.h"
 
-
 class Cables: public Electricidad {
 public: 
 
-    Cables(enum TipoConductor, string, string);
+    Cables(TipoConductor, string, string);
 
     ~Cables();
     
@@ -40,7 +39,7 @@ void set_Aislamiento(string NuevoEstado);
 void set_Cubierta(string NuevoEstado);
 
 private: 
-    enum TipoConductor;
+    TipoConductor Conduc;
     string Aislamiento;
     string Cubierta;
 };

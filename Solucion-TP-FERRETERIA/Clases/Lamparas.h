@@ -13,7 +13,7 @@
 class Lamparas: public Electricidad {
 public: 
 
-    Lamparas(enum TipoLampara, string);
+    Lamparas(TipoLampara, string);
 
     ~Lamparas();
     
@@ -32,7 +32,7 @@ void set_Lampara(TipoLampara NuevoEstado);
 void set_Disenio(string NuevoEstado);
 
 private: 
-    enum TipoLampara;
+    TipoLampara Lamp;
     string Disenio;
 };
 
