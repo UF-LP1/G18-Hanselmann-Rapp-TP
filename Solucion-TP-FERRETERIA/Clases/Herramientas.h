@@ -2,34 +2,36 @@
  * Project Untitled
  */
 
-
 #ifndef _HERRAMIENTAS_H
 #define _HERRAMIENTAS_H
 
 #include "ArtFerreteria.h"
 #include "TipoHerramienta.h"
 
-
-class Herramientas: public ArtFerreteria {
+class Herramientas: public ArtFerreteria 
+{
 public: 
+
+    Herramientas(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoHerramienta, string);
+    ~Herramientas();
     
-    TipoHerramienta get_Herramienta();
+    TipoHerramienta get_HerramientaArtFerr();
+
+    string get_MarcaArtFerr();
     
-/**
- * @param TipoHerramienta
- */
-void set_Herramienta(TipoHerramienta NuevoEstado);
+    /**
+     * @param TipoHerramienta
+     */
+    void set_HerramientaArtFerr(TipoHerramienta NuevoEstado);
     
-string get_Marca();
-    
-/**
- * @param string
- */
-void set_Marca(string NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_MarcaArtFerr(string NuevoEstado);
 
 private: 
-    enum TipoHerramienta;
-    string Marca;
+    TipoHerramienta HerramientaArtFerr;
+    string MarcaArtFerr;
 };
 
 #endif //_HERRAMIENTAS_H

@@ -14,7 +14,7 @@ public:
     Tornillos(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, string, string, string);
     ~Tornillos();
     
-    string get_Cabeza();
+    string get_CabezaTornillo();
     
     string get_Rosca();
     
@@ -23,7 +23,7 @@ public:
     /**
      * @param string
      */
-    void set_Cabeza(string NuevoEstado);
+    void set_CabezaTornillo(string NuevoEstado);
     
     /**
      * @param string
@@ -36,7 +36,7 @@ public:
     void set_Utilidad(string NuevoEstado);
 
 private: 
-    string Cabeza;
+    string CabezaTornillo;
     string Rosca;
     string Utilidad;
 };

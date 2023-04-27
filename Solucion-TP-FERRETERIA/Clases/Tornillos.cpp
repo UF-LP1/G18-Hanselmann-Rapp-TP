@@ -7,9 +7,9 @@
 /**
  * Tornillos implementation
  */
-Tornillos::Tornillos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string MaterialArtFerr_, string Cabeza_, string Rosca_, string Utilidad_):ArtFerreteria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, MaterialArtFerr_)
+Tornillos::Tornillos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string MaterialArtFerr_, string CabezaTornillo_, string Rosca_, string Utilidad_):ArtFerreteria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, MaterialArtFerr_)
 {
-    this->Cabeza = Cabeza_;
+    this->CabezaTornillo = CabezaTornillo_;
     this->Rosca = Rosca_;
     this->Utilidad = Utilidad_;
 }
@@ -22,9 +22,9 @@ Tornillos::~Tornillos()
 /**
  * @return string
  */
-string Tornillos::get_Cabeza() 
+string Tornillos::get_CabezaTornillo() 
 {
-    return this->Cabeza;
+    return this->CabezaTornillo;
 }
 
 /**
@@ -47,9 +47,9 @@ string Tornillos::get_Utilidad()
  * @param string
  * @return void
  */
-void Tornillos::set_Cabeza(string NuevoEstado) 
+void Tornillos::set_CabezaTornillo(string NuevoEstado) 
 {
-    this->Cabeza = NuevoEstado;
+    this->CabezaTornillo = NuevoEstado;
 }
 
 /**
