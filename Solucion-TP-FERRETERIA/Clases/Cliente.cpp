@@ -8,11 +8,12 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo> Articulos_, const string Foto_, const string ArtRoto_, const bool EnvoltorioIntaco_):Persona(Nombre_, Apellido_, DNI_, Sexo_)
+Cliente::Cliente(string Nombre_, string Apellido_, const string DNI_, TipoSexo Sexo_, string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo> Articulos_, const string Foto_, const string ArtRoto_, bool EnvoltorioIntaco_):Persona(Nombre_, Apellido_,DNI_,Sexo_)
 {
     this->Direccion = Direccion_;
     this->MetodoPagoCli = MetodoPagoCli_;
     this->Articulos = Articulos_;
+    this->EnvoltorioIntacto = EnvoltorioIntaco_;
 }
 
 Cliente::~Cliente()
@@ -63,7 +64,7 @@ const string Cliente::get_ArtRoto()
 /**
  * @return const bool
  */
-const bool Cliente::get_EnvoltorioIntacto() 
+bool Cliente::get_EnvoltorioIntacto() 
 {
     return this->EnvoltorioIntacto;
 }
@@ -91,6 +92,10 @@ void Cliente::set_Articulos(vector <Articulo> NuevoEstado)
     this->Articulos= NuevoEstado;
 }
 
+void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)
+{
+    this->EnvoltorioIntacto = NuevoEstado;
+}
 /**
  * @return void
  */
