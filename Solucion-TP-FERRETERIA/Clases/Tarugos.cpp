@@ -14,28 +14,33 @@
  * @return TipoTarugo
  */
 TipoTarugo Tarugos::get_Tarugo() {
-    return null;
+
+    return this->TipoTarugo; //ENUM DUDA
 }
 
 /**
  * @return string
  */
 string Tarugos::get_Utilidad() {
-    return "";
+
+    return this->Utilidad; 
 }
 
 /**
  * @param TipoTarugo
  * @return void
  */
-void Tarugos::set_Tarugo(void TipoTarugo) {
-    return;
+void Tarugos::set_Tarugo(TipoTarugo NuevoEstado) {
+
+    this->TipoTarugo=NuevoEstado;//ENUM DUDA
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Tarugos::set_Utilidad(void string) {
-    return;
+void Tarugos::set_Utilidad(string NuevoEstado) {
+
+    this->Utilidad= NuevoEstado;
 }

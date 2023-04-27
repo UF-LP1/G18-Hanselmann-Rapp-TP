@@ -7,6 +7,7 @@
 #define _MECHAS_H
 
 #include "ArtFerreteria.h"
+#include "TipoMecha.h"
 
 
 class Mechas: public ArtFerreteria {
@@ -19,14 +20,15 @@ string get_Utilidad();
 /**
  * @param TipoMecha
  */
-void set_Mecha(void TipoMecha);
+void set_Mecha(TipoMecha NuevoEstado);
     
 /**
  * @param string
  */
-void set_Utilidad(void string);
+void set_Utilidad(string NuevoEstado);
+
 private: 
-    enumeration TipoMecha;
+    enum TipoMecha;
     string Utilidad;
 };
 

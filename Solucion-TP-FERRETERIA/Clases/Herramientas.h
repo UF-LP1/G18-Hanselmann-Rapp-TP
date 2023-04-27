@@ -7,6 +7,7 @@
 #define _HERRAMIENTAS_H
 
 #include "ArtFerreteria.h"
+#include "TipoHerramienta.h"
 
 
 class Herramientas: public ArtFerreteria {
@@ -17,16 +18,17 @@ TipoHerramienta get_Herramienta();
 /**
  * @param TipoHerramienta
  */
-void set_Herramiena(void TipoHerramienta);
+void set_Herramienta(TipoHerramienta NuevoEstado);
     
 string get_Marca();
     
 /**
  * @param string
  */
-void set_Marca(void string);
+void set_Marca(string NuevoEstado);
+
 private: 
-    enumeration TipoHerramienta;
+    enum TipoHerramienta;
     string Marca;
 };
 

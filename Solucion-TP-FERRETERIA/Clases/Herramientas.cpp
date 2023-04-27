@@ -14,28 +14,36 @@
  * @return TipoHerramienta
  */
 TipoHerramienta Herramientas::get_Herramienta() {
-    return null;
+
+    return this->TipoHerramienta;//DUDA ENUM
+
 }
 
 /**
  * @param TipoHerramienta
  * @return void
  */
-void Herramientas::set_Herramiena(void TipoHerramienta) {
-    return;
+void Herramientas::set_Herramienta(TipoHerramienta NuevoEstado) {
+
+    this->TipoHerramienta=NuevoEstado;//DUDA ENUM
+
 }
 
 /**
  * @return string
  */
 string Herramientas::get_Marca() {
-    return "";
+
+    return this->Marca;
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Herramientas::set_Marca(void string) {
-    return;
+void Herramientas::set_Marca(string NuevoEstado) {
+
+    this->Marca=NuevoEstado;
+
 }
