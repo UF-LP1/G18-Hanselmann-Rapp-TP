@@ -14,43 +14,55 @@
  * @return TipoConductor
  */
 TipoConductor Cables::get_Conductores() {
-    return null;
+
+    return this->TipoConductor;//DUDA ENUM
+
 }
 
 /**
  * @return string
  */
 string Cables::get_Aislamiento() {
-    return "";
+
+    return this->Aislamiento;
+
 }
 
 /**
  * @return string
  */
 string Cables::get_Cubierta() {
-    return "";
+
+    return this->Cubierta;
+
 }
 
 /**
  * @param TipoConductor
  * @return void
  */
-void Cables::set_Conductores(void TipoConductor) {
-    return;
+void Cables::set_Conductores (TipoConductor NuevoEstado){
+
+    this->TipoConductor = NuevoEstado;//DUDA ENUM
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Cables::set_Aislamiento(void string) {
-    return;
+void Cables::set_Aislamiento (string NuevoEstado){
+
+    this->Aislamiento = NuevoEstado;
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Cables::set_Cubierta(void string) {
-    return;
+void Cables::set_Cubierta (string NuevoEstado){
+
+    this->Cubierta = NuevoEstado;
+
 }

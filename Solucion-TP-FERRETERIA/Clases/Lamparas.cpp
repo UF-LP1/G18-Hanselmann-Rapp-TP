@@ -14,28 +14,37 @@
  * @return TipoLampara
  */
 TipoLampara Lamparas::get_Lampara() {
-    return null;
+
+    return this->TipoLampara;//DUDA ENUM
+
 }
+
 
 /**
  * @return string
  */
 string Lamparas::get_Disenio() {
-    return "";
+
+    return this->Disenio;
+
 }
 
 /**
  * @param TipoLampara
  * @return void
  */
-void Lamparas::set_Lampara(void TipoLampara) {
-    return;
+void Lamparas::set_Lampara(TipoLampara NuevoEstado){
+
+    this->TipoLampara = NuevoEstado;//DUDA ENUM
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Lamparas::set_Disenio(void string) {
-    return;
+void Lamparas::set_Disenio(string NuevoEstado){
+
+    this->Disenio = NuevoEstado;
+
 }

@@ -7,6 +7,7 @@
 #define _CABLES_H
 
 #include "Electricidad.h"
+#include "TipoConductor.h"
 
 
 class Cables: public Electricidad {
@@ -21,19 +22,20 @@ string get_Cubierta();
 /**
  * @param TipoConductor
  */
-void set_Conductores(void TipoConductor);
+void set_Conductores(TipoConductor NuevoEstado);
     
 /**
  * @param string
  */
-void set_Aislamiento(void string);
+void set_Aislamiento(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_Cubierta(void string);
+void set_Cubierta(string NuevoEstado);
+
 private: 
-    enumeration TipoConductor;
+    enum TipoConductor;
     string Aislamiento;
     string Cubierta;
 };

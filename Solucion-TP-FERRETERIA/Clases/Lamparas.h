@@ -7,6 +7,7 @@
 #define _LAMPARAS_H
 
 #include "Electricidad.h"
+#include "TipoLampara.h"
 
 
 class Lamparas: public Electricidad {
@@ -19,14 +20,15 @@ string get_Disenio();
 /**
  * @param TipoLampara
  */
-void set_Lampara(void TipoLampara);
+void set_Lampara(TipoLampara NuevoEstado);
     
 /**
  * @param string
  */
-void set_Disenio(void string);
+void set_Disenio(string NuevoEstado);
+
 private: 
-    enumeration TipoLampara;
+    enum TipoLampara;
     string Disenio;
 };
 

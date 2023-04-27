@@ -14,13 +14,17 @@
  * @return TipoEnchufe
  */
 TipoEnchufe Enchufes::get_Enchufe() {
-    return null;
+
+    return this->TipoEnchufe;//DUDA ENUM
+
 }
 
 /**
  * @param TipoEnchufe
  * @return void
  */
-void Enchufes::set_Enchufe(void TipoEnchufe) {
-    return;
+void Enchufes::set_Enchufe(TipoEnchufe NuevoEstado){
+
+    this->TipoEnchufe = NuevoEstado;//DUDA ENUM
+
 }

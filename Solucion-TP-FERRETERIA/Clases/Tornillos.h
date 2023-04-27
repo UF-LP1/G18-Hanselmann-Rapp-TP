@@ -21,17 +21,18 @@ string get_Utilidad();
 /**
  * @param string
  */
-void set_Cabeza(void string);
+void set_Cabeza(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_Rosca(void string);
+void set_Rosca(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_Utilidad(void string);
+void set_Utilidad(string NuevoEstado);
+
 private: 
     string Cabeza;
     string Rosca;
