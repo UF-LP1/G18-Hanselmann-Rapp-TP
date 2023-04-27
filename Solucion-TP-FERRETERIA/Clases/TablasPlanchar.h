@@ -12,7 +12,7 @@ class TablasPlanchar: public Bazar
 {
 public: 
 
-    TablasPlanchar(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoTablaPlanchar, string, string);
+    TablasPlanchar(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoTablasPlanchar, string, string);
 
     ~TablasPlanchar();
     

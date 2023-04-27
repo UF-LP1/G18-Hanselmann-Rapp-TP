@@ -7,9 +7,9 @@
 /**
  * TablasPlanchar implementation
  */
-TablasPlanchar::TablasPlanchar(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string Color_, TipoTabla TipoTabla_, string Marca_, string MaterialPlanchar_): Bazar(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, Color_)
+TablasPlanchar::TablasPlanchar(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string Color_, TipoTablasPlanchar Planchita_, string Marca_, string MaterialPlanchar_): Bazar(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, Color_)
 {
-    this->tipotab = TipoTabla_;
+    this->Planchita = Planchita_;
     this->Marca = Marca_;
     this->MaterialPlanchar = MaterialPlanchar_;
 }
@@ -22,9 +22,9 @@ TablasPlanchar::~TablasPlanchar()
 /**
  * @return TipoTabla
  */
-TipoTabla TablasPlanchar::get_Planchar() 
+TipoTablasPlanchar TablasPlanchar::get_Planchar() 
 {
-    return this->tipotab;
+    return this->Planchita;
 }
 
 /**
@@ -47,9 +47,9 @@ string TablasPlanchar::get_MaterialPlanchar()
  * @param TipoTabla
  * @return void
  */
-void TablasPlanchar::set_Planchar(TipoTabla NuevoEstado)
+void TablasPlanchar::set_Planchar(TipoTablasPlanchar NuevoEstado)
 {
-    this->tipotab = NuevoEstado;
+    this->Planchita = NuevoEstado;
 }
 
 /**
