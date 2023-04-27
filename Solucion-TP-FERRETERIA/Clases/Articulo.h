@@ -16,7 +16,9 @@ class Articulo
 {
 public: 
 
-    Articulo(float Precio_);
+    Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_);
+
+    ~Articulo();
     
    unsigned int get_Precio();
     
@@ -26,13 +28,17 @@ public:
     
     const string get_TipoProducto();
     
-    const unsigned float get_Alto();
+    const float get_Alto();
     
-    const unsigned float get_Ancho();
+    const float get_Ancho();
     
-    unsigned int get_Largo();
+    const float get_Largo();
     
     unsigned int get_Cantidad();
+
+    string get_ArticuloVendido();
+
+    unsigned int get_PrecioArtVendio();
     
     /**
      * @param unsigned float
@@ -42,22 +48,21 @@ public:
     /**
      * @param bool
      */
-    void set_Cambio(void bool);
+    void set_Cambio(bool NuevoEstado);
     
     /**
      * @param string
      */
-    void set_EstadoArt(void string);
-    
+    void set_EstadoArt(string NuevoEstado);
+         
     /**
      * @param unsigned int
      */
-    void set_Largo(unsigned int);
-        
-    /**
-     * @param unsigned int
-     */
-    void set_Cantidad(unsigned int);
+    void set_Cantidad(unsigned int NuevoEstado);
+
+    void set_ArticuloVendido(string NuevoEstado);
+
+    void set_PrecioArtVendio(unsigned int NuevoEstado);
 
 protected: 
    unsigned int Precio;
@@ -66,10 +71,10 @@ protected:
     const string TipoProducto;
     const float Alto;
     const float Ancho;
-    unsigned int Largo;
+    const float Largo;
     unsigned int Cantidad;
     string ArticuloVendido;
-    float PrecioArtVendido;
+    unsigned int PrecioArtVendido;
 };
 
 #endif //_ARTICULO_H

@@ -9,20 +9,11 @@
 #ifndef _FERRETERIA_H
 #define _FERRETERIA_H
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <list>
-#include <algorithm>
-#include <iterator>
-
-using namespace std;
-
 class Ferreteria 
 {
 public: 
 
-    Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, string MetodoPago_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_);
+    Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, MetodoPago MetodoPagosFerreteria_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_);
     ~Ferreteria();
     
     const string get_Nombre();
@@ -33,7 +24,7 @@ public:
     
     const string get_Mail();
     
-    const string get_MetodoPago();
+    MetodoPago get_MetodoPagoFerreteria();
   
     list <string> get_ArticulosTotales();
 
@@ -48,7 +39,7 @@ public:
     /**
      * @param string
      */
-    void set_MetodoPago(string NuevoEstado);
+    void set_MetodoPagoFerreteria(MetodoPago NuevoEstado);
             
     void set_ArticulosTotales(list <string> NuevoEstado);
 
@@ -84,7 +75,7 @@ private:
     const string Direccion;
     const string Telefono;
     const string Mail;
-    const string MetodoPago;
+    MetodoPago MetodoPagoFerreteria;
     list <string> ArticulosTotales;
     list <int> CantArtTotales;
     unsigned int AlquilerLocal;

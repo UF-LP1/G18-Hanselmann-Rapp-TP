@@ -2,26 +2,45 @@
  * Project Untitled
  */
 
-
 #include "Duenio.h"
 
 /**
  * Duenio implementation
  */
 
+Duenio::Duenio(bool Disponibilidad_):Disponibilidad(Disponibilidad_)
+{
+
+}
+
+Duenio::~Duenio()
+{
+
+}
 
 /**
  * @return bool
  */
-bool Duenio::get_Disponibilidad() {
-    return false;
+bool Duenio::get_Disponibilidad() 
+{
+    return this->Disponibilidad;
 }
 
 /**
  * @param bool
  * @return void
  */
-void Duenio::set_Disponibilidad(void bool) {
+void Duenio::set_Disponibilidad(bool NuevoEstado) 
+{
+    this->Disponibilidad = NuevoEstado;
+}
+
+/**
+ * @param Cliente
+ * @return void
+ */
+void Duenio::atender_cliente(Cliente cli) 
+{
     return;
 }
 
@@ -29,15 +48,8 @@ void Duenio::set_Disponibilidad(void bool) {
  * @param Cliente
  * @return void
  */
-void Duenio::atender_cliente(void Cliente) {
-    return;
-}
-
-/**
- * @param Cliente
- * @return void
- */
-void Duenio::identificar_art(void Cliente) {
+void Duenio::identificar_art(Cliente cli) 
+{
     return;
 }
 
@@ -45,16 +57,18 @@ void Duenio::identificar_art(void Cliente) {
  * @param Articulo
  * @return unisgned float
  */
-unisgned float Duenio::cobrar(void Articulo) {
-    return null;
+float Duenio::cobrar(Articulo art) 
+{
+    return;
 }
 
 /**
  * @param Articulo
  * @return string
  */
-string Duenio::revisar_art(void Articulo) {
-    return "";
+string Duenio::revisar_art(Articulo art) 
+{
+    return;
 }
 
 /**
@@ -62,21 +76,24 @@ string Duenio::revisar_art(void Articulo) {
  * @param Ferreteria
  * @return bool
  */
-bool Duenio::atenderCliente(void Cliente, void Ferreteria) {
+bool Duenio::atenderCliente(Cliente cli, Ferreteria ferr) 
+{
     return false;
 }
 
 /**
  * @return void
  */
-void Duenio::abrir_ferreteria() {
+void Duenio::abrir_ferreteria() 
+{
     return;
 }
 
 /**
  * @return void
  */
-void Duenio::cerrar_ferreteria() {
+void Duenio::cerrar_ferreteria() 
+{
     return;
 }
 
@@ -85,7 +102,8 @@ void Duenio::cerrar_ferreteria() {
  * @param Herramientas
  * @return bool
  */
-bool Duenio::buscar_Herramientas(void Ferreteria, void Herramientas) {
+bool Duenio::buscar_Herramientas(Ferreteria ferr, HerramientasAlquiler herralq) 
+{
     return false;
 }
 
@@ -94,7 +112,8 @@ bool Duenio::buscar_Herramientas(void Ferreteria, void Herramientas) {
  * @param Herramientas
  * @return bool
  */
-bool Duenio::dar_HerramientasCliente(void Cliente, void Herramientas) {
+bool Duenio::dar_HerramientasCliente(Cliente cli, HerramientasAlquiler herralq) 
+{
     return false;
 }
 
@@ -102,6 +121,7 @@ bool Duenio::dar_HerramientasCliente(void Cliente, void Herramientas) {
  * @param Empleado
  * @return bool
  */
-bool Duenio::llamar_Empleado(void Empleado) {
+bool Duenio::llamar_Empleado(Empleado emp) 
+{
     return false;
 }

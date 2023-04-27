@@ -8,7 +8,7 @@
  * Ferreteria implementation
  */
 
-Ferreteria::Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, string MetodoPago_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_): Nombre(Nombre_), Direccion(Direccion_), Telefono(Telefono_), Mail(Mail_), MetodoPago(MetodoPago_), ArticulosTotales(ArticulosTotales_), CantArtTotales(CantArtTotales_), AlquilerLocal(AlquilerLocal_), ExpensasLocal(Expensaslocal_), PrecioCargamento(PrecioCargamento_)
+Ferreteria::Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, MetodoPago MetodoPagoFerreteria_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_): Nombre(Nombre_), Direccion(Direccion_), Telefono(Telefono_), Mail(Mail_), MetodoPagoFerreteria(MetodoPagoFerreteria_), ArticulosTotales(ArticulosTotales_), CantArtTotales(CantArtTotales_), AlquilerLocal(AlquilerLocal_), ExpensasLocal(Expensaslocal_), PrecioCargamento(PrecioCargamento_)
 {
 
 }
@@ -53,9 +53,9 @@ const string Ferreteria::get_Mail()
 /**
  * @return const string
  */
-const string Ferreteria::get_MetodoPago() 
+MetodoPago Ferreteria::get_MetodoPagoFerreteria() 
 {
-    return this->MetodoPago;
+    return this->MetodoPagoFerreteria;
 }
 
 list <string> Ferreteria::get_ArticulosTotales()
@@ -87,9 +87,9 @@ unsigned int Ferreteria::get_PrecioCargamento()
  * @param string
  * @return void
  */
-void Ferreteria::set_MetodoPago(string NuevoEstado) 
+void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado) 
 {
-    this->MetodoPago == NuevoEstado;
+    this->MetodoPagoFerreteria == NuevoEstado;
 }
 
 void Ferreteria::set_ArticulosTotales(list <string> NuevoEstado)

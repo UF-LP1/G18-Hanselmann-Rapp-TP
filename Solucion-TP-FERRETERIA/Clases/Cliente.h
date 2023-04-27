@@ -5,7 +5,7 @@
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
-#include "Persona.h"
+#include "MetodoPago.h"
 #include "HerramientasAlquiler.h"
 #include "Empleado.h"
 #include "Articulo.h"
@@ -14,13 +14,13 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(string Direccion_, MetodoPago MetodoPago_, vector<Articulo> Articulos_, string Foto_, string ArtRoto_, bool EnvoltorioIntacto_);
+    Cliente(string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo> Articulos_, string Foto_, string ArtRoto_, bool EnvoltorioIntacto_);
 
     ~Cliente();
     
     const string get_Direccion();
     
-    MetodoPago get_Pago();
+    MetodoPago get_MetodoPagoCli();
     
     vector <Articulo> get_Articulos();
         
@@ -33,7 +33,7 @@ public:
     /**
      * @param MetodoPago
      */
-    void set_Pago(MetodoPago NuevoEstado);
+    void set_MetodoPagoCli(MetodoPago NuevoEstado);
     
     /**
      * @param string
@@ -54,11 +54,11 @@ public:
     /**
      * @param Precio
      */
-    void elegir_art(void Precio);
+    void elegir_art(Articulo art); 
 
 private: 
     const string Direccion;
-    enum MetodoPago;
+    MetodoPago MetodoPagoCli;
     vector <Articulo> Articulos;
     const string Foto;
     const string ArtRoto;
