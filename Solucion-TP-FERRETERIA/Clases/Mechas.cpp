@@ -14,28 +14,30 @@
  * @return TipoMecha
  */
 TipoMecha Mechas::get_Mecha() {
-    return null;
+
+    return this->TipoMecha;
 }
 
 /**
  * @return string
  */
 string Mechas::get_Utilidad() {
-    return "";
+
+    return this->Utilidad;
 }
 
 /**
  * @param TipoMecha
  * @return void
  */
-void Mechas::set_Mecha(void TipoMecha) {
-    return;
+void Mechas::set_Mecha(TipoMecha NuevoEstado) {
+    this->;
 }
 
 /**
  * @param string
  * @return void
  */
-void Mechas::set_Utilidad(void string) {
+void Mechas::set_Utilidad(string NuevoEstado) {
     return;
 }

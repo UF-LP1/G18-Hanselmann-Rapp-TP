@@ -7,6 +7,7 @@
 #define _TARUGOS_H
 
 #include "ArtFerreteria.h"
+#include "TipoTarugo.h"
 
 
 class Tarugos: public ArtFerreteria {
@@ -19,14 +20,14 @@ string get_Utilidad();
 /**
  * @param TipoTarugo
  */
-void set_Tarugo(void TipoTarugo);
+void set_Tarugo(TipoTarugo);
     
 /**
  * @param string
  */
-void set_Utilidad(void string);
+void set_Utilidad(string);
 private: 
-    enumeration TipoTarugo;
+    enum TipoTarugo;
     string Utilidad;
 };
 
