@@ -12,6 +12,10 @@
 
 class TablasPlanchar: public Bazar {
 public: 
+
+    TablasPlanchar(enum TipoTabla, string, string);
+
+    ~TablasPlanchar();
     
 TipoTabla get_Planchar();
     

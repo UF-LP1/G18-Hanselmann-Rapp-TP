@@ -8,7 +8,10 @@
 /**
  * TablasPlanchar implementation
  */
+TablasPlanchar::TablasPlanchar(enum TipoTabla TipoTabla_, string Marca_, string MaterialPlanchar_)
+{
 
+}
 
 /**
  * @return TipoTabla
