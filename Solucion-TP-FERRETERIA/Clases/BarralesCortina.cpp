@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #include "BarralesCortina.h"
 
 /**
@@ -23,56 +22,50 @@ BarralesCortina::~BarralesCortina()
 /**
  * @return TipoBarrales
  */
-TipoBarreles BarralesCortina::get_Barrales() {
-
+TipoBarreles BarralesCortina::get_Barrales() 
+{
     return this->tipoba;
-
 }
 
 /**
  * @return string
  */
-string BarralesCortina::get_MaterialBarrales() {
-
+string BarralesCortina::get_MaterialBarrales() 
+{
     return this->MaterialBarreles;
-
 }
 
 /**
  * @param TipoBarrales
  * @return void
  */
-void BarralesCortina::set_Barrales(TipoBarreles NuevoEstado) {
-
+void BarralesCortina::set_Barrales(TipoBarreles NuevoEstado) 
+{
     this->tipoba = NuevoEstado;
-
 }
 
 /**
  * @param string
  * @return void
  */
-void BarralesCortina::set_MaterialBarrales(string NuevoEstado) {
-
+void BarralesCortina::set_MaterialBarrales(string NuevoEstado) 
+{
     this->MaterialBarreles = NuevoEstado;
-
 }
 
 /**
  * @return unsigned int
  */
-unsigned int BarralesCortina::get_Ganchos() {
-
+unsigned int BarralesCortina::get_Ganchos()
+{
     return this->Ganchos;
-
 }
 
 /**
  * @param unsigned int
  * @return void
  */
-void BarralesCortina::set_Ganchos(unsigned int NuevoEstado) {
-
+void BarralesCortina::set_Ganchos(unsigned int NuevoEstado) 
+{
     this->Ganchos=NuevoEstado;
-
 }
