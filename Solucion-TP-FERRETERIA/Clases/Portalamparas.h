@@ -7,19 +7,21 @@
 #define _PORTALAMPARAS_H
 
 #include "Electricidad.h"
+#include "TipoPortalamparas.h"
 
 
 class Portalamparas: public Electricidad {
 public: 
     
-TipoPortalampara get_PortaLampara();
+    TipoPortalamparas get_Portalamparas();
     
 /**
  * @param TipoPortalamparas
  */
-void set_PortaLampara(void TipoPortalamparas);
+    void set_PortaLamparas(TipoPortalamparas NuevoEstado);
+
 private: 
-    enumeration TipoPortalamparas;
+    enum TipoPortalamparas;
 };
 
 #endif //_PORTALAMPARAS_H

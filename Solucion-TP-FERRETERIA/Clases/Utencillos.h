@@ -7,6 +7,7 @@
 #define _UTENCILLOS_H
 
 #include "Cocina.h"
+#include "TipoUtencillo.h"
 
 
 class Utencillos: public Cocina {
@@ -19,14 +20,15 @@ string get_MaterialUtencillo();
 /**
  * @param TipoUtencillo
  */
-void set_Utencillo(void TipoUtencillo);
+void set_Utencillo(TipoUtencillo NuevoEstado);
     
 /**
  * @param string
  */
-void set_MaterialUtencillo(void string);
+void set_MaterialUtencillo(string NuevoEstado);
+
 private: 
-    enumeration TipoUtencillo;
+    enum TipoUtencillo;
     string MaterialUtencillo;
 };
 

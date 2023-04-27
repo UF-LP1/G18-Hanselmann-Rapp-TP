@@ -7,6 +7,7 @@
 #define _OLLAS_H
 
 #include "Cocina.h"
+#include "TipoOlla.h"
 
 
 class Ollas: public Cocina {
@@ -19,14 +20,15 @@ string get_MaterialOlla();
 /**
  * @param TipoOlla
  */
-void set_Olla(void TipoOlla);
+void set_Olla(TipoOlla NuevoEstado);
     
 /**
  * @param string
  */
-void set_MaterialOlla(void string);
+void set_MaterialOlla(string NuevoEstado);
+
 private: 
-    enumeration TipoOlla;
+    enum TipoOlla;
     string MaterialOlla;
 };
 

@@ -14,28 +14,37 @@
  * @return TipoUtencillo
  */
 TipoUtencillo Utencillos::get_Utencillo() {
-    return null;
+
+    return this->TipoUtencillo;//DUDA ENUM
+
 }
+
 
 /**
  * @return string
  */
 string Utencillos::get_MaterialUtencillo() {
-    return "";
+
+    return this->MaterialUtencillo;
+
 }
 
 /**
  * @param TipoUtencillo
  * @return void
  */
-void Utencillos::set_Utencillo(void TipoUtencillo) {
-    return;
+void Utencillos::set_Utencillo(TipoUtencillo NuevoEstado){
+
+    this->TipoUtencillo = NuevoEstado; //DUDA ENUM
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Utencillos::set_MaterialUtencillo(void string) {
-    return;
+void Utencillos::set_MaterialUtencillo(string NuevoEstado){
+
+    this->MaterialUtencillo = NuevoEstado;
+
 }

@@ -14,28 +14,36 @@
  * @return TipoOlla
  */
 TipoOlla Ollas::get_Olla() {
-    return null;
+
+    return this->TipoOlla;
+
 }
 
 /**
  * @return string
  */
 string Ollas::get_MaterialOlla() {
-    return "";
+
+    return this->MaterialOlla;
+
 }
 
 /**
  * @param TipoOlla
  * @return void
  */
-void Ollas::set_Olla(void TipoOlla) {
-    return;
+void Ollas::set_Olla(TipoOlla NuevoEstado){
+
+    this->TipoOlla = NuevoEstado;
+
 }
 
 /**
  * @param string
  * @return void
  */
-void Ollas::set_MaterialOlla(void string) {
-    return;
+void Ollas::set_MaterialOlla(string NuevoEstado){
+
+    this->MaterialOlla = NuevoEstado;
+
 }
