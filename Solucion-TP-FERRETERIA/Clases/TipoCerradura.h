@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _TIPOCERRADURA_H
 #define _TIPOCERRADURA_H
 

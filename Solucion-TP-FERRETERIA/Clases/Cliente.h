@@ -5,6 +5,7 @@
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
+#include "Persona.h"
 #include "MetodoPago.h"
 #include "HerramientasAlquiler.h"
 #include "Empleado.h"

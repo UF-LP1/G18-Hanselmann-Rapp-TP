@@ -13,7 +13,6 @@ Cliente::Cliente(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, 
     this->Direccion = Direccion_;
     this->MetodoPagoCli = MetodoPagoCli_;
     this->Articulos = Articulos_;
-    
 }
 
 Cliente::~Cliente()

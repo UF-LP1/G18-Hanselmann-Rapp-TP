@@ -2,25 +2,35 @@
  * Project Untitled
  */
 
-
 #include "LLaves.h"
 
 /**
  * LLaves implementation
  */
 
+LLaves::LLaves(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string MaterialCerraj_, TipoLLave LLavecita_):Cerrajeria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, MaterialCerraj_)
+{
+    this->LLavecita = LLavecita_;
+}
+
+LLaves::~LLaves()
+{
+
+}
 
 /**
  * @return TipoLlave
  */
-TipoLlave LLaves::get_Tipo() {
-    return null;
+TipoLLave LLaves::get_LLavecita() 
+{
+    return this->LLavecita;
 }
 
 /**
  * @param TipoLlave
  * @return void
  */
-void LLaves::set_Tipo(void TipoLlave) {
-    return;
+void LLaves::set_LLavecita(TipoLLave NuevoEstado) 
+{
+    this->LLavecita = NuevoEstado;
 }
