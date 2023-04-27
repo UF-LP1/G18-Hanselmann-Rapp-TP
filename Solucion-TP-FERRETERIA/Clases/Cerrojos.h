@@ -8,9 +8,10 @@
 
 #include "Cerrajeria.h"
 #include "Cerrajeria.h"
+#include "TipoCerrojo.h"
 
 
-class Cerrojos: public Cerrajeria, public Cerrajeria {
+class Cerrojos: public Cerrajeria {
 public: 
     
 TipoCerrojo get_Cerrojo();
@@ -18,9 +19,10 @@ TipoCerrojo get_Cerrojo();
 /**
  * @param TipoCerrojo
  */
-void set_Cerrojo(void TipoCerrojo);
+void set_Cerrojo(TipoCerrojo NuevoEstado);
+
 private: 
-    enumeration TipoCerrojo;
+    enum TipoCerrojo;
 };
 
 #endif //_CERROJOS_H

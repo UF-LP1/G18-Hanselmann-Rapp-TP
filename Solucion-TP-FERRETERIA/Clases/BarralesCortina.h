@@ -8,7 +8,6 @@
 
 #include "Banio.h"
 
-
 class BarralesCortina: public Banio {
 public: 
     
@@ -19,21 +18,22 @@ string get_MaterialBarrales();
 /**
  * @param TipoBarrales
  */
-void set_Barrales(void TipoBarrales);
+void set_Barrales(TipoBarrales NuevoEstado);
     
 /**
  * @param string
  */
-void set_MaterialBarrales(void string);
+void set_MaterialBarrales(string NuevoEstado);
     
 unsigned int get_Ganchos();
     
 /**
  * @param unsigned int
  */
-void set_Ganchos(void unsigned int);
+void set_Ganchos(unsigned int NuevoEstado);
+
 private: 
-    enumeration TipoBarrales;
+    enum TipoBarrales;
     string MaterialBarrales;
     unsigned int Ganchos;
 };

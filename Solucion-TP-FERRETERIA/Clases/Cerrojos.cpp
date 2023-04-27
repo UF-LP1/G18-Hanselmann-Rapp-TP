@@ -14,13 +14,17 @@
  * @return TipoCerrojo
  */
 TipoCerrojo Cerrojos::get_Cerrojo() {
-    return null;
+
+    return this->TipoCerrojo;
+
 }
 
 /**
  * @param TipoCerrojo
  * @return void
  */
-void Cerrojos::set_Cerrojo(void TipoCerrojo) {
-    return;
+void Cerrojos::set_Cerrojo(TipoCerrojo NuevoEstado) {
+
+    this->TipoCerrojo=NuevoEstado;
+
 }

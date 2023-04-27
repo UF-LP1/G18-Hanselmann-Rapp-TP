@@ -14,13 +14,17 @@
  * @return TipoCerradura
  */
 TipoCerradura Cerraduras::get_Tipo() {
-    return null;
+
+    return this->TipoCerradura;
+
 }
 
 /**
  * @param TipoCerradura
  * @return void
  */
-void Cerraduras::set_Tipo(void TipoCerradura) {
-    return;
+void Cerraduras::set_Tipo(TipoCerradura NuevoEstado) {
+
+    this->TipoCerradura=NuevoEstado;
+
 }

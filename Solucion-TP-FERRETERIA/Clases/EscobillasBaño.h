@@ -23,22 +23,23 @@ string get_MaterialEscobilla();
 /**
  * @param string
  */
-void set_TipoEscobilla(void string);
+void set_TipoEscobilla(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_Disenio(void string);
+void set_Disenio(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_Marca(void string);
+void set_Marca(string NuevoEstado);
     
 /**
  * @param string
  */
-void set_MaterialEscobilla(void string);
+void set_MaterialEscobilla(string NuevoEstado);
+
 private: 
     string TipoEscobilla;
     string Disenio;
