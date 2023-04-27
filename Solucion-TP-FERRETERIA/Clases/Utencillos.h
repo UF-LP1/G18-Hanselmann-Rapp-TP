@@ -13,7 +13,7 @@
 class Utencillos: public Cocina {
 public: 
 
-    Utencillos(TipoUtencillo, string);
+    Utencillos(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool, TipoUtencillo, string);
 
     ~Utencillos();
     
