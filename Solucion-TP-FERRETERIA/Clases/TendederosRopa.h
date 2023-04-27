@@ -12,6 +12,10 @@
 
 class TendederosRopa: public Bazar {
 public: 
+
+    TendederosRopa(enum TipoTendedero, string);
+
+    ~TendederosRopa();
     
 TipoTendedero get_Tendedero();
     

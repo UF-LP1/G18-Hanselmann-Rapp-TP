@@ -12,6 +12,10 @@
 
 class Ollas: public Cocina {
 public: 
+
+    Ollas(enum TipoOlla, string);
+
+    ~Ollas();
     
 TipoOlla get_Olla();
     

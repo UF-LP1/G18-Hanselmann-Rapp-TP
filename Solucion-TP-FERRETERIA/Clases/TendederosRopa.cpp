@@ -8,7 +8,15 @@
 /**
  * TendederosRopa implementation
  */
+TendederosRopa::TendederosRopa(enum TipoTendedero TipoTendedero_, string MaterialTendedero_) {
 
+    this->TipoTendedero = TipoTendedero_;
+    this->MaterialTendedero = MaterialTendedero_;
+}
+
+TendederosRopa::~TendederosRopa() {
+
+}
 
 /**
  * @return TipoTendedero

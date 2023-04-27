@@ -8,7 +8,16 @@
 /**
  * Ollas implementation
  */
+Ollas::Ollas(enum TipoOlla TipoOlla_, string MaterialOlla_) {
 
+    this->TipoOlla = TipoOlla_;
+    this->MaterialOlla = MaterialOlla_;
+}
+
+Ollas::~Ollas()
+{
+
+}
 
 /**
  * @return TipoOlla

@@ -12,6 +12,10 @@
 
 class Utencillos: public Cocina {
 public: 
+
+    Utencillos(enum TipoUtencillo, string);
+
+    ~Utencillos();
     
 TipoUtencillo get_Utencillo();
     

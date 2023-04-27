@@ -8,14 +8,21 @@
 /**
  * Utencillos implementation
  */
+Utencillos::Utencillos(enum TipoUtencillo TipoUtencillo_, string MaterialUtencillo_)
+{
+    this->TipoUtencillo = TipoUtencillo_;
+    this->MaterialUtencillo = MaterialUtencillo_;
+}
 
+Utencillos::~Utencillos() {
 
+}
 /**
  * @return TipoUtencillo
  */
 TipoUtencillo Utencillos::get_Utencillo() {
 
-    return this->TipoUtencillo;//DUDA ENUM
+    return this->TipoUtencillo;
 
 }
 
@@ -35,7 +42,7 @@ string Utencillos::get_MaterialUtencillo() {
  */
 void Utencillos::set_Utencillo(TipoUtencillo NuevoEstado){
 
-    this->TipoUtencillo = NuevoEstado; //DUDA ENUM
+    this->TipoUtencillo = NuevoEstado; 
 
 }
 

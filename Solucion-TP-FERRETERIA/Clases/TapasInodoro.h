@@ -12,6 +12,10 @@
 
 class TapasInodoro: public Bazar {
 public: 
+
+    TapasInodoro(enum TipoTabla, string, string);
+
+    ~TapasInodoro();
     
 TipoTabla get_Tabla();
     

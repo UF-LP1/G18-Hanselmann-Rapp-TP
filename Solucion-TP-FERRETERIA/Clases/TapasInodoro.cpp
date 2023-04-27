@@ -8,7 +8,17 @@
 /**
  * TapasInodoro implementation
  */
+TapasInodoro::TapasInodoro(enum TipoTabla TipoTabla_, string Anclajes_, string Disenio_) {
 
+    this->TipoTabla = TipoTabla_;
+    this->Anclajes = Anclajes_;
+    this->Disenio = Disenio_;
+}
+
+TapasInodoro::~TapasInodoro()
+{
+
+}
 
 /**
  * @return TipoTabla
