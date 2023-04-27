@@ -2,6 +2,8 @@
  * Project Untitled
  */
 
+#include "TipoSexo.h"
+
 #ifndef _PERSONA_H
 #define _PERSONA_H
 
@@ -9,12 +11,17 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
 class Persona 
 {
 public: 
+
+    Persona(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_);
+    ~Persona();
     
     string get_Nombre();
     
@@ -27,22 +34,23 @@ public:
     /**
      * @param string
      */
-    void set_Nombre(void string);
+    void set_Nombre(string NuevoEstado);
     
     /**
      * @param string
      */
-    void set_Apellido(void string);
+    void set_Apellido(string NuevoEstado);
     
     /**
      * @param TipoSexo
      */
-    void set_Sexo(void TipoSexo);
+    void set_Sexo(TipoSexo NuevoEstado);
+
 protected: 
     string Nombre;
     string Apellido;
     const string DNI;
-    enumeration TipoSexo;
+    TipoSexo Sexo;
 };
 
 #endif //_PERSONA_H

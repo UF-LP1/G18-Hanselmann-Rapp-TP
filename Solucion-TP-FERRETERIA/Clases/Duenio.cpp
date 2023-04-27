@@ -8,7 +8,7 @@
  * Duenio implementation
  */
 
-Duenio::Duenio(bool Disponibilidad_):Disponibilidad(Disponibilidad_)
+Duenio::Duenio(bool Disponibilidad_): Disponibilidad(Disponibilidad_)
 {
 
 }
