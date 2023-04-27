@@ -8,10 +8,10 @@
 /**
  * BarralesCortina implementation
  */
-BarralesCortina::BarralesCortina(TipoBarrales Tipobarrales_, string MaterialBarrales_, unsigned int Ganchos_)
+BarralesCortina::BarralesCortina(TipoBarreles Tipobarreles_, string MaterialBarreles_, unsigned int Ganchos_)
 {
-    this->TipoBarrales = TipoBarrales_;
-    this->MaterialBarrales = MaterialBarrales_;
+    this->tipoba = Tipobarreles_;
+    this->MaterialBarreles = MaterialBarreles_;
     this->Ganchos = Ganchos_;
 }
 
@@ -23,9 +23,9 @@ BarralesCortina::~BarralesCortina()
 /**
  * @return TipoBarrales
  */
-TipoBarrales BarralesCortina::get_Barrales() {
+TipoBarreles BarralesCortina::get_Barrales() {
 
-    return this->TipoBarrales;
+    return this->tipoba;
 
 }
 
@@ -34,7 +34,7 @@ TipoBarrales BarralesCortina::get_Barrales() {
  */
 string BarralesCortina::get_MaterialBarrales() {
 
-    return this->MaterialBarrales;
+    return this->MaterialBarreles;
 
 }
 
@@ -42,9 +42,9 @@ string BarralesCortina::get_MaterialBarrales() {
  * @param TipoBarrales
  * @return void
  */
-void BarralesCortina::set_Barrales(TipoBarrales NuevoEstado) {
+void BarralesCortina::set_Barrales(TipoBarreles NuevoEstado) {
 
-    this->TipoBarrales = NuevoEstado;
+    this->tipoba = NuevoEstado;
 
 }
 
@@ -54,7 +54,7 @@ void BarralesCortina::set_Barrales(TipoBarrales NuevoEstado) {
  */
 void BarralesCortina::set_MaterialBarrales(string NuevoEstado) {
 
-    this->MaterialBarrales = NuevoEstado;
+    this->MaterialBarreles = NuevoEstado;
 
 }
 

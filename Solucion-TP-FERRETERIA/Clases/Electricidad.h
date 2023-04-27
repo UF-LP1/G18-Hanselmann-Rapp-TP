@@ -12,7 +12,7 @@
 class Electricidad: public Articulo {
 public: 
 
-    Electricidad(unsigned int, unsigned int);
+    Electricidad(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, unsigned int, unsigned int);
 
     ~Electricidad();
     

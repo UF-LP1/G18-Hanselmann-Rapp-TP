@@ -12,7 +12,7 @@
 class Cocina: public Articulo {
 public: 
 
-    Cocina(bool);
+    Cocina(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool);
 
     ~Cocina();
     

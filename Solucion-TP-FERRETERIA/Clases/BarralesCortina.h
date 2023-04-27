@@ -7,22 +7,23 @@
 #define _BARRALESCORTINA_H
 
 #include "Banio.h"
+#include"TipoBarreles.h"
 
 class BarralesCortina: public Banio {
 public: 
     
-    BarralesCortina(enum TipoBarrales, string, unsigned int);
+    BarralesCortina(TipoBarreles, string, unsigned int);
 
     ~BarralesCortina();
 
-TipoBarrales get_Barrales();
+TipoBarreles get_Barrales();
     
 string get_MaterialBarrales();
     
 /**
  * @param TipoBarrales
  */
-void set_Barrales(TipoBarrales NuevoEstado);
+void set_Barrales(TipoBarreles NuevoEstado);
     
 /**
  * @param string
@@ -37,8 +38,8 @@ unsigned int get_Ganchos();
 void set_Ganchos(unsigned int NuevoEstado);
 
 private: 
-    enum TipoBarrales;
-    string MaterialBarrales;
+    TipoBarreles tipoba;
+    string MaterialBarreles;
     unsigned int Ganchos;
 };
 
