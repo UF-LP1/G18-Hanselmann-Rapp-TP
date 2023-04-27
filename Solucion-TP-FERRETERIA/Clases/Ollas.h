@@ -2,34 +2,33 @@
  * Project Untitled
  */
 
-
 #ifndef _OLLAS_H
 #define _OLLAS_H
 
 #include "Cocina.h"
 #include "TipoOlla.h"
 
-
-class Ollas: public Cocina {
+class Ollas: public Cocina
+{
 public: 
 
     Ollas(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool, TipoOlla, string);
 
     ~Ollas();
     
-TipoOlla get_Olla();
+    TipoOlla get_Olla();
     
-string get_MaterialOlla();
+    string get_MaterialOlla();
     
-/**
- * @param TipoOlla
- */
-void set_Olla(TipoOlla NuevoEstado);
+    /**
+     * @param TipoOlla
+     */
+    void set_Olla(TipoOlla NuevoEstado);
     
-/**
- * @param string
- */
-void set_MaterialOlla(string NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_MaterialOlla(string NuevoEstado);
 
 private: 
     TipoOlla tipool;

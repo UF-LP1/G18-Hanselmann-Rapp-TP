@@ -2,29 +2,29 @@
  * Project Untitled
  */
 
-
 #ifndef _COCINA_H
 #define _COCINA_H
 
 #include "Articulo.h"
 
+class Cocina: public Articulo 
+{
+protected:
+    bool RepuestoArt;
 
-class Cocina: public Articulo {
 public: 
 
     Cocina(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool);
 
     ~Cocina();
     
-bool get_RepuestoArt();
+    bool get_RepuestoArt();
     
-/**
- * @param bool
- */
-void set_RepuestoArt(bool NuevoEstado);
+    /**
+     * @param bool
+     */
+    void set_RepuestoArt(bool NuevoEstado);
 
-protected: 
-    bool RepuestoArt;
 };
 
 #endif //_COCINA_H

@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #include "Electricidad.h"
 
 /**
@@ -22,37 +21,33 @@ Electricidad::~Electricidad()
 /**
  * @return unsigned int
  */
-unsigned int Electricidad::get_Tension() {
-
+unsigned int Electricidad::get_Tension()
+{
     return this->Tension;
-
 }
 
 /**
  * @return unsigned int
  */
-unsigned int Electricidad::get_Potencia() {
-
+unsigned int Electricidad::get_Potencia() 
+{
     return this->Potencia;
-
 }
 
 /**
  * @param unsigned int
  * @return void
  */
-void Electricidad::set_Tension(unsigned int NuevoEstado) {
-
+void Electricidad::set_Tension(unsigned int NuevoEstado) 
+{
     this->Tension = NuevoEstado;
-
 }
 
 /**
  * @param unsigned int
  * @return void
  */
-void Electricidad::set_Potencia(unsigned int NuevoEstado) {
-
+void Electricidad::set_Potencia(unsigned int NuevoEstado) 
+{
     this->Potencia=NuevoEstado;
-
 }

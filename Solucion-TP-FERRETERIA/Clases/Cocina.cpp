@@ -12,7 +12,6 @@ Cocina::Cocina(unsigned int Precio_, bool Cambio_, string EstadoArt_, string Tip
    this->RepuestoArt = RepuestoArt_;
 }
 
-
 Cocina::~Cocina()
 {
 
@@ -21,18 +20,16 @@ Cocina::~Cocina()
 /**
  * @return bool
  */
-bool Cocina::get_RepuestoArt() {
-
+bool Cocina::get_RepuestoArt() 
+{
     return this->RepuestoArt;
-
 }
 
 /**
  * @param bool
  * @return void
  */
-void Cocina::set_RepuestoArt(bool NuevoEstado) {
-
+void Cocina::set_RepuestoArt(bool NuevoEstado) 
+{
     this->RepuestoArt=NuevoEstado;
-
 }

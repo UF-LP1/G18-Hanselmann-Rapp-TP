@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #include "Portalamparas.h"
 
 /**
@@ -21,16 +20,16 @@ Portalamparas::~Portalamparas()
 /**
  * @return TipoPortalamparas
  */
-TipoPortalamparas Portalamparas::get_Portalamparas(){
-
+TipoPortalamparas Portalamparas::get_Portalamparas()
+{
     return this->Portalamp;
-
 }
 
 /**
  * @param TipoPortalamparas
  * @return void
  */
-void Portalamparas::set_PortaLamparas (TipoPortalamparas NuevoEstado){
-
+void Portalamparas::set_PortaLamparas(TipoPortalamparas NuevoEstado)
+{
     this->Portalamp = NuevoEstado;
+}
