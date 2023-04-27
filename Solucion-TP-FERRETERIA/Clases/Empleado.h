@@ -18,6 +18,7 @@ protected:
 public: 
 
     Empleado(string, string, string, TipoSexo, unsigned int, string, time_t);
+
     ~Empleado();
     
     unsigned int get_Salario();

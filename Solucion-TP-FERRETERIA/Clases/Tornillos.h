@@ -12,6 +12,7 @@ class Tornillos: public ArtFerreteria
 public: 
 
     Tornillos(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, string, string, string);
+
     ~Tornillos();
     
     string get_CabezaTornillo();

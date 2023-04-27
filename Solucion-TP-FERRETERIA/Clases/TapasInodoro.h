@@ -2,46 +2,44 @@
  * Project Untitled
  */
 
-
 #ifndef _TAPASINODORO_H
 #define _TAPASINODORO_H
 
 #include "Bazar.h"
-#include "TipoTabla.h"
+#include "TipoTablaInodoro.h"
 
-
-class TapasInodoro: public Bazar {
+class TapasInodoro: public Bazar 
+{
 public: 
 
-    TapasInodoro(TipoTabla, string, string);
+    TapasInodoro(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoTablaInodoro, string, string);
 
     ~TapasInodoro();
     
-TipoTabla get_Tabla();
+    TipoTablaInodoro get_TablaInodoro();
     
-string get_Anclajes();
+    string get_Anclajes();
     
-string get_Disenio();
+    string get_Disenio();
     
-/**
- * @param string
- */
-void set_Anclajes(string NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_Anclajes(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_Disenio(string NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_Disenio(string NuevoEstado);
     
-/**
- * @param TipoTabla
- */
-void set_Tabla(TipoTabla NuevoEstado);
+    /**
+     * @param TipoTabla
+     */
+    void set_TablaInodoro(TipoTablaInodoro NuevoEstado);
 
 private: 
-    TipoTabla tipot;
+    TipoTablaInodoro Inodorito;
     string Anclajes;
     string Disenio;
 };
-
 #endif //_TAPASINODORO_H

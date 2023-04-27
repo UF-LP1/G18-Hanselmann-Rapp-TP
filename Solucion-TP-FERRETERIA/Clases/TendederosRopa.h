@@ -2,38 +2,36 @@
  * Project Untitled
  */
 
-
 #ifndef _TENDEDEROSROPA_H
 #define _TENDEDEROSROPA_H
 
 #include "Bazar.h"
 #include "TipoTendedero.h"
 
-
-class TendederosRopa: public Bazar {
+class TendederosRopa: public Bazar 
+{
 public: 
 
-    TendederosRopa(TipoTendedero, string);
+    TendederosRopa(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoTendedero, string);
 
     ~TendederosRopa();
     
-TipoTendedero get_Tendedero();
+    TipoTendedero get_Tendedero();
     
-string get_MaterialTendedero();
+    string get_MaterialTendedero();
     
-/**
- * @param TipoTendedero
- */
-void set_Tendedero(TipoTendedero NuevoEstado);
+    /**
+     * @param TipoTendedero
+     */
+    void set_Tendedero(TipoTendedero NuevoEstado);
     
-/**
- * @param string
- */
-void set_MaterialTendedero(string NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_MaterialTendedero(string NuevoEstado);
 
 private: 
     TipoTendedero tipoten;
     string MaterialTendedero;
 };
-
 #endif //_TENDEDEROSROPA_H

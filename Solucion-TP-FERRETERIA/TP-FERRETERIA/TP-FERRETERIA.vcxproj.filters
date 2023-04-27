@@ -269,7 +269,7 @@
     <ClInclude Include="..\Clases\TipoSexo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Clases\TipoTabla.h">
+    <ClInclude Include="..\Clases\TipoTablaInodoro.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Clases\TipoTarugo.h">
@@ -294,6 +294,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Clases\HerramientasAlquiler.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="TipoTablaPlanchar.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

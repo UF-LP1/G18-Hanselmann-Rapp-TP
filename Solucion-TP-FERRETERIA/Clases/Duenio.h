@@ -13,6 +13,7 @@ class Duenio: public Persona
 public: 
     
     Duenio(string, string, string, TipoSexo, bool);
+
     ~Duenio();
 
     bool get_Disponibilidad();

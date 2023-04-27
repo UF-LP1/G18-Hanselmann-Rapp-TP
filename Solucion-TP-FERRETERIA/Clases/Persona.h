@@ -28,6 +28,7 @@ protected:
 public: 
 
     Persona(string, string, const string, TipoSexo);
+
     ~Persona();
     
     string get_Nombre();

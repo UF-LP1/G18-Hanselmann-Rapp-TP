@@ -13,6 +13,7 @@ class Mechas: public ArtFerreteria
 public: 
 
     Mechas(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoMecha, string);
+
     ~Mechas();
     
     TipoMecha get_Mechita();

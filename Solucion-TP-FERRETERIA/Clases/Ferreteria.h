@@ -14,6 +14,7 @@ class Ferreteria
 public: 
 
     Ferreteria(const string, const string, const string, const string, MetodoPago, list<string>, list<int>, unsigned int, unsigned int, unsigned int);
+
     ~Ferreteria();
     
     const string get_Nombre();

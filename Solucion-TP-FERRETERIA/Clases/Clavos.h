@@ -13,6 +13,7 @@ class Clavos: public ArtFerreteria
 public: 
 
     Clavos(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoClavo, string);
+
     ~Clavos();
     
     TipoClavo get_Clavito();

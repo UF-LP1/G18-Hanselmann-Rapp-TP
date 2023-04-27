@@ -214,7 +214,7 @@
     <ClInclude Include="..\Clases\TipoOlla.h" />
     <ClInclude Include="..\Clases\TipoPortalamparas.h" />
     <ClInclude Include="..\Clases\TipoSexo.h" />
-    <ClInclude Include="..\Clases\TipoTabla.h" />
+    <ClInclude Include="..\Clases\TipoTablaInodoro.h" />
     <ClInclude Include="..\Clases\TipoTarugo.h" />
     <ClInclude Include="..\Clases\TipoTendedero.h" />
     <ClInclude Include="..\Clases\TipoTornillo.h" />
@@ -222,6 +222,7 @@
     <ClInclude Include="..\Clases\TipoUtencillo.h" />
     <ClInclude Include="..\Clases\Tornillos.h" />
     <ClInclude Include="..\Clases\Utencillos.h" />
+    <ClInclude Include="TipoTablaPlanchar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
