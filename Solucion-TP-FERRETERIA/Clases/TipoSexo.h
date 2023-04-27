@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _TIPOSEXO_H
 #define _TIPOSEXO_H
 
