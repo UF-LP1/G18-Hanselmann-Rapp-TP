@@ -8,7 +8,7 @@
 /**
  * BarralesCortina implementation
  */
-BarralesCortina::BarralesCortina(TipoBarreles Tipobarreles_, string MaterialBarreles_, unsigned int Ganchos_)
+BarralesCortina::BarralesCortina(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoBarreles Tipobarreles_, string MaterialBarreles_, unsigned int Ganchos_):Banio(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_)
 {
     this->tipoba = Tipobarreles_;
     this->MaterialBarreles = MaterialBarreles_;

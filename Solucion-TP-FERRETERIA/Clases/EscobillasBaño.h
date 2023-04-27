@@ -12,7 +12,7 @@
 class EscobillasBaño: public Banio {
 public: 
 
-    EscobillasBaño(string, string, string, string);
+    EscobillasBaño(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool, string, string, string, string);
 
     ~EscobillasBaño();
     
