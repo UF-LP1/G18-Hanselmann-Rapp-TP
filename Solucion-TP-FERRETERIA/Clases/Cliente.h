@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
@@ -11,50 +10,55 @@
 #include "Empleado.h"
 #include "Articulo.h"
 
-class Cliente: public Persona {
+class Cliente: public Persona 
+{
 public: 
+
+    Cliente(string Direccion_, MetodoPago MetodoPago_, vector<Articulo> Articulos_, string Foto_, string ArtRoto_, bool EnvoltorioIntacto_);
+
+    ~Cliente();
     
-const string get_Direccion();
+    const string get_Direccion();
     
-MetodoPago get_Pago();
+    MetodoPago get_Pago();
     
-vector <Articulo> get_Articulos();
+    vector <Articulo> get_Articulos();
         
-const string get_Foto();
+    const string get_Foto();
     
-const string get_ArtRoto();
+    const string get_ArtRoto();
     
-const bool get_EnvoltorioIntacto();
+    const bool get_EnvoltorioIntacto();
     
-/**
- * @param MetodoPago
- */
-void set_Pago(void MetodoPago);
+    /**
+     * @param MetodoPago
+     */
+    void set_Pago(MetodoPago NuevoEstado);
     
-/**
- * @param string
- */
-void set_Articulos(vector <Articulo> NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_Articulos(vector <Articulo> NuevoEstado);
     
-/**
- * @param unsigned int
- */
+    /**
+     * @param unsigned int
+     */
 
     
-void MostrarFoto();
+    void MostrarFoto();
     
-void MostrarArtRoto();
+    void MostrarArtRoto();
     
-void MostrarEnvoltorioInt();
+    void MostrarEnvoltorioInt();
     
-/**
- * @param Precio
- */
-void elegir_art(void Precio);
+    /**
+     * @param Precio
+     */
+    void elegir_art(void Precio);
 
 private: 
     const string Direccion;
-    enumeration MetodoPago;
+    enum MetodoPago;
     vector <Articulo> Articulos;
     const string Foto;
     const string ArtRoto;

@@ -2,6 +2,7 @@
  * Project Untitled
  */
 
+#include "Horario.h"
 #include "Articulo.h"
 #include "Duenio.h"
 
@@ -20,6 +21,9 @@ using namespace std;
 class Ferreteria 
 {
 public: 
+
+    Ferreteria(string Nombre_, string Direccion_, string Telefono_, string Mail_, string MetodoPago_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_);
+    ~Ferreteria();
     
     const string get_Nombre();
     
@@ -30,44 +34,49 @@ public:
     const string get_Mail();
     
     const string get_MetodoPago();
-    
-    unsigned int get_Monto();
-
+  
     list <string> get_ArticulosTotales();
 
     list<int> get_CantArtTotales();
+
+    unsigned int get_AlquilerLocal();
+
+    unsigned int get_ExpensasLocal();
+
+    unsigned int get_PrecioCargamento();
     
     /**
      * @param string
      */
-    void set_MetodoPago(void string);
-    
-    /**
- * @param unsigned int
- */
-void set_Monto(void unsigned int);
-    
-/**
- * @param Horario
- */
-bool abrir(class Horario);
-    
-/**
- * @param Cliente
- */
-articulos dar_art(class Cliente);
-    
-/**
- * @param Articulo
- * @param Empleado
- */
-    bool dar_ArticuloEmpleado(class Articulo, class Empleado);
-
+    void set_MetodoPago(string NuevoEstado);
+            
     void set_ArticulosTotales(list <string> NuevoEstado);
 
     void set_CantArtTotales(list <int> NuevoEstado);
 
-    int generar_Presupuesto( Articulo art, Cliente cli);
+    void set_AlquilerLocal(unsigned int NuevoEstado);
+
+    void set_ExpensasLocal(unsigned int NuevoEstado);
+
+    void set_PrecioCargamento(unsigned int NuevoEstado);
+
+    /**
+     * @param Horario
+     */
+    bool abrir(Horario hora);
+        
+    /**
+     * @param Cliente
+     */
+    bool dar_ArticuloCliente(Cliente cli, Articulo art);
+    
+    /**
+     * @param Articulo
+     * @param Empleado
+     */
+    bool dar_ArticuloEmpleado(Articulo art, Empleado emp);
+
+    int generar_Presupuesto(Articulo art, Cliente cli);
 
 
 private: 
@@ -75,13 +84,11 @@ private:
     const string Direccion;
     const string Telefono;
     const string Mail;
-    string MetodoPago;
-    unsigned int Monto;
+    const string MetodoPago;
     list <string> ArticulosTotales;
     list <int> CantArtTotales;
-    float AlquilerLocal;
-    float ExpensasLocal;
-    float PrecioCargamento;
+    unsigned int AlquilerLocal;
+    unsigned int ExpensasLocal;
+    unsigned int PrecioCargamento;
 };
-
 #endif //_FERRETERIA_H
