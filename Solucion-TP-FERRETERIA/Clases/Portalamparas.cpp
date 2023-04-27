@@ -8,14 +8,22 @@
 /**
  * Portalamparas implementation
  */
+Portalamparas::Portalamparas(enum TipoPortalamparas TipoPortalamparas_)
+{
+    this->TipoPortalamparas = TipoPortalamparas_;
+}
 
+Portalamparas::~Portalamparas()
+{
+
+}
 
 /**
  * @return TipoPortalamparas
  */
 TipoPortalamparas Portalamparas::get_Portalamparas(){
 
-    return this->TipoPortalamparas;//DUDA ENUM
+    return this->TipoPortalamparas;
 
 }
 
@@ -25,6 +33,4 @@ TipoPortalamparas Portalamparas::get_Portalamparas(){
  */
 void Portalamparas::set_PortaLamparas (TipoPortalamparas NuevoEstado){
 
-    this->TipoPortalamparas = NuevoEstado;//DUDAENUM
-
-}
+    this->TipoPortalamparas = NuevoEstado;

@@ -10,9 +10,15 @@
  */
 TablasPlanchar::TablasPlanchar(enum TipoTabla TipoTabla_, string Marca_, string MaterialPlanchar_)
 {
-
+    this->TipoTabla = TipoTabla_;
+    this->Marca = Marca_;
+    this->MaterialPlanchar = MaterialPlanchar_;
 }
 
+TablasPlanchar::~TablasPlanchar()
+{
+
+}
 /**
  * @return TipoTabla
  */

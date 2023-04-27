@@ -12,6 +12,10 @@
 
 class Enchufes: public Electricidad {
 public: 
+
+    Enchufes(enum TipoEnchufe);
+
+    ~Enchufes();
     
 TipoEnchufe get_Enchufe();
     

@@ -12,6 +12,10 @@
 
 class Portalamparas: public Electricidad {
 public: 
+
+    Portalamparas(enum TipoPortalamparas);
+
+    ~Portalamparas();
     
     TipoPortalamparas get_Portalamparas();
     

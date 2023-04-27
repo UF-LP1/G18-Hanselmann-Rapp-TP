@@ -8,7 +8,18 @@
 /**
  * Cables implementation
  */
+Cables::Cables(enum TipoConductor TipoConductor_, string Aislamiento_, string Cubierta_)
+{
+    this->TipoConductor = TipoConductor_;
+    this->Aislamiento = Aislamiento_;
+    this->Cubierta = Cubierta_;
 
+}
+
+Cables::~Cables()
+{
+
+}
 
 /**
  * @return TipoConductor

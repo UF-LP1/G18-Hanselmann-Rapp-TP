@@ -8,14 +8,21 @@
 /**
  * Enchufes implementation
  */
+Enchufes::Enchufes(enum TipoEnchufe TipoEnchufe_)
+{
+    this->TipoEnchufe = TipoEnchufe_;
+}
 
+Enchufes::~Enchufes() {
+
+}
 
 /**
  * @return TipoEnchufe
  */
 TipoEnchufe Enchufes::get_Enchufe() {
 
-    return this->TipoEnchufe;//DUDA ENUM
+    return this->TipoEnchufe;
 
 }
 
@@ -25,6 +32,6 @@ TipoEnchufe Enchufes::get_Enchufe() {
  */
 void Enchufes::set_Enchufe(TipoEnchufe NuevoEstado){
 
-    this->TipoEnchufe = NuevoEstado;//DUDA ENUM
+    this->TipoEnchufe = NuevoEstado;
 
 }

@@ -12,6 +12,10 @@
 
 class Lamparas: public Electricidad {
 public: 
+
+    Lamparas(enum TipoLampara, string);
+
+    ~Lamparas();
     
 TipoLampara get_Lampara();
     

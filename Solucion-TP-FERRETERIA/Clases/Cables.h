@@ -12,6 +12,11 @@
 
 class Cables: public Electricidad {
 public: 
+
+    Cables(enum TipoConductor, string, string);
+
+    ~Cables();
+    
     
 TipoConductor get_Conductores();
     

@@ -8,14 +8,24 @@
 /**
  * Lamparas implementation
  */
+Lamparas::Lamparas(enum TipoLampara TipoLampara_, string Disenio_)
+{
+    this->TipoLampara= TipoLampara_;
+    this->Disenio = Disenio_;
 
+}
+
+Lamparas::~Lamparas()
+{
+
+}
 
 /**
  * @return TipoLampara
  */
 TipoLampara Lamparas::get_Lampara() {
 
-    return this->TipoLampara;//DUDA ENUM
+    return this->TipoLampara;
 
 }
 
@@ -35,7 +45,7 @@ string Lamparas::get_Disenio() {
  */
 void Lamparas::set_Lampara(TipoLampara NuevoEstado){
 
-    this->TipoLampara = NuevoEstado;//DUDA ENUM
+    this->TipoLampara = NuevoEstado;
 
 }
 

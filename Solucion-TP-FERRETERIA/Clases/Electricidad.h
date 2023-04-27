@@ -11,6 +11,10 @@
 
 class Electricidad: public Articulo {
 public: 
+
+    Electricidad(unsigned int, unsigned int);
+
+    ~Electricidad();
     
 unsigned int get_Tension();
     
@@ -19,12 +23,13 @@ unsigned int get_Potencia();
 /**
  * @param unsigned int
  */
-void set_Tension(void unsigned int);
+void set_Tension(unsigned int NuevoEstado);
     
 /**
  * @param unsigned int
  */
-void set_Potencia(void unsigned int);
+void set_Potencia(unsigned int NuevoEstado);
+
 protected: 
     unsigned int Tension;
     unsigned int Potencia;
