@@ -14,11 +14,11 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo> Articulos_, string Foto_, string ArtRoto_, bool EnvoltorioIntacto_);
+    Cliente(string, string, string, TipoSexo, string, MetodoPago, vector<Articulo>, const string, const string, const bool);
 
     ~Cliente();
     
-    const string get_Direccion();
+    string get_Direccion();
     
     MetodoPago get_MetodoPagoCli();
     
@@ -34,6 +34,8 @@ public:
      * @param MetodoPago
      */
     void set_MetodoPagoCli(MetodoPago NuevoEstado);
+
+    void set_Direccion(string NuevoEstado);
     
     /**
      * @param string
@@ -57,7 +59,7 @@ public:
     void elegir_art(Articulo art); 
 
 private: 
-    const string Direccion;
+    string Direccion;
     MetodoPago MetodoPagoCli;
     vector <Articulo> Articulos;
     const string Foto;

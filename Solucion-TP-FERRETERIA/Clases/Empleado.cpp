@@ -8,8 +8,11 @@
  * Empleado implementation
  */
 
-Empleado::Empleado(unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_): Salario(Salario_), TipoTransporte(TipoTransporte_), TiempoTrabajado(TiempoTrabajado_)
+Empleado::Empleado(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_): Persona(Nombre_, Apellido_, DNI_, Sexo_)
 {
+    this->Salario = Salario_;
+    this->TipoTransporte = TipoTransporte_;
+    this->TiempoTrabajado = TiempoTrabajado_;
 
 }
 

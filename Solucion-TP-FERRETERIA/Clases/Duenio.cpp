@@ -8,9 +8,9 @@
  * Duenio implementation
  */
 
-Duenio::Duenio(bool Disponibilidad_): Disponibilidad(Disponibilidad_)
+Duenio::Duenio(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, bool Disponibilidad_):Persona(Nombre_, Apellido_, DNI_, Sexo_)
 {
-
+    this->Disponibilidad = Disponibilidad_;
 }
 
 Duenio::~Duenio()

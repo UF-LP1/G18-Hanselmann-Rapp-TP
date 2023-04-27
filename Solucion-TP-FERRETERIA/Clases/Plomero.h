@@ -2,17 +2,17 @@
  * Project Untitled
  */
 
-#include "TipoTuberia.h"
-#include "Empleado.h"
-
 #ifndef _PLOMERO_H
 #define _PLOMERO_H
+
+#include "TipoTuberia.h"
+#include "Empleado.h"
 
 class Plomero: public Empleado 
 {
 public: 
 
-    Plomero(TipoTuberia tub, float Longitud_, float Ancho_);
+    Plomero(string, string, string, TipoSexo, unsigned int, string, time_t, TipoTuberia, float, float);
     ~Plomero();
     
     TipoTuberia get_Tuberias();
@@ -40,8 +40,8 @@ public:
 
 private: 
     TipoTuberia Tuberias;
-    const float Longitud;
-    const float Ancho;
+    float Longitud;
+    float Ancho;
 };
 
 #endif //_PLOMERO_H

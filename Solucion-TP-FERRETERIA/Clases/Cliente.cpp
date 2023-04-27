@@ -8,9 +8,12 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo> Articulos_, string Foto_, string ArtRoto_, bool EnvoltorioIntacto_):Direccion(Direccion_), MetodoPagoCli(MetodoPagoCli_), Articulos(Articulos_), Foto(Foto_), ArtRoto(ArtRoto_), EnvoltorioIntacto(EnvoltorioIntacto_)
+Cliente::Cliente(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo> Articulos_, const string Foto_, const string ArtRoto_, const bool EnvoltorioIntaco_):Persona(Nombre_, Apellido_, DNI_, Sexo_)
 {
-
+    this->Direccion = Direccion_;
+    this->MetodoPagoCli = MetodoPagoCli_;
+    this->Articulos = Articulos_;
+    
 }
 
 Cliente::~Cliente()
@@ -21,7 +24,7 @@ Cliente::~Cliente()
 /**
  * @return const string
  */
-const string Cliente::get_Direccion() 
+string Cliente::get_Direccion() 
 {
     return this->Direccion;
 }
@@ -73,6 +76,11 @@ const bool Cliente::get_EnvoltorioIntacto()
 void Cliente::set_MetodoPagoCli(MetodoPago NuevoEstado) 
 {
     this->MetodoPagoCli = NuevoEstado;
+}
+
+void Cliente::set_Direccion(string NuevoEstado)
+{
+    this->Direccion = NuevoEstado;
 }
 
 /**

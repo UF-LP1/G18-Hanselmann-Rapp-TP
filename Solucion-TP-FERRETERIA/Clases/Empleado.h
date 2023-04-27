@@ -9,9 +9,15 @@
 
 class Empleado: public Persona 
 {
+
+protected:
+    unsigned int Salario;
+    string TipoTransporte;
+    time_t TiempoTrabajado;
+
 public: 
 
-    Empleado(unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_);
+    Empleado(string, string, string, TipoSexo, unsigned int, string, time_t);
     ~Empleado();
     
     unsigned int get_Salario();
@@ -39,11 +45,6 @@ public:
      * @param time_t
      */
     void set_TiempoTrabajado(time_t NuevoEstado);
-
-protected: 
-    unsigned int Salario;
-    string TipoTransporte;
-    time_t TiempoTrabajado;
 };
 
 #endif //_EMPLEADO_H

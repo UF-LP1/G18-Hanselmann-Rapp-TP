@@ -2,8 +2,6 @@
  * Project Untitled
  */
 
-#include "TipoSexo.h"
-
 #ifndef _PERSONA_H
 #define _PERSONA_H
 
@@ -16,11 +14,20 @@
 
 using namespace std;
 
+#include "TipoSexo.h"
+
 class Persona 
 {
+
+protected:
+    string Nombre;
+    string Apellido;
+    const string DNI;
+    TipoSexo Sexo;
+
 public: 
 
-    Persona(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_);
+    Persona(string, string, const string, TipoSexo);
     ~Persona();
     
     string get_Nombre();
@@ -45,12 +52,6 @@ public:
      * @param TipoSexo
      */
     void set_Sexo(TipoSexo NuevoEstado);
-
-protected: 
-    string Nombre;
-    string Apellido;
-    const string DNI;
-    TipoSexo Sexo;
 };
 
 #endif //_PERSONA_H

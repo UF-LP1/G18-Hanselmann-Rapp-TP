@@ -8,9 +8,11 @@
  * Persona implementation
  */
 
-Persona::Persona(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_): Nombre(Nombre_), Apellido(Apellido_), DNI(DNI_), Sexo(Sexo_)
+Persona::Persona(string Nombre_, string Apellido_, const string DNI_, TipoSexo Sexo_)
 {
-
+    this->Nombre = Nombre_;
+    this->Apellido = Apellido_;
+    this->Sexo = Sexo;
 }
 
 Persona::~Persona()

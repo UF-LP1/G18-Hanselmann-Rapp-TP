@@ -5,13 +5,14 @@
 #ifndef _DUENIO_H
 #define _DUENIO_H
 
+#include "Persona.h"
 #include "Cliente.h"
 
 class Duenio: public Persona
 {
 public: 
     
-    Duenio(bool Disponibilidad_);
+    Duenio(string, string, string, TipoSexo, bool);
     ~Duenio();
 
     bool get_Disponibilidad();
