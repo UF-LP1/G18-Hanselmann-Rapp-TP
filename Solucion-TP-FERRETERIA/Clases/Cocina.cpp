@@ -8,19 +8,31 @@
 /**
  * Cocina implementation
  */
+Cocina::Cocina(bool RepuestoArt_) {
 
+    this->RepuestoArt = RepuestoArt_;
+}
+
+Cocina::~Cocina()
+{
+
+}
 
 /**
  * @return bool
  */
 bool Cocina::get_RepuestoArt() {
-    return false;
+
+    return this->RepuestoArt;
+
 }
 
 /**
  * @param bool
  * @return void
  */
-void Cocina::set_RepuestoArt(void bool) {
-    return;
+void Cocina::set_RepuestoArt(bool NuevoEstado) {
+
+    this->RepuestoArt=NuevoEstado;
+
 }

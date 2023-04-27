@@ -11,6 +11,10 @@
 class BarralesCortina: public Banio {
 public: 
     
+    BarralesCortina(enum TipoBarrales, string, unsigned int);
+
+    ~BarralesCortina();
+
 TipoBarrales get_Barrales();
     
 string get_MaterialBarrales();

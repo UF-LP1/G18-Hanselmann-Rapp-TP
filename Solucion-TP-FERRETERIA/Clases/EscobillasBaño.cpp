@@ -8,7 +8,19 @@
 /**
  * EscobillasBaño implementation
  */
+EscobillasBaño::EscobillasBaño(string TipoEscobilla_, string Disenio_, string Marca_, string MaterialEscobilla_)
+{
 
+    this->TipoEscobilla = TipoEscobilla_;
+    this->Disenio = Disenio_;
+    this->Marca = Marca_;
+    this->MaterialEscobilla = MaterialEscobilla_;
+}
+
+EscobillasBaño::~EscobillasBaño()
+{
+
+}
 
 /**
  * @return string

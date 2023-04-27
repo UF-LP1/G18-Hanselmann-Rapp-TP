@@ -8,7 +8,17 @@
 /**
  * BarralesCortina implementation
  */
+BarralesCortina::BarralesCortina(TipoBarrales Tipobarrales_, string MaterialBarrales_, unsigned int Ganchos_)
+{
+    this->TipoBarrales = TipoBarrales_;
+    this->MaterialBarrales = MaterialBarrales_;
+    this->Ganchos = Ganchos_;
+}
 
+BarralesCortina::~BarralesCortina()
+{
+
+}
 
 /**
  * @return TipoBarrales

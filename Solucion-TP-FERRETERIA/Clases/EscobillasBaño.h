@@ -11,6 +11,10 @@
 
 class EscobillasBaño: public Banio {
 public: 
+
+    EscobillasBaño(string, string, string, string);
+
+    ~EscobillasBaño();
     
 string get_TipoEscobilla();
     
