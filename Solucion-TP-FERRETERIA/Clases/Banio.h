@@ -12,12 +12,17 @@
 class Banio: public Articulo {
 public: 
     
+    Banio(bool);
+
+    ~Banio();
+
 bool get_RepuestoArt();
     
 /**
  * @param bool
  */
-void set_RepuestoArt(void bool);
+void set_RepuestoArt(bool NuevoEstado);
+
 protected: 
     bool RepuestoArt;
 };
