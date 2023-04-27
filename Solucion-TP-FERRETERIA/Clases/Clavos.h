@@ -7,6 +7,7 @@
 #define _CLAVOS_H
 
 #include "ArtFerreteria.h"
+#include "TipoClavo.h"
 
 
 class Clavos: public ArtFerreteria {
@@ -19,14 +20,15 @@ string get_Cabeza();
 /**
  * @param TipoClavo
  */
-void set_Clavo(void TipoClavo);
+void set_Clavo(TipoClavo NuevoEstado);
     
 /**
  * @param string
  */
-void set_Cabeza(void string);
+void set_Cabeza(string NuevoEstado);
+
 private: 
-    enumeration TipoClavo;
+    enum TipoClavo;
     string Cabeza;
 };
 

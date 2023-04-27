@@ -32,7 +32,7 @@ string Tarugos::get_Utilidad() {
  */
 void Tarugos::set_Tarugo(TipoTarugo NuevoEstado) {
 
-    this->TipoTarugo=NuevoEstado;//ENUM DUDA
+    this->TipoTarugo = NuevoEstado;//ENUM DUDA
 
 }
 

@@ -13,7 +13,7 @@
 class Tarugos: public ArtFerreteria {
 public: 
     
-TipoTarugo get_Tarugo();
+    TipoTarugo get_Tarugo();
     
 string get_Utilidad();
     

@@ -13,7 +13,7 @@
 class Herramientas: public ArtFerreteria {
 public: 
     
-TipoHerramienta get_Herramienta();
+    TipoHerramienta get_Herramienta();
     
 /**
  * @param TipoHerramienta

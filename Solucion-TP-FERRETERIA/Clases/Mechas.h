@@ -13,7 +13,7 @@
 class Mechas: public ArtFerreteria {
 public: 
     
-TipoMecha get_Mecha();
+    TipoMecha get_Mecha();
     
 string get_Utilidad();
     
