@@ -155,11 +155,12 @@ int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
     vector<Articulo>::iterator arr;
 
     float acum = 0;
+    int i = 0;
 
-    for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++)
+    for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
     {
         if(art.get_Cantidad()!=0)
-            acum += art.get_Precio() * art.get_Cantidad();
+            acum += arr[i].get_Precio() * arr[i].get_Cantidad();
     }
 
     return acum;
