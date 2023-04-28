@@ -152,6 +152,7 @@
     <ClCompile Include="..\Clases\Horario.cpp" />
     <ClCompile Include="..\Clases\Lamparas.cpp" />
     <ClCompile Include="..\Clases\LLaves.cpp" />
+    <ClCompile Include="..\Clases\Main.cpp" />
     <ClCompile Include="..\Clases\Mechas.cpp" />
     <ClCompile Include="..\Clases\Ollas.cpp" />
     <ClCompile Include="..\Clases\Persona.cpp" />

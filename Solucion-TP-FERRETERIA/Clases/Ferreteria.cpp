@@ -158,7 +158,8 @@ int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
 
     for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++)
     {
-        acum += art.get_Precio() * art.get_Cantidad();
+        if(art.get_Cantidad()!=0)
+            acum += art.get_Precio() * art.get_Cantidad();
     }
 
     return acum;
