@@ -8,10 +8,10 @@
  * Herramientas implementation
  */
 
-Herramientas::Herramientas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string MaterialArtFerr_, TipoHerramienta HerramientaArtFerr_, string MarcaArtFerr_) :ArtFerreteria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, MaterialArtFerr_)
+Herramientas::Herramientas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string MaterialArtFerr_, TipoHerramienta HerramientaArtFerr_, string MarcaHerrFerr_) :ArtFerreteria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, MaterialArtFerr_)
 {
     this->HerramientaArtFerr = HerramientaArtFerr_;
-    this->MarcaArtFerr = MarcaArtFerr_;
+    this->MarcaHerrFerr = MarcaHerrFerr_;
 }
 
 Herramientas::~Herramientas()
@@ -39,16 +39,16 @@ void Herramientas::set_HerramientaArtFerr(TipoHerramienta NuevoEstado)
 /**
  * @return string
  */
-string Herramientas::get_MarcaArtFerr() 
+string Herramientas::get_MarcaHerrFerr() 
 {
-    return this->MarcaArtFerr;
+    return this->MarcaHerrFerr;
 }
 
 /**
  * @param string
  * @return void
  */
-void Herramientas::set_MarcaArtFerr(string NuevoEstado) 
+void Herramientas::set_MarcaHerrFerr(string NuevoEstado) 
 {
-    this->MarcaArtFerr = NuevoEstado;
+    this->MarcaHerrFerr = NuevoEstado;
 }

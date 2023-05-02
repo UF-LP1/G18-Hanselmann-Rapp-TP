@@ -16,15 +16,15 @@ public:
 
     ~Portalamparas();
     
-    TipoPortalamparas get_Portalamparas();
+    TipoPortalamparas get_PortaLamp();
     
     /**
      * @param TipoPortalamparas
      */
-    void set_PortaLamparas(TipoPortalamparas NuevoEstado);
+    void set_PortaLamp(TipoPortalamparas NuevoEstado);
 
 private: 
-    TipoPortalamparas Portalamp;
+    TipoPortalamparas PortaLamp;
 };
 
 #endif //_PORTALAMPARAS_H

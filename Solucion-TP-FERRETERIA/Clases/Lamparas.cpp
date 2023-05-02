@@ -22,7 +22,7 @@ Lamparas::~Lamparas()
 /**
  * @return TipoLampara
  */
-TipoLampara Lamparas::get_Lampara() 
+TipoLampara Lamparas::get_Lamp() 
 {
     return this->Lamp;
 }
@@ -39,7 +39,7 @@ string Lamparas::get_Disenio()
  * @param TipoLampara
  * @return void
  */
-void Lamparas::set_Lampara(TipoLampara NuevoEstado)
+void Lamparas::set_Lamp(TipoLampara NuevoEstado)
 {
     this->Lamp = NuevoEstado;
 }

@@ -20,7 +20,7 @@ Enchufes::~Enchufes()
 /**
  * @return TipoEnchufe
  */
-TipoEnchufe Enchufes::get_Enchufe() 
+TipoEnchufe Enchufes::get_Enchu() 
 {
     return this->Enchu;
 }
@@ -29,7 +29,7 @@ TipoEnchufe Enchufes::get_Enchufe()
  * @param TipoEnchufe
  * @return void
  */
-void Enchufes::set_Enchufe(TipoEnchufe NuevoEstado)
+void Enchufes::set_Enchu(TipoEnchufe NuevoEstado)
 {
     this->Enchu = NuevoEstado;
 }

@@ -16,12 +16,12 @@ public:
 
     ~Enchufes();
     
-    TipoEnchufe get_Enchufe();
+    TipoEnchufe get_Enchu();
     
     /**
      * @param TipoEnchufe
      */
-    void set_Enchufe(TipoEnchufe NuevoEstado);
+    void set_Enchu(TipoEnchufe NuevoEstado);
 
 private: 
     TipoEnchufe Enchu;

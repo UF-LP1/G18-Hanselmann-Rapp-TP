@@ -18,7 +18,7 @@ public:
     
     TipoHerramienta get_HerramientaArtFerr();
 
-    string get_MarcaArtFerr();
+    string get_MarcaHerrFerr();
     
     /**
      * @param TipoHerramienta
@@ -28,11 +28,11 @@ public:
     /**
      * @param string
      */
-    void set_MarcaArtFerr(string NuevoEstado);
+    void set_MarcaHerrFerr(string NuevoEstado);
 
 private: 
     TipoHerramienta HerramientaArtFerr;
-    string MarcaArtFerr;
+    string MarcaHerrFerr;
 };
 
 #endif //_HERRAMIENTAS_H

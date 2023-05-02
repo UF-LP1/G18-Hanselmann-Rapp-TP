@@ -16,14 +16,14 @@ public:
 
     ~Lamparas();
     
-    TipoLampara get_Lampara();
+    TipoLampara get_Lamp();
     
     string get_Disenio();
     
     /**
      * @param TipoLampara
      */
-    void set_Lampara(TipoLampara NuevoEstado);
+    void set_Lamp(TipoLampara NuevoEstado);
     
     /**
      * @param string
