@@ -16,7 +16,7 @@ public:
 
     ~TapasInodoro();
     
-    TipoTablaInodoro get_TablaInodoro();
+    TipoTablaInodoro get_Inodorito();
     
     string get_Anclajes();
     
@@ -35,7 +35,7 @@ public:
     /**
      * @param TipoTabla
      */
-    void set_TablaInodoro(TipoTablaInodoro NuevoEstado);
+    void set_Inodorito(TipoTablaInodoro NuevoEstado);
 
 private: 
     TipoTablaInodoro Inodorito;

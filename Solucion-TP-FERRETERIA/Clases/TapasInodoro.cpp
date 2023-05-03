@@ -22,7 +22,7 @@ TapasInodoro::~TapasInodoro()
 /**
  * @return TipoTabla
  */
-TipoTablaInodoro TapasInodoro::get_TablaInodoro() 
+TipoTablaInodoro TapasInodoro::get_Inodorito() 
 {
     return this->Inodorito;
 }
@@ -65,7 +65,7 @@ void TapasInodoro::set_DisenioTablIno(string NuevoEstado)
  * @param TipoTabla
  * @return void
  */
-void TapasInodoro::set_TablaInodoro(TipoTablaInodoro NuevoEstado)
+void TapasInodoro::set_Inodorito(TipoTablaInodoro NuevoEstado)
 {
   this->Inodorito = NuevoEstado;
 }

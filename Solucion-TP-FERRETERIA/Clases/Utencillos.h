@@ -16,14 +16,14 @@ public:
 
     ~Utencillos();
     
-    TipoUtencillo get_Utencillo();
+    TipoUtencillo get_Uten();
     
     string get_MaterialUtencillo();
     
     /**
      * @param TipoUtencillo
      */
-    void set_Utencillo(TipoUtencillo NuevoEstado);
+    void set_Uten(TipoUtencillo NuevoEstado);
     
     /**
      * @param string
@@ -31,7 +31,7 @@ public:
     void set_MaterialUtencillo(string NuevoEstado);
 
 private: 
-    TipoUtencillo tipouten;
+    TipoUtencillo Uten;
     string MaterialUtencillo;
 };
 

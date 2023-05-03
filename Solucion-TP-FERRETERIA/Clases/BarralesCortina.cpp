@@ -7,9 +7,9 @@
 /**
  * BarralesCortina implementation
  */
-BarralesCortina::BarralesCortina(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoBarreles Tipobarreles_, string MaterialBarreles_, unsigned int Ganchos_):Banio(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_)
+BarralesCortina::BarralesCortina(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoBarreles Barralito_, string MaterialBarreles_, unsigned int Ganchos_):Banio(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_)
 {
-    this->tipoba = Tipobarreles_;
+    this->Barralito = Barralito_;
     this->MaterialBarreles = MaterialBarreles_;
     this->Ganchos = Ganchos_;
 }
@@ -22,9 +22,9 @@ BarralesCortina::~BarralesCortina()
 /**
  * @return TipoBarrales
  */
-TipoBarreles BarralesCortina::get_Barrales() 
+TipoBarreles BarralesCortina::get_Barralito() 
 {
-    return this->tipoba;
+    return this->Barralito;
 }
 
 /**
@@ -39,9 +39,9 @@ string BarralesCortina::get_MaterialBarrales()
  * @param TipoBarrales
  * @return void
  */
-void BarralesCortina::set_Barrales(TipoBarreles NuevoEstado) 
+void BarralesCortina::set_Barralito(TipoBarreles NuevoEstado) 
 {
-    this->tipoba = NuevoEstado;
+    this->Barralito = NuevoEstado;
 }
 
 /**

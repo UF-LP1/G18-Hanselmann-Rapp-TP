@@ -7,9 +7,9 @@
 /**
  * Ollas implementation
  */
-Ollas::Ollas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoOlla TipoOlla_, string MaterialOlla_):Cocina(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_){
+Ollas::Ollas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoOlla Ollita_, string MaterialOlla_):Cocina(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_){
 
-    this->tipool = TipoOlla_;
+    this->Ollita = Ollita_;
     this->MaterialOlla = MaterialOlla_;
 }
 
@@ -21,9 +21,9 @@ Ollas::~Ollas()
 /**
  * @return TipoOlla
  */
-TipoOlla Ollas::get_Olla() 
+TipoOlla Ollas::get_Ollita() 
 {
-    return this->tipool;
+    return this->Ollita;
 }
 
 /**
@@ -38,9 +38,9 @@ string Ollas::get_MaterialOlla()
  * @param TipoOlla
  * @return void
  */
-void Ollas::set_Olla(TipoOlla NuevoEstado)
+void Ollas::set_Ollita(TipoOlla NuevoEstado)
 {
-    this->tipool = NuevoEstado;
+    this->Ollita = NuevoEstado;
 }
 
 /**

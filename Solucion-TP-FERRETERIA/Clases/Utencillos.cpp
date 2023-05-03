@@ -7,9 +7,9 @@
 /**
  * Utencillos implementation
  */
-Utencillos::Utencillos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoUtencillo TipoUtencillo_, string MaterialUtencillo_):Cocina(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_)
+Utencillos::Utencillos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, bool RepuestoArt_, TipoUtencillo Uten_, string MaterialUtencillo_):Cocina(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, RepuestoArt_)
 {
-    this->tipouten = TipoUtencillo_;
+    this->Uten = Uten_;
     this->MaterialUtencillo = MaterialUtencillo_;
 }
 
@@ -19,9 +19,9 @@ Utencillos::~Utencillos() {
 /**
  * @return TipoUtencillo
  */
-TipoUtencillo Utencillos::get_Utencillo() 
+TipoUtencillo Utencillos::get_Uten() 
 {
-    return this->tipouten;
+    return this->Uten;
 }
 
 /**
@@ -36,9 +36,9 @@ string Utencillos::get_MaterialUtencillo()
  * @param TipoUtencillo
  * @return void
  */
-void Utencillos::set_Utencillo(TipoUtencillo NuevoEstado)
+void Utencillos::set_Uten(TipoUtencillo NuevoEstado)
 {
-    this->tipouten = NuevoEstado; 
+    this->Uten = NuevoEstado; 
 }
 
 /**

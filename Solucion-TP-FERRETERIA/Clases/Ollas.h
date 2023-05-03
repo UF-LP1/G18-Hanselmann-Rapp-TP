@@ -16,14 +16,14 @@ public:
 
     ~Ollas();
     
-    TipoOlla get_Olla();
+    TipoOlla get_Ollita();
     
     string get_MaterialOlla();
     
     /**
      * @param TipoOlla
      */
-    void set_Olla(TipoOlla NuevoEstado);
+    void set_Ollita(TipoOlla NuevoEstado);
     
     /**
      * @param string
@@ -31,7 +31,7 @@ public:
     void set_MaterialOlla(string NuevoEstado);
 
 private: 
-    TipoOlla tipool;
+    TipoOlla Ollita;
     string MaterialOlla;
 };
 

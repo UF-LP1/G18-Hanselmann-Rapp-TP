@@ -7,9 +7,9 @@
 /**
  * TendederosRopa implementation
  */
-TendederosRopa::TendederosRopa(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string Color_, TipoTendedero TipoTendedero_, string MaterialTendedero_): Bazar(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, Color_)
+TendederosRopa::TendederosRopa(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string Color_, TipoTendedero Tendederito_, string MaterialTendedero_): Bazar(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, Color_)
 {
-    this->tipoten = TipoTendedero_;
+    this->Tendederito = Tendederito_;
     this->MaterialTendedero = MaterialTendedero_;
 }
 
@@ -21,9 +21,9 @@ TendederosRopa::~TendederosRopa()
 /**
  * @return TipoTendedero
  */
-TipoTendedero TendederosRopa::get_Tendedero() 
+TipoTendedero TendederosRopa::get_Tendederito() 
 {
-    return this->tipoten;
+    return this->Tendederito;
 }
 
 /**
@@ -38,9 +38,9 @@ string TendederosRopa::get_MaterialTendedero()
  * @param TipoTendedero
  * @return void
  */
-void TendederosRopa::set_Tendedero(TipoTendedero NuevoEstado)
+void TendederosRopa::set_Tendederito(TipoTendedero NuevoEstado)
 {
-    this->tipoten = NuevoEstado;
+    this->Tendederito = NuevoEstado;
 }
 
 /**

@@ -16,7 +16,7 @@ public:
 
     ~BarralesCortina();
 
-    TipoBarreles get_Barrales();
+    TipoBarreles get_Barralito();
     
     string get_MaterialBarrales();
 
@@ -25,7 +25,7 @@ public:
     /**
      * @param TipoBarrales
      */
-    void set_Barrales(TipoBarreles NuevoEstado);
+    void set_Barralito(TipoBarreles NuevoEstado);
     
     /**
      * @param string
@@ -38,7 +38,7 @@ public:
     void set_Ganchos(unsigned int NuevoEstado);
 
 private: 
-    TipoBarreles tipoba;
+    TipoBarreles Barralito;
     string MaterialBarreles;
     unsigned int Ganchos;
 };

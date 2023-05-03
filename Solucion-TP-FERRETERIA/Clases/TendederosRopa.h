@@ -16,14 +16,14 @@ public:
 
     ~TendederosRopa();
     
-    TipoTendedero get_Tendedero();
+    TipoTendedero get_Tendederito();
     
     string get_MaterialTendedero();
     
     /**
      * @param TipoTendedero
      */
-    void set_Tendedero(TipoTendedero NuevoEstado);
+    void set_Tendederito(TipoTendedero NuevoEstado);
     
     /**
      * @param string
@@ -31,7 +31,7 @@ public:
     void set_MaterialTendedero(string NuevoEstado);
 
 private: 
-    TipoTendedero tipoten;
+    TipoTendedero Tendederito;
     string MaterialTendedero;
 };
 #endif //_TENDEDEROSROPA_H
