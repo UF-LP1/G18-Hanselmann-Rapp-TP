@@ -12,7 +12,7 @@ class TapasInodoro: public Bazar
 {
 public: 
 
-    TapasInodoro(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoTablaInodoro, string, string);
+    TapasInodoro(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoTablaInodoro, string, string);
 
     ~TapasInodoro();
     

@@ -14,7 +14,7 @@ protected:
 
 public: 
     
-    Banio(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool);
+    Banio(unsigned int, bool, string, string, float, float, float, unsigned int, bool);
 
     ~Banio();
 

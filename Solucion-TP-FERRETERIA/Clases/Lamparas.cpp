@@ -7,7 +7,7 @@
 /**
  * Lamparas implementation
  */
-Lamparas::Lamparas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, unsigned int Tension_, unsigned int Potencia_, TipoLampara TipoLampara_, string Disenio_):Electricidad(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, Tension_, Potencia_)
+Lamparas::Lamparas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, unsigned int Tension_, unsigned int Potencia_, TipoLampara TipoLampara_, string Disenio_):Electricidad(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, Tension_, Potencia_)
 {
     this->Lamp= TipoLampara_;
     this->Disenio = Disenio_;

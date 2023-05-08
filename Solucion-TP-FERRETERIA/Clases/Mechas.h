@@ -12,7 +12,7 @@ class Mechas: public ArtFerreteria
 {
 public: 
 
-    Mechas(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoMecha, string);
+    Mechas(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoMecha, string);
 
     ~Mechas();
     

@@ -8,7 +8,7 @@
  * Articulo implementation
  */
 
-Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_)
+Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_)
 {
     this->Precio = Precio;
     this->Cambio = Cambio_;
@@ -18,8 +18,6 @@ Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string
     this->Ancho = Ancho_;
     this->Largo = Largo_;
     this->Cantidad = Cantidad_;
-    this->ArticuloVendido = ArticuloVendido_;
-    this->PrecioArtVendido = PrecioArtVendido_;
 }
 
 Articulo::~Articulo()
@@ -91,16 +89,6 @@ unsigned int Articulo::get_Cantidad()
     return this->Cantidad;
 }
 
-string Articulo::get_ArticuloVendido()
-{
-    return this->ArticuloVendido;
-}
-
-unsigned int Articulo::get_PrecioArtVendio()
-{
-    return this->PrecioArtVendido;
-}
-
 /**
  * @param unsigned float
  * @return void
@@ -155,14 +143,4 @@ void Articulo::set_Largo(float NuevoEstado)
 void Articulo::set_Cantidad(unsigned int NuevoEstado) 
 {
     this->Cantidad = NuevoEstado;
-}
-
-void Articulo::set_ArticuloVendido(string NuevoEstado)
-{
-    this->ArticuloVendido = NuevoEstado;
-}
-
-void Articulo::set_PrecioArtVendio(unsigned int NuevoEstado)
-{
-    this->PrecioArtVendido = NuevoEstado;
 }

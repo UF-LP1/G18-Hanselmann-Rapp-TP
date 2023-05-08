@@ -11,7 +11,7 @@
 class Cerraduras: public Cerrajeria 
 {
 public: 
-    Cerraduras(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoCerradura);
+    Cerraduras(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoCerradura);
 
     ~Cerraduras();
     

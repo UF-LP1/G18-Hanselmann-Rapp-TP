@@ -12,7 +12,7 @@ class Enchufes: public Electricidad
 {
 public: 
 
-    Enchufes(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, unsigned int, unsigned int, TipoEnchufe);
+    Enchufes(unsigned int, bool, string, string, float, float, float, unsigned int, unsigned int, unsigned int, TipoEnchufe);
 
     ~Enchufes();
     

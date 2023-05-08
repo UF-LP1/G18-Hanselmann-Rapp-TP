@@ -7,7 +7,7 @@
 /**
  * Clavos implementation
  */
-Clavos::Clavos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string ArticuloVendido_, unsigned int PrecioArtVendido_, string MaterialArtFerr_, TipoClavo Clavito_, string CabezaClavo_):ArtFerreteria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, ArticuloVendido_, PrecioArtVendido_, MaterialArtFerr_)
+Clavos::Clavos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string MaterialArtFerr_, TipoClavo Clavito_, string CabezaClavo_):ArtFerreteria(Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, MaterialArtFerr_)
 {
     this->Clavito = Clavito_;
     this->CabezaClavo = CabezaClavo_;

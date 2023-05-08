@@ -14,7 +14,7 @@ protected:
 
 public: 
 
-    Bazar(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string);
+    Bazar(unsigned int, bool, string, string, float, float, float, unsigned int, string);
 
     ~Bazar();
     

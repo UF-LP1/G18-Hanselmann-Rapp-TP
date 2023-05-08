@@ -11,7 +11,7 @@ class EscobillasBanio: public Banio
 {
 public: 
 
-    EscobillasBanio(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool, string, string, string, string);
+    EscobillasBanio(unsigned int, bool, string, string, float, float, float, unsigned int, bool, string, string, string, string);
 
     ~EscobillasBanio();
     

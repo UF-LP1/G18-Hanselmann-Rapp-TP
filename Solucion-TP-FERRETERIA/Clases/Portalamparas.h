@@ -12,7 +12,7 @@ class Portalamparas: public Electricidad
 {
 public: 
 
-    Portalamparas(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, unsigned int, unsigned int, TipoPortalamparas);
+    Portalamparas(unsigned int, bool, string, string, float, float, float, unsigned int, unsigned int, unsigned int, TipoPortalamparas);
 
     ~Portalamparas();
     

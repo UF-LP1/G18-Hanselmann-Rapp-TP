@@ -12,7 +12,7 @@ class Herramientas: public ArtFerreteria
 {
 public: 
 
-    Herramientas(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoHerramienta, string);
+    Herramientas(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoHerramienta, string);
 
     ~Herramientas();
     

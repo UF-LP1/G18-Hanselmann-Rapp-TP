@@ -25,12 +25,10 @@ protected:
     float Ancho;
     float Largo;
     unsigned int Cantidad;
-    string ArticuloVendido;
-    unsigned int PrecioArtVendido;
 
 public: 
 
-    Articulo(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int);
+    Articulo(unsigned int, bool, string, string, float, float, float, unsigned int);
 
     ~Articulo();
     
@@ -50,9 +48,6 @@ public:
     
     unsigned int get_Cantidad();
 
-    string get_ArticuloVendido();
-
-    unsigned int get_PrecioArtVendio();
     
     /**
      * @param unsigned float
@@ -81,10 +76,6 @@ public:
      * @param unsigned int
      */
     void set_Cantidad(unsigned int NuevoEstado);
-
-    void set_ArticuloVendido(string NuevoEstado);
-
-    void set_PrecioArtVendio(unsigned int NuevoEstado);
 
 };
 #endif //_ARTICULO_H

@@ -12,7 +12,7 @@ class TendederosRopa: public Bazar
 {
 public: 
 
-    TendederosRopa(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, string, TipoTendedero, string);
+    TendederosRopa(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoTendedero, string);
 
     ~TendederosRopa();
     
