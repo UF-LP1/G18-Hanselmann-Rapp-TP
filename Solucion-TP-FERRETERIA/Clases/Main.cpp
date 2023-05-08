@@ -13,7 +13,7 @@ using namespace std;
 
 int main() 
 {
-	Articulo* Art1 = new Articulo(567, true, "JOYA", "clavo", 2.05, 3.04, 4.01, 34);
+	Articulo* Art1 = new Articulo(567, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 34);
 
 	vector <Articulo> Articulos;
 
