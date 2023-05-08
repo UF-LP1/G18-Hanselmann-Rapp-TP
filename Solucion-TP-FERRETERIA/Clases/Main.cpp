@@ -5,6 +5,8 @@
 #include <algorithm>
 #include <iterator>
 
+#include "Cliente.h"
+
 using namespace std;
 
 int main() 

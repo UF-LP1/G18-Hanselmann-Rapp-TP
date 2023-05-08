@@ -36,12 +36,7 @@ public:
      * @param string
      */
     void set_TipoTransporte(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_DireccionCliente(string NuevoEstado);
-    
+     
     /**
      * @param time_t
      */

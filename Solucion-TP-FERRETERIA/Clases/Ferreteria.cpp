@@ -94,7 +94,7 @@ unsigned int Ferreteria::get_PrecioCargamento()
  */
 void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado) 
 {
-    this->MetodoPagoFerreteria == NuevoEstado;
+    this->MetodoPagoFerreteria = NuevoEstado;
 }
 
 void Ferreteria::set_ArticulosTotales(list <string> NuevoEstado)
@@ -154,7 +154,7 @@ int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
 {
     vector<Articulo>::iterator arr;
 
-    float acum = 0;
+    int acum = 0;
     int i = 0;
 
     for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final

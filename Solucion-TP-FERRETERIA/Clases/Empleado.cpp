@@ -64,15 +64,6 @@ void Empleado::set_TipoTransporte(string NuevoEstado)
 }
 
 /**
- * @param string
- * @return void
- */
-void Empleado::set_DireccionCliente(string NuevoEstado) 
-{
-    this->Direccion = NuevoEstado;
-}
-
-/**
  * @param time_t
  * @return void
  */

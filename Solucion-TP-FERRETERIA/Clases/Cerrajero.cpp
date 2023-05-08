@@ -40,7 +40,7 @@ void Cerrajero::set_Alarma(string NuevoEstado)
  */
 string Cerrajero::DuplicarLlaves(string)
 {
-    return;
+    return "";
 }
 
 /**

@@ -36,39 +36,20 @@ public:
     /**
      * @param Articulo
      */
-    float cobrar(Articulo art);
+    int cobrar(Articulo art);
     
     /**
      * @param Articulo
      */
     string revisar_art(Articulo art);
     
-    /**
-     * @param Cliente
-     * @param Ferreteria
-     */
-    bool atenderCliente(Cliente cli, Ferreteria ferr);
-    
-    void abrir_ferreteria();
-    
-    void cerrar_ferreteria();
-    
-    /**
-     * @param Ferreteria
-     * @param Herramientas
-     */
-    bool buscar_Herramientas(Ferreteria ferr, HerramientasAlquiler herralq);
+    bool abrir_ferreteria(); 
     
     /**
      * @param Cliente
      * @param Herramientas
      */
     bool dar_HerramientasCliente(Cliente cli, HerramientasAlquiler herralq);
-    
-    /**
-     * @param Empleado
-     */
-    bool llamar_Empleado(Empleado emp);
 
 private: 
     bool Disponibilidad;

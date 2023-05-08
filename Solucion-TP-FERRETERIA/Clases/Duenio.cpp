@@ -57,9 +57,9 @@ void Duenio::identificar_art(Cliente cli)
  * @param Articulo
  * @return unisgned float
  */
-float Duenio::cobrar(Articulo art) 
+int Duenio::cobrar(Articulo art) 
 {
-    return;
+    return 0;
 }
 
 /**
@@ -68,41 +68,13 @@ float Duenio::cobrar(Articulo art)
  */
 string Duenio::revisar_art(Articulo art) 
 {
-    return;
-}
-
-/**
- * @param Cliente
- * @param Ferreteria
- * @return bool
- */
-bool Duenio::atenderCliente(Cliente cli, Ferreteria ferr) 
-{
-    return false;
+    return "";
 }
 
 /**
  * @return void
  */
-void Duenio::abrir_ferreteria() 
-{
-    return;
-}
-
-/**
- * @return void
- */
-void Duenio::cerrar_ferreteria() 
-{
-    return;
-}
-
-/**
- * @param Ferreteria
- * @param Herramientas
- * @return bool
- */
-bool Duenio::buscar_Herramientas(Ferreteria ferr, HerramientasAlquiler herralq) 
+bool Duenio::abrir_ferreteria() 
 {
     return false;
 }
@@ -113,15 +85,6 @@ bool Duenio::buscar_Herramientas(Ferreteria ferr, HerramientasAlquiler herralq)
  * @return bool
  */
 bool Duenio::dar_HerramientasCliente(Cliente cli, HerramientasAlquiler herralq) 
-{
-    return false;
-}
-
-/**
- * @param Empleado
- * @return bool
- */
-bool Duenio::llamar_Empleado(Empleado emp) 
 {
     return false;
 }

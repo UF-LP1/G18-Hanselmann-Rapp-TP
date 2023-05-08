@@ -2,18 +2,18 @@
  * Project Untitled
  */
 
-#ifndef _ESCOBILLASBAÑO_H
-#define _ESCOBILLASBAÑO_H
+#ifndef _ESCOBILLASBANIO_H
+#define _ESCOBILLASBANIO_H
 
 #include "Banio.h"
 
-class EscobillasBaño: public Banio 
+class EscobillasBanio: public Banio 
 {
 public: 
 
-    EscobillasBaño(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool, string, string, string, string);
+    EscobillasBanio(unsigned int, bool, string, string, float, float, float, unsigned int, string, unsigned int, bool, string, string, string, string);
 
-    ~EscobillasBaño();
+    ~EscobillasBanio();
     
     string get_TipoEscobilla();
     
@@ -50,4 +50,4 @@ private:
     string MaterialEscobilla;
 };
 
-#endif //_ESCOBILLASBAÑO_H
+#endif //_ESCOBILLASBANIO_H
