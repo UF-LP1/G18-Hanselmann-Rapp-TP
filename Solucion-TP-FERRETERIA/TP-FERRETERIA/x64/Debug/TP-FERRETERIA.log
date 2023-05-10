@@ -1,5 +1,3 @@
-﻿  Ferreteria.cpp
-  Main.cpp
+﻿  Main.cpp
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(17,88): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Generando código...
   TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe

@@ -18,7 +18,6 @@ int main()
 
 	Cliente* Javier = new Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos ,"Foto", "ArtRoto", true);
 
-	//for para los delete
 	delete Articulos[0];
 	return 0;
  
