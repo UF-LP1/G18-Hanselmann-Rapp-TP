@@ -29,6 +29,7 @@ TipoTarugo Tarugos::get_Tarugin()
 /**
  * @return string
  */
+
 string Tarugos::get_UtilidadTarugo() 
 {
     return this->UtilidadTarugo; 

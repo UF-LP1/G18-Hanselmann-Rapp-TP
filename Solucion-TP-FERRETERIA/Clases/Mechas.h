@@ -19,7 +19,6 @@ public:
     TipoMecha get_Mechita();
     
     string get_UtilidadMecha();
-    
     /**
      * @param TipoMecha
      */
