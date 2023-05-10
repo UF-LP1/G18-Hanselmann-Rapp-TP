@@ -19,7 +19,6 @@ public:
     TipoTarugo get_Tarugin();
     
     string get_UtilidadTarugo();
-    
     /**
      * @param TipoTarugo
      */
