@@ -145,13 +145,14 @@
     <ClCompile Include="..\Clases\Electricidad.cpp" />
     <ClCompile Include="..\Clases\Empleado.cpp" />
     <ClCompile Include="..\Clases\Enchufes.cpp" />
-    <ClCompile Include="..\Clases\EscobillasBaño.cpp" />
+    <ClCompile Include="..\Clases\EscobillasBanio.cpp" />
     <ClCompile Include="..\Clases\Ferreteria.cpp" />
     <ClCompile Include="..\Clases\Herramientas.cpp" />
     <ClCompile Include="..\Clases\HerramientasAlquiler.cpp" />
     <ClCompile Include="..\Clases\Horario.cpp" />
     <ClCompile Include="..\Clases\Lamparas.cpp" />
     <ClCompile Include="..\Clases\LLaves.cpp" />
+    <ClCompile Include="..\Clases\Main.cpp" />
     <ClCompile Include="..\Clases\Mechas.cpp" />
     <ClCompile Include="..\Clases\Ollas.cpp" />
     <ClCompile Include="..\Clases\Persona.cpp" />
@@ -183,7 +184,7 @@
     <ClInclude Include="..\Clases\Electricidad.h" />
     <ClInclude Include="..\Clases\Empleado.h" />
     <ClInclude Include="..\Clases\Enchufes.h" />
-    <ClInclude Include="..\Clases\EscobillasBaño.h" />
+    <ClInclude Include="..\Clases\EscobillasBanio.h" />
     <ClInclude Include="..\Clases\Ferreteria.h" />
     <ClInclude Include="..\Clases\Herramientas.h" />
     <ClInclude Include="..\Clases\HerramientasAlquiler.h" />
@@ -214,7 +215,7 @@
     <ClInclude Include="..\Clases\TipoOlla.h" />
     <ClInclude Include="..\Clases\TipoPortalamparas.h" />
     <ClInclude Include="..\Clases\TipoSexo.h" />
-    <ClInclude Include="..\Clases\TipoTabla.h" />
+    <ClInclude Include="..\Clases\TipoTablaInodoro.h" />
     <ClInclude Include="..\Clases\TipoTarugo.h" />
     <ClInclude Include="..\Clases\TipoTendedero.h" />
     <ClInclude Include="..\Clases\TipoTornillo.h" />
@@ -222,6 +223,7 @@
     <ClInclude Include="..\Clases\TipoUtencillo.h" />
     <ClInclude Include="..\Clases\Tornillos.h" />
     <ClInclude Include="..\Clases\Utencillos.h" />
+    <ClInclude Include="TipoTablaPlanchar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

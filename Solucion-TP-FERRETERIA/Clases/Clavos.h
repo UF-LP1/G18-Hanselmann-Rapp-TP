@@ -2,32 +2,37 @@
  * Project Untitled
  */
 
-
 #ifndef _CLAVOS_H
 #define _CLAVOS_H
 
 #include "ArtFerreteria.h"
+#include "TipoClavo.h"
 
-
-class Clavos: public ArtFerreteria {
+class Clavos: public ArtFerreteria 
+{
 public: 
+
+    Clavos(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoClavo, string);
+
+    ~Clavos();
     
-void get_Clavo();
+    TipoClavo get_Clavito();
     
-string get_Cabeza();
+    string get_CabezaClavo();
     
-/**
- * @param TipoClavo
- */
-void set_Clavo(void TipoClavo);
+    /**
+     * @param TipoClavo
+     */
+    void set_Clavito(TipoClavo NuevoEstado);
     
-/**
- * @param string
- */
-void set_Cabeza(void string);
+    /**
+     * @param string
+     */
+    void set_CabezaClavo(string NuevoEstado);
+
 private: 
-    enumeration TipoClavo;
-    string Cabeza;
+    TipoClavo Clavito;
+    string CabezaClavo;
 };
 
 #endif //_CLAVOS_H

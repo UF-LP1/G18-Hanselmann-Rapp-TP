@@ -2,25 +2,28 @@
  * Project Untitled
  */
 
-
 #ifndef _ARTFERRETERIA_H
 #define _ARTFERRETERIA_H
 
-#include "Ferreteria.h"
 #include "Articulo.h"
 
-class ArtFerreteria: public Ferreteria, public Articulo
+class ArtFerreteria: public Articulo 
 {
-public: 
-    
-string get_Material();
-    
-/**
- * @param string
- */
-void set_Material(void string);
-protected: 
-    string Material;
-};
+protected:
+    string MaterialArtFerr;
 
+public: 
+
+    ArtFerreteria(unsigned int, bool, string, string, float, float, float, unsigned int, string);
+
+    ~ArtFerreteria();
+    
+    string get_MaterialArtFerr();
+    
+    /**
+     * @param string
+     */
+    void set_MaterialArtFerr(string NuevoEstado);
+
+};
 #endif //_ARTFERRETERIA_H

@@ -2,39 +2,44 @@
  * Project Untitled
  */
 
-
 #ifndef _BARRALESCORTINA_H
 #define _BARRALESCORTINA_H
 
 #include "Banio.h"
+#include"TipoBarreles.h"
 
-
-class BarralesCortina: public Banio {
+class BarralesCortina: public Banio 
+{
 public: 
     
-TipoBarrales get_Barrales();
+    BarralesCortina(unsigned int, bool, string, string, float, float, float, unsigned int, bool, TipoBarreles, string, unsigned int);
+
+    ~BarralesCortina();
+
+    TipoBarreles get_Barralito();
     
-string get_MaterialBarrales();
+    string get_MaterialBarrales();
+
+    unsigned int get_Ganchos();
     
-/**
- * @param TipoBarrales
- */
-void set_Barrales(void TipoBarrales);
+    /**
+     * @param TipoBarrales
+     */
+    void set_Barralito(TipoBarreles NuevoEstado);
     
-/**
- * @param string
- */
-void set_MaterialBarrales(void string);
-    
-unsigned int get_Ganchos();
-    
-/**
- * @param unsigned int
- */
-void set_Ganchos(void unsigned int);
+    /**
+     * @param string
+     */
+    void set_MaterialBarrales(string NuevoEstado);
+        
+    /**
+     * @param unsigned int
+     */
+    void set_Ganchos(unsigned int NuevoEstado);
+
 private: 
-    enumeration TipoBarrales;
-    string MaterialBarrales;
+    TipoBarreles Barralito;
+    string MaterialBarreles;
     unsigned int Ganchos;
 };
 

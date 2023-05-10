@@ -9,12 +9,27 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
+#include "TipoSexo.h"
+
 class Persona 
 {
+
+protected:
+    string Nombre;
+    string Apellido;
+    const string DNI;
+    TipoSexo Sexo;
+
 public: 
+
+    Persona(string, string, const string, TipoSexo);
+
+    ~Persona();
     
     string get_Nombre();
     
@@ -27,22 +42,17 @@ public:
     /**
      * @param string
      */
-    void set_Nombre(void string);
+    void set_Nombre(string NuevoEstado);
     
     /**
      * @param string
      */
-    void set_Apellido(void string);
+    void set_Apellido(string NuevoEstado);
     
     /**
      * @param TipoSexo
      */
-    void set_Sexo(void TipoSexo);
-protected: 
-    string Nombre;
-    string Apellido;
-    const string DNI;
-    enumeration TipoSexo;
+    void set_Sexo(TipoSexo NuevoEstado);
 };
 
 #endif //_PERSONA_H

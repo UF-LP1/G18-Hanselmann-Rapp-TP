@@ -2,24 +2,29 @@
  * Project Untitled
  */
 
-
 #ifndef _PORTALAMPARAS_H
 #define _PORTALAMPARAS_H
 
 #include "Electricidad.h"
+#include "TipoPortalamparas.h"
 
-
-class Portalamparas: public Electricidad {
+class Portalamparas: public Electricidad 
+{
 public: 
+
+    Portalamparas(unsigned int, bool, string, string, float, float, float, unsigned int, unsigned int, unsigned int, TipoPortalamparas);
+
+    ~Portalamparas();
     
-TipoPortalampara get_PortaLampara();
+    TipoPortalamparas get_PortaLamp();
     
-/**
- * @param TipoPortalamparas
- */
-void set_PortaLampara(void TipoPortalamparas);
+    /**
+     * @param TipoPortalamparas
+     */
+    void set_PortaLamp(TipoPortalamparas NuevoEstado);
+
 private: 
-    enumeration TipoPortalamparas;
+    TipoPortalamparas PortaLamp;
 };
 
 #endif //_PORTALAMPARAS_H

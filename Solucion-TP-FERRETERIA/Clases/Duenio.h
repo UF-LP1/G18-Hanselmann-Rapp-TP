@@ -2,70 +2,55 @@
  * Project Untitled
  */
 
-
 #ifndef _DUENIO_H
 #define _DUENIO_H
 
 #include "Persona.h"
 #include "Cliente.h"
 
-
-class Duenio: public Persona {
+class Duenio: public Persona
+{
 public: 
     
-bool get_Disponibilidad();
+    Duenio(string, string, string, TipoSexo, bool);
+
+    ~Duenio();
+
+    bool get_Disponibilidad();
     
-/**
- * @param bool
- */
-void set_Disponibilidad(void bool);
+    /**
+     * @param bool
+     */
+    void set_Disponibilidad(bool NuevoEstado);
     
-/**
- * @param Cliente
- */
-void atender_cliente(void Cliente);
+    /**
+     * @param Cliente
+     */
+    void atender_cliente(Cliente cli);
     
-/**
- * @param Cliente
- */
-void identificar_art(void Cliente);
+    /**
+     * @param Cliente
+     */
+    void identificar_art(Cliente cli);
     
-/**
- * @param Articulo
- */
-unisgned float cobrar(void Articulo);
+    /**
+     * @param Articulo
+     */
+    int cobrar(Articulo art);
     
-/**
- * @param Articulo
- */
-string revisar_art(void Articulo);
+    /**
+     * @param Articulo
+     */
+    string revisar_art(Articulo art);
     
-/**
- * @param Cliente
- * @param Ferreteria
- */
-bool atenderCliente(void Cliente, void Ferreteria);
+    bool abrir_ferreteria(); 
     
-void abrir_ferreteria();
-    
-void cerrar_ferreteria();
-    
-/**
- * @param Ferreteria
- * @param Herramientas
- */
-bool buscar_Herramientas(void Ferreteria, void Herramientas);
-    
-/**
- * @param Cliente
- * @param Herramientas
- */
-bool dar_HerramientasCliente(void Cliente, void Herramientas);
-    
-/**
- * @param Empleado
- */
-bool llamar_Empleado(void Empleado);
+    /**
+     * @param Cliente
+     * @param Herramientas
+     */
+    bool dar_HerramientasCliente(Cliente cli, HerramientasAlquiler herralq);
+
 private: 
     bool Disponibilidad;
 };

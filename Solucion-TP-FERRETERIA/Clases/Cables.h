@@ -2,38 +2,43 @@
  * Project Untitled
  */
 
-
 #ifndef _CABLES_H
 #define _CABLES_H
 
 #include "Electricidad.h"
+#include "TipoConductor.h"
 
-
-class Cables: public Electricidad {
+class Cables: public Electricidad 
+{
 public: 
+
+    Cables(unsigned int, bool, string, string, float, float, float, unsigned int, unsigned int, unsigned int, TipoConductor, string, string);
+
+    ~Cables();
+        
+    TipoConductor get_Conductores();
     
-TipoConductor get_Conductores();
+    string get_Aislamiento();
     
-string get_Aislamiento();
+    string get_Cubierta();
     
-string get_Cubierta();
+    /**
+     * @param TipoConductor
+     */
+    void set_Conductores(TipoConductor NuevoEstado);
     
-/**
- * @param TipoConductor
- */
-void set_Conductores(void TipoConductor);
+    /**
+     * @param string
+     */
+    void set_Aislamiento(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_Aislamiento(void string);
-    
-/**
- * @param string
- */
-void set_Cubierta(void string);
+    /**
+     * @param string
+     */
+    void set_Cubierta(string NuevoEstado);
+
 private: 
-    enumeration TipoConductor;
+    TipoConductor Conduc;
     string Aislamiento;
     string Cubierta;
 };

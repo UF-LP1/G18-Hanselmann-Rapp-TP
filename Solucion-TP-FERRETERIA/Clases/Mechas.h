@@ -2,34 +2,35 @@
  * Project Untitled
  */
 
-
 #ifndef _MECHAS_H
 #define _MECHAS_H
 
 #include "ArtFerreteria.h"
 #include "TipoMecha.h"
 
-
-class Mechas: public ArtFerreteria {
+class Mechas: public ArtFerreteria
+{
 public: 
+
+    Mechas(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoMecha, string);
+
+    ~Mechas();
     
-TipoMecha get_Mecha();
+    TipoMecha get_Mechita();
     
-string get_Utilidad();
+    string get_UtilidadMecha();
+    /**
+     * @param TipoMecha
+     */
+    void set_Mechita(TipoMecha NuevoEstado);
     
-/**
- * @param TipoMecha
- */
-void set_Mecha(TipoMecha);
-    
-/**
- * @param string
- */
-void set_Utilidad(string);
+    /**
+     * @param string
+     */
+    void set_UtilidadMecha(string NuevoEstado);
 
 private: 
-    enum TipoMecha;
-    string Utilidad;
+    TipoMecha Mechita;
+    string UtilidadMecha;
 };
-
 #endif //_MECHAS_H

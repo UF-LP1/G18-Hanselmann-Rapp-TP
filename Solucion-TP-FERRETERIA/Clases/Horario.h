@@ -2,33 +2,46 @@
  * Project Untitled
  */
 
-
 #ifndef _HORARIO_H
 #define _HORARIO_H
 
-class Horario {
+#include <iostream>
+#include <string>
+#include <vector>
+#include <list>
+#include <algorithm>
+#include <iterator>
+
+using namespace std;
+
+class Horario 
+{
 public: 
+
+    Horario(string, string, string);
+    ~Horario();
     
-string get_SemanaManiana();
+    string get_SemanaManiana();
     
-string get_SemanaTarde();
+    string get_SemanaTarde();
     
-string get_Sabados();
+    string get_Sabados();
     
-/**
- * @param string
- */
-void set_SemanaManiana(void string);
+    /**
+     * @param string
+     */
+    void set_SemanaManiana(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_SemanaTarde(void string);
+    /**
+     * @param string
+     */
+    void set_SemanaTarde(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_Sabados(void string);
+    /**
+     * @param string
+     */
+    void set_Sabados(string NuevoEstado);
+
 private: 
     string SemanaManiana;
     string SemanaTarde;

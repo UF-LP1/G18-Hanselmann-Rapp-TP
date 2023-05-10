@@ -2,31 +2,36 @@
  * Project Untitled
  */
 
-
 #ifndef _LAMPARAS_H
 #define _LAMPARAS_H
 
 #include "Electricidad.h"
+#include "TipoLampara.h"
 
-
-class Lamparas: public Electricidad {
+class Lamparas: public Electricidad 
+{
 public: 
+
+    Lamparas(unsigned int, bool, string, string, float, float, float, unsigned int, unsigned int, unsigned int, TipoLampara, string);
+
+    ~Lamparas();
     
-TipoLampara get_Lampara();
+    TipoLampara get_Lamp();
     
-string get_Disenio();
+    string get_Disenio();
     
-/**
- * @param TipoLampara
- */
-void set_Lampara(void TipoLampara);
+    /**
+     * @param TipoLampara
+     */
+    void set_Lamp(TipoLampara NuevoEstado);
     
-/**
- * @param string
- */
-void set_Disenio(void string);
+    /**
+     * @param string
+     */
+    void set_Disenio(string NuevoEstado);
+
 private: 
-    enumeration TipoLampara;
+    TipoLampara Lamp;
     string Disenio;
 };
 

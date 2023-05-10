@@ -2,39 +2,44 @@
  * Project Untitled
  */
 
-
 #ifndef _TABLASPLANCHAR_H
 #define _TABLASPLANCHAR_H
 
 #include "Bazar.h"
+#include "TipoTablaPlanchar.h"
 
-
-class TablasPlanchar: public Bazar {
+class TablasPlanchar: public Bazar 
+{
 public: 
+
+    TablasPlanchar(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoTablasPlanchar, string, string);
+
+    ~TablasPlanchar();
     
-TipoTabla get_Planchar();
+    TipoTablasPlanchar get_Planchita();
     
-string get_Marca();
+    string get_MarcaTablPlanch();
     
-string get_MaterialPlanchar();
+    string get_MaterialPlanchar();
     
-/**
- * @param TipoTabla
- */
-void set_Planchar(void TipoTabla);
+    /**
+     * @param TipoTabla
+     */
+    void set_Planchita(TipoTablasPlanchar NuevoEstado);
     
-/**
- * @param string
- */
-void set_Marca(void string);
+    /**
+     * @param string
+     */
+    void set_MarcaTablPlanch(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_MaterialPlanchar(void string);
+    /**
+     * @param string
+     */
+    void set_MaterialPlanchar(string NuevoEstado);
+
 private: 
-    enumeration TipoTabla;
-    string Marca;
+    TipoTablasPlanchar Planchita;
+    string MarcaTablPlanch;
     string MaterialPlanchar;
 };
 

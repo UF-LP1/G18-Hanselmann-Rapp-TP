@@ -2,63 +2,68 @@
  * Project Untitled
  */
 
-
 #ifndef _CLIENTE_H
 #define _CLIENTE_H
 
 #include "Persona.h"
+#include "MetodoPago.h"
 #include "HerramientasAlquiler.h"
 #include "Empleado.h"
 #include "Articulo.h"
 
-class Cliente: public Persona {
+class Cliente: public Persona 
+{
 public: 
+
+    Cliente(string, string, const string, TipoSexo, string, MetodoPago, vector<Articulo*>, const string, const string, bool);
+
+    ~Cliente();
     
-const string get_Direccion();
+    string get_Direccion();
     
-MetodoPago get_Pago();
+    MetodoPago get_MetodoPagoCli();
     
-vector <Articulo> get_Articulos();
+    vector <Articulo*> get_Articulos();
         
-const string get_Foto();
+    const string get_Foto();
     
-const string get_ArtRoto();
+    const string get_ArtRoto();
     
-const bool get_EnvoltorioIntacto();
+    bool get_EnvoltorioIntacto();
     
-/**
- * @param MetodoPago
- */
-void set_Pago(void MetodoPago);
+    /**
+     * @param MetodoPago
+     */
+    void set_MetodoPagoCli(MetodoPago NuevoEstado);
+
+    void set_Direccion(string NuevoEstado);
     
-/**
- * @param string
- */
-void set_Articulos(vector <Articulo> NuevoEstado);
+    /**
+     * @param string
+     */
+    void set_Articulos(vector <Articulo*> NuevoEstado);
     
-/**
- * @param unsigned int
- */
+    void set_EnvoltorioIntacto(bool NuevoEstado);
 
     
-void MostrarFoto();
+    void MostrarFoto();
     
-void MostrarArtRoto();
+    void MostrarArtRoto();
     
-void MostrarEnvoltorioInt();
+    void MostrarEnvoltorioInt();
     
-/**
- * @param Precio
- */
-void elegir_art(void Precio);
+    /**
+     * @param Precio
+     */
+    void elegir_art(Articulo art); 
 
 private: 
-    const string Direccion;
-    enumeration MetodoPago;
-    vector <Articulo> Articulos;
+    string Direccion;
+    MetodoPago MetodoPagoCli;
+    vector <Articulo*> Articulos;
     const string Foto;
     const string ArtRoto;
-    const bool EnvoltorioIntacto;
+    bool EnvoltorioIntacto;
 };
 
 #endif //_CLIENTE_H

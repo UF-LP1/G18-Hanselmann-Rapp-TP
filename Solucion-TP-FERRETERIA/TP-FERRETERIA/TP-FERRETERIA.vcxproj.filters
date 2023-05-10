@@ -69,7 +69,7 @@
     <ClCompile Include="..\Clases\Enchufes.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\Clases\EscobillasBaño.cpp">
+    <ClCompile Include="..\Clases\EscobillasBanio.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="..\Clases\Ferreteria.cpp">
@@ -121,6 +121,9 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="..\Clases\HerramientasAlquiler.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Clases\Main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -179,7 +182,7 @@
     <ClInclude Include="..\Clases\Enchufes.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Clases\EscobillasBaño.h">
+    <ClInclude Include="..\Clases\EscobillasBanio.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Clases\Ferreteria.h">
@@ -269,7 +272,7 @@
     <ClInclude Include="..\Clases\TipoSexo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Clases\TipoTabla.h">
+    <ClInclude Include="..\Clases\TipoTablaInodoro.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Clases\TipoTarugo.h">
@@ -294,6 +297,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="..\Clases\HerramientasAlquiler.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="TipoTablaPlanchar.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
