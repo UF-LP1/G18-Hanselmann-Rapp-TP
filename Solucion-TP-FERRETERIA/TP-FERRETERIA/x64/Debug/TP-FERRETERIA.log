@@ -1,36 +1,5 @@
-﻿  ArtFerreteria.cpp
-  Articulo.cpp
-  Banio.cpp
-  BarralesCortina.cpp
-  Bazar.cpp
-  Cables.cpp
-  Cerraduras.cpp
-  Cerrajeria.cpp
-  Cerrojos.cpp
-  Clavos.cpp
-  Cliente.cpp
-  Cocina.cpp
-  Duenio.cpp
-  Electricidad.cpp
-  Enchufes.cpp
-  EscobillasBanio.cpp
-  Ferreteria.cpp
-  Herramientas.cpp
-  LLaves.cpp
-  Lamparas.cpp
-  Generando código...
-  Compilando...
+﻿  Ferreteria.cpp
   Main.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(16,85): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Mechas.cpp
-  Ollas.cpp
-  Persona.cpp
-  Portalamparas.cpp
-  TablasPlanchar.cpp
-  TapasInodoro.cpp
-  Tarugos.cpp
-  TendederosRopa.cpp
-  Tornillos.cpp
-  Utencillos.cpp
+C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(17,88): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
   TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe

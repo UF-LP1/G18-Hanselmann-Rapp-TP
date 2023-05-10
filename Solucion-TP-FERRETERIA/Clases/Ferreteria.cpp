@@ -152,7 +152,7 @@ bool Ferreteria::dar_ArticuloEmpleado(Articulo art, Empleado emp)
 
 int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
 {
-    vector<Articulo>::iterator arr;
+    vector<Articulo*>::iterator arr;
 
     int acum = 0;
     int i = 0;
@@ -160,7 +160,7 @@ int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
     for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
     {
         if (art.get_Cantidad() != 0)
-            acum += arr[i].get_Precio() * arr[i].get_Cantidad();
+            acum += arr[i]->get_Precio() * arr[i]->get_Cantidad();
         else
             cout << "No hay mas stock de este Articulo." << endl;
     }
