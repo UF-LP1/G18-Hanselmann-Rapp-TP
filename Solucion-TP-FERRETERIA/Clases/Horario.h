@@ -5,6 +5,7 @@
 #ifndef _HORARIO_H
 #define _HORARIO_H
 
+#include "DiaSemana.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -18,26 +19,21 @@ class Horario
 {
 public: 
 
-    Horario(time_t, DiaSemana);
+    Horario(const DiaSemana, time_t);
     ~Horario();
     
     time_t get_Hora();
     
-    string get_DiaSemana();
+    const DiaSemana get_Semanita();
         
     /**
      * @param string
      */
     void set_Hora(time_t NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_DiaSemana(string NuevoEstado);
- 
+     
 private: 
     time_t Hora;
-    DiaSemana Semanita;
+    enum DiaSemana Semanita {Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo};
 };
 
 #endif //_HORARIO_H
