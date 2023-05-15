@@ -35,7 +35,7 @@ public:
     /**
      * @param Horario
      */
-    bool abrir(Horario hora);
+    bool abrir(Horario horita);
         
     /**
      * @param Cliente

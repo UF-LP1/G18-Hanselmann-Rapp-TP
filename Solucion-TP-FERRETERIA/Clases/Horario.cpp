@@ -8,11 +8,10 @@
  * Horario implementation
  */
 
-Horario::Horario(string SemanaManiana_, string SemanaTarde_, string Sabados_)
+Horario::Horario(time_t Hora_, DiaSemana DiaSemana_)
 {
-    this->SemanaManiana = SemanaManiana_;
-    this->SemanaTarde = SemanaTarde_;
-    this->Sabados = Sabados_;
+    this->Hora = Hora_;
+    this->DiaSemana = DiaSemana_;
 }
 
 Horario::~Horario()
@@ -23,50 +22,33 @@ Horario::~Horario()
 /**
  * @return string
  */
-string Horario::get_SemanaManiana() 
+time_t Horario::get_Hora() 
 {
-    return this->SemanaManiana;
+    return this->Hora;
 }
 
 /**
  * @return string
  */
-string Horario::get_SemanaTarde() 
+string Horario::get_DiaSemana() 
 {
-    return this->SemanaTarde;
-}
-
-/**
- * @return string
- */
-string Horario::get_Sabados()
-{
-    return this->Sabados;
+    return this->DiaSemana;
 }
 
 /**
  * @param string
  * @return void
  */
-void Horario::set_SemanaManiana(string NuevoEstado)
+void Horario::set_Hora(time_t NuevoEstado)
 {
-    this->SemanaManiana = NuevoEstado;
+    this->Hora = NuevoEstado;
 }
 
 /**
  * @param string
  * @return void
  */
-void Horario::set_SemanaTarde(string NuevoEstado)
+void Horario::set_DiaSemana(string NuevoEstado)
 {
-    this->SemanaTarde = NuevoEstado;
-}
-
-/**
- * @param string
- * @return void
- */
-void Horario::set_Sabados(string NuevoEstado)
-{
-    this->Sabados = NuevoEstado;
+    this->DiaSemana = NuevoEstado;
 }

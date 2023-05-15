@@ -18,34 +18,26 @@ class Horario
 {
 public: 
 
-    Horario(string, string, string);
+    Horario(time_t, DiaSemana);
     ~Horario();
     
-    string get_SemanaManiana();
+    time_t get_Hora();
     
-    string get_SemanaTarde();
-    
-    string get_Sabados();
+    string get_DiaSemana();
+        
+    /**
+     * @param string
+     */
+    void set_Hora(time_t NuevoEstado);
     
     /**
      * @param string
      */
-    void set_SemanaManiana(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_SemanaTarde(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_Sabados(string NuevoEstado);
-
+    void set_DiaSemana(string NuevoEstado);
+ 
 private: 
-    string SemanaManiana;
-    string SemanaTarde;
-    string Sabados;
+    time_t Hora;
+    DiaSemana Semanita;
 };
 
 #endif //_HORARIO_H

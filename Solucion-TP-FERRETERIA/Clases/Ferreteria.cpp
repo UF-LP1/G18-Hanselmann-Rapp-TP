@@ -72,8 +72,9 @@ void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado)
  * @param Horario
  * @return bool
  */
-bool Ferreteria::abrir(Horario hora) 
+bool Ferreteria::abrir(Horario horita) 
 {
+    if(horita.get_DiaSemana() == "Lunes" || horita.get_DiaSemana() == "Martes" || horita.get_DiaSemana() == "Miercoles" || horita.get_DiaSemana() == "Jueves")
     return false;
 }
 

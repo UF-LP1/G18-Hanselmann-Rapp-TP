@@ -2,7 +2,6 @@
  * Project Untitled
  */
 
-
 #ifndef _TIPOCERROJO_H
 #define _TIPOCERROJO_H
 
