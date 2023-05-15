@@ -13,9 +13,18 @@ using namespace std;
 
 int main() 
 {
-	int i = 0;
-
 	Ferreteria ferr = Ferreteria("Jaimito", "Tucasa", " 12344", "AJAJAJ@.COM", Efectivo);
+	time_t tiempito;
+	time(&tiempito);
+	Horario horacio = Horario(Lunes, tiempito);
+
+	bool abierto = false;
+	abierto = ferr.abrir(horacio);
+
+	cout << "Abiero = 1 y Cerrado = 0" << endl;
+	cout << "La ferreteria esta: " << abierto << endl;
+
+	int i = 0;
 
 	vector <Articulo*> Articulos;
 	vector <Articulo*> ::iterator iter;

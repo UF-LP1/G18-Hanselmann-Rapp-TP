@@ -67,7 +67,6 @@ void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado)
     this->MetodoPagoFerreteria = NuevoEstado;
 }
 
-
 /**
  * @param Horario
  * @return bool
