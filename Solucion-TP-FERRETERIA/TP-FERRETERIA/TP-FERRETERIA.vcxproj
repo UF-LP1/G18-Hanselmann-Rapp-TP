@@ -223,7 +223,6 @@
     <ClInclude Include="..\Clases\TipoUtencillo.h" />
     <ClInclude Include="..\Clases\Tornillos.h" />
     <ClInclude Include="..\Clases\Utencillos.h" />
-    <ClInclude Include="DiaSemanita.h" />
     <ClInclude Include="TipoTablaPlanchar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

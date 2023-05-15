@@ -75,6 +75,7 @@ void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado)
 bool Ferreteria::abrir(Horario hor) 
 {
     if(hor.get_Semanita() == Lunes || hor.get_Semanita() = Martes || hor.get_Semanita() == Miercoles || hor.get_Semanita() == Jueves || hor.get_Semanita() == Viernes)
+        
         return false;
 }
 
