@@ -24,7 +24,7 @@ int main()
 
 	Cliente* Javier = new Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos ,"Foto", "ArtRoto", true);
 
-	cout << "El precio total es: " << ferr->generar_Presupuesto(arti,Articulos, *Javier) << endl;
+	cout << "El precio total es: " << ferr->generar_Presupuesto(Articulos, *Javier) << endl;
 
 	int i = 0;
 	for (iter = Articulos.begin(); iter != Articulos.end(); i++, iter++)

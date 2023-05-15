@@ -13,7 +13,7 @@ class Ferreteria
 {
 public: 
 
-    Ferreteria(const string, const string, const string, const string, MetodoPago, list<string>, list<int>, unsigned int, unsigned int, unsigned int);
+    Ferreteria(const string, const string, const string, const string, MetodoPago);
 
     ~Ferreteria();
     
@@ -26,32 +26,12 @@ public:
     const string get_Mail();
     
     MetodoPago get_MetodoPagoFerreteria();
-  
-    list <string> get_ArticulosTotales();
-
-    list<int> get_CantArtTotales();
-
-    unsigned int get_AlquilerLocal();
-
-    unsigned int get_ExpensasLocal();
-
-    unsigned int get_PrecioCargamento();
-    
+      
     /**
      * @param string
      */
     void set_MetodoPagoFerreteria(MetodoPago NuevoEstado);
-            
-    void set_ArticulosTotales(list <string> NuevoEstado);
-
-    void set_CantArtTotales(list <int> NuevoEstado);
-
-    void set_AlquilerLocal(unsigned int NuevoEstado);
-
-    void set_ExpensasLocal(unsigned int NuevoEstado);
-
-    void set_PrecioCargamento(unsigned int NuevoEstado);
-
+      
     /**
      * @param Horario
      */
@@ -68,7 +48,7 @@ public:
      */
     bool dar_ArticuloEmpleado(Articulo art, Empleado emp);
 
-    int generar_Presupuesto(Articulo arti, vector<Articulo*> v, Cliente cli);
+    int generar_Presupuesto(vector <Articulo*>, Cliente cli);
 
 
 private: 
@@ -77,10 +57,5 @@ private:
     const string Telefono;
     const string Mail;
     MetodoPago MetodoPagoFerreteria;
-    list <string> ArticulosTotales;
-    list <int> CantArtTotales;
-    unsigned int AlquilerLocal;
-    unsigned int ExpensasLocal;
-    unsigned int PrecioCargamento;
 };
 #endif //_FERRETERIA_H

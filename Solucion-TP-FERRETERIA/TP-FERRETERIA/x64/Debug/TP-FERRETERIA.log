@@ -1,9 +1,7 @@
 ﻿  Ferreteria.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(162,13): error C2065: 'art': identificador no declarado
   Main.cpp
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(21,88): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(22,93): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(23,97): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Persona.cpp
   Generando código...
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(27): error C4700: se utilizó la variable local 'ferr' sin inicializar
+  TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe
