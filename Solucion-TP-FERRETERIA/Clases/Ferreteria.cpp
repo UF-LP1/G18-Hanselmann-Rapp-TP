@@ -74,8 +74,14 @@ void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado)
  */
 bool Ferreteria::abrir(Horario hor) 
 {
-    if(hor.get_Semanita() == Lunes || hor.get_Semanita() = Martes || hor.get_Semanita() == Miercoles || hor.get_Semanita() == Jueves || hor.get_Semanita() == Viernes)
-        if(hor.get_Hora() )
+    time_t timer;
+    struct tm* tiempolocal;
+
+    time(&timer);
+    tiempolocal = localtime(&timer);
+
+    if(hor.get_Semanita() == Lunes || hor.get_Semanita() == Martes || hor.get_Semanita() == Miercoles || hor.get_Semanita() == Jueves || hor.get_Semanita() == Viernes)
+       if(hor.get_Hora() )
         
         return false;
 }
@@ -106,9 +112,9 @@ int Ferreteria::generar_Presupuesto(vector<Articulo*> v, Cliente cli)
     int acum = 0;
     int i = 0;
     
-    for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
+    for (arr = cli.get_Articulos().begin();i < cli.get_Articulos().size(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
     {
-            acum += arr[i]->get_Precio() * arr[i]->get_Cantidad();
+            acum = acum + arr[i]->get_Precio() * arr[i]->get_Cantidad();
     }
 
     return acum;

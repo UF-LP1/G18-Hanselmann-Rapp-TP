@@ -124,7 +124,7 @@ void Cliente::MostrarEnvoltorioInt()
  * @param Precio
  * @return void
  */
-void Cliente::elegir_art(Articulo art)  //precio
+void Cliente::elegir_art(Articulo art)  //agregar al carrito
 {
     return;
 }
