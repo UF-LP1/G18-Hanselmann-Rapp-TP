@@ -20,17 +20,17 @@ class Horario
 {
 private:
 
-    DiaSemanita Semanita;
+    DiaSemana Semanita;
     time_t Hora;
 
 public: 
 
-    Horario(DiaSemanita, time_t);
+    Horario(DiaSemana, time_t);
     ~Horario();
     
     time_t get_Hora();
     
-    DiaSemanita get_Semanita();
+    DiaSemana get_Semanita();
         
     /**
      * @param string

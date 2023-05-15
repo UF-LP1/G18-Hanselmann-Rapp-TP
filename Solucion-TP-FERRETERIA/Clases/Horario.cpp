@@ -8,9 +8,9 @@
  * Horario implementation
  */
 
-Horario::Horario(DiaSemanita Semanita_, time_t Hora_)
+Horario::Horario(DiaSemana Semanita_, time_t Hora_)
 {
-    this->Hora = Hora_;
+    this->Hora = Hora_
     this->Semanita = Semanita_;
 }
 
@@ -30,7 +30,7 @@ time_t Horario::get_Hora()
 /**
  * @return string
  */
-DiaSemanita Horario:: get_Semanita();
+DiaSemana Horario:: get_Semanita()
 {
     return this->Semanita;
 }
