@@ -8,7 +8,7 @@
  * Horario implementation
  */
 
-Horario::Horario(DiaSem Semanita_, time_t Hora_)
+Horario::Horario(DiaSemanita Semanita_, time_t Hora_)
 {
     this->Hora = Hora_;
     this->Semanita = Semanita_;
@@ -30,9 +30,9 @@ time_t Horario::get_Hora()
 /**
  * @return string
  */
-enum DiaSem Horario:: get_Semanita()
+unsigned int Horario:: get_Semanita()
 {
-    return this->Semanita;
+    return Semanita;
 }
 
 /**
@@ -44,7 +44,7 @@ void Horario::set_Hora(time_t NuevoEstado)
     this->Hora = NuevoEstado;
 }
 
-void Horario::set_Semanita(DiaSem NuevoEstado)
+void Horario::set_Semanita(DiaSemanita NuevoEstado)
 {
     this->Semanita = NuevoEstado;
 }

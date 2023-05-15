@@ -5,13 +5,14 @@
 #ifndef _HORARIO_H
 #define _HORARIO_H
 
+#include "DiaSemanita.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <list>
 #include <algorithm>
 #include <iterator>
-#include <time.h>
+#include <ctime>
 
 using namespace std;
 
@@ -19,24 +20,24 @@ class Horario
 {
 private:
 
-    enum DiaSem { Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo } Semanita;
+    DiaSemanita Semanita;
     time_t Hora;
 
 public: 
 
-    Horario(DiaSem, time_t);
+    Horario(DiaSemanita, time_t);
     ~Horario();
     
     time_t get_Hora();
     
-    enum DiaSem get_Semanita();
+    unsigned int get_Semanita();
         
     /**
      * @param string
      */
     void set_Hora(time_t NuevoEstado);
 
-    void set_Semanita(DiaSem NuevoEstado);
+    void set_Semanita(DiaSemanita NuevoEstado);
 };
 
 #endif //_HORARIO_H
