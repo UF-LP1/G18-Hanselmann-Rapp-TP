@@ -103,7 +103,8 @@ void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)
  */
 void Cliente::elegir_art(Articulo art)  //agregar al carrito
 {
-
+    /* cin>>"Ingresar artículo seleccionado:">> art>> endl;
+    */
 }
 
 //int Cliente::generar_Presupuesto()
