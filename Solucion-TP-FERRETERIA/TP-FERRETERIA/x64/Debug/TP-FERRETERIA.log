@@ -1,11 +1,3 @@
-﻿  Cliente.cpp
-  Despachante.cpp
-  Duenio.cpp
-  Ferreteria.cpp
-  Main.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(30,83): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(31,88): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(32,92): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Generando código...
+﻿  Ferreteria.cpp
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(106): warning C4715: 'Ferreteria::abrir': no todas las rutas de acceso de control devuelven un valor
   TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe
