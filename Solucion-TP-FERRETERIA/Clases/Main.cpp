@@ -35,11 +35,11 @@ int main()
 
 	Cliente Javier = Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos,"Foto", "ArtRoto", true);
 
-	cout << "El precio total es: " << ferr.generar_Presupuesto(Articulos, Javier) << endl;
+	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
 
-	for (iter = Articulos.begin(); iter != Articulos.end(); i++, iter++)
+	for (iter = Articulos.begin(); iter != Articulos.end(); iter++)
 	{
-		delete iter[i];
+		delete* iter;  // Eliminar el objeto apuntado por el puntero actual
 	}
 
 	return 0;

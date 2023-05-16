@@ -115,16 +115,22 @@ bool Ferreteria::dar_ArticuloEmpleado(Articulo art, Empleado emp)
     return false;
 }
 
-int Ferreteria::generar_Presupuesto(vector<Articulo*> v, Cliente cli)
+int Ferreteria::generar_Presupuesto(Cliente cli)
 {
     vector<Articulo*>::iterator arr;
 
     int acum = 0;
     int i = 0;
-    
-    for (arr = cli.get_Articulos().begin();i < cli.get_Articulos().size(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
+
+
+    arr = cli.get_Articulos().begin();
+
+    for (arr = cli.get_Articulos().begin(); i <= cli.get_Articulos().size(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
     {
+        if (arr[i] != nullptr)
             acum = acum + arr[i]->get_Precio() * arr[i]->get_Cantidad();
+        else
+            return 1234;
     }
 
     return acum;

@@ -44,7 +44,7 @@ public:
      */
     bool dar_ArticuloEmpleado(Articulo art, Empleado emp);
 
-    int generar_Presupuesto(vector <Articulo*>, Cliente cli);
+    int generar_Presupuesto(Cliente cli);
 
 
 private: 
