@@ -121,12 +121,20 @@ int Ferreteria::generar_Presupuesto(Cliente cli)
 
     int acum = 0;
     int i = 0;
-    itArt = cli.get_Articulos().begin();
 
+    itArt = cli.get_Articulos().begin();
+    
     for ( i = 0 ; i < cli.get_Articulos().size();i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
     {
-            acum = acum + itArt->get_Precio() * itArt->get_Cantidad();
+        if (itArt->get_Cantidad() > 0)
+        {
+            acum = acum + (itArt->get_Precio() * itArt->get_Cantidad());
             itArt++;
+        }
+        else
+        {
+            cout << "No hay Cantidad del Producto" << endl;
+        }
     }
 
     return acum;

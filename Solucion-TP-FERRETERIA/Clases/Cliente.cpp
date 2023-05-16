@@ -89,7 +89,7 @@ void Cliente::set_Direccion(string NuevoEstado)
  */
 void Cliente::set_Articulos(list <Articulo> NuevoEstado)
 {
-    this->Articulos= NuevoEstado;
+    this->Articulos = NuevoEstado;
 }
 
 void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)

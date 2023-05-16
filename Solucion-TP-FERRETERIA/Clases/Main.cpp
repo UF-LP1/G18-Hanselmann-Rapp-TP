@@ -35,10 +35,12 @@ int main()
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
 
-	//for (iter = Articulos.begin(); iter != Articulos.end(); iter++)
-	//{
-	//	delete iter;  // Eliminar el objeto apuntado por el puntero actual
-	//}
+	/*
+	for (iter = Articulos.begin(); iter != Articulos.end(); iter++)
+	{
+		delete iter;  // Eliminar el objeto apuntado por el puntero actual
+	}
+	*/
 
 	return 0;
 }
