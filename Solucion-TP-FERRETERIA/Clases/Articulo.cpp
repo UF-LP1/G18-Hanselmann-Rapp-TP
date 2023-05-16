@@ -10,7 +10,7 @@
 
 Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_)
 {
-    this->Precio = Precio;
+    this->Precio = Precio_;
     this->Cambio = Cambio_;
     this->EstadoArt = EstadoArt_;
     this->TipoProducto = TipoProducto_;
