@@ -33,15 +33,14 @@ int main()
 	Articulos.push_back(new Articulo(57869, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 434));
 	Articulos.push_back(new Articulo(5647827, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4524));
 
-	Cliente Javier = Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos ,"Foto", "ArtRoto", true);
+	Cliente Javier = Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos,"Foto", "ArtRoto", true);
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Articulos, Javier) << endl;
 
 	for (iter = Articulos.begin(); iter != Articulos.end(); i++, iter++)
 	{
-		delete Articulos[i];
+		delete iter[i];
 	}
 
 	return 0;
- 
 }

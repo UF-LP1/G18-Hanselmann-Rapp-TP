@@ -96,29 +96,6 @@ void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)
 {
     this->EnvoltorioIntacto = NuevoEstado;
 }
-/**
- * @return void
- */
-void Cliente::MostrarFoto() 
-{
-    return;
-}
-
-/**
- * @return void
- */
-void Cliente::MostrarArtRoto() 
-{
-    return;
-}
-
-/**
- * @return void
- */
-void Cliente::MostrarEnvoltorioInt() 
-{
-    return;
-}
 
 /**
  * @param Precio
@@ -126,6 +103,20 @@ void Cliente::MostrarEnvoltorioInt()
  */
 void Cliente::elegir_art(Articulo art)  //agregar al carrito
 {
-    return;
+
 }
 
+//int Cliente::generar_Presupuesto()
+//{
+//    vector<Articulo*>::iterator arr;
+
+//    int acum = 0;
+//   int i = 0;
+
+//    for (arr = get_Articulos().begin(); i < get_Articulos().size(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
+//    {
+//        acum = acum + arr[i]->get_Precio() * arr[i]->get_Cantidad();
+//    }
+
+//    return acum;
+//}

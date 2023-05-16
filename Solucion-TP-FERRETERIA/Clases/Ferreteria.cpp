@@ -91,7 +91,7 @@ bool Ferreteria::abrir(Horario hor)
                 return true;
             }
         }
-        else if (tiempolocal->tm_wday == 6)
+        if (tiempolocal->tm_wday == 6)
         {
             if (tiempolocal->tm_hour >= 8 && tiempolocal->tm_hour <= 13)
             {
@@ -103,15 +103,6 @@ bool Ferreteria::abrir(Horario hor)
     }
     else
         return false;
-}
-
-/**
- * @param Cliente
- * @return articulos
- */
-bool Ferreteria::dar_ArticuloCliente(Cliente cli, Articulo art) 
-{
-    return false;
 }
 
 /**

@@ -11,6 +11,7 @@
 #include <list>
 #include <algorithm>
 #include <iterator>
+#include <forward_list>
 
 using namespace std;
 

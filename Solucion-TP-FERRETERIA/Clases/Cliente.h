@@ -44,18 +44,13 @@ public:
     void set_Articulos(vector <Articulo*> NuevoEstado);
     
     void set_EnvoltorioIntacto(bool NuevoEstado);
-
-    
-    void MostrarFoto();
-    
-    void MostrarArtRoto();
-    
-    void MostrarEnvoltorioInt();
     
     /**
      * @param Precio
      */
     void elegir_art(Articulo art); 
+
+    //int generar_Presupuesto();
 
 private: 
     string Direccion;

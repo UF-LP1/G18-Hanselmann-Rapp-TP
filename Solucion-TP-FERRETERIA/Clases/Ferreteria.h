@@ -37,12 +37,7 @@ public:
      * @param Horario
      */
     bool abrir(Horario hor);
-        
-    /**
-     * @param Cliente
-     */
-    bool dar_ArticuloCliente(Cliente cli, Articulo art);
-    
+
     /**
      * @param Articulo
      * @param Empleado

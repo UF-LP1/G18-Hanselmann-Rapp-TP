@@ -25,6 +25,12 @@ protected:
     float Ancho;
     float Largo;
     unsigned int Cantidad;
+    friend class ArtFerreteria;
+    friend class Banio;
+    friend class Bazar;
+    friend class Cerrajeria;
+    friend class Cocina;
+    friend class Electricidad;
 
 public: 
 

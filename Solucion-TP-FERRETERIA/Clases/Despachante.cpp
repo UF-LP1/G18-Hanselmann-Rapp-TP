@@ -37,7 +37,8 @@ void Despachante::set_Pedido(string NuevoEstado)
 /**
  * @return void
  */
-void Despachante::llevar_pedido() 
+void Despachante::enviar_articulo(Articulo arti, Cliente cli)
 {
-    return;
+    cout << "Se envia el articulo: " << arti.get_TipoProducto() << " hacia la direccion: " << cli.get_Direccion() << endl;
+
 }

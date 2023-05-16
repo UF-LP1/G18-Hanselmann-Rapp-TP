@@ -302,5 +302,8 @@
     <ClInclude Include="TipoTablaPlanchar.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="TipoHerrAlquiler.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

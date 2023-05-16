@@ -5,6 +5,8 @@
 #ifndef _DESPACHANTE_H
 #define _DESPACHANTE_H
 
+#include "Articulo.h"
+#include "Cliente.h"
 #include "Empleado.h"
 
 class Despachante: public Empleado
@@ -21,7 +23,7 @@ public:
      */
     void set_Pedido(string NuevoEstado);
     
-    void llevar_pedido();
+    void enviar_articulo(Articulo arti, Cliente cli);
 
 private: 
     string Pedido;
