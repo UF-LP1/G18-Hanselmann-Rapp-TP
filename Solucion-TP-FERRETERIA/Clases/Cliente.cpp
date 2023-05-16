@@ -107,7 +107,8 @@ void Cliente::elegir_art(Articulo art)  //agregar al carrito
     int stock;
     stock = art.get_Cantidad();
 
-    if (stock == 0) {
+    if (stock == 0) 
+    {
 
        }
        // throw;
@@ -117,18 +118,3 @@ void Cliente::elegir_art(Articulo art)  //agregar al carrito
     }
 
 }
-
-//int Cliente::generar_Presupuesto()
-//{
-//    vector<Articulo*>::iterator arr;
-
-//    int acum = 0;
-//   int i = 0;
-
-//    for (arr = get_Articulos().begin(); i < get_Articulos().size(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
-//    {
-//        acum = acum + arr[i]->get_Precio() * arr[i]->get_Cantidad();
-//    }
-
-//    return acum;
-//}

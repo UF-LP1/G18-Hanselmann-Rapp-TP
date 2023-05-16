@@ -27,20 +27,13 @@ int main()
 
 	list <Articulo> Articulos;
 
-	Articulos.push_back(Articulo(567, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 34));
-	Articulos.push_back(Articulo(57869, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 434));
-	Articulos.push_back(Articulo(5647827, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4524));
+	Articulos.push_back(Articulo(5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 9));
+	Articulos.push_back(Articulo(9, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 34));
+	Articulos.push_back(Articulo(10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4));
 
 	Cliente Javier = Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos,"Foto", "ArtRoto", true);
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
-
-	/*
-	for (iter = Articulos.begin(); iter != Articulos.end(); iter++)
-	{
-		delete iter;  // Eliminar el objeto apuntado por el puntero actual
-	}
-	*/
 
 	return 0;
 }
