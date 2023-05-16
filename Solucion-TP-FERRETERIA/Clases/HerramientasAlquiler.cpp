@@ -10,7 +10,7 @@
 
 HerramientasAlquiler::HerramientasAlquiler(TipoHerrAlquiler HerrAlquiler_, string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_)
 {
-    this->TipoHerrAlquiler = HerrAlquiler_;
+    this->HerrAlquiler = HerrAlquiler_;
     this->Modelo = Modelo_;
     this->Condicion = Condicion_;
     this->PrecioSeguro = PrecioSeguro_;
