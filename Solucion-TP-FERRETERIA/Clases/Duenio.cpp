@@ -50,6 +50,8 @@ void Duenio::atender_cliente(Cliente cli)
  */
 void Duenio::identificar_art(Cliente cli) 
 {
+   // cout << "Mostrar articulo en devolucion:" << cli.get_ArtRoto << endl;
+
     return;
 }
 
