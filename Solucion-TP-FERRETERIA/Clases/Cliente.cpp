@@ -8,7 +8,7 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(string Nombre_, string Apellido_, const string DNI_, TipoSexo Sexo_, string Direccion_, MetodoPago MetodoPagoCli_, vector<Articulo*> Articulos_, const string Foto_, const string ArtRoto_, bool EnvoltorioIntaco_) :Persona(Nombre_, Apellido_, DNI_, Sexo_)
+Cliente::Cliente(string Nombre_, string Apellido_, const string DNI_, TipoSexo Sexo_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, const string Foto_, const string ArtRoto_, bool EnvoltorioIntaco_) :Persona(Nombre_, Apellido_, DNI_, Sexo_)
 {
     this->Direccion = Direccion_;
     this->MetodoPagoCli = MetodoPagoCli_;
@@ -40,7 +40,7 @@ MetodoPago Cliente::get_MetodoPagoCli()
 /**
  * @return string
  */
-vector <Articulo*> Cliente::get_Articulos()
+list <Articulo> Cliente::get_Articulos()
 {
     return this->Articulos;
 }
@@ -87,7 +87,7 @@ void Cliente::set_Direccion(string NuevoEstado)
  * @param string
  * @return void
  */
-void Cliente::set_Articulos(vector <Articulo*> NuevoEstado)
+void Cliente::set_Articulos(list <Articulo> NuevoEstado)
 {
     this->Articulos= NuevoEstado;
 }

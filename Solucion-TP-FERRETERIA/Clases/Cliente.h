@@ -15,7 +15,7 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(string, string, const string, TipoSexo, string, MetodoPago, vector<Articulo*>, const string, const string, bool);
+    Cliente(string, string, const string, TipoSexo, string, MetodoPago, list<Articulo>, const string, const string, bool);
 
     ~Cliente();
     
@@ -23,7 +23,7 @@ public:
     
     MetodoPago get_MetodoPagoCli();
     
-    vector <Articulo*> get_Articulos();
+    list <Articulo> get_Articulos();
         
     const string get_Foto();
     
@@ -41,7 +41,7 @@ public:
     /**
      * @param string
      */
-    void set_Articulos(vector <Articulo*> NuevoEstado);
+    void set_Articulos(list <Articulo> NuevoEstado);
     
     void set_EnvoltorioIntacto(bool NuevoEstado);
     
@@ -55,7 +55,7 @@ public:
 private: 
     string Direccion;
     MetodoPago MetodoPagoCli;
-    vector <Articulo*> Articulos;
+    list <Articulo> Articulos;
     const string Foto;
     const string ArtRoto;
     bool EnvoltorioIntacto;
