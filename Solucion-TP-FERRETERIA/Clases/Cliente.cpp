@@ -103,12 +103,7 @@ void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)
  */
 void Cliente::elegir_art(Articulo art)  //agregar al carrito
 {
-    /* cin>>"Ingresar artículo seleccionado:">> art.get_cantidad>> "En caso de tener foto mostrar:">> endl;
-    * 
-    * if(art.get_cantidad!=0){
-    * 
-    *     
-    */
+    /*this->Articulos.push_back(art);*/
 }
 
 //int Cliente::generar_Presupuesto()
