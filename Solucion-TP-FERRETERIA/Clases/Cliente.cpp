@@ -103,7 +103,19 @@ void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)
  */
 void Cliente::elegir_art(Articulo art)  //agregar al carrito
 {
-    /*this->Articulos.push_back(art);*/
+
+    int stock;
+    stock = art.get_Cantidad();
+
+    if (stock == 0) {
+
+       }
+       // throw;
+
+    else {
+        this->Articulos.push_back(art);
+    }
+
 }
 
 //int Cliente::generar_Presupuesto()
