@@ -29,7 +29,7 @@ void Despachante::set_Pedido(string NuevoEstado)
     this->Pedido = NuevoEstado;
 }
 
-bool Despachante::enviar_articulo(Articulo arti, Cliente cli) //enviamos ek articulo a la direccion del cliente
+bool Despachante::enviar_articulo(Articulo arti, Cliente cli) //enviamos el articulo a la direccion del cliente
 {
     if (cli.get_EnvioDomicilio() == true)
     {
