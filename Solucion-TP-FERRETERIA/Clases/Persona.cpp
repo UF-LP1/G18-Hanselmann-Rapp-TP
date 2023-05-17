@@ -4,7 +4,7 @@
  * Persona implementation
  */
 
-Persona::Persona(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_):DNI(DNI_)
+Persona::Persona(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_): DNI(DNI_)
 {
     this->Nombre = Nombre_;
     this->Apellido = Apellido_;
@@ -28,7 +28,7 @@ string Persona::get_Apellido()
 
 const string Persona::get_DNI() 
 {
-    return this->DNI;
+    return DNI;
 }
 
 TipoSexo Persona::get_Sexo() 
