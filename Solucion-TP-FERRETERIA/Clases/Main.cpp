@@ -48,17 +48,16 @@ int main()
 
 	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 
-	cout << "Los datos de la foto/Articulo roto: " << due.identificar_art(Javier) << endl;
+	cout << "1 = Trajo una Foto o ArtRoto y 0 = No trajo ninguna de las dos: " << due.identificar_art(Javier, art) << endl;
 
-	try {
-
+	try 
+	{
 		throw -5;
 	}
 
-	catch(int stock){
-	
-			cout << "Se encontro un error" << endl;
-
+	catch(int stock)
+	{
+		cout << "Se encontro un error" << endl;
 	}
 
 	return 0;

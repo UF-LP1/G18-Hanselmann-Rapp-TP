@@ -27,7 +27,7 @@ public:
     /**
      * @param Cliente
      */
-    int identificar_art(Cliente cli);
+    bool identificar_art(Cliente cli, Articulo art);
     
     /**
      * @param Articulo
