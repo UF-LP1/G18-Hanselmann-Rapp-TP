@@ -48,5 +48,7 @@ int main()
 
 	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier);
 
+	cout << "Los datos de la foto/Articulo roto: " << due.identificar_art(Javier);
+
 	return 0;
 }
