@@ -32,9 +32,14 @@ int main()
 	list <Articulo> Articulos;
 	list <HerramientasAlquiler> Amoladorcita;
 
-	Articulos.push_back(Articulo(5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 0));
-	Articulos.push_back(Articulo(15, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 57));
-	Articulos.push_back(Articulo(10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4));
+	
+	Articulo art1 (5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 0);
+	Articulo art2 (15, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 57);
+	Articulo art3 (10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4);
+
+	Articulos.push_back(art1);
+	Articulos.push_back(art2);
+	Articulos.push_back(art3);
 
 	Amoladorcita.push_back(HerramientasAlquiler(Amoladoras, "Casio", "Perfecta", 490, 57, 0));
 	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Medio", 490, 217, 3));
@@ -63,6 +68,8 @@ int main()
 	string DupiLLavecita = cerraj.DuplicarLlaves(llave, Javier) ? "El cliente quiere duplicar una llave" : "El cliente no quiere duplicar ninguna llave."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
 	cout << DupiLLavecita << endl;
+
+	cout << Articulo::get_CantidadMaximaArticulos() << endl;
 
 	try 
 	{

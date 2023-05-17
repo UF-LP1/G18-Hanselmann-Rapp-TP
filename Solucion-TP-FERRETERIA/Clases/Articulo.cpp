@@ -4,6 +4,8 @@
  * Articulo implementation
  */
 
+unsigned int Articulo::CantidadMaximaArticulos = 0;
+
 Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_)
 {
     this->Precio = Precio_;
@@ -14,11 +16,12 @@ Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string
     this->Ancho = Ancho_;
     this->Largo = Largo_;
     this->Cantidad = Cantidad_;
+    CantidadMaximaArticulos++;
 }
 
 Articulo::~Articulo()
 {
-
+    CantidadMaximaArticulos--;
 }
 
 unsigned int Articulo::get_Precio() 
@@ -59,6 +62,11 @@ float Articulo::get_Largo()
 unsigned int Articulo::get_Cantidad() 
 {
     return this->Cantidad;
+}
+
+unsigned int Articulo::get_CantidadMaximaArticulos()
+{
+    return CantidadMaximaArticulos;
 }
 
 void Articulo::set_Precio(unsigned int NuevoEstado) 

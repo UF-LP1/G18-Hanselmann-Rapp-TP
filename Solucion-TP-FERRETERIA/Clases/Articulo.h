@@ -21,6 +21,7 @@ protected:
     float Ancho;
     float Largo;
     unsigned int Cantidad;
+    static unsigned int CantidadMaximaArticulos;
     friend class ArtFerreteria;
     friend class Banio;
     friend class Bazar;
@@ -49,6 +50,8 @@ public:
     float get_Largo();
     
     unsigned int get_Cantidad();
+
+    static unsigned int get_CantidadMaximaArticulos();
 
     void set_Precio(unsigned int NuevoEstado);
  
