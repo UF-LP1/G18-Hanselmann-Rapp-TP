@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _ARTICULO_H
 #define _ARTICULO_H
 

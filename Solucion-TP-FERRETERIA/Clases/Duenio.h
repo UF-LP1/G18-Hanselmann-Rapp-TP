@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _DUENIO_H
 #define _DUENIO_H
 

@@ -50,8 +50,6 @@ public:
      */
     void elegir_art(Articulo art); 
 
-    //int generar_Presupuesto();
-
 private: 
     string Direccion;
     MetodoPago MetodoPagoCli;

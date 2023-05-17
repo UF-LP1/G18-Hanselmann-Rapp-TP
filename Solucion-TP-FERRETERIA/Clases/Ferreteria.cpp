@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Ferreteria.h"
 
 /**
@@ -78,33 +74,31 @@ bool Ferreteria::abrir(Horario hor)
     time(&timer);
     tiempolocal = localtime(&timer);
     
-    if (hor.get_Semanita() == Lunes || hor.get_Semanita() == Martes || hor.get_Semanita() == Miercoles || hor.get_Semanita() == Jueves || hor.get_Semanita() == Viernes || hor.get_Semanita() == Sabado)
+    if (tiempolocal->tm_wday == 1 || tiempolocal->tm_wday == 2 || tiempolocal->tm_wday == 3 || tiempolocal->tm_wday == 4 || tiempolocal->tm_wday == 5)
     {
-        if (tiempolocal->tm_wday == 1 || tiempolocal->tm_wday == 2 || tiempolocal->tm_wday == 3 || tiempolocal->tm_wday == 4 || tiempolocal->tm_wday == 5)
+        if (tiempolocal->tm_hour >= 7 && tiempolocal->tm_min > 30)
         {
-            if (tiempolocal->tm_hour >= 7 && tiempolocal->tm_hour <= 13)
-            {
-                return true;
-            }
-            if (tiempolocal->tm_hour >= 17 && tiempolocal->tm_hour <= 20)
+            if (tiempolocal->tm_hour <= 13)
             {
                 return true;
             }
         }
-        if (tiempolocal->tm_wday == 6)
+        if (tiempolocal->tm_hour >= 17 && tiempolocal->tm_hour <= 20)
         {
-            if (tiempolocal->tm_hour >= 8 && tiempolocal->tm_hour <= 13)
-            {
-                return true;
-            }
+            return true;
         }
-        else
-            return false;
+    }
+    if (tiempolocal->tm_wday == 6)
+    {
+        if (tiempolocal->tm_hour >= 8 && tiempolocal->tm_hour <= 13)
+        {
+            return true;
+        }
     }
     else
-        return false;
+         return false;
 }
-
+   
 /**
  * @param Articulo
  * @param Empleado

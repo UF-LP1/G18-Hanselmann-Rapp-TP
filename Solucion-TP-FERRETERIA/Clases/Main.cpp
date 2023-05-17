@@ -15,7 +15,7 @@ int main()
 	Ferreteria ferr = Ferreteria("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
 	time_t tiempito;
 	time(&tiempito);
-	Horario horacio = Horario(Lunes, tiempito);
+	Horario horacio = Horario(tiempito);
 
 	bool abierto = false;
 	abierto = ferr.abrir(horacio);
@@ -27,7 +27,7 @@ int main()
 
 	list <Articulo> Articulos;
 
-	Articulos.push_back(Articulo(5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 9));
+	Articulos.push_back(Articulo(5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 0));
 	Articulos.push_back(Articulo(195, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 57));
 	Articulos.push_back(Articulo(10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4));
 

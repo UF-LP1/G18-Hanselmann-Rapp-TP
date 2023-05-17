@@ -1,7 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-/**
- * Project Untitled
- */
 
 #include "Horario.h"
 #include "Articulo.h"
