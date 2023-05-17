@@ -50,5 +50,6 @@ int main()
 
 	cout << "Los datos de la foto/Articulo roto: " << due.identificar_art(Javier) << endl;
 
+	
 	return 0;
 }
