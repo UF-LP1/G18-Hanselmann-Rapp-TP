@@ -15,7 +15,7 @@ protected:
 
 public: 
 
-    Electricidad(unsigned int, bool, string, string, float, float, float, unsigned int, unsigned int, unsigned int);
+    Electricidad(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, unsigned int Tension_, unsigned int Potencia_);
 
     ~Electricidad();
     

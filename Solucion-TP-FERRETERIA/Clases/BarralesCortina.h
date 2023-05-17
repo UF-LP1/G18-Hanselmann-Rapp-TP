@@ -12,7 +12,7 @@ class BarralesCortina: public Banio
 {
 public: 
     
-    BarralesCortina(unsigned int, bool, string, string, float, float, float, unsigned int, bool, TipoBarreles, string, unsigned int);
+    BarralesCortina(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, bool RepuestoArt_, TipoBarreles Barralito_, string MaterialBarreles_, unsigned int Ganchos_);
 
     ~BarralesCortina();
 
