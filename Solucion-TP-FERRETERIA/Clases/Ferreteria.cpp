@@ -4,7 +4,7 @@
  * Ferreteria implementation
  */
 
-Ferreteria::Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_)
+Ferreteria::Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_):Nombre(Nombre_), Direccion(Direccion_), Telefono(Telefono_)
 {
     this->MetodoPagoFerreteria = MetodoPagoFerreteria_;
 }
@@ -44,7 +44,7 @@ void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado)
     this->MetodoPagoFerreteria = NuevoEstado;
 }
 
-bool Ferreteria::abrir(Horario hor) 
+bool Ferreteria::abrir(Horario hor) //Funcion que abre la ferreteria segun el horario: atiende de lunes a viernes de 730 a 13 y de 17 a 20. Los sábados de 8 a 13.
 {
     time_t timer;
     struct tm* tiempolocal;
@@ -76,7 +76,7 @@ bool Ferreteria::abrir(Horario hor)
          return false;
 }
    
-int Ferreteria::generar_Presupuesto(Cliente cli)
+int Ferreteria::generar_Presupuesto(Cliente cli) //Calculo el presupuesto generado, según lo que quiera el cliente
 {
     list<Articulo>::iterator itArt;
     list <HerramientasAlquiler>::iterator itHerrAlq;
@@ -90,7 +90,7 @@ int Ferreteria::generar_Presupuesto(Cliente cli)
     itArt = arti.begin();
     itHerrAlq = herr.begin();
     
-    for (i = 0; i < arti.size(); i++, itArt++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
+    for (i = 0; i < arti.size(); i++, itArt++) //recorre el vector de articulos en el iterador itArt desde el principio hasta el final
     {
         if ((*itArt).get_Cantidad() > 0)
         {
@@ -101,7 +101,7 @@ int Ferreteria::generar_Presupuesto(Cliente cli)
             cout << "No hay Cantidad del Producto: " << itArt->get_TipoProducto() << endl;
         }
     }
-    for (i = 0; i < herr.size(); i++, itHerrAlq++)
+    for (i = 0; i < herr.size(); i++, itHerrAlq++) //Calculamos lo que saldria alquilar las Herraminetas segun las horas requeridas.
     {
         if ((*itHerrAlq).get_Cant_Horas_Alquiler() > 0)
         {

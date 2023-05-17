@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _CERRADURAS_H
 #define _CERRADURAS_H
 
@@ -17,10 +13,8 @@ public:
     
     TipoCerradura get_Cerrad();
     
-    /**
-     * @param TipoCerradura
-     */
     void set_Cerrad(TipoCerradura NuevoEstado);
+
 private: 
     TipoCerradura Cerrad;
 };

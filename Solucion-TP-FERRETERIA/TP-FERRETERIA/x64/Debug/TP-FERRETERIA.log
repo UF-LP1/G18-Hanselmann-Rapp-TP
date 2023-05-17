@@ -1,20 +1,3 @@
-﻿  Cerraduras.cpp
-  Cerrajeria.cpp
-  Cerrajero.cpp
-  Cerrojos.cpp
-  Cliente.cpp
-  Despachante.cpp
-  Duenio.cpp
-  Ferreteria.cpp
-  LLaves.cpp
-  Main.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(37,80): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(38,84): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(39,84): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(47,78): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(49,107): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(70,12): warning C4101: 'stock': variable local sin referencia
-  Generando código...
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(77): warning C4715: 'Ferreteria::abrir': no todas las rutas de acceso de control devuelven un valor
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(116): warning C4715: 'Duenio::CambioArticulo': no todas las rutas de acceso de control devuelven un valor
+﻿  Cliente.cpp
+C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(144): warning C4715: 'Cliente::elegir_art': no todas las rutas de acceso de control devuelven un valor
   TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe

@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Cerrajeria.h"
 
 /**
@@ -18,18 +14,11 @@ Cerrajeria::~Cerrajeria()
 
 }
 
-/**
- * @return string
- */
 string Cerrajeria::get_MaterialCerraj() 
 {
     return this->MaterialCerraj;
 }
 
-/**
- * @param string
- * @return void
- */
 void Cerrajeria::set_MaterialCerraj(string NuevoEstado)
 {
     this->MaterialCerraj = NuevoEstado;

@@ -40,9 +40,6 @@ public:
 
     bool get_Dupllaves();
     
-    /**
-     * @param MetodoPago
-     */
     void set_MetodoPagoCli(MetodoPago NuevoEstado);
 
     void set_Foto(string NuevoEstado);
@@ -50,18 +47,12 @@ public:
     void set_ArtRoto(string NuevoEstado);
 
     void set_Direccion(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_Articulos(list <Articulo> NuevoEstado);
     
     void set_EnvoltorioIntacto(bool NuevoEstado);
-    
-    /**
-     * @param Precio
-     */
-    void elegir_art(Articulo art); 
+
+    int elegir_art(Articulo art); 
 
     void set_Herr_Alquiler(list <HerramientasAlquiler> NuevoEstado);
 

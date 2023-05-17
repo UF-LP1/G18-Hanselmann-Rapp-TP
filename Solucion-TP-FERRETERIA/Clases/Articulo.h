@@ -50,20 +50,10 @@ public:
     
     unsigned int get_Cantidad();
 
-    
-    /**
-     * @param unsigned float
-     */
     void set_Precio(unsigned int NuevoEstado);
-    
-    /**
-     * @param bool
-     */
+ 
     void set_Cambio(bool NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_EstadoArt(string NuevoEstado);
          
     void set_TipoProducto(string NuevoEstado);
@@ -74,9 +64,6 @@ public:
 
     void set_Largo(float NuevoEstado);
 
-    /**
-     * @param unsigned int
-     */
     void set_Cantidad(unsigned int NuevoEstado);
 
 };

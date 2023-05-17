@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _CERROJOS_H
 #define _CERROJOS_H
 
@@ -16,10 +12,7 @@ public:
     ~Cerrojos();
     
     TipoCerrojo get_Cerroj();
-    
-    /**
-     * @param TipoCerrojo
-     */
+
     void set_Cerroj(TipoCerrojo NuevoEstado);
 
 private: 

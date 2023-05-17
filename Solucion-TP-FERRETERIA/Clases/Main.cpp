@@ -64,7 +64,7 @@ int main()
 
 	try 
 	{
-		throw -5;
+		throw Javier.elegir_art(art);
 	}
 
 	catch(int stock)

@@ -1,4 +1,3 @@
-
 #ifndef _DESPACHANTE_H
 #define _DESPACHANTE_H
 
@@ -16,10 +15,7 @@ public:
     string get_Nombre();
         
     string get_Pedido();
-    
-    /**
-     * @param string
-     */
+  
     void set_Pedido(string NuevoEstado);
     
     static bool enviar_articulo(Articulo arti, Cliente cli);

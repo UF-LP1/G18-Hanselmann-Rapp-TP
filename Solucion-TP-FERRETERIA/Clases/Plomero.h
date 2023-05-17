@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _PLOMERO_H
 #define _PLOMERO_H
 
@@ -12,7 +8,7 @@ class Plomero: public Empleado
 {
 public: 
 
-    Plomero(string, string, string, TipoSexo, unsigned int, string, time_t, TipoTuberia, float, float);
+    Plomero(const string, string, string, TipoSexo, unsigned int, string, time_t, TipoTuberia, float, float);
     ~Plomero();
 
     string get_Nombre();
@@ -23,23 +19,12 @@ public:
     
     float get_Ancho();
     
-    /**
-     * @param TipoTuberia
-     */
     void set_Tuberias(TipoTuberia tub);
-    
-    /**
-     * @param unsigned float
-     */
+ 
     void set_Longitud(float NuevoEstado);
-    
-    /**
-     * @param unsigned float
-     */
+
     void set_Ancho(float NuevoEstado);
     
-    void Mantenimiento_tuberias();
-
 private: 
     TipoTuberia Tuberias;
     float Longitud;

@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "ArtFerreteria.h"
 
 /**
@@ -17,18 +13,11 @@ ArtFerreteria::~ArtFerreteria()
 
 }
 
-/**
- * @return string
- */
 string ArtFerreteria::get_MaterialArtFerr() 
 {
     return this->MaterialArtFerr;
 }
 
-/**
- * @param string
- * @return void
- */
 void ArtFerreteria::set_MaterialArtFerr(string NuevoEstado) 
 {
     this->MaterialArtFerr = NuevoEstado;

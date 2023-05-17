@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "LLaves.h"
 
 /**
@@ -19,9 +15,6 @@ LLaves::~LLaves()
 
 }
 
-/**
- * @return TipoLlave
- */
 TipoLLave LLaves::get_LLavecita() 
 {
     return this->LLavecita;
@@ -32,10 +25,6 @@ bool LLaves::get_PermisoEdificio()
     return this->PermisoEdificio;
 }
 
-/**
- * @param TipoLlave
- * @return void
- */
 void LLaves::set_LLavecita(TipoLLave NuevoEstado) 
 {
     this->LLavecita = NuevoEstado;

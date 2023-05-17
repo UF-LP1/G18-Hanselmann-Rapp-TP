@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Cerrajero.h"
 
 /**
@@ -23,28 +19,17 @@ string Cerrajero::get_Nombre()
     return this->Nombre;
 }
 
-/**
- * @return string
- */
 string Cerrajero::get_Alarma() 
 {
     return this->Alarma;
 }
 
-/**
- * @param string
- * @return void
- */
 void Cerrajero::set_Alarma(string NuevoEstado) 
 {
     this->Alarma = NuevoEstado;
 }
 
-/**
- * @param string
- * @return string
- */
-bool Cerrajero::DuplicarLlaves(LLaves llavelinda, Cliente cli)
+bool Cerrajero::DuplicarLlaves(LLaves llavelinda, Cliente cli) //Funcion duplicamos la llave segun lo que quiera el cliente
 {
     if (llavelinda.get_LLavecita() == LLavesMagneticas)
     {

@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Duenio.h"
 
 /**
@@ -23,37 +19,22 @@ string Duenio::get_Nombre()
     return this->Nombre;
 }
 
-/**
- * @return bool
- */
 bool Duenio::get_Disponibilidad() 
 {
     return this->Disponibilidad;
 }
 
-/**
- * @param bool
- * @return void
- */
 void Duenio::set_Disponibilidad(bool NuevoEstado) 
 {
     this->Disponibilidad = NuevoEstado;
 }
 
-/**
- * @param Cliente
- * @return void
- */
 void Duenio::atender_cliente(Cliente cli) 
 {
     return;
 }
 
-/**
- * @param Cliente
- * @return void
- */
-bool Duenio::identificar_art(Cliente cli, Articulo art) 
+bool Duenio::identificar_art(Cliente cli, Articulo art) //Identificamos si quiere cambiar un articulo segun una Foto o un Articulo Roto
 {
     list<Articulo>::iterator itArt; 
     list<Articulo> arti = cli.get_Articulos();
@@ -74,7 +55,7 @@ bool Duenio::identificar_art(Cliente cli, Articulo art)
 
 }
 
-int Duenio::CambioArticulo(Articulo art, Cliente cli)
+int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articulos tienen cambio o no según los criterios dados
 {
     list<Articulo>::iterator itArt;
 
@@ -113,31 +94,4 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli)
             }        
         }
     }
-}
-
-/**
- * @param Articulo
- * @return string
- */
-string Duenio::revisar_art(Articulo art) 
-{
-    return "";
-}
-
-/**
- * @return void
- */
-bool Duenio::abrir_ferreteria() 
-{
-    return false;
-}
-
-/**
- * @param Cliente
- * @param Herramientas
- * @return bool
- */
-bool Duenio::dar_HerramientasCliente(Cliente cli, HerramientasAlquiler herralq) 
-{
-    return false;
 }

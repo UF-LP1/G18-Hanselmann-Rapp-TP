@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _LLAVES_H
 #define _LLAVES_H
 
@@ -19,9 +15,6 @@ public:
 
     bool get_PermisoEdificio();
     
-    /**
-     * @param TipoLlave
-     */
     void set_LLavecita(TipoLLave NuevoEstado);
 
     void set_PermisoEdificio(bool NuevoEstado);

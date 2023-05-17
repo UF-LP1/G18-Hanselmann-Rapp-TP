@@ -34,25 +34,13 @@ public:
     unsigned int get_PrecioAlquiler();
 
     unsigned int get_Cant_Horas_Alquiler();
-    
-    /**
-     * @param string
-     */
+  
     void set_Modelo(string NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_Condicion(string NuevoEstado);
     
-    /**
-     * @param unsigned float
-     */
     void set_PrecioSeguro(unsigned int NuevoEstado);
     
-    /**
-     * @param unsigned float
-     */
     void set_PrecioAlquiler(unsigned int NuevoEstado);
 
     void set_TipoHerrAlquiler (TipoHerrAlquiler NuevoEstado);

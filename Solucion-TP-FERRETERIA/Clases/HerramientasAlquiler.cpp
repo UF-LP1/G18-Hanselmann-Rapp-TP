@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "HerramientasAlquiler.h"
 
 /**
@@ -63,19 +59,11 @@ void HerramientasAlquiler::set_Condicion(string NuevoEstado)
     this->Condicion = NuevoEstado;
 }
 
-/**
- * @param unsigned float
- * @return void
- */
 void HerramientasAlquiler::set_PrecioSeguro(unsigned int NuevoEstado)
 {
     this->PrecioSeguro = NuevoEstado;
 }
 
-/**
- * @param unsigned float
- * @return void
- */
 void HerramientasAlquiler::set_PrecioAlquiler(unsigned int NuevoEstado)
 {
     this->PrecioAlquiler = NuevoEstado;

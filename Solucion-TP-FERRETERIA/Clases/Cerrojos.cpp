@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Cerrojos.h"
 
 /**
@@ -18,18 +14,11 @@ Cerrojos::~Cerrojos()
 
 }
 
-/**
- * @return TipoCerrojo
- */
 TipoCerrojo Cerrojos::get_Cerroj() 
 {
     return this->Cerroj;
 }
 
-/**
- * @param TipoCerrojo
- * @return void
- */
 void Cerrojos::set_Cerroj(TipoCerrojo NuevoEstado) 
 {
     this->Cerroj = NuevoEstado;

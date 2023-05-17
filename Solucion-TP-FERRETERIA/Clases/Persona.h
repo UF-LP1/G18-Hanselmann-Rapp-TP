@@ -40,19 +40,10 @@ public:
     
     TipoSexo get_Sexo();
     
-    /**
-     * @param string
-     */
     void set_Nombre(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+   
     void set_Apellido(string NuevoEstado);
-    
-    /**
-     * @param TipoSexo
-     */
+   
     void set_Sexo(TipoSexo NuevoEstado);
 };
 

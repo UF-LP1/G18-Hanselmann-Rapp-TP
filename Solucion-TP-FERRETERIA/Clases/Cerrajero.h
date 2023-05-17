@@ -20,15 +20,9 @@ public:
     string get_Nombre();
       
     string get_Alarma();
-    
-    /**
-     * @param string
-     */
+
     void set_Alarma(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+   
     bool DuplicarLlaves(LLaves llavelinda, Cliente cli);
     
 private: 

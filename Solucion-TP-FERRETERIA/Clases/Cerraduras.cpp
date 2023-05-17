@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Cerraduras.h"
 
 /**
@@ -17,18 +13,11 @@ Cerraduras::~Cerraduras()
 
 }
 
-/**
- * @return TipoCerradura
- */
 TipoCerradura Cerraduras::get_Cerrad() 
 {
     return this->Cerrad;
 }
 
-/**
- * @param TipoCerradura
- * @return void
- */
 void Cerraduras::set_Cerrad(TipoCerradura NuevoEstado) 
 {
     this->Cerrad = NuevoEstado;

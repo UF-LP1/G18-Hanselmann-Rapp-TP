@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Despachante.h"
 
 /**
@@ -23,27 +19,17 @@ string Despachante::get_Nombre()
     return this->Nombre;
 }
 
-/**
- * @return string
- */
 string Despachante::get_Pedido()
 {
     return this->Pedido;
 }
 
-/**
- * @param string
- * @return void
- */
 void Despachante::set_Pedido(string NuevoEstado) 
 {
     this->Pedido = NuevoEstado;
 }
 
-/**
- * @return void
- */
-bool Despachante::enviar_articulo(Articulo arti, Cliente cli)
+bool Despachante::enviar_articulo(Articulo arti, Cliente cli) //enviamos ek articulo a la direccion del cliente
 {
     if (cli.get_EnvioDomicilio() == true)
     {

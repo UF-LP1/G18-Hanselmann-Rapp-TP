@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _CERRAJERIA_H
 #define _CERRAJERIA_H
 
@@ -22,10 +18,7 @@ public:
     ~Cerrajeria();
     
     string get_MaterialCerraj();
-    
-    /**
-     * @param string
-     */
+ 
     void set_MaterialCerraj(string NuevoEstado);
 
 };

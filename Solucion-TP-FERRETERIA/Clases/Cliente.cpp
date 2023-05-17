@@ -28,49 +28,31 @@ string Cliente::get_Nombre()
     return this->Nombre;
 }
 
-/**
- * @return const string
- */
 string Cliente::get_Direccion() 
 {
     return this->Direccion;
 }
 
-/**
- * @return MetodoPago
- */
 MetodoPago Cliente::get_MetodoPagoCli() 
 {
     return this->MetodoPagoCli;
 }
 
-/**
- * @return string
- */
 list <Articulo> Cliente::get_Articulos()
 {
     return this->Articulos;
 }
 
-/**
- * @return const string
- */
 string Cliente::get_Foto() 
 {
     return this->Foto;
 }
 
-/**
- * @return const string
- */
 string Cliente::get_ArtRoto() 
 {
     return this->ArtRoto;
 }
 
-/**
- * @return const bool
- */
 bool Cliente::get_EnvoltorioIntacto() 
 {
     return this->EnvoltorioIntacto;
@@ -91,10 +73,6 @@ bool Cliente::get_Dupllaves()
     return this->duplicadollave;
 }
 
-/**
- * @param MetodoPago
- * @return void
- */
 void Cliente::set_MetodoPagoCli(MetodoPago NuevoEstado) 
 {
     this->MetodoPagoCli = NuevoEstado;
@@ -115,10 +93,6 @@ void Cliente::set_Direccion(string NuevoEstado)
     this->Direccion = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void Cliente::set_Articulos(list <Articulo> NuevoEstado)
 {
     this->Articulos = NuevoEstado;
@@ -144,21 +118,27 @@ void Cliente::set_Dupllaves(bool NuevoEstado)
     this->duplicadollave = NuevoEstado;
 } 
 
-/**
- * @param Precio
- * @return void
- */
-void Cliente::elegir_art(Articulo art)  //agregar al carrito
+int Cliente::elegir_art(Articulo art)  //Agregar al carrito y probamos el Trycatch (Arreglarlo)
 {
-    int stock;
-    stock = art.get_Cantidad();
+    list<Articulo>::iterator itArt;
+ 
+    list<Articulo> arti = get_Articulos();
 
-    if (stock <= 0) 
+    itArt = arti.begin();
+    int stock=0, i=0;
+    stock = itArt->get_Cantidad();
+
+    for (i = 0; i < arti.size(); i++, itArt++)
     {
-        throw stock;
-    }
-    else
-    {
-        this->Articulos.push_back(art);
+        if (stock <= 0)
+        {
+            stock = itArt->get_Cantidad();
+            throw stock;
+        }
+        else
+        {
+            this->Articulos.push_back(art);
+            return itArt->get_Cantidad();
+        }
     }
 }

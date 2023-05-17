@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _ARTFERRETERIA_H
 #define _ARTFERRETERIA_H
 
@@ -19,10 +15,7 @@ public:
     ~ArtFerreteria();
     
     string get_MaterialArtFerr();
-    
-    /**
-     * @param string
-     */
+ 
     void set_MaterialArtFerr(string NuevoEstado);
 
 };
