@@ -6,7 +6,6 @@
 
 Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
-    this->duplicadollave = duplicadollave_;
     this->Foto = Foto_;
     this->ArtRoto = ArtRoto_;
     this->Direccion = Direccion_;
@@ -15,6 +14,7 @@ Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo S
     this->EnvoltorioIntacto = EnvoltorioIntaco_;
     this->Herr_Alquiler = Herr_Alquiler_;
     this->EnvioDomicilio = EnvioDomicilio_;
+    this->duplicadollave = duplicadollave_;
 }
 
 Cliente::~Cliente()
@@ -88,7 +88,6 @@ bool Cliente::get_EnvioDomicilio()
 
 bool Cliente::get_Dupllaves()
 {
-
     return this->duplicadollave;
 }
 
@@ -142,7 +141,6 @@ void Cliente::set_EnvioDomicilio(bool NuevoEstado)
 
 void Cliente::set_Dupllaves(bool NuevoEstado)
 {
-
     this->duplicadollave = NuevoEstado;
 } 
 

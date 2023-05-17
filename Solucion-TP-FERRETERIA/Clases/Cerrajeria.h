@@ -11,6 +11,9 @@ class Cerrajeria: public Articulo
 {
 protected:
     string MaterialCerraj;
+    friend class Cerraduras;
+    friend class Cerrojos;
+    friend class LLaves;
 
 public: 
 

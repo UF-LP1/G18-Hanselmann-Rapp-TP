@@ -8,6 +8,7 @@
 #include "Cliente.h"
 #include "Empleado.h"
 #include "Cerrajeria.h"
+#include "LLaves.h"
 
 class Cerrajero: public Empleado 
 {
@@ -28,7 +29,7 @@ public:
     /**
      * @param string
      */
-    bool DuplicarLlaves(Cerrajeria cerraj, Cliente cli);
+    bool DuplicarLlaves(LLaves llavelinda, Cliente cli);
     
 private: 
     string Alarma;

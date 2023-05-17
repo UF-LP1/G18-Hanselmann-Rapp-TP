@@ -44,9 +44,22 @@ void Cerrajero::set_Alarma(string NuevoEstado)
  * @param string
  * @return string
  */
-bool Cerrajero::DuplicarLlaves(Cerrajeria cerraj, Cliente cli)
+bool Cerrajero::DuplicarLlaves(LLaves llavelinda, Cliente cli)
 {
-    if(cerraj.)
+    if (llavelinda.get_LLavecita() == LLavesMagneticas)
+    {
+        if (cli.get_Dupllaves() == true && llavelinda.get_PermisoEdificio() == true)
+        {
+            cout << "Duplico una llave: " << llavelinda.get_LLavecita() << " del edificio:" << cli.get_Direccion() << endl;
 
-    return false;
+            return true;
+        }
+        else
+        {
+            cout << "No tengo permiso para duplicar la llave." << endl;
+            return false;
+        }
+    }
+    else
+        return false;
 }
