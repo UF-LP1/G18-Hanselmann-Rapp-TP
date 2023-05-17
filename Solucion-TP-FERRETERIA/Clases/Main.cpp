@@ -38,7 +38,7 @@ int main()
 	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Medio", 490, 217, 3));
 	Amoladorcita.push_back(HerramientasAlquiler(Perforadoras, "Casio", "Perfecta", 490, 567, 5));
 
-	Cliente Javier = Cliente("45545166", "Javier", "Peña", Otro, "Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita);
+	Cliente Javier = Cliente("45545166", "Javier", "Peña", Otro,"Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita);
 
 	Articulo art = Articulo(345, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 98);
 
@@ -46,9 +46,9 @@ int main()
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
 
-	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier);
+	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 
-	cout << "Los datos de la foto/Articulo roto: " << due.identificar_art(Javier);
+	cout << "Los datos de la foto/Articulo roto: " << due.identificar_art(Javier) << endl;
 
 	return 0;
 }

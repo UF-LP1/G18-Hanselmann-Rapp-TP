@@ -4,8 +4,10 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, const string Foto_, const string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
+Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
+    this->Foto = Foto_;
+    this->ArtRoto = ArtRoto_;
     this->Direccion = Direccion_;
     this->MetodoPagoCli = MetodoPagoCli_;
     this->Articulos = Articulos_;
@@ -45,7 +47,7 @@ list <Articulo> Cliente::get_Articulos()
 /**
  * @return const string
  */
-const string Cliente::get_Foto() 
+string Cliente::get_Foto() 
 {
     return this->Foto;
 }
@@ -53,7 +55,7 @@ const string Cliente::get_Foto()
 /**
  * @return const string
  */
-const string Cliente::get_ArtRoto() 
+string Cliente::get_ArtRoto() 
 {
     return this->ArtRoto;
 }
@@ -78,6 +80,16 @@ list <HerramientasAlquiler> Cliente::get_Herr_Alquiler()
 void Cliente::set_MetodoPagoCli(MetodoPago NuevoEstado) 
 {
     this->MetodoPagoCli = NuevoEstado;
+}
+
+void Cliente::set_Foto(string NuevoEstado)
+{
+    this->Foto = NuevoEstado;
+}
+
+void Cliente::set_Foto(string NuevoEstado)
+{
+    this->ArtRoto = NuevoEstado;
 }
 
 void Cliente::set_Direccion(string NuevoEstado)

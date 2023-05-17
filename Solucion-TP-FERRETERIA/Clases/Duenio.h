@@ -8,7 +8,7 @@ class Duenio: public Persona
 {
 public: 
     
-    Duenio(string, string, string, TipoSexo, bool);
+    Duenio(const string, string, string, TipoSexo, bool);
 
     ~Duenio();
 

@@ -15,7 +15,7 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(const string, string, string, TipoSexo, const string, const string, string, MetodoPago, list<Articulo>, bool, list <HerramientasAlquiler>);
+    Cliente(const string, string, string, TipoSexo, string, string, string, MetodoPago, list<Articulo>, bool, list <HerramientasAlquiler>);
 
     ~Cliente();
     
@@ -25,9 +25,9 @@ public:
     
     list <Articulo> get_Articulos();
         
-    const string get_Foto();
+    string get_Foto();
     
-    const string get_ArtRoto();
+    string get_ArtRoto();
     
     bool get_EnvoltorioIntacto();
 
@@ -37,6 +37,10 @@ public:
      * @param MetodoPago
      */
     void set_MetodoPagoCli(MetodoPago NuevoEstado);
+
+    void set_Foto(string NuevoEstado);
+
+    void set_ArtRoto(string NuevoEstado);
 
     void set_Direccion(string NuevoEstado);
     
@@ -55,8 +59,8 @@ public:
     void set_Herr_Alquiler(list <HerramientasAlquiler> NuevoEstado);
 
 private: 
-    const string Foto;
-    const string ArtRoto;
+    string Foto;
+    string ArtRoto;
     string Direccion;
     MetodoPago MetodoPagoCli;
     list <Articulo> Articulos;

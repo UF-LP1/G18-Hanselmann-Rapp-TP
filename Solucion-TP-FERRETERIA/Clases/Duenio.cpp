@@ -8,7 +8,7 @@
  * Duenio implementation
  */
 
-Duenio::Duenio(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, bool Disponibilidad_):Persona(Nombre_, Apellido_, DNI_, Sexo_)
+Duenio::Duenio(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, bool Disponibilidad_):Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
     this->Disponibilidad = Disponibilidad_;
 }
@@ -53,12 +53,12 @@ int Duenio::identificar_art(Cliente cli)
     list<Articulo>::iterator itArt; 
     list<Articulo> arti = cli.get_Articulos();
 
-    if (cli.get_Foto() == "Foto" || cli.get_ArtRoto() == "Articulo Roto") {
-
+    if (cli.get_Foto() == "Foto" || cli.get_ArtRoto() == "ArtRoto") 
+    {
         return itArt->get_Alto(), itArt->get_Ancho(), itArt->get_Largo();
     }
-    else {
-
+    else 
+    {
         cout << "No trajo foto ni articulo roto" << endl;
 
         return 0;
