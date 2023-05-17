@@ -52,11 +52,17 @@ int main()
 
 	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 
-	cout << "1 = Trajo una Foto o ArtRoto y 0 = No trajo ninguna de las dos: " << due.identificar_art(Javier, art) << endl;
+	string identif_art = due.identificar_art(Javier, art) ? "Trajo una Foto o un Articulo Roto." : "No trajo ni una Foto ni un Articulo Roto."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
-	cout << "1 = El cliente pide un envio a domicilio y 0 = El cliente no pide un envio a domicilio: " << despi.enviar_articulo(art, Javier) << endl;
+	cout << identif_art << endl;
 
-	cout << "1 = El cliente pide duplicar llave y 0 = El cliente no pide duplicar llave: " << cerraj.DuplicarLlaves(llave, Javier) << endl;
+	string envia_Art = despi.enviar_articulo(art, Javier) ? "El cliente quiere un envio a su domicilio." : "El cliente no quiere un envio a domicilio."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
+
+	cout << envia_Art << endl;
+
+	string DupiLLavecita = cerraj.DuplicarLlaves(llave, Javier) ? "El cliente quiere duplicar una llave" : "El cliente no quiere duplicar ninguna llave."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
+
+	cout << DupiLLavecita << endl;
 
 	try 
 	{
