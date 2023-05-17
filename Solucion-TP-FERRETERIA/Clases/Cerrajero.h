@@ -5,7 +5,9 @@
 #ifndef _CERRAJERO_H
 #define _CERRAJERO_H
 
+#include "Cliente.h"
 #include "Empleado.h"
+#include "Cerrajeria.h"
 
 class Cerrajero: public Empleado 
 {
@@ -26,10 +28,8 @@ public:
     /**
      * @param string
      */
-    string DuplicarLlaves(string);
+    bool DuplicarLlaves(Cerrajeria cerraj, Cliente cli);
     
-    void Reparar_cerradura();
-
 private: 
     string Alarma;
 };

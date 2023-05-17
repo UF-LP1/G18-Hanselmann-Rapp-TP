@@ -44,15 +44,9 @@ void Cerrajero::set_Alarma(string NuevoEstado)
  * @param string
  * @return string
  */
-string Cerrajero::DuplicarLlaves(string)
+bool Cerrajero::DuplicarLlaves(Cerrajeria cerraj, Cliente cli)
 {
-    return "";
-}
+    if(cerraj.)
 
-/**
- * @return void
- */
-void Cerrajero::Reparar_cerradura() 
-{
-    return;
+    return false;
 }
