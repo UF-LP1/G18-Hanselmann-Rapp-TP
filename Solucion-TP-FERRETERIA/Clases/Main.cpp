@@ -13,6 +13,7 @@ using namespace std;
 int main() 
 {
 	Ferreteria ferr = Ferreteria("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
+	Duenio due = Duenio("62739", "MaterClas", "Rodrigo", Maculino, true);
 
 	time_t tiempito;
 	time(&tiempito);
@@ -39,9 +40,13 @@ int main()
 
 	Cliente Javier = Cliente("45545166", "Javier", "Peña", Otro, "Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita);
 
+	Articulo art = Articulo(345, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 98);
+
 	cout << "Amoladoras = 0, Lijadoras = 1, Perforadoras = 2" << endl;
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
+
+	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier);
 
 	return 0;
 }
