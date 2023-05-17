@@ -57,7 +57,7 @@ int main()
 
 	catch(int stock){
 	
-			cout << "Se encontró un error" << endl;
+			cout << "Se encontro un error" << endl;
 
 	}
 
