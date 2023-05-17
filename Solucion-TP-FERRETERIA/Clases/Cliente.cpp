@@ -6,7 +6,7 @@
 
 //&Articulos_
 
-Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
+Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
     this->Foto = Foto_;
     this->ArtRoto = ArtRoto_;
@@ -17,6 +17,7 @@ Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo S
     this->Herr_Alquiler = Herr_Alquiler_;
     this->EnvioDomicilio = EnvioDomicilio_;
     this->duplicadollave = duplicadollave_;
+    this->DeseaCambiarArt = DeseaCambiarArt_;
 }
 
 Cliente::~Cliente()
@@ -75,6 +76,11 @@ bool Cliente::get_Dupllaves()
     return this->duplicadollave;
 }
 
+bool Cliente::get_DeseaCambiarArt()
+{
+    return this->DeseaCambiarArt;
+}
+
 void Cliente::set_MetodoPagoCli(MetodoPago NuevoEstado) 
 {
     this->MetodoPagoCli = NuevoEstado;
@@ -119,6 +125,11 @@ void Cliente::set_Dupllaves(bool NuevoEstado)
 {
     this->duplicadollave = NuevoEstado;
 } 
+
+void Cliente::set_DeseaCambiarArt(bool NuevoEstado)
+{
+    this->DeseaCambiarArt = NuevoEstado;
+}
 
 int Cliente::elegir_art(Articulo art)  //Agregar al carrito y probamos el Trycatch (Arreglarlo)
 {

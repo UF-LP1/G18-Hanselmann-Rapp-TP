@@ -15,7 +15,7 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_);
+    Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_);
 
     ~Cliente();
 
@@ -39,6 +39,8 @@ public:
     bool get_EnvioDomicilio();
 
     bool get_Dupllaves();
+
+    bool get_DeseaCambiarArt();
     
     void set_MetodoPagoCli(MetodoPago NuevoEstado);
 
@@ -60,6 +62,8 @@ public:
 
     void set_Dupllaves(bool NuevoEstado);
 
+    void set_DeseaCambiarArt(bool NuevoEstado);
+
 private: 
     
     string Foto;
@@ -71,6 +75,7 @@ private:
     bool EnvoltorioIntacto;
     bool EnvioDomicilio;
     bool duplicadollave;
+    bool DeseaCambiarArt;
 };
 
 #endif //_CLIENTE_H

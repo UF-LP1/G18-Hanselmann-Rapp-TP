@@ -33,7 +33,7 @@ public:
 
     Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_);
 
-    ~Articulo();
+    virtual ~Articulo();
     
     unsigned int get_Precio();
     

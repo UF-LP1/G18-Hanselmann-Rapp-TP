@@ -66,32 +66,37 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
 
     for (i = 0; i < arti.size(); i++, itArt++)
     {
-        if (itArt->get_Cambio() == true)
+        if (cli.get_DeseaCambiarArt() == true)
         {
-            if (cli.get_EnvoltorioIntacto() == true)
+            cout << "¿Por que Articulo desea Cambiar?" << endl;
+
+            if (itArt->get_Cambio() == true)
             {
-                if (itArt->get_Precio() < art.get_Precio())
+                if (cli.get_EnvoltorioIntacto() == true)
                 {
-                    precio = art.get_Precio() - itArt->get_Precio();
+                    if (itArt->get_Precio() < art.get_Precio())
+                    {
+                        precio = art.get_Precio() - itArt->get_Precio();
 
-                    return precio;
-                }
-                if (itArt->get_Precio() > art.get_Precio())
-                {
-                    precio2 = itArt->get_Precio() - art.get_Precio();
+                        return precio;
+                    }
+                    if (itArt->get_Precio() > art.get_Precio())
+                    {
+                        precio2 = itArt->get_Precio() - art.get_Precio();
 
-                    return precio2;
-                }
-                if (itArt->get_Precio() == art.get_Precio())
-                {
-                    cout << "No hay diferencia de precio." << endl;
-                    return 0;
-                }
+                        return precio2;
+                    }
+                    if (itArt->get_Precio() == art.get_Precio())
+                    {
+                        cout << "No hay diferencia de precio." << endl;
+                        return 0;
+                    }
                     else
                     {
                         cout << "No hay Cambio o el Envoltorio no esta Intacto." << endl;
                     }
-            }        
+                }
+            }
         }
     }
 }

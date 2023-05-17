@@ -14,8 +14,12 @@ using namespace std;
 
 int main() 
 {
-	Ferreteria ferr = Ferreteria("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
-	Duenio due = Duenio("62739", "MaterClas", "Rodrigo", Maculino, true);
+	bool CHANGE = false;
+	cout << "¿Desea Cambiar un Articulo? (Poner 1 si quiere, o 0 si no quiere) " << endl;
+	cin >> CHANGE;
+
+	Ferreteria ferr ("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
+	Duenio due ("62739", "MaterClas", "Rodrigo", Maculino, true);
 	Despachante despi = Despachante("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
 	Cerrajero cerraj = Cerrajero("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
 
@@ -41,11 +45,15 @@ int main()
 	Articulos.push_back(art2);
 	Articulos.push_back(art3);
 
-	Amoladorcita.push_back(HerramientasAlquiler(Amoladoras, "Casio", "Perfecta", 490, 57, 0));
-	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Medio", 490, 217, 3));
-	Amoladorcita.push_back(HerramientasAlquiler(Perforadoras, "Casio", "Perfecta", 490, 567, 5));
+	HerramientasAlquiler herralq1(Amoladoras, "Casio", "Perfecta", 490, 57, 0);
+	HerramientasAlquiler herralq2(Lijadoras, "Casio", "Medio", 490, 217, 3);
+	HerramientasAlquiler herralq3(Perforadoras, "Casio", "Perfecta", 490, 567, 5);
 
-	Cliente Javier ("45545166", "Javier", "Peña", Otro,"Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true);
+	Amoladorcita.push_back(herralq1);
+	Amoladorcita.push_back(herralq2);
+	Amoladorcita.push_back(herralq3);
+
+	Cliente Javier ("45545166", "Javier", "Peña", Otro,"Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
 
 	Articulo art (345, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 98);
 
@@ -69,7 +77,7 @@ int main()
 
 	cout << DupiLLavecita << endl;
 
-	cout << Articulo::get_CantidadMaximaArticulos() << endl;
+	cout << "Cantidad de Articulos Totales: " << Articulo::get_CantidadMaximaArticulos() << endl;
 
 	try 
 	{

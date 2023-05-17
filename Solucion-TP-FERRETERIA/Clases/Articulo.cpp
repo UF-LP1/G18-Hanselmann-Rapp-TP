@@ -21,7 +21,7 @@ Articulo::Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string
 
 Articulo::~Articulo()
 {
-    CantidadMaximaArticulos--;
+   //CantidadMaximaArticulos--;
 }
 
 unsigned int Articulo::get_Precio() 
