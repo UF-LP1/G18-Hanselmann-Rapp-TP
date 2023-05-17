@@ -14,7 +14,8 @@ class Cerrajero: public Empleado
 {
 public: 
 
-    Cerrajero(string, string, string, TipoSexo, unsigned int, string, time_t, string);
+    Cerrajero(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_, string Alarma_);
+   
     ~Cerrajero();
 
     string get_Nombre();

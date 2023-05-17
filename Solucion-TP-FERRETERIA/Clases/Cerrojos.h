@@ -7,7 +7,7 @@
 class Cerrojos: public Cerrajeria
 {
 public: 
-    Cerrojos(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoCerrojo);
+    Cerrojos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string MaterialCerraj_, TipoCerrojo Cerroj_);
 
     ~Cerrojos();
     

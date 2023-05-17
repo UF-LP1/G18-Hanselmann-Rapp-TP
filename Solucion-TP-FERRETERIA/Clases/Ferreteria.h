@@ -11,7 +11,7 @@ class Ferreteria
 {
 public: 
 
-    Ferreteria(const string, const string, const string, const string, MetodoPago);
+    Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_);
 
     ~Ferreteria();
     

@@ -8,7 +8,7 @@ class Plomero: public Empleado
 {
 public: 
 
-    Plomero(const string, string, string, TipoSexo, unsigned int, string, time_t, TipoTuberia, float, float);
+    Plomero(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_, TipoTuberia tub, float Longitud_, float Ancho_);
     ~Plomero();
 
     string get_Nombre();

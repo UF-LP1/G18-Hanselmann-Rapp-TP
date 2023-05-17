@@ -13,7 +13,7 @@ protected:
 
 public: 
 
-    Empleado(const string, string, string, TipoSexo, unsigned int, string, unsigned int);
+    Empleado(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, unsigned int TiempoTrabajado_);
 
     ~Empleado();
    

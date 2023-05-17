@@ -18,7 +18,7 @@ private:
 
 public: 
 
-    Horario(time_t);
+    Horario(time_t Hora_);
     ~Horario();
     
     time_t get_Hora();

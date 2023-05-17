@@ -28,7 +28,7 @@ protected:
 
 public: 
 
-    Persona(const string, string, string, TipoSexo);
+    Persona(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_);
 
     ~Persona();
     

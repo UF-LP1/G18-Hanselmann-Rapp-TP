@@ -9,7 +9,7 @@ class Despachante: public Empleado
 {
 public: 
 
-    Despachante(const string, string, string, TipoSexo, unsigned int, string, time_t, string);
+    Despachante(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_, string Pedido_);
     ~Despachante();
 
     string get_Nombre();
