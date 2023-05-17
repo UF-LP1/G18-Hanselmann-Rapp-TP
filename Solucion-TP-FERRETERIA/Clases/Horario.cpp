@@ -16,11 +16,5 @@ Horario::~Horario()
 
 time_t Horario::get_Hora() 
 {
-    return this->Hora;
+    return Hora;
 }
-
-void Horario::set_Hora(time_t NuevoEstado)
-{
-    this->Hora = NuevoEstado;
-}
-

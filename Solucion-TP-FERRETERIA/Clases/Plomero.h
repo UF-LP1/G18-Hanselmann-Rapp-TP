@@ -14,6 +14,8 @@ public:
 
     Plomero(string, string, string, TipoSexo, unsigned int, string, time_t, TipoTuberia, float, float);
     ~Plomero();
+
+    string get_Nombre();
     
     TipoTuberia get_Tuberias();
     

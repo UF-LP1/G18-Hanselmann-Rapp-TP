@@ -12,7 +12,9 @@ public:
 
     Despachante(const string, string, string, TipoSexo, unsigned int, string, time_t, string);
     ~Despachante();
-    
+
+    string get_Nombre();
+        
     string get_Pedido();
     
     /**

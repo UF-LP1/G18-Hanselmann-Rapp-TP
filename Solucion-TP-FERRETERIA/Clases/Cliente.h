@@ -18,6 +18,8 @@ public:
     Cliente(const string, string, string, TipoSexo, string, string, string, MetodoPago, list<Articulo>, bool, list <HerramientasAlquiler>, bool);
 
     ~Cliente();
+
+    string get_Nombre();
     
     string get_Direccion();
     

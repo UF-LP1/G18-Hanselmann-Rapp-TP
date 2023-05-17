@@ -18,6 +18,11 @@ Duenio::~Duenio()
 
 }
 
+string Duenio::get_Nombre()
+{
+    return this->Nombre;
+}
+
 /**
  * @return bool
  */

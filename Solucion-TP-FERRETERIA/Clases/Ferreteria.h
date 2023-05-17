@@ -25,21 +25,9 @@ public:
     
     MetodoPago get_MetodoPagoFerreteria();
       
-    /**
-     * @param string
-     */
     void set_MetodoPagoFerreteria(MetodoPago NuevoEstado);
       
-    /**
-     * @param Horario
-     */
     bool abrir(Horario hor);
-
-    /**
-     * @param Articulo
-     * @param Empleado
-     */
-    bool dar_ArticuloEmpleado(Articulo art, Empleado emp);
 
     int generar_Presupuesto(Cliente cli);
 

@@ -21,6 +21,11 @@ Plomero::~Plomero()
 
 }
 
+string Plomero::get_Nombre()
+{
+    return this->Nombre;
+}
+
 /**
  * @return TipoTuberia
  */

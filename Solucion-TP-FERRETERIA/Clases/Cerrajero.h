@@ -13,7 +13,9 @@ public:
 
     Cerrajero(string, string, string, TipoSexo, unsigned int, string, time_t, string);
     ~Cerrajero();
-    
+
+    string get_Nombre();
+      
     string get_Alarma();
     
     /**

@@ -21,6 +21,11 @@ Cliente::~Cliente()
 
 }
 
+string Cliente::get_Nombre()
+{
+    return this->Nombre;
+}
+
 /**
  * @return const string
  */

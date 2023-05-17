@@ -32,7 +32,7 @@ public:
 
     ~Persona();
     
-    string get_Nombre();
+    virtual string get_Nombre() = 0;
     
     string get_Apellido();
     

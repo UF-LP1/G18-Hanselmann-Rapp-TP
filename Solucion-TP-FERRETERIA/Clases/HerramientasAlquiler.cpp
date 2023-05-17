@@ -27,33 +27,22 @@ TipoHerrAlquiler HerramientasAlquiler::get_TipoHerrAlquiler()
 {
     return this->HerrAlquiler;
 }
-/**
- * @return string
- */
+
 string HerramientasAlquiler::get_Modelo() 
 {
     return this->Modelo;
 }
 
-/**
- * @return string
- */
 string HerramientasAlquiler::get_Condicion() 
 {
     return this->Condicion;
 }
 
-/**
- * @return unsigned float
- */
 unsigned int HerramientasAlquiler::get_PrecioSeguro() 
 {
     return this->PrecioSeguro;
 }
 
-/**
- * @return unsigned float
- */
 unsigned int HerramientasAlquiler::get_PrecioAlquiler() 
 {
     return this->PrecioAlquiler;
@@ -64,19 +53,11 @@ unsigned int HerramientasAlquiler::get_Cant_Horas_Alquiler()
     return this->Cant_Horas_Alquiler;
 }
 
-/**
- * @param string
- * @return void
- */
 void HerramientasAlquiler::set_Modelo(string NuevoEstado)
 {
     this->Modelo = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void HerramientasAlquiler::set_Condicion(string NuevoEstado)
 {
     this->Condicion = NuevoEstado;

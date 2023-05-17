@@ -12,6 +12,8 @@ public:
 
     ~Duenio();
 
+    string get_Nombre();
+    
     bool get_Disponibilidad();
     
     /**

@@ -54,6 +54,8 @@ int main()
 
 	cout << "1 = El cliente pide un envio a domicilio y 0 = El cliente no pide un envio a domicilio: " << despi.enviar_articulo(art, Javier) << endl;
 
+	int stock = 0;
+
 	try 
 	{
 		throw -5;

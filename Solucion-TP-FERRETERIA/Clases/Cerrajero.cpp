@@ -12,9 +12,15 @@ Cerrajero::Cerrajero(string Nombre_, string Apellido_, string DNI_, TipoSexo Sex
 {
     this->Alarma = Alarma_;
 }
+
 Cerrajero::~Cerrajero()
 {
 
+}
+
+string Cerrajero::get_Nombre()
+{
+    return this->Nombre;
 }
 
 /**

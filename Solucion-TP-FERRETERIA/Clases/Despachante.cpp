@@ -12,9 +12,15 @@ Despachante::Despachante(const string DNI_, string Nombre_, string Apellido_, Ti
 {
     this->Pedido = Pedido_;
 }
+
 Despachante::~Despachante()
 {
 
+}
+
+string Despachante::get_Nombre()
+{
+    return this->Nombre;
 }
 
 /**

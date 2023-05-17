@@ -14,59 +14,36 @@ Ferreteria::~Ferreteria()
 
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Nombre() 
 {
     return this->Nombre;
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Direccion() 
 {
     return this->Direccion;
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Telefono() 
 {
     return this->Telefono;
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Mail() 
 {
     return this->Mail;
 }
 
-/**
- * @return const string
- */
 MetodoPago Ferreteria::get_MetodoPagoFerreteria() 
 {
     return this->MetodoPagoFerreteria;
 }
 
-/**
- * @param string
- * @return void
- */
 void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado) 
 {
     this->MetodoPagoFerreteria = NuevoEstado;
 }
 
-/**
- * @param Horario
- * @return bool
- */
 bool Ferreteria::abrir(Horario hor) 
 {
     time_t timer;
@@ -99,16 +76,6 @@ bool Ferreteria::abrir(Horario hor)
          return false;
 }
    
-/**
- * @param Articulo
- * @param Empleado
- * @return bool
- */
-bool Ferreteria::dar_ArticuloEmpleado(Articulo art, Empleado emp) 
-{
-    return false;
-}
-
 int Ferreteria::generar_Presupuesto(Cliente cli)
 {
     list<Articulo>::iterator itArt;

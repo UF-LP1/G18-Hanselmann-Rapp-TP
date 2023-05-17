@@ -22,9 +22,6 @@ public:
     ~Horario();
     
     time_t get_Hora();
-    
-    void set_Hora(time_t NuevoEstado);
-
 };
 
 #endif //_HORARIO_H
