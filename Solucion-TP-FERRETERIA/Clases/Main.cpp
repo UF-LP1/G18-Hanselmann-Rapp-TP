@@ -50,6 +50,16 @@ int main()
 
 	cout << "Los datos de la foto/Articulo roto: " << due.identificar_art(Javier) << endl;
 
+	try {
+
+		throw -5;
+	}
+
+	catch(int stock){
 	
+			cout << "We caught the exception" << endl;
+
+	}
+
 	return 0;
 }

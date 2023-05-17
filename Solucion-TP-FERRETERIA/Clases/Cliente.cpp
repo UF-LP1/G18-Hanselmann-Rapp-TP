@@ -125,14 +125,15 @@ void Cliente::elegir_art(Articulo art)  //agregar al carrito
     int stock;
     stock = art.get_Cantidad();
 
-    if (stock == 0) 
+    if (stock <= 0) 
     {
         throw stock;
+
     }
- 
-    else 
-    {
+    else{
+
         this->Articulos.push_back(art);
+
     }
 
 }
