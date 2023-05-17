@@ -37,8 +37,7 @@ void Despachante::set_Pedido(string NuevoEstado)
 /**
  * @return void
  */
-void Despachante::enviar_articulo(Articulo arti, Cliente cli)
+void Despachante::enviar_articulo(Articulo arti, Cliente cli) //podemos usar un virtual
 {
     cout << "Se envia el articulo: " << arti.get_TipoProducto() << " hacia la direccion: " << cli.get_Direccion() << endl;
-
 }

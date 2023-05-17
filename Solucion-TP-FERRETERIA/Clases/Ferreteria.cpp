@@ -138,7 +138,12 @@ int Ferreteria::generar_Presupuesto(Cliente cli)
     {
         if ((*itHerrAlq).get_Cant_Horas_Alquiler() > 0)
         {
-            acum2 = acum2 + (itHerrAlq->get_PrecioAlquiler() * itHerrAlq->get_Cant_Horas_Alquiler());
+            acum2 = acum2 + (itHerrAlq->get_PrecioAlquiler() * itHerrAlq->get_Cant_Horas_Alquiler() + itHerrAlq->get_PrecioSeguro());
+
+            if (itHerrAlq->get_Condicion() == "Perfecta")
+            {
+                acum2 = acum2 - itHerrAlq->get_PrecioSeguro();
+            }
         }
         else
         {

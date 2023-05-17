@@ -34,7 +34,7 @@ int main()
 	Articulos.push_back(Articulo(10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4));
 
 	Amoladorcita.push_back(HerramientasAlquiler(Amoladoras, "Casio", "Perfecta", 490, 57, 0));
-	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Perfecta", 490, 217, 0));
+	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Medio", 490, 217, 3));
 	Amoladorcita.push_back(HerramientasAlquiler(Perforadoras, "Casio", "Perfecta", 490, 567, 5));
 
 	Cliente Javier = Cliente("45545166", "Javier", "Peña", Otro, "Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita);

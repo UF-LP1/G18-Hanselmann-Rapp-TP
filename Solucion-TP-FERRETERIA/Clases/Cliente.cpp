@@ -110,17 +110,17 @@ void Cliente::set_Herr_Alquiler(list <HerramientasAlquiler> NuevoEstado)
  */
 void Cliente::elegir_art(Articulo art)  //agregar al carrito
 {
-
     int stock;
     stock = art.get_Cantidad();
 
     if (stock == 0) 
     {
 
-       }
+    }
        // throw;
 
-    else {
+    else 
+    {
         this->Articulos.push_back(art);
     }
 
