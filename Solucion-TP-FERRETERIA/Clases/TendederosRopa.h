@@ -20,14 +20,8 @@ public:
     
     string get_MaterialTendedero();
     
-    /**
-     * @param TipoTendedero
-     */
     void set_Tendederito(TipoTendedero NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MaterialTendedero(string NuevoEstado);
 
 private: 

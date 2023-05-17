@@ -20,9 +20,6 @@ public:
     
     bool get_RepuestoArt();
     
-    /**
-     * @param bool
-     */
     void set_RepuestoArt(bool NuevoEstado);
 
 };

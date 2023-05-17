@@ -17,18 +17,11 @@ Cocina::~Cocina()
 
 }
 
-/**
- * @return bool
- */
 bool Cocina::get_RepuestoArt() 
 {
     return this->RepuestoArt;
 }
 
-/**
- * @param bool
- * @return void
- */
 void Cocina::set_RepuestoArt(bool NuevoEstado) 
 {
     this->RepuestoArt=NuevoEstado;

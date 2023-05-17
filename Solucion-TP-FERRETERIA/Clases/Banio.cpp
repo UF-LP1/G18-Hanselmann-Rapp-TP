@@ -16,18 +16,12 @@ Banio::~Banio()
 {
 
 }
-/**
- * @return bool
- */
+
 bool Banio::get_RepuestoArt() 
 {
     return this->RepuestoArt;
 }
 
-/**
- * @param bool
- * @return void
- */
 void Banio::set_RepuestoArt(bool NuevoEstado) 
 {
     this->RepuestoArt=NuevoEstado;

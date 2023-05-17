@@ -23,14 +23,8 @@ public:
     
     unsigned int get_Potencia();
     
-    /**
-     * @param unsigned int
-     */
     void set_Tension(unsigned int NuevoEstado);
-    
-    /**
-     * @param unsigned int
-     */
+
     void set_Potencia(unsigned int NuevoEstado);
 
 };

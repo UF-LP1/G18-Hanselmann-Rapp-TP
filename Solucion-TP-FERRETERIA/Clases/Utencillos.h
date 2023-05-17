@@ -20,14 +20,8 @@ public:
     
     string get_MaterialUtencillo();
     
-    /**
-     * @param TipoUtencillo
-     */
     void set_Uten(TipoUtencillo NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MaterialUtencillo(string NuevoEstado);
 
 private: 

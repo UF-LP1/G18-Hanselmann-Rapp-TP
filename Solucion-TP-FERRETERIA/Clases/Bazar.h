@@ -20,9 +20,6 @@ public:
     
     string get_Color();
     
-    /**
-     * @param string
-     */
     void set_Color(string NuevoEstado);
 
 };

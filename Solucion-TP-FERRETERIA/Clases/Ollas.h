@@ -20,14 +20,9 @@ public:
     
     string get_MaterialOlla();
     
-    /**
-     * @param TipoOlla
-     */
     void set_Ollita(TipoOlla NuevoEstado);
     
-    /**
-     * @param string
-     */
+  
     void set_MaterialOlla(string NuevoEstado);
 
 private: 
