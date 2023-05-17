@@ -21,20 +21,11 @@ public:
     string get_MarcaTablPlanch();
     
     string get_MaterialPlanchar();
-    
-    /**
-     * @param TipoTabla
-     */
+
     void set_Planchita(TipoTablasPlanchar NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_MarcaTablPlanch(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MaterialPlanchar(string NuevoEstado);
 
 private: 

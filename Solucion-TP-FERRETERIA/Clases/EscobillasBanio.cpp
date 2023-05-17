@@ -20,69 +20,41 @@ EscobillasBanio::~EscobillasBanio()
 
 }
 
-/**
- * @return string
- */
 string EscobillasBanio::get_TipoEscobilla() 
 {
     return this->TipoEscobilla;
 }
 
-/**
- * @return string
- */
 string EscobillasBanio::get_DisenioEscobilla()
 {
     return this->DisenioEscobilla;
 }
 
-/**
- * @return string
- */
 string EscobillasBanio::get_MarcaEscobilla() 
 {
     return this->MarcaEscobilla;
 }
 
-/**
- * @return string
- */
 string EscobillasBanio::get_MaterialEscobilla() 
 {
     return this->MaterialEscobilla;
 }
 
-/**
- * @param string
- * @return void
- */
 void EscobillasBanio::set_TipoEscobilla(string NuevoEstado) 
 {
     this->TipoEscobilla = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void EscobillasBanio::set_DisenioEscobilla(string NuevoEstado) 
 {
     this->DisenioEscobilla = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void EscobillasBanio::set_MarcaEscobilla(string NuevoEstado) 
 {
     this->MarcaEscobilla = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void EscobillasBanio::set_MaterialEscobilla(string NuevoEstado) 
 {
     this->MaterialEscobilla=NuevoEstado;

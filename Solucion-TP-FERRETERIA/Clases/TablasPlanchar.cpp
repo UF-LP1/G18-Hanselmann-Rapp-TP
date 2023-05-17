@@ -19,52 +19,31 @@ TablasPlanchar::~TablasPlanchar()
 
 }
 
-/**
- * @return TipoTabla
- */
 TipoTablasPlanchar TablasPlanchar::get_Planchita() 
 {
     return this->Planchita;
 }
 
-/**
- * @return string
- */
 string TablasPlanchar::get_MarcaTablPlanch()
 {
     return this->MarcaTablPlanch;
 }
 
-/**
- * @return string
- */
 string TablasPlanchar::get_MaterialPlanchar() 
 {
     return MaterialPlanchar;
 }
 
-/**
- * @param TipoTabla
- * @return void
- */
 void TablasPlanchar::set_Planchita(TipoTablasPlanchar NuevoEstado)
 {
     this->Planchita = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void TablasPlanchar::set_MarcaTablPlanch(string NuevoEstado)
 {
     this->MarcaTablPlanch = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void TablasPlanchar::set_MaterialPlanchar(string NuevoEstado)
 {
     this->MaterialPlanchar = NuevoEstado;

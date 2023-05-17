@@ -19,52 +19,31 @@ BarralesCortina::~BarralesCortina()
 
 }
 
-/**
- * @return TipoBarrales
- */
 TipoBarreles BarralesCortina::get_Barralito() 
 {
     return this->Barralito;
 }
 
-/**
- * @return string
- */
 string BarralesCortina::get_MaterialBarrales() 
 {
     return this->MaterialBarreles;
 }
 
-/**
- * @param TipoBarrales
- * @return void
- */
 void BarralesCortina::set_Barralito(TipoBarreles NuevoEstado) 
 {
     this->Barralito = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void BarralesCortina::set_MaterialBarrales(string NuevoEstado) 
 {
     this->MaterialBarreles = NuevoEstado;
 }
 
-/**
- * @return unsigned int
- */
 unsigned int BarralesCortina::get_Ganchos()
 {
     return this->Ganchos;
 }
 
-/**
- * @param unsigned int
- * @return void
- */
 void BarralesCortina::set_Ganchos(unsigned int NuevoEstado) 
 {
     this->Ganchos=NuevoEstado;

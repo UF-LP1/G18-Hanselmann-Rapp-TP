@@ -22,25 +22,13 @@ public:
     string get_MarcaEscobilla();
     
     string get_MaterialEscobilla();
-    
-    /**
-     * @param string
-     */
+ 
     void set_TipoEscobilla(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_DisenioEscobilla(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MarcaEscobilla(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MaterialEscobilla(string NuevoEstado);
 
 private: 

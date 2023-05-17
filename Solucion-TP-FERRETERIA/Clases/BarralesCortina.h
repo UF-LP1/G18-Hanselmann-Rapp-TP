@@ -22,19 +22,10 @@ public:
 
     unsigned int get_Ganchos();
     
-    /**
-     * @param TipoBarrales
-     */
     void set_Barralito(TipoBarreles NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MaterialBarrales(string NuevoEstado);
-        
-    /**
-     * @param unsigned int
-     */
+
     void set_Ganchos(unsigned int NuevoEstado);
 
 private: 

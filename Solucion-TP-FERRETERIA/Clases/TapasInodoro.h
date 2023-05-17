@@ -21,20 +21,11 @@ public:
     string get_Anclajes();
     
     string get_DisenioTablIno();
-    
-    /**
-     * @param string
-     */
+
     void set_Anclajes(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_DisenioTablIno(string NuevoEstado);
-    
-    /**
-     * @param TipoTabla
-     */
+
     void set_Inodorito(TipoTablaInodoro NuevoEstado);
 
 private: 
