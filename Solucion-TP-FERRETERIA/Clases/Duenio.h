@@ -32,7 +32,7 @@ public:
     /**
      * @param Articulo
      */
-    int cobrar(Articulo art);
+    int CambioArticulo(Articulo art, Cliente cli);
     
     /**
      * @param Articulo

@@ -55,13 +55,45 @@ void Duenio::identificar_art(Cliente cli)
     return;
 }
 
-/**
- * @param Articulo
- * @return unisgned float
- */
-int Duenio::cobrar(Articulo art) 
+int Duenio::CambioArticulo(Articulo art, Cliente cli)
 {
-    return 0;
+    list<Articulo>::iterator itArt;
+
+    int precio = 0, precio2 = 0;
+    int i = 0;
+    list<Articulo> arti = cli.get_Articulos();
+    itArt = arti.begin();
+
+    for (i = 0; i < arti.size(); i++, itArt++)
+    {
+        if (itArt->get_Cambio() == true)
+        {
+            if (cli.get_EnvoltorioIntacto() == true)
+            {
+                if (itArt->get_Precio() < art.get_Precio())
+                {
+                    precio = art.get_Precio() - itArt->get_Precio();
+
+                    return precio;
+                }
+                if (itArt->get_Precio() > art.get_Precio())
+                {
+                    precio2 = itArt->get_Precio() - art.get_Precio();
+
+                    return precio2;
+                }
+                if (itArt->get_Precio() == art.get_Precio())
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                    return 0;
+                }
+                    else
+                    {
+                        cout << "No hay Cambio o el Envoltorio no esta Intacto." << endl;
+                    }
+            }        
+        }
+    }
 }
 
 /**
