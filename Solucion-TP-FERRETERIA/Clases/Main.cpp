@@ -23,10 +23,8 @@ int main()
 	time(&tiempito);
 	Horario horacio = Horario(tiempito);
 
-	bool abierto = false;
-	abierto = ferr.abrir(horacio);
+	string abierto = ferr.abrir(horacio)? "Abierta" : "Cerrada"; //Uso el operador ternario para que me diga si esta Abierto o Cerrada
 
-	cout << "Abierto = 1 y Cerrado = 0" << endl;
 	cout << "La ferreteria esta: " << abierto << endl;
 
 	int i = 0;
