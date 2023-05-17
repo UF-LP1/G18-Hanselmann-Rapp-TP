@@ -57,7 +57,7 @@ int main()
 
 	catch(int stock){
 	
-			cout << "We caught the exception" << endl;
+			cout << "Se encontró un error" << endl;
 
 	}
 
