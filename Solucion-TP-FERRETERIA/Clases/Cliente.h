@@ -15,7 +15,7 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(const string, string, string, TipoSexo, string, string, string, MetodoPago, list<Articulo>, bool, list <HerramientasAlquiler>, bool, bool);
+    Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_);
 
     ~Cliente();
 
@@ -66,7 +66,7 @@ private:
     string ArtRoto;
     string Direccion;
     MetodoPago MetodoPagoCli;
-    list <Articulo> Articulos;
+    list <Articulo> Articulos; //*Articulos
     list <HerramientasAlquiler> Herr_Alquiler;
     bool EnvoltorioIntacto;
     bool EnvioDomicilio;

@@ -45,11 +45,11 @@ int main()
 	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Medio", 490, 217, 3));
 	Amoladorcita.push_back(HerramientasAlquiler(Perforadoras, "Casio", "Perfecta", 490, 567, 5));
 
-	Cliente Javier = Cliente("45545166", "Javier", "Peña", Otro,"Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true);
+	Cliente Javier ("45545166", "Javier", "Peña", Otro,"Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true);
 
-	Articulo art = Articulo(345, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 98);
+	Articulo art (345, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 98);
 
-	LLaves llave = LLaves(3, true, "Perfecto", "llave", 2.05, 3.04, 4.01, 98, "metal", LLavesMagneticas, true);
+	LLaves llave (3, true, "Perfecto", "llave", 2.05, 3.04, 4.01, 98, "metal", LLavesMagneticas, true);
 
 	cout << "Amoladoras = 0, Lijadoras = 1, Perforadoras = 2" << endl;
 
