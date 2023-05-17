@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _TARUGOS_H
 #define _TARUGOS_H
 
@@ -19,14 +15,9 @@ public:
     TipoTarugo get_Tarugin();
     
     string get_UtilidadTarugo();
-    /**
-     * @param TipoTarugo
-     */
+
     void set_Tarugin(TipoTarugo NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_UtilidadTarugo(string NuevoEstado);
 
 private: 

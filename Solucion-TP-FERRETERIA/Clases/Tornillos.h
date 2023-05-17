@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _TORNILLOS_H
 #define _TORNILLOS_H
 
@@ -20,20 +16,11 @@ public:
     string get_Rosca();
     
     string get_Utilidad();
-    
-    /**
-     * @param string
-     */
+ 
     void set_CabezaTornillo(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_Rosca(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_Utilidad(string NuevoEstado);
 
 private: 

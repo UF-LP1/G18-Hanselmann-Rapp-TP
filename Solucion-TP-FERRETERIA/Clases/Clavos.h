@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _CLAVOS_H
 #define _CLAVOS_H
 
@@ -19,15 +15,9 @@ public:
     TipoClavo get_Clavito();
     
     string get_CabezaClavo();
-    
-    /**
-     * @param TipoClavo
-     */
+   
     void set_Clavito(TipoClavo NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_CabezaClavo(string NuevoEstado);
 
 private: 

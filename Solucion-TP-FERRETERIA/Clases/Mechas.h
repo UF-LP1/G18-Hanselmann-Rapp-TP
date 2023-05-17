@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _MECHAS_H
 #define _MECHAS_H
 
@@ -19,14 +15,9 @@ public:
     TipoMecha get_Mechita();
     
     string get_UtilidadMecha();
-    /**
-     * @param TipoMecha
-     */
+
     void set_Mechita(TipoMecha NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_UtilidadMecha(string NuevoEstado);
 
 private: 

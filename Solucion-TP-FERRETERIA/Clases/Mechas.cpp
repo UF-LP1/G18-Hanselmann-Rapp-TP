@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Mechas.h"
 
 /**
@@ -19,35 +15,21 @@ Mechas::~Mechas()
 
 }
 
-/**
- * @return TipoMecha
- */
 TipoMecha Mechas::get_Mechita() 
 {
     return this->Mechita;
 }
 
-/**
- * @return string
- */
 string Mechas::get_UtilidadMecha() 
 {
     return this->UtilidadMecha;
 }
 
-/**
- * @param TipoMecha
- * @return void
- */
 void Mechas::set_Mechita(TipoMecha NuevoEstado) 
 {
     this->Mechita = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void Mechas::set_UtilidadMecha(string NuevoEstado) 
 {
     this->UtilidadMecha = NuevoEstado;

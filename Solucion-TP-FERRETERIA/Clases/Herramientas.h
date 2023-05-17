@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _HERRAMIENTAS_H
 #define _HERRAMIENTAS_H
 
@@ -19,15 +15,9 @@ public:
     TipoHerramienta get_HerramientaArtFerr();
 
     string get_MarcaHerrFerr();
-    
-    /**
-     * @param TipoHerramienta
-     */
+
     void set_HerramientaArtFerr(TipoHerramienta NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_MarcaHerrFerr(string NuevoEstado);
 
 private: 
