@@ -20,7 +20,7 @@ public:
      */
     void set_Pedido(string NuevoEstado);
     
-    void enviar_articulo(Articulo arti, Cliente cli);
+    bool enviar_articulo(Articulo arti, Cliente cli);
 
 private: 
     string Pedido;
