@@ -127,7 +127,7 @@ void Cliente::elegir_art(Articulo art)  //agregar al carrito
 
     if (stock == 0) 
     {
-
+       
     }
        // throw;
 
