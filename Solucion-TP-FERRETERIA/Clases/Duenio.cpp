@@ -48,11 +48,22 @@ void Duenio::atender_cliente(Cliente cli)
  * @param Cliente
  * @return void
  */
-void Duenio::identificar_art(Cliente cli) 
+int Duenio::identificar_art(Cliente cli) 
 {
-   // cout << "Mostrar articulo en devolucion:" << cli.get_ArtRoto << endl;
+    list<Articulo>::iterator itArt; 
+    list<Articulo> arti = cli.get_Articulos();
 
-    return;
+    if (cli.get_Foto() == "Foto" || cli.get_ArtRoto() == "Articulo Roto") {
+
+        return itArt->get_Alto(), itArt->get_Ancho(), itArt->get_Largo();
+    }
+    else {
+
+        cout << "No trajo foto ni articulo roto" << endl;
+
+        return 0;
+    }
+
 }
 
 int Duenio::CambioArticulo(Articulo art, Cliente cli)
