@@ -15,9 +15,10 @@ class Cliente: public Persona
 {
 public: 
 
-    Cliente(const string, string, string, TipoSexo, string, string, string, MetodoPago, list<Articulo>, bool, list <HerramientasAlquiler>, bool);
+    Cliente(const string, string, string, TipoSexo, string, string, string, MetodoPago, list<Articulo>, bool, list <HerramientasAlquiler>, bool, bool);
 
     ~Cliente();
+
 
     string get_Nombre();
     
@@ -36,6 +37,8 @@ public:
     list <HerramientasAlquiler> get_Herr_Alquiler();
 
     bool get_EnvioDomicilio();
+
+    bool get_Dupllaves();
     
     /**
      * @param MetodoPago
@@ -64,7 +67,10 @@ public:
 
     void set_EnvioDomicilio(bool NuevoEstado);
 
+    void set_Dupllaves(bool NuevoEstado);
+
 private: 
+    
     string Foto;
     string ArtRoto;
     string Direccion;
@@ -73,6 +79,7 @@ private:
     list <HerramientasAlquiler> Herr_Alquiler;
     bool EnvoltorioIntacto;
     bool EnvioDomicilio;
+    bool duplicadollave;
 };
 
 #endif //_CLIENTE_H
