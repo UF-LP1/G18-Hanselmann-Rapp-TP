@@ -22,7 +22,7 @@ public:
      */
     void set_Pedido(string NuevoEstado);
     
-    bool enviar_articulo(Articulo arti, Cliente cli);
+    static bool enviar_articulo(Articulo arti, Cliente cli);
 
 private: 
     string Pedido;

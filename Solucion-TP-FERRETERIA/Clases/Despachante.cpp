@@ -43,7 +43,7 @@ void Despachante::set_Pedido(string NuevoEstado)
 /**
  * @return void
  */
-bool Despachante::enviar_articulo(Articulo arti, Cliente cli) //podemos usar un virtual
+bool Despachante::enviar_articulo(Articulo arti, Cliente cli)
 {
     if (cli.get_EnvioDomicilio() == true)
     {
