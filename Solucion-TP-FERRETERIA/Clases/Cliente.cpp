@@ -4,12 +4,13 @@
  * Cliente implementation
  */
 
-Cliente::Cliente(string Nombre_, string Apellido_, const string DNI_, TipoSexo Sexo_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, const string Foto_, const string ArtRoto_, bool EnvoltorioIntaco_) :Persona(Nombre_, Apellido_, DNI_, Sexo_)
+Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, const string Foto_, const string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
     this->Direccion = Direccion_;
     this->MetodoPagoCli = MetodoPagoCli_;
     this->Articulos = Articulos_;
     this->EnvoltorioIntacto = EnvoltorioIntaco_;
+    this->Herr_Alquiler = Herr_Alquiler_;
 }
 
 Cliente::~Cliente()
@@ -65,6 +66,11 @@ bool Cliente::get_EnvoltorioIntacto()
     return this->EnvoltorioIntacto;
 }
 
+list <HerramientasAlquiler> Cliente::get_Herr_Alquiler()
+{
+    return this->Herr_Alquiler;
+}
+
 /**
  * @param MetodoPago
  * @return void
@@ -91,6 +97,11 @@ void Cliente::set_Articulos(list <Articulo> NuevoEstado)
 void Cliente::set_EnvoltorioIntacto(bool NuevoEstado)
 {
     this->EnvoltorioIntacto = NuevoEstado;
+}
+
+void Cliente::set_Herr_Alquiler(list <HerramientasAlquiler> NuevoEstado)
+{
+    this->Herr_Alquiler = NuevoEstado;
 }
 
 /**

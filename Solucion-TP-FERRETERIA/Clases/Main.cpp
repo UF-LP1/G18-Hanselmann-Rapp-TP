@@ -13,6 +13,7 @@ using namespace std;
 int main() 
 {
 	Ferreteria ferr = Ferreteria("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
+
 	time_t tiempito;
 	time(&tiempito);
 	Horario horacio = Horario(tiempito);
@@ -26,12 +27,19 @@ int main()
 	int i = 0;
 
 	list <Articulo> Articulos;
+	list <HerramientasAlquiler> Amoladorcita;
 
 	Articulos.push_back(Articulo(5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 0));
-	Articulos.push_back(Articulo(195, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 57));
+	Articulos.push_back(Articulo(15, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 57));
 	Articulos.push_back(Articulo(10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4));
 
-	Cliente Javier = Cliente("Javier", "Peña", "45545166", Otro, "Manuel Ugarte 5500", Efectivo, Articulos,"Foto", "ArtRoto", true);
+	Amoladorcita.push_back(HerramientasAlquiler(Amoladoras, "Casio", "Perfecta", 567, 890, 0));
+	Amoladorcita.push_back(HerramientasAlquiler(Lijadoras, "Casio", "Perfecta", 217, 490, 0));
+	Amoladorcita.push_back(HerramientasAlquiler(Perforadoras, "Casio", "Perfecta", 567, 490, 5));
+
+	Cliente Javier = Cliente("45545166", "Javier", "Peña", Otro, "Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita);
+
+	cout << "Amoladoras = 0, Lijadoras = 1, Perforadoras = 2" << endl;
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
 

@@ -20,10 +20,10 @@ class HerramientasAlquiler
 {
 public: 
     
-    HerramientasAlquiler(TipoHerrAlquiler, string, string, unsigned int, unsigned int);
+    HerramientasAlquiler(TipoHerrAlquiler, string, string, unsigned int, unsigned int, unsigned int);
     ~HerramientasAlquiler();
 
-    TipoHerrAlquiler get_HerrAlquiler();
+    TipoHerrAlquiler get_TipoHerrAlquiler();
 
     string get_Modelo();
     
@@ -32,6 +32,8 @@ public:
     unsigned int get_PrecioSeguro();
     
     unsigned int get_PrecioAlquiler();
+
+    unsigned int get_Cant_Horas_Alquiler();
     
     /**
      * @param string
@@ -53,10 +55,15 @@ public:
      */
     void set_PrecioAlquiler(unsigned int NuevoEstado);
 
+    void set_TipoHerrAlquiler (TipoHerrAlquiler NuevoEstado);
+
+    void set_Cant_Horas_Alquiler(unsigned int NuevoEstado);
+
 private: 
     TipoHerrAlquiler HerrAlquiler;
     string Modelo;
     string Condicion;
+    unsigned int Cant_Horas_Alquiler;
     unsigned int PrecioSeguro;
     unsigned int PrecioAlquiler;
 };

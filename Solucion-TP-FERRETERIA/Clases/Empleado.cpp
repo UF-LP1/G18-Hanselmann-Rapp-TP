@@ -1,19 +1,14 @@
-/**
- * Project Untitled
- */
-
 #include "Empleado.h"
 
 /**
  * Empleado implementation
  */
 
-Empleado::Empleado(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_): Persona(Nombre_, Apellido_, DNI_, Sexo_)
+Empleado::Empleado(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_): Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
     this->Salario = Salario_;
     this->TipoTransporte = TipoTransporte_;
     this->TiempoTrabajado = TiempoTrabajado_;
-
 }
 
 Empleado::~Empleado()

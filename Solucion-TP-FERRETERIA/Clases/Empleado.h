@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _EMPLEADO_H
 #define _EMPLEADO_H
 
@@ -17,7 +13,7 @@ protected:
 
 public: 
 
-    Empleado(string, string, string, TipoSexo, unsigned int, string, time_t);
+    Empleado(const string, string, string, TipoSexo, unsigned int, string, time_t);
 
     ~Empleado();
     

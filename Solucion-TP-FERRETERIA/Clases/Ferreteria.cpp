@@ -112,11 +112,16 @@ bool Ferreteria::dar_ArticuloEmpleado(Articulo art, Empleado emp)
 int Ferreteria::generar_Presupuesto(Cliente cli)
 {
     list<Articulo>::iterator itArt;
+    list <HerramientasAlquiler>::iterator itHerrAlq;
 
     int acum = 0;
+    int acum2 = 0;
+    int acumtot = 0;
     int i = 0;
     list<Articulo> arti = cli.get_Articulos();
+    list<HerramientasAlquiler> herr = cli.get_Herr_Alquiler();
     itArt = arti.begin();
+    itHerrAlq = herr.begin();
     
     for (i = 0; i < arti.size(); i++, itArt++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
     {
@@ -126,9 +131,22 @@ int Ferreteria::generar_Presupuesto(Cliente cli)
         }
         else
         {
-            cout << "No hay Cantidad del Producto" << endl;
+            cout << "No hay Cantidad del Producto: " << itArt->get_TipoProducto() << endl;
+        }
+    }
+    for (i = 0; i < herr.size(); i++, itHerrAlq++)
+    {
+        if ((*itHerrAlq).get_Cant_Horas_Alquiler() > 0)
+        {
+            acum2 = acum2 + (itHerrAlq->get_PrecioAlquiler() * itHerrAlq->get_Cant_Horas_Alquiler());
+        }
+        else
+        {
+            cout << "No va a alquilar la Herramienta: " << itHerrAlq->get_TipoHerrAlquiler() << endl;
         }
     }
 
-    return acum;
+    acumtot = acum + acum2;
+
+    return acumtot;
 }
