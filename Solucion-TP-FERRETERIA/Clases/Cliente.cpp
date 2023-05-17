@@ -130,9 +130,9 @@ int Cliente::elegir_art(Articulo art)  //Agregar al carrito y probamos el Trycat
 
     for (i = 0; i < arti.size(); i++, itArt++)
     {
+        stock = itArt->get_Cantidad();
         if (stock <= 0)
         {
-            stock = itArt->get_Cantidad();
             throw stock;
         }
         else

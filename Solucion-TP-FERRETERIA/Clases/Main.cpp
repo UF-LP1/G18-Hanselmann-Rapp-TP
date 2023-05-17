@@ -60,11 +60,9 @@ int main()
 
 	cout << "1 = El cliente pide duplicar llave y 0 = El cliente no pide duplicar llave: " << cerraj.DuplicarLlaves(llave, Javier) << endl;
 
-	int stock = 0;
-
 	try 
 	{
-		throw Javier.elegir_art(art);
+		Javier.elegir_art(art);
 	}
 
 	catch(int stock)
