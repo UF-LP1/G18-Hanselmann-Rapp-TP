@@ -87,7 +87,7 @@ void Cliente::set_Foto(string NuevoEstado)
     this->Foto = NuevoEstado;
 }
 
-void Cliente::set_Foto(string NuevoEstado)
+void Cliente::set_ArtRoto(string NuevoEstado)
 {
     this->ArtRoto = NuevoEstado;
 }

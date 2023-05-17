@@ -1,4 +1,6 @@
 ﻿  Cliente.cpp
+C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(90,15): error C2084: la función 'void Cliente::set_Foto(std::string)' ya tiene un cuerpo
+C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(85): message : vea la definición anterior de 'set_Foto'
   Despachante.cpp
   Duenio.cpp
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(58,53): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
@@ -11,5 +13,3 @@ C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\
   Generando código...
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(100): warning C4715: 'Ferreteria::abrir': no todas las rutas de acceso de control devuelven un valor
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(108): warning C4715: 'Duenio::CambioArticulo': no todas las rutas de acceso de control devuelven un valor
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1094,5): error MSB6006: "link.exe" salió con el código 1168.
-LINK : fatal error LNK1168: no se puede abrir C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe para escritura
