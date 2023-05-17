@@ -55,7 +55,7 @@ int Duenio::identificar_art(Cliente cli)
 
     if (cli.get_Foto() == "Foto" || cli.get_ArtRoto() == "ArtRoto") 
     {
-        return itArt->get_Alto(), itArt->get_Ancho(), itArt->get_Largo();
+       // return itArt->get_Alto(), itArt->get_Ancho(), itArt->get_Largo();
     }
     else 
     {

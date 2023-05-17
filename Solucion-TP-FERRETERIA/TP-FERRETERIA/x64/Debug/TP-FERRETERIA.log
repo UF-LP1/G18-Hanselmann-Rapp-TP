@@ -1,15 +1,8 @@
 ﻿  Cliente.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(90,15): error C2084: la función 'void Cliente::set_Foto(std::string)' ya tiene un cuerpo
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(85): message : vea la definición anterior de 'set_Foto'
-  Despachante.cpp
-  Duenio.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(58,53): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
-  Ferreteria.cpp
   Main.cpp
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(33,80): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(34,84): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(35,84): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Main.cpp(43,78): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(100): warning C4715: 'Ferreteria::abrir': no todas las rutas de acceso de control devuelven un valor
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(108): warning C4715: 'Duenio::CambioArticulo': no todas las rutas de acceso de control devuelven un valor
+  TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe
