@@ -71,7 +71,7 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
               }
               if (itArt->get_Precio() > art.get_Precio())
               {
-                   precio2 = itArt->get_Precio() - art.get_Precio();
+                   precio2 = art.get_Precio() - itArt->get_Precio();
 
                    return precio2;
               }
@@ -186,6 +186,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                {
                    cout << "Va a tener que pagar por el cambio: " << tornillito << endl;
                }
+               else if (tornillito < 0)
+               {
+                   cout << "La Ferreteria le va a tener que devolver por el cambio: " << tornillito*-1 << endl;
+               }
                else if (tornillito == 0)
                {
                    cout << "No hay diferencia de precio." << endl;
@@ -200,6 +204,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 if (clavito > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << clavito << endl;
+                }
+                else if (clavito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << clavito * -1 << endl;
                 }
                 else if (clavito == 0)
                 {
@@ -216,6 +224,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 {
                     cout << "Va a tener que pagar por el cambio: " << clavito << endl;
                 }
+                else if (herramientita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << herramientita * -1 << endl;
+                }
                 else if (herramientita == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -231,6 +243,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 {
                     cout << "Va a tener que pagar por el cambio: " << tarugo << endl;
                 }
+                else if (tarugo < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << tarugo * -1 << endl;
+                }
                 else if (tarugo == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -245,6 +261,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 if (mecha > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << mecha << endl;
+                }
+                else if (mecha < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << mecha * -1 << endl;
                 }
                 else if (mecha == 0)
                 {
@@ -293,6 +313,10 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras ce
                 {
                     cout << "Va a tener que pagar por el cambio: " << cerrojito << endl;
                 }
+                else if (cerrojito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << cerrojito * -1 << endl;
+                }
                 else if (cerrojito == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -308,6 +332,10 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras ce
                 {
                     cout << "Va a tener que pagar por el cambio: " << cerrajedurita << endl;
                 }
+                else if (cerrajedurita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << cerrajedurita * -1 << endl;
+                }
                 else if (cerrajedurita == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -322,6 +350,10 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras ce
                 if (llavecita > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << llavecita << endl;
+                }
+                else if (llavecita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << llavecita * -1 << endl;
                 }
                 else if (llavecita == 0)
                 {
@@ -371,6 +403,10 @@ void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, 
                 {
                     cout << "Va a tener que pagar por el cambio: " << cablecito << endl;
                 }
+                else if (cablecito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << cablecito * -1 << endl;
+                }
                 else if (cablecito == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -385,6 +421,10 @@ void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, 
                 if (lamparita > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << cablecito << endl;
+                }
+                else if (lamparita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << lamparita * -1 << endl;
                 }
                 else if (lamparita == 0)
                 {
@@ -401,6 +441,10 @@ void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, 
                 {
                     cout << "Va a tener que pagar por el cambio: " << enchufecito << endl;
                 }
+                else if (enchufecito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << enchufecito * -1 << endl;
+                }
                 else if (enchufecito == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -415,6 +459,10 @@ void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, 
                 if (portalamparita > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << portalamparita << endl;
+                }
+                else if (portalamparita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << portalamparita * -1 << endl;
                 }
                 else if (portalamparita == 0)
                 {
@@ -462,6 +510,10 @@ void Duenio::Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute)
                 {
                     cout << "Va a tener que pagar por el cambio: " << ollitas << endl;
                 }
+                else if (ollitas < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << ollitas * -1 << endl;
+                }
                 else if (ollitas == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -476,6 +528,10 @@ void Duenio::Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute)
                 if (utencillito > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << utencillito << endl;
+                }
+                else if (utencillito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << utencillito * -1 << endl;
                 }
                 else if (utencillito == 0)
                 {
@@ -524,6 +580,10 @@ void Duenio::Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlan
                 {
                     cout << "Va a tener que pagar por el cambio: " << tapita << endl;
                 }
+                else if (tapita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << tapita * -1 << endl;
+                }
                 else if (tapita == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -539,6 +599,10 @@ void Duenio::Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlan
                 {
                     cout << "Va a tener que pagar por el cambio: " << tablita << endl;
                 }
+                else if (tablita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << tablita * -1 << endl;
+                }
                 else if (tablita == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -553,6 +617,10 @@ void Duenio::Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlan
                 if (tendederito > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << tendederito << endl;
+                }
+                else if (tendederito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << tendederito * -1 << endl;
                 }
                 else if (tendederito == 0)
                 {
@@ -600,6 +668,10 @@ void Duenio::Imprimir_Menu_Banio(Cliente cli, BarralesCortina barr, EscobillasBa
                 {
                     cout << "Va a tener que pagar por el cambio: " << escobillita << endl;
                 }
+                else if (escobillita < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << escobillita * -1 << endl;
+                }
                 else if (escobillita == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
@@ -614,6 +686,10 @@ void Duenio::Imprimir_Menu_Banio(Cliente cli, BarralesCortina barr, EscobillasBa
                 if (barralito > 0)
                 {
                     cout << "Va a tener que pagar por el cambio: " << barralito << endl;
+                }
+                else if (barralito < 0)
+                {
+                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << barralito * -1 << endl;
                 }
                 else if (barralito == 0)
                 {
