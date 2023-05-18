@@ -16,7 +16,7 @@ protected:
     unsigned int Precio;
     bool Cambio;
     string EstadoArt;
-    string TipoProducto;
+    TipoProducto;
     float Alto;
     float Ancho;
     float Largo;

@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <iterator>
 
+#include "TipoProducto.h"
 #include "Cliente.h"
 #include "Articulo.h"
 #include "Ferreteria.h"
@@ -15,8 +16,27 @@ using namespace std;
 int main() 
 {
 	bool CHANGE = false;
+	unsigned int opcion = 0;
 	cout << "¿Desea Cambiar un Articulo? (Poner 1 si quiere, o 0 si no quiere) " << endl;
 	cin >> CHANGE;
+
+	if (CHANGE == true)
+	{
+		cout << "¿Por que Articulo desea Cambiar?" << endl;
+		cin >> opcion;
+
+		switch (opcion)
+			case(1):
+				if(Tip)
+
+		if (itArt->get_Cambio() == true)
+		{
+			if (cli.get_EnvoltorioIntacto() == true)
+			{
+				
+			}
+		}
+	}
 
 	Ferreteria ferr ("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
 	Duenio due ("62739", "MaterClas", "Rodrigo", Maculino, true);
