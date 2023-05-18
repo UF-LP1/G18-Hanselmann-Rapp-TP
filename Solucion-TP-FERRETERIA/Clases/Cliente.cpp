@@ -154,4 +154,5 @@ int Cliente::elegir_art(Articulo art)  //Agregar al carrito y probamos el Trycat
             return itArt->get_Cantidad();
         }
     }
+    return 1;
 }

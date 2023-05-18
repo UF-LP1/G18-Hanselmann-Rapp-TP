@@ -35,13 +35,10 @@ bool Cerrajero::DuplicarLlaves(LLaves llavelinda, Cliente cli) //Funcion duplica
     {
         if (cli.get_Dupllaves() == true && llavelinda.get_PermisoEdificio() == true)
         {
-            cout << "Duplico una llave: " << llavelinda.get_LLavecita() << " del edificio:" << cli.get_Direccion() << endl;
-
             return true;
         }
         else
         {
-            cout << "No tengo permiso para duplicar la llave." << endl;
             return false;
         }
     }

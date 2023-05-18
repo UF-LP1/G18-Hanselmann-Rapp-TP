@@ -8,8 +8,6 @@
 #include <algorithm>
 #include <iterator>
 
-#include "TipoProducto.h"
-
 using namespace std;
 
 class Articulo 

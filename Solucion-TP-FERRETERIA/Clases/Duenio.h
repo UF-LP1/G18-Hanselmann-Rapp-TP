@@ -24,6 +24,8 @@ public:
     
     int CambioArticulo(Articulo art, Cliente cli);
 
+    int consrandom(int maximo, int minimo);
+
     void imprimir_MenuPrincipal();
 
     void Imprimir_Menu_ArtFerreteria();

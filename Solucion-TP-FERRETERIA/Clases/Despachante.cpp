@@ -33,14 +33,10 @@ bool Despachante::enviar_articulo(Articulo arti, Cliente cli) //enviamos el arti
 {
     if (cli.get_EnvioDomicilio() == true)
     {
-        cout << "Se envia el articulo: " << arti.get_TipoProducto() << " hacia la direccion: " << cli.get_Direccion() << endl;
-
         return true;
     }
     else
     {
-        cout << "No quiere hacer ningun envio a domicilio." << endl;
-
         return false;
     }
 }

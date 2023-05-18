@@ -99,6 +99,13 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
     }
 }
 
+int Duenio::consrandom(int maximo, int minimo)
+{
+    srand(time(NULL));
+    int valor = rand() % (maximo - minimo) + minimo;
+    return valor;
+}
+
 void Duenio::imprimir_MenuPrincipal()
 {
    int opcion = 0;
@@ -160,6 +167,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria()
 {
     int opcion = 0;
     bool regresar = true;
+    int Tornillin = 0, clavitito = 0, herramientita = 0, taruguillo = 0, mechitita = 0;
 
     do
     {
@@ -180,23 +188,23 @@ void Duenio::Imprimir_Menu_ArtFerreteria()
         switch (opcion)
         {
         case (1):
-            //usar un random para el enum de tornillos.
+            Tornillin = Duenio::consrandom(2, 0); //me va a decir que tipo de tornillo es
             break;
 
         case (2):
-            //usar un random para el enum de clavos.
+            clavitito = Duenio::consrandom(2, 0); //usar un random para el enum de clavos.
             break;
 
         case (3):
-            //usar un random para el enum de herramientas.
+            herramientita = Duenio::consrandom(3, 0); //usar un random para el enum de herramientas.
             break;
 
         case (4):
-            //usar un random para el enum de tarugos.
+            taruguillo = Duenio::consrandom(3, 0); //usar un random para el enum de tarugos.
             break;
 
         case (5):
-            //usar un random para el enum de mechas.
+            mechitita = Duenio::consrandom(2, 0);//usar un random para el enum de mechas.
             break;
 
         case(0):
