@@ -153,7 +153,7 @@ int main()
 
 	catch(int stock)
 	{
-		cout << "Se encontro un error" << endl;
+		cout << "No funciona el stock ya que nos ha dado un valor irreal" << endl;
 	}
 
 	return 0;
