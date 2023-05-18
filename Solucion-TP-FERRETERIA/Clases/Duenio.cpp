@@ -96,7 +96,7 @@ int Duenio::consrandom(int maximo, int minimo)
     return valor;
 }
 
-void Duenio::imprimir_MenuPrincipal(Articulo art, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco)
+void Duenio::imprimir_MenuPrincipal(Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco)
 {
    int opcion = 0;
    bool salir = true;
@@ -105,7 +105,7 @@ void Duenio::imprimir_MenuPrincipal(Articulo art, Cliente cli, Tornillos torni, 
     {
         system("cls");
 
-        cout << "\n\n\t\t\tMENU CAMIO DE ARTICULO" << endl;
+        cout << "\n\n\t\t\tMENU CAMBIO DE ARTICULO" << endl;
         cout << "\t\t\t--------------" << endl;
         cout << "\t1. ArtFerreteria" << endl;
         cout << "\t2. Cerrajeria" << endl;
@@ -121,11 +121,7 @@ void Duenio::imprimir_MenuPrincipal(Articulo art, Cliente cli, Tornillos torni, 
         switch (opcion)
         {
             case(1):
-                Imprimir_Menu_ArtFerreteria(torni, clavi, herri, tar, mech);
-                if (torni.get_Cambio() == true)
-                {
-                    Duenio::CambioArticulo(art, cli);
-                }
+                Imprimir_Menu_ArtFerreteria(cli, torni, clavi, herri, tar, mech);
                 break;
 
             case(2):
@@ -157,10 +153,10 @@ void Duenio::imprimir_MenuPrincipal(Articulo art, Cliente cli, Tornillos torni, 
     system("cls");
 }
 
-void Duenio::Imprimir_Menu_ArtFerreteria(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech)
+void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech)
 {
     int opcion = 0;
-    bool regresar = true;
+    bool regresar = true, salir = true;
     int Tornillin = 0, clavitito = 0, herramientita = 0, taruguillo = 0, mechitita = 0;
 
     do
@@ -182,8 +178,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Tornillos torni, Clavos clavi, Herramie
         switch (opcion)
         {
         case (1):
-            Tornillin = Duenio::consrandom(2, 0); //me va a decir que tipo de tornillo es
-            torni.get_tornillin() == Tornillin;
+            if (torni.get_Cambio() == true)
+            {
+               Duenio::CambioArticulo(torni, cli);
+            }
             break;
 
         case (2):

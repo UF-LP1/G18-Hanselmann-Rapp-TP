@@ -21,7 +21,36 @@ int main()
 	Despachante despi("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
 	Cerrajero cerraj("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
 
-	Tornillos tornito(3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", "Cabezita", "Rosca", "Madera", Lateral);
+	//Artferreteria
+	Tornillos screw(1, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 10, "Metal", "Cabezita", "Rosca", "Madera", Lateral);
+	Clavos nail (2, true, "Perfecto", "clavo", 2.03, 0.65, 0.80, 20, "Acero", Anillados, "Cabezita");
+	Herramientas tool(3, true, "Perfecto", "martillo", 2.03, 0.65, 0.80, 30, "Madera", Martillos, "Casio");
+	Tarugos dowel(4, true, "Perfecto", "tarugo", 2.03, 0.65, 0.80, 40, "Metal", Multiuso, "Acero");
+
+	//Cerrajeria
+	Mechas wick(5, true, "Perfecto", "mecha", 2.03, 0.65, 0.80, 50, "Acero", Helicoideal, "Madera");
+	Cerrojos bolt(6, true, "Perfecto", "cerrojo", 2.03, 0.65, 0.80, 60, "Acero", Doble);
+	Cerraduras lock(7, true, "Perfecto", "cerradura", 2.03, 0.65, 0.80, 70, "Metal", Cilindricas);
+	LLaves key(8, true, "Perfecto", "llave", 2.03, 0.65, 0.80, 80, "metal", DobleTambor, true);
+
+	//Electricidad
+	Cables cord(9, true, "Perfecto", "cable", 2.03, 0.65, 0.80, 90, 25, 35, Flexible, "aislado", "cubierta");
+	Lamparas lamp(10, true, "Perfecto", "lampara", 2.03, 0.65, 0.80, 100, 26, 36, Fluorescentes, "ondulado");
+	Enchufes plug(11, true, "Perfecto", "enchufe", 2.03, 0.65, 0.80, 110, 27, 37, Europlug);
+	Portalamparas lampholder(12, true, "Perfecto", "portalampara", 2.03, 0.65, 0.80, 120, 28, 38, Bayoneta);
+
+	//Cocina
+	Utencillos utensil(13, true, "Perfecto", "utencillo", 2.03, 0.65, 0.80, 130, true, Tenedor, "Plastico");
+	Ollas pot(14, true, "Perfecto", "ollas", 2.03, 0.65, 0.80, 140, true, Programables, "Acero");
+
+	//Bazar
+	TendederosRopa cloth(15, true, "Perfecto", "tendedor", 2.03, 0.65, 0.80, 150, "Azul", Radiador, "Plastico");
+	TablasPlanchar ironing(16, true, "Perfecto", "tablaplanchar", 2.03, 0.65, 0.80, 160, "Rojo", Pared, "Casio", "Metal");
+	TapasInodoro toilet(17, true, "Perfecto", "tapasinodoro", 2.03, 0.65, 0.80, 170, "Amarillo", Rectangular, "Anclaje", "Rectangular");
+
+	//Banio
+	BarralesCortina barral(18, true, "Perfecto", "barralescortina", 2.03, 0.65, 0.80, 180, true, Curvos, "plastico", 15);
+	EscobillasBanio escob(19, true, "Perfecto", "escobillasbanio", 2.03, 0.65, 0.80, 190, true, Cerdas, "patitos", "Casio", "plastico");
 
 	time_t tiempito;
 	time(&tiempito);
@@ -59,8 +88,6 @@ int main()
 	string identif_art = due.identificar_art(Javier, art) ? "Trajo una Foto o un Articulo Roto." : "No trajo ni una Foto ni un Articulo Roto."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
 	string envia_Art = despi.enviar_articulo(art, Javier) ? "El cliente quiere un envio a su domicilio." : "El cliente no quiere un pedido a domicilio."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
-
-	cout << envia_Art << endl;
 
 	string DupiLLavecita = cerraj.DuplicarLlaves(llave, Javier) ? "El cliente quiere duplicar una llave" : "El cliente no quiere duplicar ninguna llave o no tengo el permiso para duplicar la llave."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
@@ -111,7 +138,7 @@ int main()
 			break;
 
 		case(4):
-			//due.imprimir_MenuPrincipal();
+			due.imprimir_MenuPrincipal(Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
 			cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 			salir = false;
 			break;
