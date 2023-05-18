@@ -5,6 +5,6 @@
 #ifndef _TIPOTORNILLO_H
 #define _TIPOTORNILLO_H
 
-enum TipoTornillo { ParaRosca, ParaMadera, Literal1 };
+enum TipoTornillo { ParaRosca, ParaMadera, Lateral };
 
 #endif //_TIPOTORNILLO_H

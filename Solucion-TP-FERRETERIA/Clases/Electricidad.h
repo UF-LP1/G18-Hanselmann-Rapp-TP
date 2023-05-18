@@ -6,6 +6,10 @@
 #define _ELECTRICIDAD_H
 
 #include "Articulo.h"
+#include "Cables.h"
+#include "Portalamparas.h"
+#include "Lamparas.h"
+#include "Enchufes.h"
 
 class Electricidad: public Articulo 
 {

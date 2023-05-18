@@ -8,6 +8,13 @@
 #include <algorithm>
 #include <iterator>
 
+#include "ArtFerreteria.h"
+#include "Electricidad.h"
+#include "Banio.h"
+#include "Bazar.h"
+#include "Cocina.h"
+#include "Cerrajeria.h"
+
 using namespace std;
 
 class Articulo 

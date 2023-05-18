@@ -1,8 +1,3 @@
-/**
- * Project Untitled
- */
-
-
 #ifndef _TIPOTENDEDERO_H
 #define _TIPOTENDEDERO_H
 

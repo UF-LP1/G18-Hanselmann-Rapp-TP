@@ -6,6 +6,7 @@
 #define _ESCOBILLASBANIO_H
 
 #include "Banio.h"
+#include "TipoEscobillaBanio.h"
 
 class EscobillasBanio: public Banio 
 {
@@ -32,7 +33,7 @@ public:
     void set_MaterialEscobilla(string NuevoEstado);
 
 private: 
-    string TipoEscobilla;
+    TipoEscobillaBanio EscobillinBanio;
     string DisenioEscobilla;
     string MarcaEscobilla;
     string MaterialEscobilla;

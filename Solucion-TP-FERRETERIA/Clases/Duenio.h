@@ -26,19 +26,19 @@ public:
 
     int consrandom(int maximo, int minimo);
 
-    void imprimir_MenuPrincipal();
+    void imprimir_MenuPrincipal(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
 
-    void Imprimir_Menu_ArtFerreteria();
+    void Imprimir_Menu_ArtFerreteria(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
 
-    void Imprimir_Menu_Cerrajeria();
+    void Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves llav);
 
-    void Imprimir_Menu_Electricidad();
+    void Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
 
-    void Imprimir_Menu_Cocina();
+    void Imprimir_Menu_Cocina(Ollas oll, Utencillos ute);
 
-    void Imprimir_Menu_Bazar();
+    void Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
 
-    void Imprimir_Menu_Banio();
+    void Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco);
   
 private: 
     bool Disponibilidad;
