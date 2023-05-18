@@ -139,7 +139,6 @@ int main()
 
 		case(4):
 			due.imprimir_MenuPrincipal(Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
-			cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 			salir = false;
 			break;
 

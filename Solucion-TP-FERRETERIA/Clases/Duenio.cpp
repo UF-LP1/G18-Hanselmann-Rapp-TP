@@ -89,7 +89,7 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
     }
 }
 
-int Duenio::consrandom(int maximo, int minimo)
+int Duenio::consrandom(int maximo, int minimo) //habria que borrarla
 {
     srand(time(NULL));
     int valor = rand() % (maximo - minimo) + minimo;
@@ -125,23 +125,23 @@ void Duenio::imprimir_MenuPrincipal(Cliente cli, Tornillos torni, Clavos clavi, 
                 break;
 
             case(2):
-                Imprimir_Menu_Cerrajeria(cerro, cerra, llav);
+                Imprimir_Menu_Cerrajeria(cli, cerro, cerra, llav);
                 break;
 
             case(3):
-                Imprimir_Menu_Electricidad(cab, lamp, enchu, port);
+                Imprimir_Menu_Electricidad(cli, cab, lamp, enchu, port);
                 break;
 
             case(4):
-                Imprimir_Menu_Cocina(oll, ute);
+                Imprimir_Menu_Cocina(cli, oll, ute);
                 break;
 
             case(5):
-                Imprimir_Menu_Bazar(tendrop, tabpla, tapin);
+                Imprimir_Menu_Bazar(cli, tendrop, tabpla, tapin);
                 break;
 
             case(6):
-                Imprimir_Menu_Banio(barr, esco);
+                Imprimir_Menu_Banio(cli, barr, esco);
                 break; 
 
             case(0):
@@ -157,6 +157,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
 {
     int opcion = 0;
     bool regresar = true, salir = true;
+    int tornillito = 0, clavito = 0, herramientita = 0, tarugo = 0, mecha = 0;
 
     do
     {
@@ -179,35 +180,75 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
         case (1):
             if (torni.get_Cambio() == true)
             {
-               Duenio::CambioArticulo(torni, cli);
-            }
+               tornillito = Duenio::CambioArticulo(torni, cli);
+               if (tornillito > 0)
+               {
+                   cout << "Va a tener que pagar por el cambio: " << tornillito << endl;
+               }
+               if (tornillito == 0)
+               {
+                   cout << "No hay diferencia de precio." << endl;
+               }
+            }   
             break;
 
         case (2):
             if (clavi.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(clavi, cli);
+                clavito = Duenio::CambioArticulo(clavi, cli);
+                if (clavito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << clavito << endl;
+                }
+                if (clavito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (3):
             if (herri.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(herri, cli);
+                herramientita = Duenio::CambioArticulo(herri, cli);
+                if (herramientita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << clavito << endl;
+                }
+                if (herramientita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (4):
             if (tar.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(tar, cli);
+                tarugo = Duenio::CambioArticulo(tar, cli);
+                if (tarugo > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << tarugo << endl;
+                }
+                if (tarugo == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (5):
             if (mech.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(mech, cli);
+                mecha = Duenio::CambioArticulo(mech, cli);
+                if (mecha > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << mecha << endl;
+                }
+                if (mecha == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
@@ -223,6 +264,7 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras ce
 {
     int opcion = 0;
     bool regresar = true;
+    int cerrojito = 0, crrajdurita = 0, llavecita = 0;
 
     do
     {
