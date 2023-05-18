@@ -22,6 +22,8 @@ int main()
 	Cerrajero cerraj ("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
 
 	Tornillos tornito (3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", "Cabezita", "Rosca", "Madera", Lateral);
+	Clavos clavin(3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", Anillados, "Cabezita");
+	Tornillos tornito(3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", "Cabezita", "Rosca", "Madera", Lateral);
 
 	time_t tiempito;
 	time(&tiempito);
