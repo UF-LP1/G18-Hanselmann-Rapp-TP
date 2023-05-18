@@ -12,16 +12,16 @@
 
 using namespace std;
 
-int main() 
+int main()
 {
 	bool CHANGE = false;
-	
-	Ferreteria ferr ("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
-	Duenio due ("62739", "MaterClas", "Rodrigo", Maculino, true);
-	Despachante despi ("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
-	Cerrajero cerraj ("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
 
-	Tornillos tornito (3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", "Cabezita", "Rosca", "Madera", Lateral);	
+	Ferreteria ferr("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
+	Duenio due("62739", "MaterClas", "Rodrigo", Maculino, true);
+	Despachante despi("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
+	Cerrajero cerraj("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
+
+	Tornillos tornito(3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", "Cabezita", "Rosca", "Madera", Lateral);
 
 	time_t tiempito;
 	time(&tiempito);
@@ -32,9 +32,9 @@ int main()
 	list <Articulo> Articulos;
 	list <HerramientasAlquiler> Amoladorcita;
 
-	Articulo art1(5, true, "Perfecto","clavos", 2.05, 3.04, 4.01, 0);
+	Articulo art1(5, true, "Perfecto", "clavos", 2.05, 3.04, 4.01, 0);
 	Articulo art2(15, true, "Perfecto", "taruchas", 2.05, 3.04, 4.01, 57);
-	Articulo art3 (10, true, "Perfecto", "mechas", 2.05, 3.04, 4.01, 4);
+	Articulo art3(10, true, "Perfecto", "mechas", 2.05, 3.04, 4.01, 4);
 
 	Articulos.push_back(art1);
 	Articulos.push_back(art2);
@@ -48,11 +48,11 @@ int main()
 	Amoladorcita.push_back(herralq2);
 	Amoladorcita.push_back(herralq3);
 
-	Cliente Javier ("45545166", "Javier", "Peña", Otro, Foto, "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
+	Cliente Javier("45545166", "Javier", "Peña", Otro, Foto, "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
 
-	Articulo art (345, true, "Perfecto", "tornillos", 2.05, 3.04, 4.01, 98);
+	Articulo art(345, true, "Perfecto", "tornillos", 2.05, 3.04, 4.01, 98);
 
-	LLaves llave (3, true, "Perfecto", "llave", 2.05, 3.04, 4.01, 98, "metal", LLavesMagneticas, true);
+	LLaves llave(3, true, "Perfecto", "llave", 2.05, 3.04, 4.01, 98, "metal", LLavesMagneticas, true);
 
 	string abierto = ferr.abrir(horacio) ? "Abierta" : "Cerrada"; //Uso el operador ternario para que me diga si esta Abierto o Cerrada
 
@@ -66,7 +66,7 @@ int main()
 
 	int opcion = 0;
 	bool salir = true;
-	
+
 	do
 	{
 		system("cls");
@@ -80,6 +80,7 @@ int main()
 		cout << "\t5. Funcion Enviar_Articulo_Domicilio()" << endl;
 		cout << "\t6. Funcion Duplicar_Llave()" << endl;
 		cout << "\t7. FuncionStatic Cantidad_Articulos_Totales()" << endl;
+		cout << "\t8. Funcion try-catch" << endl;
 		cout << "\t0. SALIR" << endl;
 
 		cout << "\tIngrese una Opcion: ";
@@ -91,7 +92,7 @@ int main()
 			cout << "La ferreteria esta: " << abierto << endl;
 			salir = false;
 			break;
-			
+
 		case(2):
 			cout << "Amoladoras = 0, Lijadoras = 1, Perforadoras = 2" << endl;
 			cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
@@ -100,7 +101,7 @@ int main()
 
 		case(3):
 			cout << identif_art << endl;
-			if (Javier.get_fotinartin() == Foto || Javier.get_fotinartin() == ArtRoto )
+			if (Javier.get_fotinartin() == Foto || Javier.get_fotinartin() == ArtRoto)
 			{
 				cout << "Alto: " << art.get_Alto() << endl;
 				cout << "Ancho: " << art.get_Ancho() << endl;
@@ -139,6 +140,19 @@ int main()
 			salir = false;
 			break;
 
+		case(8):
+			try
+			{
+				Javier.elegir_art(art);
+			}
+
+			catch (int stock)
+			{
+				cout << "No funciona el stock ya que nos ha dado un valor irreal" << endl;
+			}
+			salir = false;
+			break;
+
 		case(0):
 			cout << "Por que apreto la opcion de SALIR?:/" << endl;
 			salir = false;
@@ -146,15 +160,4 @@ int main()
 		}
 	} while (salir);
 
-	try 
-	{
-		Javier.elegir_art(art);
-	}
-
-	catch(int stock)
-	{
-		cout << "No funciona el stock ya que nos ha dado un valor irreal" << endl;
-	}
-
-	return 0;
 }
