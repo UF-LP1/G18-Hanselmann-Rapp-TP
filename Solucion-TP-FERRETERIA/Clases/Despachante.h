@@ -9,7 +9,7 @@ class Despachante: public Empleado
 {
 public: 
 
-    Despachante(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_, string Pedido_);
+    Despachante(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, unsigned int TiempoTrabajado_, string Pedido_);
     ~Despachante();
 
     string get_Nombre();
@@ -18,7 +18,7 @@ public:
   
     void set_Pedido(string NuevoEstado);
     
-    static bool enviar_articulo(Articulo arti, Cliente cli);
+    bool enviar_articulo(Articulo arti, Cliente cli);
 
 private: 
     string Pedido;

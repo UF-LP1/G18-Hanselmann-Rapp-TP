@@ -4,7 +4,7 @@
  * Plomero implementation
  */
 
-Plomero::Plomero(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, time_t TiempoTrabajado_, TipoTuberia tub, float Longitud_, float Ancho_): Empleado(DNI_, Nombre_, Apellido_, Sexo_, Salario_, TipoTransporte_, TiempoTrabajado_)
+Plomero::Plomero(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, unsigned int TiempoTrabajado_, TipoTuberia tub, float Longitud_, float Ancho_): Empleado(DNI_, Nombre_, Apellido_, Sexo_, Salario_, TipoTransporte_, TiempoTrabajado_)
 {
     this->Tuberias = tub;
     this->Longitud = Longitud_;

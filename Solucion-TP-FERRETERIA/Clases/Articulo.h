@@ -22,12 +22,6 @@ protected:
     float Largo;
     unsigned int Cantidad;
     static unsigned int CantidadMaximaArticulos;
-    friend class ArtFerreteria;
-    friend class Banio;
-    friend class Bazar;
-    friend class Cerrajeria;
-    friend class Cocina;
-    friend class Electricidad;
 
 public: 
 

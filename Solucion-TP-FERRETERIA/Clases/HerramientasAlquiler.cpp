@@ -4,7 +4,7 @@
  * HerramientasAlquiler implementation
  */
 
-HerramientasAlquiler::HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, TipoHerrAlquiler HerrAlquiler_, unsigned int Cant_Horas_Alquiler_)
+HerramientasAlquiler::HerramientasAlquiler(TipoHerrAlquiler HerrAlquiler_, string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, unsigned int Cant_Horas_Alquiler_)
 {
     this->Modelo = Modelo_;
     this->Condicion = Condicion_;

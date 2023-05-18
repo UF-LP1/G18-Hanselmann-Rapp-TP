@@ -36,7 +36,7 @@ public:
     bool get_Disponibilidad();
   
     void set_Disponibilidad(bool NuevoEstado);
-    
+ 
     void atender_cliente(Cliente cli);
     
     bool identificar_art(Cliente cli, Articulo art);

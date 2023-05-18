@@ -20,7 +20,7 @@ class HerramientasAlquiler
 {
 public: 
     
-    HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, TipoHerrAlquiler HerrAlquiler_, unsigned int Cant_Horas_Alquiler_);
+    HerramientasAlquiler(TipoHerrAlquiler HerrAlquiler_, string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, unsigned int Cant_Horas_Alquiler_);
 
     ~HerramientasAlquiler();
 
@@ -44,7 +44,7 @@ public:
     
     void set_PrecioAlquiler(unsigned int NuevoEstado);
 
-    void set_TipoHerrAlquiler (TipoHerrAlquiler NuevoEstado);
+    void set_TipoHerrAlquiler(TipoHerrAlquiler NuevoEstado);
 
     void set_Cant_Horas_Alquiler(unsigned int NuevoEstado);
 
