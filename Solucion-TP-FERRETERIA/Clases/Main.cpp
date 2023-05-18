@@ -22,14 +22,6 @@ int main()
 	Despachante despi = Despachante("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
 	Cerrajero cerraj = Cerrajero("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
 
-	cout << "¿Desea Cambiar un Articulo? (Poner 1 si quiere, o 0 si no quiere) ";
-	cin >> CHANGE;
-
-	if (CHANGE == true)
-	{
-		due.imprimir_MenuPrincipal();
-	}
-
 	time_t tiempito;
 	time(&tiempito);
 	Horario horacio = Horario(tiempito);
@@ -69,6 +61,14 @@ int main()
 	cout << "Amoladoras = 0, Lijadoras = 1, Perforadoras = 2" << endl;
 
 	cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
+
+	cout << "¿Desea Cambiar un Articulo? (Poner 1 si quiere, o 0 si no quiere) ";
+	cin >> CHANGE;
+
+	if (CHANGE == true)
+	{
+		due.imprimir_MenuPrincipal();
+	}
 
 	cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 
