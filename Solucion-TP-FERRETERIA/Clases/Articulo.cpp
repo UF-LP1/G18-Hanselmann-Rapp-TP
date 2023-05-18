@@ -39,11 +39,6 @@ string Articulo::get_EstadoArt()
     return this->EstadoArt;
 }
 
-string Articulo::get_TipoProducto() 
-{
-    return this->TipoProducto;
-}
-
 float Articulo::get_Alto() 
 {
     return this->Alto;
@@ -69,6 +64,11 @@ unsigned int Articulo::get_CantidadMaximaArticulos()
     return CantidadMaximaArticulos;
 }
 
+string Articulo::get_TipoProducto()
+{
+    return this->TipoProducto;
+}
+
 void Articulo::set_Precio(unsigned int NuevoEstado) 
 {
     this->Precio = NuevoEstado;
@@ -82,11 +82,6 @@ void Articulo::set_Cambio(bool NuevoEstado)
 void Articulo::set_EstadoArt(string NuevoEstado) 
 {
     this->EstadoArt = NuevoEstado;
-}
-
-void Articulo::set_TipoProducto(string NuevoEstado)
-{
-    this->TipoProducto = NuevoEstado;
 }
 
 void Articulo::set_Alto(float NuevoEstado)
@@ -107,4 +102,9 @@ void Articulo::set_Largo(float NuevoEstado)
 void Articulo::set_Cantidad(unsigned int NuevoEstado) 
 {
     this->Cantidad = NuevoEstado;
+}
+
+void Articulo::set_TipoProducto(string NuevoEstado)
+{
+    this->TipoProducto = NuevoEstado;
 }

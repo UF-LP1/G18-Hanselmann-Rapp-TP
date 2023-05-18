@@ -4,7 +4,6 @@
 #include <algorithm>
 #include <iterator>
 
-#include "TipoProducto.h"
 #include "Cliente.h"
 #include "Articulo.h"
 #include "Ferreteria.h"
@@ -16,32 +15,20 @@ using namespace std;
 int main() 
 {
 	bool CHANGE = false;
-	unsigned int opcion = 0;
-	cout << "¿Desea Cambiar un Articulo? (Poner 1 si quiere, o 0 si no quiere) " << endl;
-	cin >> CHANGE;
-
-	if (CHANGE == true)
-	{
-		cout << "¿Por que Articulo desea Cambiar?" << endl;
-		cin >> opcion;
-
-		switch (opcion)
-			case(1):
-				if(Tip)
-
-		if (itArt->get_Cambio() == true)
-		{
-			if (cli.get_EnvoltorioIntacto() == true)
-			{
-				
-			}
-		}
-	}
+	int opcion = 0;
 
 	Ferreteria ferr ("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
 	Duenio due ("62739", "MaterClas", "Rodrigo", Maculino, true);
 	Despachante despi = Despachante("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
 	Cerrajero cerraj = Cerrajero("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
+
+	cout << "¿Desea Cambiar un Articulo? (Poner 1 si quiere, o 0 si no quiere) ";
+	cin >> CHANGE;
+
+	if (CHANGE == true)
+	{
+		due.imprimir_MenuPrincipal();
+	}
 
 	time_t tiempito;
 	time(&tiempito);
@@ -57,9 +44,9 @@ int main()
 	list <HerramientasAlquiler> Amoladorcita;
 
 	
-	Articulo art1 (5, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 0);
-	Articulo art2 (15, true, "Perfecto", "tarucha", 2.05, 3.04, 4.01, 57);
-	Articulo art3 (10, true, "Perfecto", "tornillo", 2.05, 3.04, 4.01, 4);
+	Articulo art1(5, true, "Perfecto","clavos", 2.05, 3.04, 4.01, 0);
+	Articulo art2(15, true, "Perfecto", "taruchas", 2.05, 3.04, 4.01, 57);
+	Articulo art3 (10, true, "Perfecto", "mechas", 2.05, 3.04, 4.01, 4);
 
 	Articulos.push_back(art1);
 	Articulos.push_back(art2);
@@ -75,7 +62,7 @@ int main()
 
 	Cliente Javier ("45545166", "Javier", "Peña", Otro,"Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
 
-	Articulo art (345, true, "Perfecto", "clavo", 2.05, 3.04, 4.01, 98);
+	Articulo art (345, true, "Perfecto", "tornillos", 2.05, 3.04, 4.01, 98);
 
 	LLaves llave (3, true, "Perfecto", "llave", 2.05, 3.04, 4.01, 98, "metal", LLavesMagneticas, true);
 

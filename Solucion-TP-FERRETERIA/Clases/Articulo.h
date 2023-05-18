@@ -8,6 +8,8 @@
 #include <algorithm>
 #include <iterator>
 
+#include "TipoProducto.h"
+
 using namespace std;
 
 class Articulo 
@@ -16,7 +18,7 @@ protected:
     unsigned int Precio;
     bool Cambio;
     string EstadoArt;
-    TipoProducto;
+    string TipoProducto;
     float Alto;
     float Ancho;
     float Largo;
@@ -40,9 +42,7 @@ public:
     bool get_Cambio();
     
     string get_EstadoArt();
-    
-    string get_TipoProducto();
-    
+        
     float get_Alto();
     
     float get_Ancho();
@@ -52,14 +52,14 @@ public:
     unsigned int get_Cantidad();
 
     static unsigned int get_CantidadMaximaArticulos();
+    
+    string get_TipoProducto();
 
     void set_Precio(unsigned int NuevoEstado);
  
     void set_Cambio(bool NuevoEstado);
     
     void set_EstadoArt(string NuevoEstado);
-         
-    void set_TipoProducto(string NuevoEstado);
 
     void set_Alto(float NuevoEstado);
 
@@ -68,6 +68,8 @@ public:
     void set_Largo(float NuevoEstado);
 
     void set_Cantidad(unsigned int NuevoEstado);
+
+    void set_TipoProducto(string NuevoEstado);
 
 };
 #endif //_ARTICULO_H

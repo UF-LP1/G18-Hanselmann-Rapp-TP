@@ -23,6 +23,20 @@ public:
     bool identificar_art(Cliente cli, Articulo art);
     
     int CambioArticulo(Articulo art, Cliente cli);
+
+    void imprimir_MenuPrincipal();
+
+    void Imprimir_Menu_ArtFerreteria();
+
+    void Imprimir_Menu_Cerrajeria();
+
+    void Imprimir_Menu_Electricidad();
+
+    void Imprimir_Menu_Cocina();
+
+    void Imprimir_Menu_Bazar();
+
+    void Imprimir_Menu_Banio();
   
 private: 
     bool Disponibilidad;

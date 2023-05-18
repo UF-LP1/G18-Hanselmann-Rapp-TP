@@ -68,8 +68,6 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
     {
         if (cli.get_DeseaCambiarArt() == true)
         {
-            cout << "¿Por que Articulo desea Cambiar?" << endl;
-
             if (itArt->get_Cambio() == true)
             {
                 if (cli.get_EnvoltorioIntacto() == true)
@@ -99,4 +97,312 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
             }
         }
     }
+}
+
+void Duenio::imprimir_MenuPrincipal()
+{
+   int opcion = 0;
+   bool salir = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
+        cout << "\t\t\t--------------" << endl;
+        cout << "\t1. ArtFerreteria" << endl;
+        cout << "\t2. Cerrajeria" << endl;
+        cout << "\t3. Electricidad" << endl;
+        cout << "\t4. Cocina" << endl;
+        cout << "\t5. Bazar" << endl;
+        cout << "\t6. Banio" << endl;
+        cout << "\t0. SALIR" << endl;
+
+        cout << "\tIngrese una Opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+            case(1):
+                Imprimir_Menu_ArtFerreteria();
+                break;
+
+            case(2):
+                Imprimir_Menu_Cerrajeria();
+                break;
+
+            case(3):
+                Imprimir_Menu_Electricidad();
+                break;
+
+            case(4):
+                Imprimir_Menu_Cocina();
+                break;
+
+            case(5):
+                Imprimir_Menu_Bazar();
+                break;
+
+            case(6):
+                Imprimir_Menu_Banio();
+                break; 
+
+            case(0):
+                salir = false;
+                break;
+        }
+    } while (salir);
+
+    system("cls");
+}
+
+void Duenio::Imprimir_Menu_ArtFerreteria()
+{
+    int opcion = 0;
+    bool regresar = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU ARTICULOS DE FERRETERIA" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Tornillos" << endl;
+        cout << "\t2. Clavos" << endl;
+        cout << "\t3. Herramientas" << endl;
+        cout << "\t4. Tarugos" << endl;
+        cout << "\t5. Mechas" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            //usar un random para el enum de tornillos.
+            break;
+
+        case (2):
+            //usar un random para el enum de clavos.
+            break;
+
+        case (3):
+            //usar un random para el enum de herramientas.
+            break;
+
+        case (4):
+            //usar un random para el enum de tarugos.
+            break;
+
+        case (5):
+            //usar un random para el enum de mechas.
+            break;
+
+        case(0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+}
+
+void Duenio::Imprimir_Menu_Cerrajeria()
+{
+    int opcion = 0;
+    bool regresar = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU CERRAJERIA" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Cerrojos" << endl;
+        cout << "\t2. Cerraduras" << endl;
+        cout << "\t3. Llaves" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            //usar un random para el enum de cerrojos.
+            break;
+
+        case (2):
+            //usar un random para el enum de cerraduras.
+            break;
+
+        case (3):
+            //usar un random para el enum de llaves.
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+}
+
+void Duenio::Imprimir_Menu_Electricidad()
+{
+    int opcion = 0;
+    bool regresar = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU ELECTRICIDAD" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Cables" << endl;
+        cout << "\t2. Lamparas" << endl;
+        cout << "\t3. Enchufes" << endl;
+        cout << "\t4. Portalamparas" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            //usar un random para el enum de cables.
+            break;
+
+        case (2):
+            //usar un random para el enum de lamparas.
+            break;
+
+        case (3):
+            //usar un random para el enum de enchufes.
+            break;
+
+        case (4):
+            //usar un random para el enum de portalamparas.
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+}
+
+void Duenio::Imprimir_Menu_Cocina()
+{
+    int opcion = 0;
+    bool regresar = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU COCINA" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Ollas" << endl;
+        cout << "\t2. Utencillos" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            //usar un random para el enum de ollas.
+            break;
+
+        case (2):
+            //usar un random para el enum de utencillos.
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+}
+
+void Duenio::Imprimir_Menu_Bazar()
+{
+    int opcion = 0;
+    bool regresar = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU BAZAR" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Tapas de Inodoro" << endl;
+        cout << "\t2. Tablas de Planchar" << endl;
+        cout << "\t3. Tendederos de Ropa" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            //usar un random para el enum de tapas de inodoro.
+            break;
+
+        case (2):
+            //usar un random para el enum de tablas de planchar.
+            break;
+
+        case (3):
+            //usar un random para el enum de tendederos de ropa.
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+}
+
+void Duenio::Imprimir_Menu_Banio()
+{
+    int opcion = 0;
+    bool regresar = true;
+
+    do
+    {
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU BANIO" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Escobillas de Banio" << endl;
+        cout << "\t2. Barrales de Cortina" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            //usar un random para el enum de escobillas de banio.
+            break;
+
+        case (2):
+            //usar un random para el enum de barrales de cortina.
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
 }
