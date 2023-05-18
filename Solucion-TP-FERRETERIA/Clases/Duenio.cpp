@@ -159,20 +159,21 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
     bool regresar = true, salir = true;
     int tornillito = 0, clavito = 0, herramientita = 0, tarugo = 0, mecha = 0;
 
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU ARTICULOS DE FERRETERIA" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Tornillos" << endl;
+    cout << "\t2. Clavos" << endl;
+    cout << "\t3. Herramientas" << endl;
+    cout << "\t4. Tarugos" << endl;
+    cout << "\t5. Mechas" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
     do
     {
-        system("cls");
-
-        cout << "\n\n\t\t\tMENU ARTICULOS DE FERRETERIA" << endl;
-        cout << "\t\t\t------------------------" << endl;
-        cout << "\n\t1. Tornillos" << endl;
-        cout << "\t2. Clavos" << endl;
-        cout << "\t3. Herramientas" << endl;
-        cout << "\t4. Tarugos" << endl;
-        cout << "\t5. Mechas" << endl;
-        cout << "\t0. REGRESAR" << endl;
-
-        cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
 
         switch (opcion)
@@ -185,7 +186,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                {
                    cout << "Va a tener que pagar por el cambio: " << tornillito << endl;
                }
-               if (tornillito == 0)
+               else if (tornillito == 0)
                {
                    cout << "No hay diferencia de precio." << endl;
                }
@@ -200,7 +201,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 {
                     cout << "Va a tener que pagar por el cambio: " << clavito << endl;
                 }
-                if (clavito == 0)
+                else if (clavito == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
                 }
@@ -215,7 +216,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 {
                     cout << "Va a tener que pagar por el cambio: " << clavito << endl;
                 }
-                if (herramientita == 0)
+                else if (herramientita == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
                 }
@@ -230,7 +231,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 {
                     cout << "Va a tener que pagar por el cambio: " << tarugo << endl;
                 }
-                if (tarugo == 0)
+                else if (tarugo == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
                 }
@@ -245,7 +246,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
                 {
                     cout << "Va a tener que pagar por el cambio: " << mecha << endl;
                 }
-                if (mecha == 0)
+                else if (mecha == 0)
                 {
                     cout << "No hay diferencia de precio." << endl;
                 }
@@ -257,6 +258,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
             break;
 
         }
+
     } while (regresar);
 }
 
@@ -264,20 +266,21 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras ce
 {
     int opcion = 0;
     bool regresar = true;
-    int cerrojito = 0, crrajdurita = 0, llavecita = 0;
+    int cerrojito = 0, cerrajedurita = 0, llavecita = 0;
+
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU CERRAJERIA" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Cerrojos" << endl;
+    cout << "\t2. Cerraduras" << endl;
+    cout << "\t3. Llaves" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
 
     do
     {
-        system("cls");
-
-        cout << "\n\n\t\t\tMENU CERRAJERIA" << endl;
-        cout << "\t\t\t------------------------" << endl;
-        cout << "\n\t1. Cerrojos" << endl;
-        cout << "\t2. Cerraduras" << endl;
-        cout << "\t3. Llaves" << endl;
-        cout << "\t0. REGRESAR" << endl;
-
-        cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
 
         switch (opcion)
@@ -285,21 +288,45 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras ce
         case (1):
             if (cerro.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(cerro, cli);
+                cerrojito = Duenio::CambioArticulo(cerro, cli);
+                if (cerrojito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << cerrojito << endl;
+                }
+                else if (cerrojito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (2):
             if (cerra.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(cerra, cli);
+                cerrajedurita = Duenio::CambioArticulo(cerra, cli);
+                if (cerrajedurita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << cerrajedurita << endl;
+                }
+                else if (cerrajedurita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (3):
             if (llav.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(llav, cli);
+                llavecita = Duenio::CambioArticulo(llav, cli);
+                if (llavecita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << llavecita << endl;
+                }
+                else if (llavecita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
@@ -316,19 +343,22 @@ void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, 
     int opcion = 0;
     bool regresar = true;
 
+    int cablecito = 0, lamparita = 0, enchufecito = 0, portalamparita = 0;
+
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU ELECTRICIDAD" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Cables" << endl;
+    cout << "\t2. Lamparas" << endl;
+    cout << "\t3. Enchufes" << endl;
+    cout << "\t4. Portalamparas" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
     do
     {
-        system("cls");
-
-        cout << "\n\n\t\t\tMENU ELECTRICIDAD" << endl;
-        cout << "\t\t\t------------------------" << endl;
-        cout << "\n\t1. Cables" << endl;
-        cout << "\t2. Lamparas" << endl;
-        cout << "\t3. Enchufes" << endl;
-        cout << "\t4. Portalamparas" << endl;
-        cout << "\t0. REGRESAR" << endl;
-
-        cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
 
         switch (opcion)
@@ -336,28 +366,60 @@ void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, 
         case (1):
             if (cab.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(cab, cli);
+                cablecito = Duenio::CambioArticulo(cab, cli);
+                if (cablecito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << cablecito << endl;
+                }
+                else if (cablecito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (2):
             if (lamp.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(lamp, cli);
+                lamparita = Duenio::CambioArticulo(lamp, cli);
+                if (lamparita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << cablecito << endl;
+                }
+                else if (lamparita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (3):
             if (enchu.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(enchu, cli);
+                enchufecito = Duenio::CambioArticulo(enchu, cli);
+                if (enchufecito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << enchufecito << endl;
+                }
+                else if (enchufecito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (4):
             if (port.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(port, cli);
+                portalamparita = Duenio::CambioArticulo(port, cli);
+                if (portalamparita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << portalamparita << endl;
+                }
+                else if (portalamparita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
@@ -373,18 +435,21 @@ void Duenio::Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute)
 {
     int opcion = 0;
     bool regresar = true;
+
+    int ollitas = 0, utencillito = 0;
    
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU COCINA" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Ollas" << endl;
+    cout << "\t2. Utencillos" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
     do
     {
-        system("cls");
-
-        cout << "\n\n\t\t\tMENU COCINA" << endl;
-        cout << "\t\t\t------------------------" << endl;
-        cout << "\n\t1. Ollas" << endl;
-        cout << "\t2. Utencillos" << endl;
-        cout << "\t0. REGRESAR" << endl;
-
-        cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
 
         switch (opcion)
@@ -392,14 +457,30 @@ void Duenio::Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute)
         case (1):
             if (oll.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(oll, cli);
+                ollitas = Duenio::CambioArticulo(oll, cli);
+                if (ollitas > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << ollitas << endl;
+                }
+                else if (ollitas == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (2):
             if (ute.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(ute, cli);
+                utencillito = Duenio::CambioArticulo(ute, cli);
+                if (utencillito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << utencillito << endl;
+                }
+                else if (utencillito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
@@ -416,18 +497,21 @@ void Duenio::Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlan
     int opcion = 0;
     bool regresar = true;
 
+    int tendederito = 0, tablita = 0, tapita = 0;
+
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU BAZAR" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Tapas de Inodoro" << endl;
+    cout << "\t2. Tablas de Planchar" << endl;
+    cout << "\t3. Tendederos de Ropa" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
     do
     {
-        system("cls");
-
-        cout << "\n\n\t\t\tMENU BAZAR" << endl;
-        cout << "\t\t\t------------------------" << endl;
-        cout << "\n\t1. Tapas de Inodoro" << endl;
-        cout << "\t2. Tablas de Planchar" << endl;
-        cout << "\t3. Tendederos de Ropa" << endl;
-        cout << "\t0. REGRESAR" << endl;
-
-        cout << "\n\tIngrese una opcion: ";
         cin >> opcion;
 
         switch (opcion)
@@ -435,21 +519,45 @@ void Duenio::Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlan
         case (1):
             if (tapin.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(tapin, cli);
+               tapita = Duenio::CambioArticulo(tapin, cli);
+                if (tapita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << tapita << endl;
+                }
+                else if (tapita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (2):
             if (tabpla.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(tabpla, cli);
+                tablita = Duenio::CambioArticulo(tabpla, cli);
+                if (tablita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << tablita << endl;
+                }
+                else if (tablita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (3):
             if (tendrop.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(tendrop, cli);
+                tendederito = Duenio::CambioArticulo(tendrop, cli);
+                if (tendederito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << tendederito << endl;
+                }
+                else if (tendederito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
@@ -466,32 +574,51 @@ void Duenio::Imprimir_Menu_Banio(Cliente cli, BarralesCortina barr, EscobillasBa
     int opcion = 0;
     bool regresar = true;
 
+    int barralito = 0, escobillita = 0;
+
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU BANIO" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Escobillas de Banio" << endl;
+    cout << "\t2. Barrales de Cortina" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
     do
     {
-        system("cls");
-
-        cout << "\n\n\t\t\tMENU BANIO" << endl;
-        cout << "\t\t\t------------------------" << endl;
-        cout << "\n\t1. Escobillas de Banio" << endl;
-        cout << "\t2. Barrales de Cortina" << endl;
-        cout << "\t0. REGRESAR" << endl;
-
-        cout << "\n\tIngrese una opcion: ";
-        cin >> opcion;
+         cin >> opcion;
 
         switch (opcion)
         {
         case (1):
             if (esco.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(esco, cli);
+                escobillita = Duenio::CambioArticulo(esco, cli);
+                if (escobillita > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << escobillita << endl;
+                }
+                else if (escobillita == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
         case (2):
             if (barr.get_Cambio() == true)
             {
-                Duenio::CambioArticulo(barr, cli);
+                barralito = Duenio::CambioArticulo(barr, cli);
+                if (barralito > 0)
+                {
+                    cout << "Va a tener que pagar por el cambio: " << barralito << endl;
+                }
+                else if (barralito == 0)
+                {
+                    cout << "No hay diferencia de precio." << endl;
+                }
             }
             break;
 
