@@ -39,18 +39,13 @@ bool Duenio::identificar_art(Cliente cli, Articulo art) //Identificamos si quier
     list<Articulo>::iterator itArt; 
     list<Articulo> arti = cli.get_Articulos();
 
-    if (cli.get_Foto() == "Foto" || cli.get_ArtRoto() == "ArtRoto") 
+    if (cli.get_fotinartin() == Foto || cli.get_fotinartin() == ArtRoto ) 
     {
-        cout << "Alto: " << art.get_Alto() << endl;
-        cout << "Ancho: " << art.get_Ancho() << endl;
-        cout << "Largo: " << art.get_Largo() << endl;
         return true;
     }
     else 
     {
-        cout << "No trajo foto ni articulo roto" << endl;
-
-        return false;
+         return false;
     }
 
 }

@@ -6,10 +6,9 @@
 
 //&Articulos_
 
-Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
+Cliente::Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, TipoFotArt fotinartin_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_) :Persona(DNI_, Nombre_, Apellido_, Sexo_)
 {
-    this->Foto = Foto_;
-    this->ArtRoto = ArtRoto_;
+    this->fotinartin = fotinartin_;
     this->Direccion = Direccion_;
     this->MetodoPagoCli = MetodoPagoCli_;
     this->Articulos = Articulos_;
@@ -46,14 +45,9 @@ list <Articulo> Cliente::get_Articulos()
     return this->Articulos;
 }
 
-string Cliente::get_Foto() 
+TipoFotArt Cliente::get_fotinartin()
 {
-    return this->Foto;
-}
-
-string Cliente::get_ArtRoto() 
-{
-    return this->ArtRoto;
+    return this->fotinartin;
 }
 
 bool Cliente::get_EnvoltorioIntacto() 
@@ -86,14 +80,9 @@ void Cliente::set_MetodoPagoCli(MetodoPago NuevoEstado)
     this->MetodoPagoCli = NuevoEstado;
 }
 
-void Cliente::set_Foto(string NuevoEstado)
+void Cliente::set_fotinartin(TipoFotArt NuevoEstado)
 {
-    this->Foto = NuevoEstado;
-}
-
-void Cliente::set_ArtRoto(string NuevoEstado)
-{
-    this->ArtRoto = NuevoEstado;
+    this->fotinartin = NuevoEstado;
 }
 
 void Cliente::set_Direccion(string NuevoEstado)

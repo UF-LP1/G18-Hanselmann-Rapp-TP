@@ -311,5 +311,8 @@
     <ClInclude Include="TipoEscobillaBanio.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="FotoArtRoto.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

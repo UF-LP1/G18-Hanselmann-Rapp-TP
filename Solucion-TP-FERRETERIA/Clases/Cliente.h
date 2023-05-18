@@ -10,12 +10,13 @@
 #include "HerramientasAlquiler.h"
 #include "Empleado.h"
 #include "Articulo.h"
+#include "FotoArtRoto.h"
 
 class Cliente: public Persona 
 {
 public: 
 
-    Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, string Foto_, string ArtRoto_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_);
+    Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, TipoFotArt fotinartin_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_);
 
     ~Cliente();
 
@@ -28,9 +29,7 @@ public:
     
     list <Articulo> get_Articulos();
         
-    string get_Foto();
-    
-    string get_ArtRoto();
+    TipoFotArt get_fotinartin();
     
     bool get_EnvoltorioIntacto();
 
@@ -44,9 +43,7 @@ public:
     
     void set_MetodoPagoCli(MetodoPago NuevoEstado);
 
-    void set_Foto(string NuevoEstado);
-
-    void set_ArtRoto(string NuevoEstado);
+    void set_fotinartin(TipoFotArt NuevoEstado);
 
     void set_Direccion(string NuevoEstado);
 
@@ -66,8 +63,7 @@ public:
 
 private: 
     
-    string Foto;
-    string ArtRoto;
+    TipoFotArt fotinartin;
     string Direccion;
     MetodoPago MetodoPagoCli;
     list <Articulo> Articulos; //*Articulos

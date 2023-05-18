@@ -223,6 +223,7 @@
     <ClInclude Include="..\Clases\TipoUtencillo.h" />
     <ClInclude Include="..\Clases\Tornillos.h" />
     <ClInclude Include="..\Clases\Utencillos.h" />
+    <ClInclude Include="FotoArtRoto.h" />
     <ClInclude Include="TipoEscobillaBanio.h" />
     <ClInclude Include="TipoProducto.h" />
     <ClInclude Include="TipoHerrAlquiler.h" />

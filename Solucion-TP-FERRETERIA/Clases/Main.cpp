@@ -48,7 +48,7 @@ int main()
 	Amoladorcita.push_back(herralq2);
 	Amoladorcita.push_back(herralq3);
 
-	Cliente Javier ("45545166", "Javier", "Peña", Otro, "Foto", "ArtRoto", "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
+	Cliente Javier ("45545166", "Javier", "Peña", Otro, Foto, "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
 
 	Articulo art (345, true, "Perfecto", "tornillos", 2.05, 3.04, 4.01, 98);
 
@@ -100,7 +100,7 @@ int main()
 
 		case(3):
 			cout << identif_art << endl;
-			if (Javier.get_Foto() == "Foto" || Javier.get_ArtRoto() == "ArtRoto")
+			if (Javier.get_fotinartin() == Foto || Javier.get_fotinartin() == ArtRoto )
 			{
 				cout << "Alto: " << art.get_Alto() << endl;
 				cout << "Ancho: " << art.get_Ancho() << endl;
