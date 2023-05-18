@@ -20,11 +20,9 @@ class HerramientasAlquiler
 {
 public: 
     
-    HerramientasAlquiler(TipoHerrAlquiler HerrAlquiler_, string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, unsigned int Cant_Horas_Alquiler_);
+    HerramientasAlquiler(string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, TipoHerrAlquiler HerrAlquiler_, unsigned int Cant_Horas_Alquiler_);
 
     ~HerramientasAlquiler();
-
-    TipoHerrAlquiler get_TipoHerrAlquiler();
 
     string get_Modelo();
     
@@ -33,6 +31,8 @@ public:
     unsigned int get_PrecioSeguro();
     
     unsigned int get_PrecioAlquiler();
+
+    TipoHerrAlquiler get_TipoHerrAlquiler();
 
     unsigned int get_Cant_Horas_Alquiler();
   
