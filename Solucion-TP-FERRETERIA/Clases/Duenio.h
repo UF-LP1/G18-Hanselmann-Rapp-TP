@@ -49,15 +49,15 @@ public:
 
     void Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
 
-    void Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves llav);
+    void Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav);
 
-    void Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
+    void Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
 
-    void Imprimir_Menu_Cocina(Ollas oll, Utencillos ute);
+    void Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute);
 
-    void Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
+    void Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
 
-    void Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco);
+    void Imprimir_Menu_Banio(Cliente cli, BarralesCortina barr, EscobillasBanio esco);
   
 private: 
     bool Disponibilidad;

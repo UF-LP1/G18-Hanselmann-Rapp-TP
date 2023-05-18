@@ -157,7 +157,6 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
 {
     int opcion = 0;
     bool regresar = true, salir = true;
-    int Tornillin = 0, clavitito = 0, herramientita = 0, taruguillo = 0, mechitita = 0;
 
     do
     {
@@ -185,23 +184,31 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
             break;
 
         case (2):
-            clavitito = Duenio::consrandom(2, 0); //usar un random para el enum de clavos.
-            clavi.get_Clavito() == clavitito;
+            if (clavi.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(clavi, cli);
+            }
             break;
 
         case (3):
-            herramientita = Duenio::consrandom(3, 0); //usar un random para el enum de herramientas.
-            herri.get_HerramientaArtFerr() == herramientita;
+            if (herri.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(herri, cli);
+            }
             break;
 
         case (4):
-            taruguillo = Duenio::consrandom(3, 0); //usar un random para el enum de tarugos.
-            tar.get_Tarugin() == taruguillo;
+            if (tar.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(tar, cli);
+            }
             break;
 
         case (5):
-            mechitita = Duenio::consrandom(2, 0);//usar un random para el enum de mechas.
-            //mech.get_Mechita() = mechitita;
+            if (mech.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(mech, cli);
+            }
             break;
 
         case(0):
@@ -212,12 +219,10 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos cl
     } while (regresar);
 }
 
-void Duenio::Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves llav)
+void Duenio::Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav)
 {
     int opcion = 0;
     bool regresar = true;
-
-    int cerrojitito = 0, cerradurita = 0, llavecitita = 0;
 
     do
     {
@@ -236,18 +241,24 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves l
         switch (opcion)
         {
         case (1):
-            cerrojitito = Duenio::consrandom(2, 0); //usar un random para el enum de cerrojos.
-            cerro.get_Cerroj() == cerrojitito;
+            if (cerro.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(cerro, cli);
+            }
             break;
 
         case (2):
-            cerradurita = Duenio::consrandom(4, 0); //usar un random para el enum de cerraduras.
-            cerra.get_Cerrad() == cerradurita;
+            if (cerra.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(cerra, cli);
+            }
             break;
 
         case (3):
-            llavecitita = Duenio::consrandom(3, 0); //usar un random para el enum de llaves.
-            llav.get_LLavecita() == llavecitita;
+            if (llav.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(llav, cli);
+            }
             break;
 
         case (0):
@@ -258,12 +269,10 @@ void Duenio::Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves l
     } while (regresar);
 }
 
-void Duenio::Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port)
+void Duenio::Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port)
 {
     int opcion = 0;
     bool regresar = true;
-
-    int cablecito = 0, lamparitita = 0, enchufecitito = 0, portalamparitita = 0;
 
     do
     {
@@ -283,23 +292,31 @@ void Duenio::Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes ench
         switch (opcion)
         {
         case (1):
-            cablecito = Duenio::consrandom(3, 0); //usar un random para el enum de cables.
-            cab.get_Conductores() == cablecito;
+            if (cab.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(cab, cli);
+            }
             break;
 
         case (2):
-            lamparitita = Duenio::consrandom(3, 0); //usar un random para el enum de lamparas.
-            lamp.get_Lamp() == lamparitita;
+            if (lamp.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(lamp, cli);
+            }
             break;
 
         case (3):
-            enchufecitito = Duenio::consrandom(3, 0); //usar un random para el enum de enchufes.
-            enchu.get_Enchu() == enchufecitito;
+            if (enchu.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(enchu, cli);
+            }
             break;
 
         case (4):
-            portalamparitita = Duenio::consrandom(3, 0); //usar un random para el enum de portalamparas.
-            port.get_PortaLamp() == portalamparitita;
+            if (port.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(port, cli);
+            }
             break;
 
         case (0):
@@ -310,12 +327,11 @@ void Duenio::Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes ench
     } while (regresar);
 }
 
-void Duenio::Imprimir_Menu_Cocina(Ollas oll, Utencillos ute)
+void Duenio::Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute)
 {
     int opcion = 0;
     bool regresar = true;
-    int ollitita = 0, utencillitito = 0;
-
+   
     do
     {
         system("cls");
@@ -332,13 +348,17 @@ void Duenio::Imprimir_Menu_Cocina(Ollas oll, Utencillos ute)
         switch (opcion)
         {
         case (1):
-            ollitita = Duenio::consrandom(1, 0); //usar un random para el enum de ollas.
-            oll.get_Ollita() == ollitita;
+            if (oll.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(oll, cli);
+            }
             break;
 
         case (2):
-            utencillitito = Duenio::consrandom(2, 0); //usar un random para el enum de utencillos.
-            ute.get_Uten() == utencillitito;
+            if (ute.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(ute, cli);
+            }
             break;
 
         case (0):
@@ -349,12 +369,10 @@ void Duenio::Imprimir_Menu_Cocina(Ollas oll, Utencillos ute)
     } while (regresar);
 }
 
-void Duenio::Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin)
+void Duenio::Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin)
 {
     int opcion = 0;
     bool regresar = true;
-
-    int tendedorropita = 0, tablitaplanchar = 0, tapitainodoro = 0;
 
     do
     {
@@ -373,18 +391,24 @@ void Duenio::Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, 
         switch (opcion)
         {
         case (1):
-            tapitainodoro = Duenio::consrandom(2, 0); //usar un random para el enum de tapas de inodoro.
-            tapin.get_Inodorito() == tapitainodoro;
+            if (tapin.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(tapin, cli);
+            }
             break;
 
         case (2):
-            tablitaplanchar = Duenio::consrandom(3, 0); //usar un random para el enum de tablas de planchar.
-            tabpla.get_Planchita() == tablitaplanchar;
+            if (tabpla.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(tabpla, cli);
+            }
             break;
 
         case (3):
-            tendedorropita = Duenio::consrandom(2, 0); //usar un random para el enum de tendederos de ropa.
-            tendrop.get_Tendederito() == tendedorropita;
+            if (tendrop.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(tendrop, cli);
+            }
             break;
 
         case (0):
@@ -395,12 +419,10 @@ void Duenio::Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, 
     } while (regresar);
 }
 
-void Duenio::Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco)
+void Duenio::Imprimir_Menu_Banio(Cliente cli, BarralesCortina barr, EscobillasBanio esco)
 {
     int opcion = 0;
     bool regresar = true;
-
-    int barralincort = 0, escobillinban = 0;
 
     do
     {
@@ -418,13 +440,17 @@ void Duenio::Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco)
         switch (opcion)
         {
         case (1):
-            escobillinban = Duenio::consrandom(1, 0); //usar un random para el enum de escobillas de banio.
-            esco.get_EscobillinBanio() == escobillinban;
+            if (esco.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(esco, cli);
+            }
             break;
 
         case (2):
-            barralincort = Duenio::consrandom(1, 0); //usar un random para el enum de barrales de cortina.
-            barr.get_Barralito() == barralincort;
+            if (barr.get_Cambio() == true)
+            {
+                Duenio::CambioArticulo(barr, cli);
+            }
             break;
 
         case (0):
