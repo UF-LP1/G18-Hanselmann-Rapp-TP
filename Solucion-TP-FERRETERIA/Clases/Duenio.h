@@ -3,6 +3,25 @@
 
 #include "Persona.h"
 #include "Cliente.h"
+#include "Tornillos.h"
+#include "Tarugos.h"
+#include "Clavos.h"
+#include "Herramientas.h"
+#include "Mechas.h"
+#include "Cerraduras.h"
+#include "LLaves.h"
+#include "Cerrojos.h"
+#include "Cables.h"
+#include "Portalamparas.h"
+#include "Lamparas.h"
+#include "Enchufes.h"
+#include "Utencillos.h"
+#include "Ollas.h"
+#include "TendederosRopa.h"
+#include "TablasPlanchar.h"
+#include "TapasInodoro.h"
+#include "BarralesCortina.h"
+#include "EscobillasBanio.h"
 
 class Duenio: public Persona
 {
@@ -26,7 +45,7 @@ public:
 
     int consrandom(int maximo, int minimo);
 
-    void imprimir_MenuPrincipal(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
+    void imprimir_MenuPrincipal(Articulo art, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
 
     void Imprimir_Menu_ArtFerreteria(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
 

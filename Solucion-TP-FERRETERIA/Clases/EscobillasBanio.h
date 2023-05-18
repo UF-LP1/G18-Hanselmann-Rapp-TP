@@ -12,11 +12,11 @@ class EscobillasBanio: public Banio
 {
 public: 
 
-    EscobillasBanio(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, bool RepuestoArt_, string TipoEscobilla_, string DisenioEscobilla_, string MarcaEscobilla_, string MaterialEscobilla_);
+    EscobillasBanio(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, bool RepuestoArt_, TipoEscobilla EscobillinBanio_, string DisenioEscobilla_, string MarcaEscobilla_, string MaterialEscobilla_);
 
     ~EscobillasBanio();
     
-    string get_TipoEscobilla();
+    TipoEscobilla get_EscobillinBanio();
     
     string get_DisenioEscobilla();
     
@@ -24,7 +24,7 @@ public:
     
     string get_MaterialEscobilla();
  
-    void set_TipoEscobilla(string NuevoEstado);
+    void set_EscobillinBanio(TipoEscobilla NuevoEstado);
 
     void set_DisenioEscobilla(string NuevoEstado);
 
@@ -33,7 +33,7 @@ public:
     void set_MaterialEscobilla(string NuevoEstado);
 
 private: 
-    TipoEscobillaBanio EscobillinBanio;
+    TipoEscobilla EscobillinBanio;
     string DisenioEscobilla;
     string MarcaEscobilla;
     string MaterialEscobilla;

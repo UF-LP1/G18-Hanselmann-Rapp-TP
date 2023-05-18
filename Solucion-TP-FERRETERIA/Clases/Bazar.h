@@ -6,9 +6,6 @@
 #define _BAZAR_H
 
 #include "Articulo.h"
-#include "TendederosRopa.h"
-#include "TablasPlanchar.h"
-#include "TapasInodoro.h"
 
 class Bazar: public Articulo 
 {

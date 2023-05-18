@@ -66,34 +66,31 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
 
     for (i = 0; i < arti.size(); i++, itArt++)
     {
-         if (itArt->get_Cambio() == true)
+         if (cli.get_EnvoltorioIntacto() == true)
          {
-                if (cli.get_EnvoltorioIntacto() == true)
-                {
-                    if (itArt->get_Precio() < art.get_Precio())
-                    {
-                        precio = art.get_Precio() - itArt->get_Precio();
+              if (itArt->get_Precio() < art.get_Precio())
+              {
+                   precio = art.get_Precio() - itArt->get_Precio();
 
-                        return precio;
-                    }
-                    if (itArt->get_Precio() > art.get_Precio())
-                    {
-                        precio2 = itArt->get_Precio() - art.get_Precio();
+                   return precio;
+              }
+              if (itArt->get_Precio() > art.get_Precio())
+              {
+                   precio2 = itArt->get_Precio() - art.get_Precio();
 
-                        return precio2;
-                    }
-                    if (itArt->get_Precio() == art.get_Precio())
-                    {
-                        cout << "No hay diferencia de precio." << endl;
-                        return 0;
-                    }
-                    else
-                    {
-                        cout << "No hay Cambio o el Envoltorio no esta Intacto." << endl;
-                    }
-                }
-            
+                   return precio2;
+              }
+              if (itArt->get_Precio() == art.get_Precio())
+              {
+                   cout << "No hay diferencia de precio." << endl;
+                   return 0;
+              }
+              else
+              {
+                   cout << "No hay Cambio o el Envoltorio no esta Intacto." << endl;
+              }
          }
+            
     }
 }
 
@@ -104,13 +101,11 @@ int Duenio::consrandom(int maximo, int minimo)
     return valor;
 }
 
-void Duenio::imprimir_MenuPrincipal(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin)
+void Duenio::imprimir_MenuPrincipal(Articulo art, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco)
 {
    int opcion = 0;
    bool salir = true;
-
-   Tornillos torni = Tornillos();
-
+   
     do
     {
         system("cls");
@@ -132,6 +127,10 @@ void Duenio::imprimir_MenuPrincipal(Tornillos torni, Clavos clavi, Herramientas 
         {
             case(1):
                 Imprimir_Menu_ArtFerreteria(torni, clavi, herri, tar, mech);
+                if (torni.get_Cambio() == true)
+                {
+                    Duenio::CambioArticulo(art, cli);
+                }
                 break;
 
             case(2):
@@ -151,7 +150,7 @@ void Duenio::imprimir_MenuPrincipal(Tornillos torni, Clavos clavi, Herramientas 
                 break;
 
             case(6):
-                Imprimir_Menu_Banio();
+                Imprimir_Menu_Banio(barr, esco);
                 break; 
 
             case(0):
@@ -209,7 +208,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Tornillos torni, Clavos clavi, Herramie
 
         case (5):
             mechitita = Duenio::consrandom(2, 0);//usar un random para el enum de mechas.
-            mech.get_Mechita() = mechitita;
+            //mech.get_Mechita() = mechitita;
             break;
 
         case(0):
@@ -426,12 +425,13 @@ void Duenio::Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco)
         switch (opcion)
         {
         case (1):
-            escobillinban = Duenio::consrandom(2, 0); //usar un random para el enum de escobillas de banio.
-            esco.get_TipoEscobilla() == escobillinban;
+            escobillinban = Duenio::consrandom(1, 0); //usar un random para el enum de escobillas de banio.
+            esco.get_EscobillinBanio() == escobillinban;
             break;
 
         case (2):
-            //usar un random para el enum de barrales de cortina.
+            barralincort = Duenio::consrandom(1, 0); //usar un random para el enum de barrales de cortina.
+            barr.get_Barralito() == barralincort;
             break;
 
         case (0):

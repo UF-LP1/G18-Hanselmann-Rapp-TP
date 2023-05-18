@@ -7,9 +7,9 @@
 /**
  * EscobillasBaño implementation
  */
-EscobillasBanio::EscobillasBanio(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, bool RepuestoArt_, string TipoEscobilla_, string DisenioEscobilla_, string MarcaEscobilla_, string MaterialEscobilla_): Banio( Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, RepuestoArt_)
+EscobillasBanio::EscobillasBanio(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, bool RepuestoArt_, TipoEscobilla EscobillinBanio_, string DisenioEscobilla_, string MarcaEscobilla_, string MaterialEscobilla_): Banio( Precio_, Cambio_, EstadoArt_, TipoProducto_, Alto_, Ancho_, Largo_, Cantidad_, RepuestoArt_)
 {
-    this->TipoEscobilla = TipoEscobilla_;
+    this->EscobillinBanio = EscobillinBanio_;
     this->DisenioEscobilla = DisenioEscobilla_;
     this->MarcaEscobilla = MarcaEscobilla_;
     this->MaterialEscobilla = MaterialEscobilla_;
@@ -20,9 +20,9 @@ EscobillasBanio::~EscobillasBanio()
 
 }
 
-string EscobillasBanio::get_TipoEscobilla() 
+TipoEscobilla EscobillasBanio::get_EscobillinBanio()
 {
-    return this->TipoEscobilla;
+    return this->EscobillinBanio;
 }
 
 string EscobillasBanio::get_DisenioEscobilla()
@@ -40,9 +40,9 @@ string EscobillasBanio::get_MaterialEscobilla()
     return this->MaterialEscobilla;
 }
 
-void EscobillasBanio::set_TipoEscobilla(string NuevoEstado) 
+void EscobillasBanio::set_EscobillinBanio(TipoEscobilla NuevoEstado)
 {
-    this->TipoEscobilla = NuevoEstado;
+    this->EscobillinBanio = NuevoEstado;
 }
 
 void EscobillasBanio::set_DisenioEscobilla(string NuevoEstado) 

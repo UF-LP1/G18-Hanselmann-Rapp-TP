@@ -2,11 +2,6 @@
 #define _ARTFERRETERIA_H
 
 #include "Articulo.h"
-#include "Tornillos.h"
-#include "Tarugos.h"
-#include "Clavos.h"
-#include "Herramientas.h"
-#include "Mechas.h"
 
 class ArtFerreteria: public Articulo 
 {

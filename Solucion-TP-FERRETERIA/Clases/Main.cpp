@@ -18,8 +18,10 @@ int main()
 	
 	Ferreteria ferr ("Jaimito", "Tucasa", "12344", "AJAJAJ@.COM", Efectivo);
 	Duenio due ("62739", "MaterClas", "Rodrigo", Maculino, true);
-	Despachante despi = Despachante("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
-	Cerrajero cerraj = Cerrajero("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
+	Despachante despi ("123456", "Jaimito", "Perez", Maculino, 67, "Auto", 40, "pedido");
+	Cerrajero cerraj ("123456", "Juanito", "Perez", Maculino, 67, "Auto", 40, "alarma");
+
+	Tornillos tornito (3, true, "Perfecto", "tornillo", 2.03, 0.65, 0.80, 30, "Metal", "Cabezita", "Rosca", "Madera", Lateral);
 
 	time_t tiempito;
 	time(&tiempito);
@@ -108,7 +110,7 @@ int main()
 			break;
 
 		case(4):
-			due.imprimir_MenuPrincipal();
+			//due.imprimir_MenuPrincipal();
 			cout << "Va a tener que pagar por el cambio: " << due.CambioArticulo(art, Javier) << endl;
 			salir = false;
 			break;

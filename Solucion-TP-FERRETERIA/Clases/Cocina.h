@@ -6,8 +6,6 @@
 #define _COCINA_H
 
 #include "Articulo.h"
-#include "Utencillos.h"
-#include "Ollas.h"
 
 class Cocina: public Articulo 
 {

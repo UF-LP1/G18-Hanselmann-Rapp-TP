@@ -2,9 +2,6 @@
 #define _CERRAJERIA_H
 
 #include "Articulo.h"
-#include "Cerraduras.h"
-#include "LLaves.h"
-#include "Cerrojos.h"
 
 class Cerrajeria: public Articulo 
 {

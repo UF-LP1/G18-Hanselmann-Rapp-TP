@@ -6,8 +6,6 @@
 #define _BANIO_H
 
 #include "Articulo.h"
-#include "BarralesCortina.h"
-#include "EscobillasBanio.h"
 
 class Banio: public Articulo 
 {
