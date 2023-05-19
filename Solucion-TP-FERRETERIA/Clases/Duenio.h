@@ -41,23 +41,21 @@ public:
     
     bool identificar_art(Cliente cli, Articulo art);
     
-    int CambioArticulo(Articulo art, Cliente cli);
+    int CambioArticulo(Articulo art, Cliente cli, Articulo cambi);
 
-    int consrandom(int maximo, int minimo);
+    void imprimir_MenuPrincipal(Articulo art2, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
 
-    void imprimir_MenuPrincipal(Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
+    void Imprimir_Menu_ArtFerreteria(Articulo art2, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
 
-    void Imprimir_Menu_ArtFerreteria(Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
+    void Imprimir_Menu_Cerrajeria(Articulo art2, Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav);
 
-    void Imprimir_Menu_Cerrajeria(Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav);
+    void Imprimir_Menu_Electricidad(Articulo art2, Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
 
-    void Imprimir_Menu_Electricidad(Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
+    void Imprimir_Menu_Cocina(Articulo art2, Cliente cli, Ollas oll, Utencillos ute);
 
-    void Imprimir_Menu_Cocina(Cliente cli, Ollas oll, Utencillos ute);
+    void Imprimir_Menu_Bazar(Articulo art2, Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
 
-    void Imprimir_Menu_Bazar(Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
-
-    void Imprimir_Menu_Banio(Cliente cli, BarralesCortina barr, EscobillasBanio esco);
+    void Imprimir_Menu_Banio(Articulo art2, Cliente cli, BarralesCortina barr, EscobillasBanio esco);
   
 private: 
     bool Disponibilidad;

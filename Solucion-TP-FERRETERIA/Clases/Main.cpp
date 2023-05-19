@@ -59,11 +59,7 @@ int main()
 	int i = 0;
 
 	list <Articulo> Articulos;
-	list <Articulo>::iterator itArti;
-	itArti = Articulos.begin();
 	list <HerramientasAlquiler> Amoladorcita;
-	list <HerramientasAlquiler>::iterator itHerriAlqui;
-	itHerriAlqui = Amoladorcita.begin();
 
 	Articulo art1(5, true, "Perfecto", "clavos", 2.05, 3.04, 4.01, 0);
 	Articulo art2(15, true, "Perfecto", "taruchas", 2.05, 3.04, 4.01, 57);
@@ -84,6 +80,8 @@ int main()
 	Cliente Javier("45545166", "Javier", "Peña", Otro, Foto, "Manuel Ugarte 5500", Efectivo, Articulos, true, Amoladorcita, true, true, CHANGE);
 
 	Articulo art(345, true, "Perfecto", "tornillos", 2.05, 3.04, 4.01, 98);
+	//Articulo que quiero cambiar.
+	Articulo cambio(2, true, "Perfecto", "cables", 2.05, 3.04, 4.01, 3);
 
 	LLaves llave(3, true, "Perfecto", "llave", 2.05, 3.04, 4.01, 98, "metal", LLavesMagneticas, true);
 
@@ -97,37 +95,35 @@ int main()
 
 	int opcion = 0;
 	bool salir = true;
+	system("cls");
+
+	cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
+	cout << "\t\t\t--------------" << endl;
+	cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
+	cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
+	cout << "\t3. Medidas de la Foto o Articulo Roto." << endl;
+	cout << "\t4. Quiero cambiar un Articulo." << endl;
+	cout << "\t5. Quiero hacer un pedido a domicilio." << endl;
+	cout << "\t6. Quiero duplicar una llave." << endl;
+	cout << "\t7. Cual es el stock de la Ferreteria." << endl;
+	cout << "\t8. Agregar al carrito." << endl;
+	cout << "\t0. SALIR" << endl;
+
+	cout << "\tIngrese una Opcion: ";
 
 	do
 	{
-		system("cls");
-
-		cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
-		cout << "\t\t\t--------------" << endl;
-		cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
-		cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
-		cout << "\t3. Medidas de la Foto o Articulo Roto." << endl;
-		cout << "\t4. Quiero cambiar un Articulo." << endl;
-		cout << "\t5. Quiero hacer un pedido a domicilio." << endl;
-		cout << "\t6. Quiero duplicar una llave." << endl;
-		cout << "\t7. Cual es el stock de la Ferreteria." << endl;
-		cout << "\t8. Agregar al carrito." << endl; 
-		cout << "\t0. SALIR" << endl;
-
-		cout << "\tIngrese una Opcion: ";
 		cin >> opcion;
 
 		switch (opcion)
 		{
 		case(1):
 			cout << "La ferreteria esta: " << abierto << endl;
-			salir = false;
 			break;
 
 		case(2):
 			cout << "Amoladoras = 0, Lijadoras = 1, Perforadoras = 2" << endl;
 			cout << "El precio total es: " << ferr.generar_Presupuesto(Javier) << endl;
-			salir = false;
 			break;
 
 		case(3):
@@ -138,12 +134,10 @@ int main()
 				cout << "Ancho: " << art.get_Ancho() << endl;
 				cout << "Largo: " << art.get_Largo() << endl;
 			}
-			salir = false;
 			break;
 
 		case(4):
-			due.imprimir_MenuPrincipal(Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
-			salir = false;
+			due.imprimir_MenuPrincipal(cambio, Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
 			break;
 
 		case(5):
@@ -152,7 +146,6 @@ int main()
 			{
 				cout << "Se envia el articulo " << art.get_TipoProducto() << " hacia " << Javier.get_Direccion() << endl;
 			}
-			salir = false;
 			break;
 
 		case(6):
@@ -161,37 +154,26 @@ int main()
 			{
 				cout << "Duplico una llave: " << llave.get_LLavecita() << " del edificio: " << Javier.get_Direccion() << endl;
 			}
-			salir = false;
 			break;
 
 		case(7):
 			cout << "Cantidad de Articulos Totales: " << Articulo::get_CantidadMaximaArticulos() << endl;
-			salir = false;
 			break;
 
 		case(8):
 			try
 			{
 				Javier.elegir_art(art);
-				for (i = 0; i < Articulos.size(); i++, itArti++)
-				{
-					cout << "Va a llevar " << itArti->get_Cantidad() << " " << itArti->get_TipoProducto();
-				}
-				for (i = 0; i < Amoladorcita.size(); i++, itHerriAlqui++)
-				{
-					cout << "Va a llevar " << itHerriAlqui->get_TipoHerrAlquiler() << " por " << itHerriAlqui->get_Cant_Horas_Alquiler();
-				}
 			}
 			catch (int stock)
 			{
 				cout << "No funciona el stock ya que nos ha dado un valor irreal" << endl;
 			}
-			salir = false;
 			break;
 
 		case(0):
 			cout << "Por que apreto la opcion de SALIR?:/" << endl;
-			salir = false;
+			cout << "Queres salir de la Ferreteria?" << endl;
 			break;
 		}
 	} while (salir);
