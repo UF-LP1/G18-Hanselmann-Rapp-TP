@@ -151,6 +151,7 @@ int main()
 
 		case(6):
 			cout << DupiLLavecita << endl;
+			cout << "Simple = 0, DobleTambor = 1, Codificadas = 2, LLavesMagneticas = 3" << endl;
 			if (Javier.get_Dupllaves() == true && llave.get_PermisoEdificio() == true)
 			{
 				cout << "Duplico una llave: " << llave.get_LLavecita() << " del edificio: " << Javier.get_Direccion() << endl;
@@ -168,7 +169,7 @@ int main()
 			}
 			catch (int stock)
 			{
-				cout << "No funciona el stock ya que nos ha dado un valor irreal" << endl;
+				cout << "No hay stock ya que nos ha dado un valor irreal" << endl;
 			}
 			break;
 

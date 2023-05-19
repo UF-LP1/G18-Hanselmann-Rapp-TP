@@ -71,13 +71,12 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli, Articulo cambi) //Revisamo
               }
               if (cambi.get_Precio() == art.get_Precio())
               {
-                   cout << "No hay diferencia de precio." << endl;
                    return 0;
               }
-              else
-              {
-                   cout << "No hay Cambio o el Envoltorio no esta Intacto." << endl;
-              }
+     }
+     else
+     {
+         cout << "No hay Cambio o el Envoltorio no esta Intacto." << endl;
      }
 }
 
@@ -207,7 +206,7 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Articulo art2, Cliente cli, Tornillos t
                 herramientita = Duenio::CambioArticulo(herri, cli, art2);
                 if (herramientita > 0)
                 {
-                    cout << "Va a tener que pagar por el cambio: " << clavito << endl;
+                    cout << "Va a tener que pagar por el cambio: " << herramientita << endl;
                 }
                 else if (herramientita < 0)
                 {
@@ -405,7 +404,7 @@ void Duenio::Imprimir_Menu_Electricidad(Articulo art2, Cliente cli, Cables cab, 
                 lamparita = Duenio::CambioArticulo(lamp, cli, art2);
                 if (lamparita > 0)
                 {
-                    cout << "Va a tener que pagar por el cambio: " << cablecito << endl;
+                    cout << "Va a tener que pagar por el cambio: " << lamparita << endl;
                 }
                 else if (lamparita < 0)
                 {
