@@ -1,4 +1,1 @@
-﻿  Duenio.cpp
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(94,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(90): warning C4715: 'Duenio::CambioArticulo': no todas las rutas de acceso de control devuelven un valor
-  TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe
+﻿  TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe

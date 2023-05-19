@@ -51,6 +51,7 @@ bool Duenio::identificar_art(Cliente cli, Articulo art) //Identificamos si quier
 }
 
 int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articulos tienen cambio o no según los criterios dados
+//tendria que pasarle como parametro un segundo articulo que es el que desea cambiar el cliente.
 {
     list<Articulo>::iterator itArt;
 
@@ -87,13 +88,6 @@ int Duenio::CambioArticulo(Articulo art, Cliente cli) //Revisamos si los Articul
          }
             
     }
-}
-
-int Duenio::consrandom(int maximo, int minimo) //habria que borrarla
-{
-    srand(time(NULL));
-    int valor = rand() % (maximo - minimo) + minimo;
-    return valor;
 }
 
 void Duenio::imprimir_MenuPrincipal(Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco)
