@@ -53,12 +53,9 @@ bool Ferreteria::abrir(Horario hor) //Funcion que abre la ferreteria segun el ho
     
     if (tiempolocal->tm_wday == 1 || tiempolocal->tm_wday == 2 || tiempolocal->tm_wday == 3 || tiempolocal->tm_wday == 4 || tiempolocal->tm_wday == 5)
     {
-        if (tiempolocal->tm_hour >= 7 && tiempolocal->tm_min > 30)
+        if (tiempolocal->tm_hour >= 7  && tiempolocal->tm_hour <= 13)
         {
-            if (tiempolocal->tm_hour <= 13)
-            {
-                return true;
-            }
+            return true;
         }
         if (tiempolocal->tm_hour >= 17 && tiempolocal->tm_hour <= 20)
         {
