@@ -233,9 +233,6 @@
     <ClInclude Include="..\Clases\TipoBarreles.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\Clases\TipoCable.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="..\Clases\TipoCerradura.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>

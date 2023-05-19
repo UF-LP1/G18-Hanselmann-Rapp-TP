@@ -202,7 +202,6 @@
     <ClInclude Include="..\Clases\Tarugos.h" />
     <ClInclude Include="..\Clases\TendederosRopa.h" />
     <ClInclude Include="..\Clases\TipoBarreles.h" />
-    <ClInclude Include="..\Clases\TipoCable.h" />
     <ClInclude Include="..\Clases\TipoCerradura.h" />
     <ClInclude Include="..\Clases\TipoCerrojo.h" />
     <ClInclude Include="..\Clases\TipoClavo.h" />
