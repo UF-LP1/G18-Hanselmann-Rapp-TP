@@ -39,56 +39,14 @@ bool Duenio::identificar_art(Cliente cli, Articulo art) //Identificamos si quier
     list<Articulo>::iterator itArt; 
     list<Articulo> arti = cli.get_Articulos();
 
-    int opcion = 0;
-    bool regresar = true;
-
-    system("cls");
-
-    cout << "\n\n\t\t\tMENU FOTO / ARTICULO ROTO" << endl;
-    cout << "\t\t\t--------------" << endl;
-    cout << "\t1. Tengo una Foto del Articulo." << endl;
-    cout << "\t2. Tengo un Articulo Roto." << endl;
-    cout << "\t3. Ninguna de las anteriores." << endl;
-    cout << "\t0. REGRESAR" << endl;
-
-    cout << "\tIngrese una Opcion: ";
-    do
+    if (cli.get_fotinartin() == ArtRoto || cli.get_fotinartin() == Foto)
     {
-        cin >> opcion;
-
-        switch (opcion)
-        {
-        case (1):
-            cli.get_fotinartin() == Foto;
-
-                 if (cli.get_fotinartin() == Foto) 
-                    {
-                     return true;
-                    }
-            break;
-
-        case (2):
-           cli.get_fotinartin() == ArtRoto;
-           if (cli.get_fotinartin() == ArtRoto ) 
-                    {
-                     return true;
-                    }
-            break;
-
-        case (3):
-            cli.get_fotinartin() == Ninguna;
-            if (cli.get_fotinartin() == Ninguna )
-            {
-                return false;
-            }
-            break;
-
-        case (0):
-            regresar = false;
-            break;
-
-        }
-    } while (regresar);
+        return true;
+    }
+    if (cli.get_fotinartin() == 2)
+    {
+        return false;
+    }
 }
 
 int Duenio::CambioArticulo(Articulo art, Cliente cli, Articulo cambi) //Revisamos si los Articulos tienen cambio o no según los criterios dados

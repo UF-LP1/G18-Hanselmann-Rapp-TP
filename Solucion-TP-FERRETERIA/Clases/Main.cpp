@@ -87,13 +87,13 @@ int main()
 
 	string abierto = ferr.abrir(horacio) ? "Abierta" : "Cerrada"; //Uso el operador ternario para que me diga si esta Abierto o Cerrada
 
-	string identif_art = due.identificar_art(Javier, art) ? "Trajo una Foto o un Articulo Roto." : "No trajo ni una Foto ni un Articulo Roto."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
-
 	string envia_Art = despi.enviar_articulo(art, Javier) ? "El cliente quiere un envio a su domicilio." : "El cliente no quiere un pedido a domicilio."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
 	string DupiLLavecita = cerraj.DuplicarLlaves(llave, Javier) ? "El cliente quiere duplicar una llave" : "El cliente no quiere duplicar ninguna llave o no tengo el permiso para duplicar la llave."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
 	int opcion = 0;
+	int opcion2 = 0;
+	bool regresar = true;
 	bool spidey = false;
 	bool salir = true;
 	system("cls");
@@ -128,14 +128,56 @@ int main()
 			break;
 
 		case(3):
-			cout << identif_art << endl;
-			if (due.identificar_art(Javier, art) == true)
+			system("cls");
+
+			cout << "\n\n\t\t\tMENU FOTO / ARTICULO ROTO" << endl;
+			cout << "\t\t\t--------------" << endl;
+			cout << "\t1. Tengo una Foto del Articulo." << endl;
+			cout << "\t2. Tengo un Articulo Roto." << endl;
+			cout << "\t3. Ninguna de las anteriores." << endl;
+			cout << "\t0. REGRESAR" << endl;
+
+			cout << "\tIngrese una Opcion: ";
+			do
 			{
-				cout << "Alto: " << art.get_Alto() << endl;
-				cout << "Ancho: " << art.get_Ancho() << endl;
-				cout << "Largo: " << art.get_Largo() << endl;
-			}
-			break;
+				cin >> opcion2;
+
+				switch (opcion2)
+				{
+				case (1):
+					Javier.get_fotinartin() == 0;
+					if (due.identificar_art(Javier, art) == true)
+					{
+						cout << "Trajo una Foto con las siguientes medidas: " << endl;
+
+						cout << "Alto: " << art.get_Alto() << endl;
+						cout << "Ancho: " << art.get_Ancho() << endl;
+						cout << "Largo: " << art.get_Largo() << endl;
+					}
+					break;
+
+				case (2):
+					Javier.get_fotinartin() == 1;
+					if (due.identificar_art(Javier, art) == true)
+					{
+						cout << "Trajo un Articulo Roto con las siguientes medidas: " << endl;
+
+						cout << "Alto: " << art.get_Alto() << endl;
+						cout << "Ancho: " << art.get_Ancho() << endl;
+						cout << "Largo: " << art.get_Largo() << endl;
+					}
+					break;
+
+				case (3):
+					cout << "No trajo ni una Foto ni un Articulo Roto." << endl;
+					Javier.get_fotinartin() == 2;
+					break;
+
+				case (0):
+					regresar = false;
+					break;
+				}
+			} while (regresar); 
 
 		case(4):
 			due.imprimir_MenuPrincipal(cambio, Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
