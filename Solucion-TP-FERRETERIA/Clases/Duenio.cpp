@@ -98,11 +98,11 @@ void Duenio::imprimir_MenuCambioArticulo(Articulo art2, Cliente cli, Tornillos t
 {
    int opcion = 0;
    bool salir = true;
+
+   system("cls");
    
     do
     {
-        system("cls");
-
         cout << "\n\n\t\t\tMENU CAMBIO DE ARTICULO" << endl;
         cout << "\t\t\t--------------" << endl;
         cout << "\t1. ArtFerreteria" << endl;
