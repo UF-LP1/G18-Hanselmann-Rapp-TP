@@ -47,6 +47,8 @@ bool Duenio::identificar_art(Cliente cli, Articulo art) //Identificamos si quier
     {
         return false;
     }
+    else
+        return false;
 }
 
 int Duenio::CambioArticulo(Articulo art, Cliente cli, Articulo cambi) //Revisamos si los Articulos tienen cambio o no según los criterios dados
