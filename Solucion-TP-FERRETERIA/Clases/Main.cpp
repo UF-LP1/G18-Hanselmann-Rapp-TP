@@ -98,7 +98,7 @@ int main()
 	bool salir = true;
 	system("cls");
 
-	/*cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
+	cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
 	cout << "\t\t\t--------------" << endl;
 	cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
 	cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
@@ -110,23 +110,11 @@ int main()
 	cout << "\t8. Agregar al carrito." << endl;
 	cout << "\t0. SALIR" << endl;
 
-	cout << "\tIngrese una Opcion: ";*/
+	cout << "\tIngrese una Opcion: ";
 
 	do
 	{
-		cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
-		cout << "\t\t\t--------------" << endl;
-		cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
-		cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
-		cout << "\t3. Comprar Articulo segun una Foto o un Articulo Roto." << endl;
-		cout << "\t4. Quiero cambiar un Articulo." << endl;
-		cout << "\t5. Quiero hacer un pedido a domicilio." << endl;
-		cout << "\t6. Quiero duplicar una llave." << endl;
-		cout << "\t7. Cual es el stock de la Ferreteria." << endl;
-		cout << "\t8. Agregar al carrito." << endl;
-		cout << "\t0. SALIR" << endl;
-
-		cout << "\tIngrese una Opcion: ";
+		cout << "\tIngrese otra Opcion: ";
 		cin >> opcion;
 
 		switch (opcion)
@@ -148,11 +136,12 @@ int main()
 			cout << "\t1. Tengo una Foto del Articulo." << endl;
 			cout << "\t2. Tengo un Articulo Roto." << endl;
 			cout << "\t3. Ninguna de las anteriores." << endl;
-			cout << "\t0. REGRESAR" << endl;
 
 			cout << "\tIngrese una Opcion: ";
+
 			do
 			{
+				cout << "\tIngrese otra Opcion: ";
 				cin >> opcion2;
 
 				switch (opcion2)
@@ -184,9 +173,6 @@ int main()
 				case (3):
 					cout << "No trajo ni una Foto ni un Articulo Roto." << endl;
 					Javier.get_fotinartin() == 2;
-					break;
-
-				case (0):
 					regresar = false;
 					break;
 				}
