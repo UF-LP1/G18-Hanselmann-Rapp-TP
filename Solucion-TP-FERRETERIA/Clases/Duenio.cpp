@@ -143,13 +143,13 @@ void Duenio::imprimir_MenuCambioArticulo(Articulo art2, Cliente cli, Tornillos t
                 break; 
 
             case(0):
+                system("cls");
                 salir = false;
                 Menu_Principal();
                 break;
         }
-    } while (salir);
 
-    system("cls");
+    } while (salir);
 }
 
 void Duenio::Imprimir_Menu_ArtFerreteria(Articulo art2, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech)
@@ -279,6 +279,8 @@ void Duenio::Imprimir_Menu_ArtFerreteria(Articulo art2, Cliente cli, Tornillos t
         }
 
     } while (regresar);
+
+    system("cls");
 }
 
 void Duenio::Imprimir_Menu_Cerrajeria(Articulo art2, Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav)
@@ -367,6 +369,9 @@ void Duenio::Imprimir_Menu_Cerrajeria(Articulo art2, Cliente cli, Cerrojos cerro
 
         }
     } while (regresar);
+
+    system("cls");
+
 }
 
 void Duenio::Imprimir_Menu_Electricidad(Articulo art2, Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port)
@@ -476,6 +481,9 @@ void Duenio::Imprimir_Menu_Electricidad(Articulo art2, Cliente cli, Cables cab, 
 
         }
     } while (regresar);
+
+    system("cls");
+
 }
 
 void Duenio::Imprimir_Menu_Cocina(Articulo art2, Cliente cli, Ollas oll, Utencillos ute)
@@ -545,6 +553,9 @@ void Duenio::Imprimir_Menu_Cocina(Articulo art2, Cliente cli, Ollas oll, Utencil
 
         }
     } while (regresar);
+
+    system("cls");
+
 }
 
 void Duenio::Imprimir_Menu_Bazar(Articulo art2, Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin)
@@ -634,6 +645,9 @@ void Duenio::Imprimir_Menu_Bazar(Articulo art2, Cliente cli, TendederosRopa tend
 
         }
     } while (regresar);
+
+    system("cls");
+
 }
 
 void Duenio::Imprimir_Menu_Banio(Articulo art2, Cliente cli, BarralesCortina barr, EscobillasBanio esco)
@@ -703,4 +717,7 @@ void Duenio::Imprimir_Menu_Banio(Articulo art2, Cliente cli, BarralesCortina bar
 
         }
     } while (regresar);
+
+    system("cls");
+
 }
