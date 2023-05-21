@@ -42,6 +42,12 @@ bool Cerrajero::DuplicarLlaves(LLaves llavelinda, Cliente cli) //Funcion duplica
             return false;
         }
     }
-    else
+    if (llavelinda.get_LLavecita() == 0 || llavelinda.get_LLavecita() == 1 || llavelinda.get_LLavecita() == 2)
+    {
+        if (cli.get_Dupllaves() == true)
+        {
+            return true;
+        }
+    }
         return false;
 }

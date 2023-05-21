@@ -89,10 +89,8 @@ int main()
 
 	string envia_Art = despi.enviar_articulo(art, Javier) ? "El cliente quiere un envio a su domicilio." : "El cliente no quiere un pedido a domicilio."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
-	string DupiLLavecita = cerraj.DuplicarLlaves(llave, Javier) ? "El cliente quiere duplicar una llave" : "El cliente no quiere duplicar ninguna llave o no tengo el permiso para duplicar la llave."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
-
-	int opcion = 0, opcion2 = 0;
-	char altura_direcCli [100];
+	int opcion = 0, opcion2 = 0, opcion3 = 0;
+	string altura_direcCli;
 	string direcCli;
 	bool regresar = true;
 	bool spidey = false;
@@ -178,27 +176,83 @@ int main()
 
 			case(5):
 				cout << "Ingresar direccion a la que desea enviar el Articulo: ";
-				getline(cin, direcCli);
-				//cin >> altura_direcCli;
+				getline(std::cin, direcCli);
+				getline(std::cin, altura_direcCli);
 				
 				if (Javier.get_EnvioDomicilio() == true)
 				{
-					cout << "Se envia el articulo " << art.get_TipoProducto() << " hacia " << direcCli << endl;
+					cout << "Se envia el articulo " << art.get_TipoProducto() << " hacia " << direcCli << " " << altura_direcCli << endl;
 				}
 				
 				break;
 
 			case(6):
-				cout << DupiLLavecita << endl;
-				cout << "Simple = 0, DobleTambor = 1, Codificadas = 2, LLavesMagneticas = 3" << endl;
-				if (Javier.get_Dupllaves() == true && llave.get_PermisoEdificio() == true)
+				system("cls");
+
+				cout << "\n\n\t\t\tMENU DUPLICAR LLAVE" << endl;
+				cout << "\t\t\t--------------" << endl;
+				cout << "\t1. Quiero duplicar una llave simple." << endl;
+				cout << "\t2. Quiero duplicar una llave doble tambor." << endl;
+				cout << "\t3. Quiero duplicar una llave codificada." << endl;
+				cout << "\t4. Quiero duplicar una llave magneticas." << endl;
+				cout << "\t0. REGRESAR." << endl;
+
+				do
 				{
-					cout << "Duplico una llave: " << llave.get_LLavecita() << " del edificio: " << Javier.get_Direccion() << endl;
-				}
+					cout << "\tIngrese una Opcion del Menu Duplicar Llave: ";
+					cin >> opcion3;
+
+					switch (opcion3)
+					{
+					case (1):
+						llave.get_LLavecita() == 0;
+						cout << "El cliente quiere duplicar una llave" << endl;
+						if (cerraj.DuplicarLlaves(llave, Javier) == true)
+						{
+							cout << "Duplico una llave simple del edificio: " << Javier.get_Direccion() << endl;
+						}
+						break;
+
+					case (2):
+						llave.get_LLavecita() == 1;
+						cout << "El cliente quiere duplicar una llave" << endl;
+						if (cerraj.DuplicarLlaves(llave, Javier) == true)
+						{
+							cout << "Duplico una llave doble tambor del edificio : " << Javier.get_Direccion() << endl;
+						}
+						break;
+
+					case (3):
+						llave.get_LLavecita() == 2;
+						cout << "El cliente quiere duplicar una llave" << endl;
+						if (cerraj.DuplicarLlaves(llave, Javier) == true)
+						{
+							cout << "Duplico una llave codificada del edificio : " << Javier.get_Direccion() << endl;
+						}
+						break;
+
+					case (4):
+						llave.get_LLavecita() == 3;
+						cout << "El cliente quiere duplicar una llave" << endl;
+						if (cerraj.DuplicarLlaves(llave, Javier) == true)
+						{
+							cout << "Duplico una llave magnetica del edificio : " << Javier.get_Direccion() << endl;
+						}
+						break;
+
+					case (0):
+						system("cls");
+						regresar = false;
+						due.Menu_Principal();
+
+						break;
+					}
+				} while (regresar);
+
 				break;
 
 			case(7):
-				cout << "Cantidad de Articulos Totales: " << Articulo::get_CantidadMaximaArticulos() << endl;
+				cout << "Cantidad de Articulos Totales en la Ferreteria: " << Articulo::get_CantidadMaximaArticulos() << endl;
 				break;
 
 			case(8):
