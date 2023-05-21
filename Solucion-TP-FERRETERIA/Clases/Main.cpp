@@ -91,9 +91,9 @@ int main()
 
 	string DupiLLavecita = cerraj.DuplicarLlaves(llave, Javier) ? "El cliente quiere duplicar una llave" : "El cliente no quiere duplicar ninguna llave o no tengo el permiso para duplicar la llave."; //Uso el operador ternario para que me devulva de forma string en vez de un bool
 
-	int opcion = 0;
-	int opcion2 = 0;
-	string direcCli = "";
+	int opcion = 0, opcion2 = 0;
+	char altura_direcCli [100];
+	string direcCli;
 	bool regresar = true;
 	bool spidey = false;
 	bool salir = true;
@@ -177,14 +177,15 @@ int main()
 				break;
 
 			case(5):
-				cout << envia_Art << endl;
-				cout << "Direccion a la que desea enviar el Articulo: ";
-				cin >> direcCli;
-				Javier.get_Direccion() = direcCli;
+				cout << "Ingresar direccion a la que desea enviar el Articulo: ";
+				getline(cin, direcCli);
+				//cin >> altura_direcCli;
+				
 				if (Javier.get_EnvioDomicilio() == true)
 				{
-					cout << "Se envia el articulo " << art.get_TipoProducto() << " hacia " << Javier.get_Direccion() << endl;
+					cout << "Se envia el articulo " << art.get_TipoProducto() << " hacia " << direcCli << endl;
 				}
+				
 				break;
 
 			case(6):
