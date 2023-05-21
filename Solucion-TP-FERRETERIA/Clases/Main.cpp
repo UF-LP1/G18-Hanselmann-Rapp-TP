@@ -102,7 +102,7 @@ int main()
 	cout << "\t\t\t--------------" << endl;
 	cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
 	cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
-	cout << "\t3. Medidas de la Foto o Articulo Roto." << endl;
+	cout << "\t3. Comprar Articulo segun una Foto o un Articulo Roto." << endl;
 	cout << "\t4. Quiero cambiar un Articulo." << endl;
 	cout << "\t5. Quiero hacer un pedido a domicilio." << endl;
 	cout << "\t6. Quiero duplicar una llave." << endl;
@@ -129,7 +129,7 @@ int main()
 
 		case(3):
 			cout << identif_art << endl;
-			if (Javier.get_fotinartin() == Foto || Javier.get_fotinartin() == ArtRoto)
+			if (due.identificar_art(Javier, art) == true)
 			{
 				cout << "Alto: " << art.get_Alto() << endl;
 				cout << "Ancho: " << art.get_Ancho() << endl;
