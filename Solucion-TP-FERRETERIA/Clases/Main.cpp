@@ -97,23 +97,8 @@ int main()
 	bool spidey = false;
 	bool salir = true;
 	bool seguir = false;
-	//system("cls");
 
-	while (seguir);
-	{
-
-		cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
-		cout << "\t\t\t--------------" << endl;
-		cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
-		cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
-		cout << "\t3. Comprar Articulo segun una Foto o un Articulo Roto." << endl;
-		cout << "\t4. Quiero cambiar un Articulo." << endl;
-		cout << "\t5. Quiero hacer un pedido a domicilio." << endl;
-		cout << "\t6. Quiero duplicar una llave." << endl;
-		cout << "\t7. Cual es el stock de la Ferreteria." << endl;
-		cout << "\t8. Agregar al carrito." << endl;
-		cout << "\t0. SALIR" << endl;
-
+	due.Menu_Principal();
 		do
 		{
 			cout << "\tIngrese una Opcion del Menu Principal: ";
@@ -179,13 +164,15 @@ int main()
 					case (0):
 						system("cls");
 						regresar = false;
+						due.Menu_Principal();
+
 						break;
 					}
 				} while (regresar);
 				break;
 
 			case(4):
-				due.imprimir_MenuPrincipal(cambio, Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
+				due.imprimir_MenuCambioArticulo(cambio, Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
 				break;
 
 			case(5):
@@ -221,6 +208,8 @@ int main()
 				break;
 
 			case(0):
+				system("cls");
+
 				cout << "Por que apreto la opcion de SALIR?:/" << endl;
 				cout << "Bueno si vas a salir de la Ferreteria queres ver un Spiderman? (1 o 0)" << endl;
 				cin >> spidey;
@@ -321,9 +310,7 @@ int main()
 					cout << "Que mala onda que sos." << endl;
 
 				salir = false;
-				seguir = true;
 				break;
 			}
 		} while (salir);
-	}
 }
