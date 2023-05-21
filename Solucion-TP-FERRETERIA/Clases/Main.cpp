@@ -93,6 +93,7 @@ int main()
 
 	int opcion = 0;
 	int opcion2 = 0;
+	string direcCli = "";
 	bool regresar = true;
 	bool spidey = false;
 	bool salir = true;
@@ -177,6 +178,9 @@ int main()
 
 			case(5):
 				cout << envia_Art << endl;
+				cout << "Direccion a la que desea enviar el Articulo: ";
+				cin >> direcCli;
+				Javier.get_Direccion() = direcCli;
 				if (Javier.get_EnvioDomicilio() == true)
 				{
 					cout << "Se envia el articulo " << art.get_TipoProducto() << " hacia " << Javier.get_Direccion() << endl;
