@@ -110,11 +110,9 @@ int main()
 	cout << "\t8. Agregar al carrito." << endl;
 	cout << "\t0. SALIR" << endl;
 
-	cout << "\tIngrese una Opcion: ";
-
 	do
 	{
-		cout << "\tIngrese otra Opcion: ";
+		cout << "\tIngrese una Opcion del Menu Principal: ";
 		cin >> opcion;
 
 		switch (opcion)
@@ -136,12 +134,11 @@ int main()
 			cout << "\t1. Tengo una Foto del Articulo." << endl;
 			cout << "\t2. Tengo un Articulo Roto." << endl;
 			cout << "\t3. Ninguna de las anteriores." << endl;
-
-			cout << "\tIngrese una Opcion: ";
+			cout << "\t0. REGRESAR." << endl;
 
 			do
 			{
-				cout << "\tIngrese otra Opcion: ";
+				cout << "\tIngrese una Opcion del Menu Foto/Articulo Roto: ";
 				cin >> opcion2;
 
 				switch (opcion2)
@@ -173,10 +170,15 @@ int main()
 				case (3):
 					cout << "No trajo ni una Foto ni un Articulo Roto." << endl;
 					Javier.get_fotinartin() == 2;
+					break;
+
+				case (0):
+					system("cls");
 					regresar = false;
 					break;
 				}
 			} while (regresar); 
+			break;
 
 		case(4):
 			due.imprimir_MenuPrincipal(cambio, Javier, screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
