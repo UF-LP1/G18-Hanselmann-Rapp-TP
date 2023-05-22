@@ -81,7 +81,6 @@ public:
 
     void set_DeseaCambiarArt(bool NuevoEstado);
 
-<<<<<<< HEAD
     void imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
 
     void Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
@@ -95,21 +94,6 @@ public:
    // void Imprimir_Menu_Bazar(Articulo art2, Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
 
     //void Imprimir_Menu_Banio(Articulo art2, Cliente cli, BarralesCortina barr, EscobillasBanio esco);
-=======
-    void imprimir_MenuAgregar_Carrito(Articulo art2, Cliente cli, Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
-
-    void Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
-
-   // void Imprimir_Menu_Cerrajeria(Articulo art2, Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav);
-
-    //void Imprimir_Menu_Electricidad(Articulo art2, Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
-
-    //void Imprimir_Menu_Cocina(Articulo art2, Cliente cli, Ollas oll, Utencillos ute);
-
-   // void Imprimir_Menu_Bazar(Articulo art2, Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
-
-    void Imprimir_Menu_Banio(Articulo art2, Cliente cli, BarralesCortina barr, EscobillasBanio esco);
->>>>>>> mas cambios
 
 private: 
     
