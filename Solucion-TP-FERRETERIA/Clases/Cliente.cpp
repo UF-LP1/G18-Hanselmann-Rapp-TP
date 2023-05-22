@@ -125,11 +125,12 @@ int Cliente::elegir_art(Articulo& art)  //Agregar al carrito y probamos el Tryca
     list<Articulo>::iterator itArt;
  
     list<Articulo> arti = get_Articulos();
+    itArt = arti.begin();
+    int stock = 0, i = 0;
+    stock = itArt->get_Cantidad();
+
     try
     {
-        itArt = arti.begin();
-        int stock = 0, i = 0;
-        stock = itArt->get_Cantidad();
 
         for (i = 0; i < arti.size(); i++, itArt++)
         {
@@ -256,10 +257,6 @@ void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos cl
             if (funciona != 1)
             {
                 cout << "Se agregaron los tornillos correctamente a su lista de Articulos." << endl;
-            }
-            else
-            {
-                cout << "No funciona." << endl;
             }
             break;
 

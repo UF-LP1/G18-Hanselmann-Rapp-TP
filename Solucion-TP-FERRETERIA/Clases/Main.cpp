@@ -59,6 +59,7 @@ int main()
 	int i = 0;
 
 	list <Articulo> Articulos;
+	list<Articulo>::iterator itArt;
 	list <HerramientasAlquiler> Amoladorcita;
 
 	Articulo art1(5, true, "Perfecto", "clavos", 2.05, 3.04, 4.01, 0);
@@ -257,6 +258,7 @@ int main()
 
 		case(8):
 			Javier.imprimir_MenuAgregar_Carrito(screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
+
 			break;
 
 		case(0):
