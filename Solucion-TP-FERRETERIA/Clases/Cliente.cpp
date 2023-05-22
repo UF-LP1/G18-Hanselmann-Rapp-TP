@@ -198,7 +198,7 @@ void Cliente::imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herram
             break;
 
         case(6):
-            //Imprimir_Menu_Banio(barr, esco);
+            Imprimir_Menu_Banio(barr, esco);
 
         case(0):
             system("cls");
@@ -586,5 +586,55 @@ void Cliente::Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla,
 
 void Cliente::Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco)
 {
+    int opcion = 0, funciona = 0;
+    bool regresar = true;
 
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU BANIO" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Escobillas de Banio" << endl;
+    cout << "\t2. Barrales de Cortina" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
+    do
+    {
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            funciona = elegir_art(esco);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (2):
+            funciona = elegir_art(barr);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+
+    system("cls");
 }
