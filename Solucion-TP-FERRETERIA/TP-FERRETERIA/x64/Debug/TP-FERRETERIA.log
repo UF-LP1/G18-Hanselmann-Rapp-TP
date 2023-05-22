@@ -1,4 +1,289 @@
+<<<<<<< HEAD
 ﻿  Cliente.cpp
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(148,16): warning C4101: 'stock': variable local sin referencia
 C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(153): warning C4715: 'Cliente::elegir_art': no todas las rutas de acceso de control devuelven un valor
   TP-FERRETERIA.vcxproj -> C:\Users\nicol\OneDrive\Escritorio\Facultad Nico 2do Año\LABORATORIO PROGRAM I\TP2 FERRETERIA NUEVO\Solucion-TP-FERRETERIA\x64\Debug\TP-FERRETERIA.exe
+=======
+﻿  ArtFerreteria.cpp
+  Articulo.cpp
+  Banio.cpp
+  BarralesCortina.cpp
+  Bazar.cpp
+  Cables.cpp
+  Cerraduras.cpp
+  Cerrajeria.cpp
+  Cerrajero.cpp
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(84,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(85,363): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(98,1): error C2059: error de sintaxis: '=='
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(99,391): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(101,10): error C2535: 'void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos,Clavos,Herramientas,Tarugos,Mechas)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(87,10): message : vea la declaración de 'Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(112,1): error C2059: error de sintaxis: '>>'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(114,8): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(7,12): error C3254: 'Cliente': la clase contiene la invalidación explícita '{ctor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(7,12): error C2838: '{ctor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(12,13): error C3254: 'Cliente': la clase contiene la invalidación explícita '{dtor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(12,13): error C2838: '{dtor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(12,13): error C2535: 'Cliente::~Cliente(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(41,6): message : vea la declaración de 'Cliente::~Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(17,19): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Nombre', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(17,19): error C2838: 'get_Nombre': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(17,19): error C2535: 'std::string Cliente::get_Nombre(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(44,12): message : vea la declaración de 'Cliente::get_Nombre'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(22,19): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Alarma', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(22,19): error C2838: 'get_Alarma': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(27,17): error C3254: 'Cliente': la clase contiene la invalidación explícita 'set_Alarma', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(27,17): error C2838: 'set_Alarma': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(32,17): error C3254: 'Cliente': la clase contiene la invalidación explícita 'DuplicarLlaves', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(32,17): error C2838: 'DuplicarLlaves': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cerrajero.cpp(54,1): fatal  error C1004: se encontró un final de archivo no esperado
+  Cerrojos.cpp
+  Clavos.cpp
+  Cliente.cpp
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(84,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(85,363): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(98,1): error C2059: error de sintaxis: '=='
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(99,391): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(101,10): error C2535: 'void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos,Clavos,Herramientas,Tarugos,Mechas)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(87,10): message : vea la declaración de 'Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(112,1): error C2059: error de sintaxis: '>>'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(114,8): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(9,10): error C4596: '{ctor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(9,10): error C2535: 'Cliente::Cliente(const std::string,std::string,std::string,TipoSexo,TipoFotArt,std::string,MetodoPago,std::list<Articulo,std::allocator<Articulo>>,bool,std::list<HerramientasAlquiler,std::allocator<HerramientasAlquiler>>,bool,bool,bool)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(39,5): message : vea la declaración de 'Cliente::Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(22,11): error C4596: '{dtor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(22,11): error C2535: 'Cliente::~Cliente(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(41,6): message : vea la declaración de 'Cliente::~Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(28,17): error C4596: 'get_Nombre': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(28,17): error C2535: 'std::string Cliente::get_Nombre(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(44,12): message : vea la declaración de 'Cliente::get_Nombre'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(33,17): error C4596: 'get_Direccion': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(33,17): error C2535: 'std::string Cliente::get_Direccion(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(46,12): message : vea la declaración de 'Cliente::get_Direccion'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(38,21): error C4596: 'get_MetodoPagoCli': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(38,21): error C2535: 'MetodoPago Cliente::get_MetodoPagoCli(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(48,16): message : vea la declaración de 'Cliente::get_MetodoPagoCli'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(43,26): error C4596: 'get_Articulos': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(43,26): error C2535: 'std::list<Articulo,std::allocator<Articulo>> Cliente::get_Articulos(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(50,21): message : vea la declaración de 'Cliente::get_Articulos'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(48,21): error C4596: 'get_fotinartin': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(48,21): error C2535: 'TipoFotArt Cliente::get_fotinartin(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(52,16): message : vea la declaración de 'Cliente::get_fotinartin'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(53,15): error C4596: 'get_EnvoltorioIntacto': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(53,15): error C2535: 'bool Cliente::get_EnvoltorioIntacto(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(54,10): message : vea la declaración de 'Cliente::get_EnvoltorioIntacto'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(58,38): error C4596: 'get_Herr_Alquiler': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(58,38): error C2535: 'std::list<HerramientasAlquiler,std::allocator<HerramientasAlquiler>> Cliente::get_Herr_Alquiler(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(56,33): message : vea la declaración de 'Cliente::get_Herr_Alquiler'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(63,15): error C4596: 'get_EnvioDomicilio': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(63,15): error C2535: 'bool Cliente::get_EnvioDomicilio(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(58,10): message : vea la declaración de 'Cliente::get_EnvioDomicilio'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(68,15): error C4596: 'get_Dupllaves': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(68,15): error C2535: 'bool Cliente::get_Dupllaves(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(60,10): message : vea la declaración de 'Cliente::get_Dupllaves'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(73,15): error C4596: 'get_DeseaCambiarArt': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(73,15): error C2535: 'bool Cliente::get_DeseaCambiarArt(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(62,10): message : vea la declaración de 'Cliente::get_DeseaCambiarArt'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(78,15): error C4596: 'set_MetodoPagoCli': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(78,15): error C2535: 'void Cliente::set_MetodoPagoCli(MetodoPago)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(64,10): message : vea la declaración de 'Cliente::set_MetodoPagoCli'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(83,15): error C4596: 'set_fotinartin': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(83,15): error C2535: 'void Cliente::set_fotinartin(TipoFotArt)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(66,10): message : vea la declaración de 'Cliente::set_fotinartin'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(88,15): error C4596: 'set_Direccion': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(88,15): error C2535: 'void Cliente::set_Direccion(std::string)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(68,10): message : vea la declaración de 'Cliente::set_Direccion'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(93,15): error C4596: 'set_Articulos': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(93,15): error C2535: 'void Cliente::set_Articulos(std::list<Articulo,std::allocator<Articulo>>)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(70,10): message : vea la declaración de 'Cliente::set_Articulos'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(98,15): error C4596: 'set_EnvoltorioIntacto': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(98,15): error C2535: 'void Cliente::set_EnvoltorioIntacto(bool)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(72,10): message : vea la declaración de 'Cliente::set_EnvoltorioIntacto'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(103,15): error C4596: 'set_Herr_Alquiler': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(103,15): error C2535: 'void Cliente::set_Herr_Alquiler(std::list<HerramientasAlquiler,std::allocator<HerramientasAlquiler>>)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(76,10): message : vea la declaración de 'Cliente::set_Herr_Alquiler'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(108,15): error C4596: 'set_EnvioDomicilio': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(108,15): error C2535: 'void Cliente::set_EnvioDomicilio(bool)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(78,10): message : vea la declaración de 'Cliente::set_EnvioDomicilio'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(113,15): error C4596: 'set_Dupllaves': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(113,15): error C2535: 'void Cliente::set_Dupllaves(bool)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(80,10): message : vea la declaración de 'Cliente::set_Dupllaves'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(118,15): error C4596: 'set_DeseaCambiarArt': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(118,15): error C2535: 'void Cliente::set_DeseaCambiarArt(bool)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(82,10): message : vea la declaración de 'Cliente::set_DeseaCambiarArt'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(123,14): error C4596: 'elegir_art': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(123,14): error C2535: 'int Cliente::elegir_art(Articulo &)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(74,9): message : vea la declaración de 'Cliente::elegir_art'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(149,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(154,1): error C2334: símbolos (token) inesperados delante de '{'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(235,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(237,1): error C2334: símbolos (token) inesperados delante de '{'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.cpp(472,1): fatal  error C1004: se encontró un final de archivo no esperado
+  Cocina.cpp
+  Despachante.cpp
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(84,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(85,363): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(98,1): error C2059: error de sintaxis: '=='
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(99,391): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(101,10): error C2535: 'void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos,Clavos,Herramientas,Tarugos,Mechas)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(87,10): message : vea la declaración de 'Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(112,1): error C2059: error de sintaxis: '>>'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(114,8): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(7,14): error C3254: 'Cliente': la clase contiene la invalidación explícita '{ctor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(7,14): error C2838: '{ctor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(12,15): error C3254: 'Cliente': la clase contiene la invalidación explícita '{dtor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(12,15): error C2838: '{dtor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(12,15): error C2535: 'Cliente::~Cliente(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(41,6): message : vea la declaración de 'Cliente::~Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(17,21): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Nombre', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(17,21): error C2838: 'get_Nombre': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(17,21): error C2535: 'std::string Cliente::get_Nombre(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(44,12): message : vea la declaración de 'Cliente::get_Nombre'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(22,21): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Pedido', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(22,21): error C2838: 'get_Pedido': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(27,19): error C3254: 'Cliente': la clase contiene la invalidación explícita 'set_Pedido', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(27,19): error C2838: 'set_Pedido': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(32,19): error C3254: 'Cliente': la clase contiene la invalidación explícita 'enviar_articulo', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(32,19): error C2838: 'enviar_articulo': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Despachante.cpp(43,1): fatal  error C1004: se encontró un final de archivo no esperado
+  Duenio.cpp
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(84,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(85,363): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(98,1): error C2059: error de sintaxis: '=='
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(99,391): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(101,10): error C2535: 'void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos,Clavos,Herramientas,Tarugos,Mechas)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(87,10): message : vea la declaración de 'Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(112,1): error C2059: error de sintaxis: '>>'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(114,8): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(7,9): error C3254: 'Cliente': la clase contiene la invalidación explícita '{ctor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(7,9): error C2838: '{ctor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(12,10): error C3254: 'Cliente': la clase contiene la invalidación explícita '{dtor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(12,10): error C2838: '{dtor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(12,10): error C2535: 'Cliente::~Cliente(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(41,6): message : vea la declaración de 'Cliente::~Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(17,16): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Nombre', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(17,16): error C2838: 'get_Nombre': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(17,16): error C2535: 'std::string Cliente::get_Nombre(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(44,12): message : vea la declaración de 'Cliente::get_Nombre'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(22,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Disponibilidad', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(22,14): error C2838: 'get_Disponibilidad': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(27,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'set_Disponibilidad', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(27,14): error C2838: 'set_Disponibilidad': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(32,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'atender_cliente', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(32,14): error C2838: 'atender_cliente': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(37,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'identificar_art', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(37,14): error C2838: 'identificar_art': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(54,13): error C3254: 'Cliente': la clase contiene la invalidación explícita 'CambioArticulo', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(54,13): error C2838: 'CambioArticulo': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(84,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Menu_Principal', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(84,14): error C2838: 'Menu_Principal': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(99,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'imprimir_MenuCambioArticulo', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(99,14): error C2838: 'imprimir_MenuCambioArticulo': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(157,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Imprimir_Menu_ArtFerreteria', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(157,14): error C2838: 'Imprimir_Menu_ArtFerreteria': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(288,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Imprimir_Menu_Cerrajeria', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(288,14): error C2838: 'Imprimir_Menu_Cerrajeria': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(379,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Imprimir_Menu_Electricidad', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(379,14): error C2838: 'Imprimir_Menu_Electricidad': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(491,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Imprimir_Menu_Cocina', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(491,14): error C2838: 'Imprimir_Menu_Cocina': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(563,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Imprimir_Menu_Bazar', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(563,14): error C2838: 'Imprimir_Menu_Bazar': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(655,14): error C3254: 'Cliente': la clase contiene la invalidación explícita 'Imprimir_Menu_Banio', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(655,14): error C2838: 'Imprimir_Menu_Banio': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(655,14): error C2535: 'void Cliente::Imprimir_Menu_Banio(Articulo,Cliente,BarralesCortina,EscobillasBanio)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(111,10): message : vea la declaración de 'Cliente::Imprimir_Menu_Banio'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Duenio.cpp(726,1): fatal  error C1004: se encontró un final de archivo no esperado
+  Electricidad.cpp
+  Empleado.cpp
+  Enchufes.cpp
+  EscobillasBanio.cpp
+  Ferreteria.cpp
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(84,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(85,363): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(98,1): error C2059: error de sintaxis: '=='
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(99,391): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(101,10): error C2535: 'void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos,Clavos,Herramientas,Tarugos,Mechas)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(87,10): message : vea la declaración de 'Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(112,1): error C2059: error de sintaxis: '>>'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(114,8): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(7,13): error C3254: 'Cliente': la clase contiene la invalidación explícita '{ctor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(7,13): error C2838: '{ctor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(12,14): error C3254: 'Cliente': la clase contiene la invalidación explícita '{dtor}', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(12,14): error C2838: '{dtor}': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(12,14): error C2535: 'Cliente::~Cliente(void)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(41,6): message : vea la declaración de 'Cliente::~Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(17,26): error C3254: 'Cliente': la clase contiene la invalidación explícita 'get_Nombre', pero no deriva de una interfaz que contiene la declaración de función
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(17,26): error C2838: 'get_Nombre': nombre completo no válido en la declaración de miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(17,26): error C2373: 'Cliente::get_Nombre': nueva definición; modificadores de tipo distintos
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(44,12): message : vea la declaración de 'Cliente::get_Nombre'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(19,5): error C2059: error de sintaxis: 'return'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(19,24): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,14): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,39): error C2734: 'string': el objeto 'const' debe inicializarse si no es de tipo 'extern'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,7): error C2737: 'string': se debe inicializar el objeto const
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,26): error C2146: error de sintaxis: falta ';' delante del identificador 'get_Direccion'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,40): error C2059: error de sintaxis: ')'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(23,1): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(8,1): error C2512: 'Persona': no hay disponible un constructor predeterminado adecuado
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Persona.h(20,7): message : vea la declaración de 'Persona'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(7,149): error C2614: 'Cliente': inicialización de miembro no válida: 'Nombre' no es una base o miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(7,166): error C2614: 'Cliente': inicialización de miembro no válida: 'Direccion' no es una base o miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(7,189): error C2614: 'Cliente': inicialización de miembro no válida: 'Telefono' no es una base o miembro
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(9,11): error C2039: "MetodoPagoFerreteria": no es un miembro de "Cliente"
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(35,7): message : vea la declaración de 'Cliente'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(23,1): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(27,14): error C2872: 'string': símbolo ambiguo
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,7): message : puede ser 'const Cliente string'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(5294,7): message : o       'std::string'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(27,14): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(27,14): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(27,7): error C2371: 'string': nueva definición; tipos básicos distintos
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(22,7): message : vea la declaración de 'string'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(27,26): error C2146: error de sintaxis: falta ';' delante del identificador 'get_Telefono'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(27,39): error C2059: error de sintaxis: ')'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(28,1): error C2143: error de sintaxis: falta ';' delante de '{'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(28,1): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(32,14): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(34,12): error C2355: 'this': solo se puede hacer referencia a this en funciones miembro no estáticas o inicializadores de miembro de datos no estáticos
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(37,12): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(39,12): error C2355: 'this': solo se puede hacer referencia a this en funciones miembro no estáticas o inicializadores de miembro de datos no estáticos
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(42,6): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(44,5): error C2355: 'this': solo se puede hacer referencia a this en funciones miembro no estáticas o inicializadores de miembro de datos no estáticos
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(47,6): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Ferreteria.cpp(76,5): error C2653: 'Ferreteria': no es un nombre de clase o espacio de nombres
+  Generando código...
+  Compilando...
+  Herramientas.cpp
+  HerramientasAlquiler.cpp
+  Horario.cpp
+  LLaves.cpp
+  Lamparas.cpp
+  Main.cpp
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(84,1): error C2059: error de sintaxis: '<<'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(85,363): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(98,1): error C2059: error de sintaxis: '=='
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(99,391): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(101,10): error C2535: 'void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos,Clavos,Herramientas,Tarugos,Mechas)': función miembro ya definida o declarada
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(87,10): message : vea la declaración de 'Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(112,1): error C2059: error de sintaxis: '>>'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Cliente.h(114,8): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Horario.h(12,7): error C2059: error de sintaxis: 'using namespace'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Horario.h(12,20): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Main.cpp(13,7): error C2059: error de sintaxis: 'using namespace'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Main.cpp(13,20): error C2238: símbolos (token) inesperados delante de ';'
+C:\Users\jahan\OneDrive\Documents\Martu facultad\Labo de programación 1\NUEVO FERRETERIA\Solucion-TP-FERRETERIA\Clases\Main.cpp(376,1): fatal  error C1004: se encontró un final de archivo no esperado
+  Mechas.cpp
+  Ollas.cpp
+  Persona.cpp
+  Plomero.cpp
+  Portalamparas.cpp
+  TablasPlanchar.cpp
+  TapasInodoro.cpp
+  Tarugos.cpp
+  TendederosRopa.cpp
+  Tornillos.cpp
+  Utencillos.cpp
+  Generando código...
+>>>>>>> 271800e2ec8b110b67cbba2d781222309352f04d
