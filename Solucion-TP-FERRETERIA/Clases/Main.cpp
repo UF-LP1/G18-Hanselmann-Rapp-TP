@@ -256,14 +256,7 @@ int main()
 			break;
 
 		case(8):
-			try
-			{
-				Javier.elegir_art(art);
-			}
-			catch (int stock)
-			{
-				cout << "No hay stock ya que nos ha dado un valor irreal" << endl;
-			}
+			Javier.imprimir_MenuAgregar_Carrito(screw, nail, tool, dowel, wick, bolt, lock, key, cord, lamp, plug, lampholder, pot, utensil, cloth, ironing, toilet, barral, escob);
 			break;
 
 		case(0):

@@ -125,25 +125,31 @@ int Cliente::elegir_art(Articulo& art)  //Agregar al carrito y probamos el Tryca
     list<Articulo>::iterator itArt;
  
     list<Articulo> arti = get_Articulos();
-
-    itArt = arti.begin();
-    int stock=0, i=0;
-    stock = itArt->get_Cantidad();
-
-    for (i = 0; i < arti.size(); i++, itArt++)
+    try
     {
+        itArt = arti.begin();
+        int stock = 0, i = 0;
         stock = itArt->get_Cantidad();
-        if (stock <= 0)
+
+        for (i = 0; i < arti.size(); i++, itArt++)
         {
-            throw stock;
-        }
-        else
-        {
-            this->Articulos.push_back(art);
-            return itArt->get_Cantidad();
+            stock = itArt->get_Cantidad();
+            if (stock <= 0)
+            {
+                throw stock;
+            }
+            else
+            {
+                this->Articulos.push_back(art);
+                return itArt->get_Cantidad();
+            }
         }
     }
-    return 1;
+    catch (int stock)
+    {
+        cout << "El articulo esta agotado." << endl;
+        return -1;
+    }
 }
 
 void Cliente::imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco)
@@ -176,23 +182,23 @@ void Cliente::imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herram
             break;
 
         case(2):
-            //Imprimir_Menu_Cerrajeria(art2, cli, cerro, cerra, llav);
+            Imprimir_Menu_Cerrajeria(cerro, cerra, llav);
             break;
 
         case(3):
-           // Imprimir_Menu_Electricidad(art2, cli, cab, lamp, enchu, port);
+           Imprimir_Menu_Electricidad(cab, lamp, enchu, port);
             break;
 
         case(4):
-            //Imprimir_Menu_Cocina(art2, cli, oll, ute);
+            Imprimir_Menu_Cocina(oll, ute);
             break;
 
         case(5):
-            //Imprimir_Menu_Bazar(art2, cli, tendrop, tabpla, tapin);
+            Imprimir_Menu_Bazar(tendrop, tabpla, tapin);
             break;
 
         case(6):
-            //Imprimir_Menu_Banio(art2, cli, barr, esco);
+            //Imprimir_Menu_Banio(barr, esco);
 
         case(0):
             system("cls");
@@ -209,7 +215,6 @@ void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos cl
     int opcion = 0, funciona = 0;
 
     bool regresar = true, salir = true;
-    int tornillito = 0, clavito = 0, herramientita = 0, tarugo = 0, mecha = 0;
 
     system("cls");
 
@@ -235,7 +240,7 @@ void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos cl
             funciona = elegir_art(torni);
             if (funciona != 1)
             {
-                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+                cout << "Se agregaron los tornillos correctamente a su lista de Articulos." << endl;
             }
             else
             {
@@ -247,7 +252,7 @@ void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos cl
             funciona = elegir_art(clavi);
             if (funciona != 1)
             {
-                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+                cout << "Se agregaron los clavos correctamente a su lista de Articulos." << endl;
             }
             else
             {
@@ -256,59 +261,38 @@ void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos cl
             break;
 
         case (3):
-            if (herri.get_Cambio() == true)
+            funciona = elegir_art(herri);
+            if (funciona != 1)
             {
-                herramientita = Duenio::CambioArticulo(herri, cli, art2);
-                if (herramientita > 0)
-                {
-                    cout << "Va a tener que pagar por el cambio: " << herramientita << endl;
-                }
-                else if (herramientita < 0)
-                {
-                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << herramientita * -1 << endl;
-                }
-                else if (herramientita == 0)
-                {
-                    cout << "No hay diferencia de precio." << endl;
-                }
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
             }
             break;
 
         case (4):
-            if (tar.get_Cambio() == true)
+            funciona = elegir_art(tar);
+            if (funciona != 1)
             {
-                tarugo = Duenio::CambioArticulo(tar, cli, art2);
-                if (tarugo > 0)
-                {
-                    cout << "Va a tener que pagar por el cambio: " << tarugo << endl;
-                }
-                else if (tarugo < 0)
-                {
-                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << tarugo * -1 << endl;
-                }
-                else if (tarugo == 0)
-                {
-                    cout << "No hay diferencia de precio." << endl;
-                }
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
             }
             break;
 
         case (5):
-            if (mech.get_Cambio() == true)
+            funciona = elegir_art(mech);
+            if (funciona != 1)
             {
-                mecha = Duenio::CambioArticulo(mech, cli, art2);
-                if (mecha > 0)
-                {
-                    cout << "Va a tener que pagar por el cambio: " << mecha << endl;
-                }
-                else if (mecha < 0)
-                {
-                    cout << "La Ferreteria le va a tener que devolver por el cambio: " << mecha * -1 << endl;
-                }
-                else if (mecha == 0)
-                {
-                    cout << "No hay diferencia de precio." << endl;
-                }
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
             }
             break;
 
@@ -324,27 +308,283 @@ void Cliente::Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos cl
 
 }
 
-void Cliente::Imprimir_Menu_Cerrajeria(Articulo art2, Cliente cli, Cerrojos cerro, Cerraduras cerra, LLaves llav)
+void Cliente::Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves llav)
 {
+    {
+        int opcion = 0, funciona = 0;
+        bool regresar = true;
+
+        system("cls");
+
+        cout << "\n\n\t\t\tMENU CERRAJERIA" << endl;
+        cout << "\t\t\t------------------------" << endl;
+        cout << "\n\t1. Cerrojos" << endl;
+        cout << "\t2. Cerraduras" << endl;
+        cout << "\t3. Llaves" << endl;
+        cout << "\t0. REGRESAR" << endl;
+
+        cout << "\n\tIngrese una opcion: ";
+
+        do
+        {
+            cin >> opcion;
+
+            switch (opcion)
+            {
+            case (1):
+                funciona = elegir_art(cerro);
+                if (funciona != 1)
+                {
+                    cout << "Se agrego correctamente a su lista de Articulos." << endl;
+                }
+                else
+                {
+                    cout << "No funciona." << endl;
+                }
+                break;
+
+            case (2):
+                funciona = elegir_art(cerra);
+                if (funciona != 1)
+                {
+                    cout << "Se agrego correctamente a su lista de Articulos." << endl;
+                }
+                else
+                {
+                    cout << "No funciona." << endl;
+                }
+                break;
+
+            case (3):
+                funciona = elegir_art(llav);
+                if (funciona != 1)
+                {
+                    cout << "Se agrego correctamente a su lista de Articulos." << endl;
+                }
+                else
+                {
+                    cout << "No funciona." << endl;
+                }
+                break;
+
+            case (0):
+                regresar = false;
+                break;
+
+            }
+        } while (regresar);
+
+        system("cls");
+
+    }
+}
+
+void Cliente::Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port)
+{
+    int opcion = 0, funciona = 0;
+    bool regresar = true;
+
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU ELECTRICIDAD" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Cables" << endl;
+    cout << "\t2. Lamparas" << endl;
+    cout << "\t3. Enchufes" << endl;
+    cout << "\t4. Portalamparas" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
+    do
+    {
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            funciona = elegir_art(cab);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (2):
+            funciona = elegir_art(lamp);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (3):
+            funciona = elegir_art(enchu);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (4):
+            funciona = elegir_art(port);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+
+    system("cls");
+}
+
+void Cliente::Imprimir_Menu_Cocina(Ollas oll, Utencillos ute)
+{
+    int opcion = 0, funciona = 0;
+    bool regresar = true;
+
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU COCINA" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Ollas" << endl;
+    cout << "\t2. Utencillos" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
+    do
+    {
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            funciona = elegir_art(oll);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (2):
+            funciona = elegir_art(ute);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+
+    system("cls");
 
 }
 
-void Cliente::Imprimir_Menu_Electricidad(Articulo art2, Cliente cli, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port)
+void Cliente::Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin)
 {
+    int opcion = 0, funciona = 0;
+    bool regresar = true;
 
+    system("cls");
+
+    cout << "\n\n\t\t\tMENU BAZAR" << endl;
+    cout << "\t\t\t------------------------" << endl;
+    cout << "\n\t1. Tapas de Inodoro" << endl;
+    cout << "\t2. Tablas de Planchar" << endl;
+    cout << "\t3. Tendederos de Ropa" << endl;
+    cout << "\t0. REGRESAR" << endl;
+
+    cout << "\n\tIngrese una opcion: ";
+
+    do
+    {
+        cin >> opcion;
+
+        switch (opcion)
+        {
+        case (1):
+            funciona = elegir_art(tapin);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (2):
+            funciona = elegir_art(tabpla);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (3):
+            funciona = elegir_art(tendrop);
+            if (funciona != 1)
+            {
+                cout << "Se agrego correctamente a su lista de Articulos." << endl;
+            }
+            else
+            {
+                cout << "No funciona." << endl;
+            }
+            break;
+
+        case (0):
+            regresar = false;
+            break;
+
+        }
+    } while (regresar);
+
+    system("cls");
 }
 
-void Cliente::Imprimir_Menu_Cocina(Articulo art2, Cliente cli, Ollas oll, Utencillos ute)
-{
-
-}
-
-void Cliente::Imprimir_Menu_Bazar(Articulo art2, Cliente cli, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin)
-{
-
-}
-
-void Cliente::Imprimir_Menu_Banio(Articulo art2, Cliente cli, BarralesCortina barr, EscobillasBanio esco)
+void Cliente::Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco)
 {
 
 }
