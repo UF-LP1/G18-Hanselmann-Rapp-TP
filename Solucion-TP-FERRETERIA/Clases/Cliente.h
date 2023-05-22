@@ -81,6 +81,8 @@ public:
 
     void set_DeseaCambiarArt(bool NuevoEstado);
 
+    void Menu_Principal();
+
     void imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
 
     void Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);

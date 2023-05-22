@@ -152,6 +152,21 @@ int Cliente::elegir_art(Articulo& art)  //Agregar al carrito y probamos el Tryca
     }
 }
 
+void Cliente::Menu_Principal()
+{
+    cout << "\n\n\t\t\tMENU PRINCIPAL" << endl;
+    cout << "\t\t\t--------------" << endl;
+    cout << "\t1. Puedo ir a la Ferreteria ahora?" << endl;
+    cout << "\t2. Cuanto tengo que pagar por los Articulos y las Herramientas alquiladas?" << endl;
+    cout << "\t3. Comprar Articulo segun una Foto o un Articulo Roto." << endl;
+    cout << "\t4. Quiero cambiar un Articulo." << endl;
+    cout << "\t5. Quiero hacer un pedido a domicilio." << endl;
+    cout << "\t6. Quiero duplicar una llave." << endl;
+    cout << "\t7. Cual es el stock de la Ferreteria." << endl;
+    cout << "\t8. Agregar al carrito." << endl;
+    cout << "\t0. SALIR" << endl;
+}
+
 void Cliente::imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco)
 {
     int opcion = 0;
@@ -203,7 +218,7 @@ void Cliente::imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herram
         case(0):
             system("cls");
             salir = false;
-            //due.Menu_Principal();
+            Menu_Principal();
             break;
         }
 

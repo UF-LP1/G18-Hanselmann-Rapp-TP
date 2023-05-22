@@ -97,7 +97,7 @@ int main()
 	bool salir = true;
 	bool seguir = false;
 
-	due.Menu_Principal();
+	Javier.Menu_Principal();
 	do
 	{
 		cout << "\tIngrese una Opcion del Menu Principal: ";
@@ -163,7 +163,7 @@ int main()
 				case (0):
 					system("cls");
 					regresar = false;
-					due.Menu_Principal();
+					Javier.Menu_Principal();
 
 					break;
 				}
@@ -243,7 +243,7 @@ int main()
 				case (0):
 					system("cls");
 					regresar = false;
-					due.Menu_Principal();
+					Javier.Menu_Principal();
 
 					break;
 				}
