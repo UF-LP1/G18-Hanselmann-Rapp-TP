@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Herramientas.h"
 
 /**
@@ -19,35 +15,21 @@ Herramientas::~Herramientas()
 
 }
 
-/**
- * @return TipoHerramienta
- */
 TipoHerramienta Herramientas::get_HerramientaArtFerr() 
 {
     return this->HerramientaArtFerr;
 }
 
-/**
- * @param TipoHerramienta
- * @return void
- */
 void Herramientas::set_HerramientaArtFerr(TipoHerramienta NuevoEstado) 
 {
     this->HerramientaArtFerr = NuevoEstado;
 }
 
-/**
- * @return string
- */
 string Herramientas::get_MarcaHerrFerr() 
 {
     return this->MarcaHerrFerr;
 }
 
-/**
- * @param string
- * @return void
- */
 void Herramientas::set_MarcaHerrFerr(string NuevoEstado) 
 {
     this->MarcaHerrFerr = NuevoEstado;

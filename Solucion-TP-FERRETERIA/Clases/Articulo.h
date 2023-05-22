@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _ARTICULO_H
 #define _ARTICULO_H
 
@@ -25,21 +21,20 @@ protected:
     float Ancho;
     float Largo;
     unsigned int Cantidad;
+    static unsigned int CantidadMaximaArticulos;
 
 public: 
 
-    Articulo(unsigned int, bool, string, string, float, float, float, unsigned int);
+    Articulo(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_);
 
-    ~Articulo();
+    virtual ~Articulo();
     
     unsigned int get_Precio();
     
     bool get_Cambio();
     
     string get_EstadoArt();
-    
-    string get_TipoProducto();
-    
+        
     float get_Alto();
     
     float get_Ancho();
@@ -48,23 +43,15 @@ public:
     
     unsigned int get_Cantidad();
 
+    static unsigned int get_CantidadMaximaArticulos();
     
-    /**
-     * @param unsigned float
-     */
+    string get_TipoProducto();
+
     void set_Precio(unsigned int NuevoEstado);
-    
-    /**
-     * @param bool
-     */
+ 
     void set_Cambio(bool NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_EstadoArt(string NuevoEstado);
-         
-    void set_TipoProducto(string NuevoEstado);
 
     void set_Alto(float NuevoEstado);
 
@@ -72,10 +59,9 @@ public:
 
     void set_Largo(float NuevoEstado);
 
-    /**
-     * @param unsigned int
-     */
     void set_Cantidad(unsigned int NuevoEstado);
+
+    void set_TipoProducto(string NuevoEstado);
 
 };
 #endif //_ARTICULO_H

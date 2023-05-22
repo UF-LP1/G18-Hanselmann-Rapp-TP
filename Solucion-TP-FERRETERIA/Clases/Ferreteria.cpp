@@ -1,21 +1,12 @@
-/**
- * Project Untitled
- */
-
 #include "Ferreteria.h"
 
 /**
  * Ferreteria implementation
  */
 
-Ferreteria::Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_, list<string> ArticulosTotales_, list<int> CantArtTotales_, unsigned int AlquilerLocal_, unsigned int Expensaslocal_, unsigned int PrecioCargamento_)
+Ferreteria::Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_):Nombre(Nombre_), Direccion(Direccion_), Telefono(Telefono_)
 {
     this->MetodoPagoFerreteria = MetodoPagoFerreteria_;
-    this->ArticulosTotales = ArticulosTotales_;
-    this->CantArtTotales = CantArtTotales_;
-    this->AlquilerLocal = AlquilerLocal_;
-    this->ExpensasLocal = Expensaslocal_;
-    this->PrecioCargamento = PrecioCargamento_;
 }
 
 Ferreteria::~Ferreteria() 
@@ -23,147 +14,108 @@ Ferreteria::~Ferreteria()
 
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Nombre() 
 {
     return this->Nombre;
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Direccion() 
 {
     return this->Direccion;
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Telefono() 
 {
     return this->Telefono;
 }
 
-/**
- * @return const string
- */
 const string Ferreteria::get_Mail() 
 {
     return this->Mail;
 }
 
-/**
- * @return const string
- */
 MetodoPago Ferreteria::get_MetodoPagoFerreteria() 
 {
     return this->MetodoPagoFerreteria;
 }
 
-list <string> Ferreteria::get_ArticulosTotales()
-{
-    return this->ArticulosTotales;
-}
-
-list<int> Ferreteria::get_CantArtTotales()
-{
-    return this->CantArtTotales;
-}
-
-unsigned int Ferreteria::get_AlquilerLocal()
-{
-    return this->AlquilerLocal;
-}
-
-unsigned int Ferreteria::get_ExpensasLocal()
-{
-    return this->ExpensasLocal;
-}
-
-unsigned int Ferreteria::get_PrecioCargamento()
-{
-    return this->PrecioCargamento;
-}
-
-/**
- * @param string
- * @return void
- */
 void Ferreteria::set_MetodoPagoFerreteria(MetodoPago NuevoEstado) 
 {
     this->MetodoPagoFerreteria = NuevoEstado;
 }
 
-void Ferreteria::set_ArticulosTotales(list <string> NuevoEstado)
+bool Ferreteria::abrir(Horario hor) //Funcion que abre la ferreteria segun el horario: atiende de lunes a viernes de 730 a 13 y de 17 a 20. Los sábados de 8 a 13.
 {
-    this->ArticulosTotales = NuevoEstado;
+    time_t timer;
+    struct tm* tiempolocal;
+    time(&timer);
+    tiempolocal = localtime(&timer);
+    
+    if (tiempolocal->tm_wday == 1 || tiempolocal->tm_wday == 2 || tiempolocal->tm_wday == 3 || tiempolocal->tm_wday == 4 || tiempolocal->tm_wday == 5)
+    {
+        if (tiempolocal->tm_hour >= 7  && tiempolocal->tm_hour <= 13)
+        {
+            return true;
+        }
+        if (tiempolocal->tm_hour >= 17 && tiempolocal->tm_hour <= 20)
+        {
+            return true;
+        }
+    }
+    if (tiempolocal->tm_wday == 6)
+    {
+        if (tiempolocal->tm_hour >= 8 && tiempolocal->tm_hour <= 13)
+        {
+            return true;
+        }
+    }
+    else
+         return false;
 }
-
-void Ferreteria::set_CantArtTotales(list <int> NuevoEstado)
+   
+int Ferreteria::generar_Presupuesto(Cliente cli) //Calculo el presupuesto generado, según lo que quiera el cliente
 {
-    this->CantArtTotales = NuevoEstado;
-}
-
-void Ferreteria::set_AlquilerLocal(unsigned int NuevoEstado)
-{
-    this->AlquilerLocal = NuevoEstado;
-}
-
-void Ferreteria::set_ExpensasLocal(unsigned int NuevoEstado)
-{
-    this->ExpensasLocal = NuevoEstado;
-}
-
-void Ferreteria::set_PrecioCargamento(unsigned int NuevoEstado)
-{
-    this->PrecioCargamento = NuevoEstado;
-}
-
-/**
- * @param Horario
- * @return bool
- */
-bool Ferreteria::abrir(Horario hora) 
-{
-    return false;
-}
-
-/**
- * @param Cliente
- * @return articulos
- */
-bool Ferreteria::dar_ArticuloCliente(Cliente cli, Articulo art) 
-{
-    return false;
-}
-
-/**
- * @param Articulo
- * @param Empleado
- * @return bool
- */
-bool Ferreteria::dar_ArticuloEmpleado(Articulo art, Empleado emp) 
-{
-    return false;
-}
-
-int Ferreteria::generar_Presupuesto(Articulo art, Cliente cli)
-{
-    vector<Articulo*>::iterator arr;
+    list<Articulo>::iterator itArt;
+    list <HerramientasAlquiler>::iterator itHerrAlq;
 
     int acum = 0;
+    int acum2 = 0;
+    int acumtot = 0;
     int i = 0;
-
-    for (arr = cli.get_Articulos().begin(); arr != cli.get_Articulos().end(); arr++, i++) //recorre el vector de articulos en el iterador arr desde el principio hasta el final
+    list<Articulo> arti = cli.get_Articulos();
+    list<HerramientasAlquiler> herr = cli.get_Herr_Alquiler();
+    itArt = arti.begin();
+    itHerrAlq = herr.begin();
+    
+    for (i = 0; i < arti.size(); i++, itArt++) //recorre el vector de articulos en el iterador itArt desde el principio hasta el final
     {
-        if (art.get_Cantidad() != 0)
-            acum += arr[i]->get_Precio() * arr[i]->get_Cantidad();
+        if ((*itArt).get_Cantidad() > 0)
+        {
+            acum = acum + (itArt->get_Precio() * itArt->get_Cantidad());
+        }
         else
-            cout << "No hay mas stock de este Articulo." << endl;
+        {
+            cout << "No hay Cantidad del Producto: " << itArt->get_TipoProducto() << endl;
+        }
+    }
+    for (i = 0; i < herr.size(); i++, itHerrAlq++) //Calculamos lo que saldria alquilar las Herraminetas segun las horas requeridas.
+    {
+        if ((*itHerrAlq).get_Cant_Horas_Alquiler() > 0)
+        {
+            acum2 = acum2 + (itHerrAlq->get_PrecioAlquiler() * itHerrAlq->get_Cant_Horas_Alquiler() + itHerrAlq->get_PrecioSeguro());
+
+            if (itHerrAlq->get_Condicion() == "Perfecta")
+            {
+                acum2 = acum2 - itHerrAlq->get_PrecioSeguro();
+            }
+        }
+        else
+        {
+            cout << "No va a alquilar la Herramienta: " << itHerrAlq->get_TipoHerrAlquiler() << endl;
+        }
     }
 
-    return acum;
+    acumtot = acum + acum2;
+
+    return acumtot;
 }

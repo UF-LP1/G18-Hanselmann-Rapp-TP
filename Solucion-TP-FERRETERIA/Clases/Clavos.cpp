@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Clavos.h"
 
 /**
@@ -18,35 +14,21 @@ Clavos::~Clavos()
 
 }
 
-/**
- * @return void
- */
 TipoClavo Clavos::get_Clavito() 
 {
     return this->Clavito;
 }
 
-/**
- * @return string
- */
 string Clavos::get_CabezaClavo() 
 {
     return this->CabezaClavo;
 }
 
-/**
- * @param TipoClavo
- * @return void
- */
 void Clavos::set_Clavito(TipoClavo NuevoEstado) 
 {
     this->Clavito=NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void Clavos::set_CabezaClavo(string NuevoEstado) 
 {
     this->CabezaClavo=NuevoEstado;

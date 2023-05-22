@@ -12,7 +12,7 @@ class TendederosRopa: public Bazar
 {
 public: 
 
-    TendederosRopa(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoTendedero, string);
+    TendederosRopa(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string Color_, TipoTendedero Tendederito_, string MaterialTendedero_);
 
     ~TendederosRopa();
     
@@ -20,14 +20,8 @@ public:
     
     string get_MaterialTendedero();
     
-    /**
-     * @param TipoTendedero
-     */
     void set_Tendederito(TipoTendedero NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_MaterialTendedero(string NuevoEstado);
 
 private: 

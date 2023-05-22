@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #include "Tarugos.h"
 
 /**
@@ -18,36 +14,21 @@ Tarugos::~Tarugos()
 
 }
 
-/**
- * @return TipoTarugo
- */
 TipoTarugo Tarugos::get_Tarugin() 
 {
     return this->Tarugin;
 }
-
-/**
- * @return string
- */
 
 string Tarugos::get_UtilidadTarugo() 
 {
     return this->UtilidadTarugo; 
 }
 
-/**
- * @param TipoTarugo
- * @return void
- */
 void Tarugos::set_Tarugin(TipoTarugo NuevoEstado) 
 {
     this->Tarugin = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void Tarugos::set_UtilidadTarugo(string NuevoEstado) 
 {
     this->UtilidadTarugo = NuevoEstado;

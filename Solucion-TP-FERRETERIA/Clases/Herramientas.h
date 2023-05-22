@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _HERRAMIENTAS_H
 #define _HERRAMIENTAS_H
 
@@ -12,22 +8,16 @@ class Herramientas: public ArtFerreteria
 {
 public: 
 
-    Herramientas(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoHerramienta, string);
+    Herramientas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string MaterialArtFerr_, TipoHerramienta HerramientaArtFerr_, string MarcaHerrFerr_);
 
     ~Herramientas();
     
     TipoHerramienta get_HerramientaArtFerr();
 
     string get_MarcaHerrFerr();
-    
-    /**
-     * @param TipoHerramienta
-     */
+
     void set_HerramientaArtFerr(TipoHerramienta NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_MarcaHerrFerr(string NuevoEstado);
 
 private: 

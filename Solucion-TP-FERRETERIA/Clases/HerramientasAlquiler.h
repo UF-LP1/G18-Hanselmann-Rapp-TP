@@ -5,6 +5,8 @@
 #ifndef _HERRAMIENTASALQUILER_H
 #define _HERRAMIENTASALQUILER_H
 
+#include "TipoHerrAlquiler.h"
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -18,7 +20,8 @@ class HerramientasAlquiler
 {
 public: 
     
-    HerramientasAlquiler(string, string, unsigned int, unsigned int);
+    HerramientasAlquiler(TipoHerrAlquiler HerrAlquiler_, string Modelo_, string Condicion_, unsigned int PrecioSeguro_, unsigned int PrecioAlquiler_, unsigned int Cant_Horas_Alquiler_);
+
     ~HerramientasAlquiler();
 
     string get_Modelo();
@@ -28,30 +31,28 @@ public:
     unsigned int get_PrecioSeguro();
     
     unsigned int get_PrecioAlquiler();
-    
-    /**
-     * @param string
-     */
+
+    TipoHerrAlquiler get_TipoHerrAlquiler();
+
+    unsigned int get_Cant_Horas_Alquiler();
+  
     void set_Modelo(string NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_Condicion(string NuevoEstado);
     
-    /**
-     * @param unsigned float
-     */
     void set_PrecioSeguro(unsigned int NuevoEstado);
     
-    /**
-     * @param unsigned float
-     */
     void set_PrecioAlquiler(unsigned int NuevoEstado);
 
+    void set_TipoHerrAlquiler(TipoHerrAlquiler NuevoEstado);
+
+    void set_Cant_Horas_Alquiler(unsigned int NuevoEstado);
+
 private: 
+    TipoHerrAlquiler HerrAlquiler;
     string Modelo;
     string Condicion;
+    unsigned int Cant_Horas_Alquiler;
     unsigned int PrecioSeguro;
     unsigned int PrecioAlquiler;
 };

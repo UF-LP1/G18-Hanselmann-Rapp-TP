@@ -20,14 +20,8 @@ public:
     
     string get_Disenio();
     
-    /**
-     * @param TipoLampara
-     */
     void set_Lamp(TipoLampara NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_Disenio(string NuevoEstado);
 
 private: 

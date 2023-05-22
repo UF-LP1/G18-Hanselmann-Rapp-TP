@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _HORARIO_H
 #define _HORARIO_H
 
@@ -11,41 +7,21 @@
 #include <list>
 #include <algorithm>
 #include <iterator>
+#include <ctime>
 
 using namespace std;
 
 class Horario 
 {
+private:
+    time_t Hora;
+
 public: 
 
-    Horario(string, string, string);
+    Horario(time_t Hora_);
     ~Horario();
     
-    string get_SemanaManiana();
-    
-    string get_SemanaTarde();
-    
-    string get_Sabados();
-    
-    /**
-     * @param string
-     */
-    void set_SemanaManiana(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_SemanaTarde(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_Sabados(string NuevoEstado);
-
-private: 
-    string SemanaManiana;
-    string SemanaTarde;
-    string Sabados;
+    time_t get_Hora();
 };
 
 #endif //_HORARIO_H

@@ -1,27 +1,24 @@
-/**
- * Project Untitled
- */
-
 #ifndef _DESPACHANTE_H
 #define _DESPACHANTE_H
 
+#include "Articulo.h"
+#include "Cliente.h"
 #include "Empleado.h"
 
 class Despachante: public Empleado
 {
 public: 
 
-    Despachante(string, string, string, TipoSexo, unsigned int, string, time_t, string);
+    Despachante(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, unsigned int TiempoTrabajado_, string Pedido_);
     ~Despachante();
-    
+
+    string get_Nombre();
+        
     string get_Pedido();
-    
-    /**
-     * @param string
-     */
+  
     void set_Pedido(string NuevoEstado);
     
-    void llevar_pedido();
+    bool enviar_articulo(Articulo arti, Cliente cli);
 
 private: 
     string Pedido;

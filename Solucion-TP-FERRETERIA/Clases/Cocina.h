@@ -14,15 +14,12 @@ protected:
 
 public: 
 
-    Cocina(unsigned int, bool, string, string, float, float, float, unsigned int, bool);
+    Cocina(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, bool RepuestoArt_);
 
     ~Cocina();
     
     bool get_RepuestoArt();
     
-    /**
-     * @param bool
-     */
     void set_RepuestoArt(bool NuevoEstado);
 
 };

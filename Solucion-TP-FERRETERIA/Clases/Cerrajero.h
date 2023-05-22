@@ -5,29 +5,27 @@
 #ifndef _CERRAJERO_H
 #define _CERRAJERO_H
 
+#include "Cliente.h"
 #include "Empleado.h"
+#include "Cerrajeria.h"
+#include "LLaves.h"
 
 class Cerrajero: public Empleado 
 {
 public: 
 
-    Cerrajero(string, string, string, TipoSexo, unsigned int, string, time_t, string);
+    Cerrajero(string Nombre_, string Apellido_, string DNI_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, unsigned int TiempoTrabajado_, string Alarma_);
+   
     ~Cerrajero();
-    
-    string get_Alarma();
-    
-    /**
-     * @param string
-     */
-    void set_Alarma(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    string DuplicarLlaves(string);
-    
-    void Reparar_cerradura();
 
+    string get_Nombre();
+      
+    string get_Alarma();
+
+    void set_Alarma(string NuevoEstado);
+   
+    bool DuplicarLlaves(LLaves llavelinda, Cliente cli);
+    
 private: 
     string Alarma;
 };

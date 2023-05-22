@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _CLAVOS_H
 #define _CLAVOS_H
 
@@ -12,22 +8,16 @@ class Clavos: public ArtFerreteria
 {
 public: 
 
-    Clavos(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoClavo, string);
+    Clavos(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string MaterialArtFerr_, TipoClavo Clavito_, string CabezaClavo_);
 
     ~Clavos();
     
     TipoClavo get_Clavito();
     
     string get_CabezaClavo();
-    
-    /**
-     * @param TipoClavo
-     */
+   
     void set_Clavito(TipoClavo NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_CabezaClavo(string NuevoEstado);
 
 private: 

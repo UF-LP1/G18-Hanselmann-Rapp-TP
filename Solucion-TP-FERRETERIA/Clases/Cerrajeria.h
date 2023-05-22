@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _CERRAJERIA_H
 #define _CERRAJERIA_H
 
@@ -14,15 +10,12 @@ protected:
 
 public: 
 
-    Cerrajeria(unsigned int, bool, string, string, float, float, float, unsigned int, string);
+    Cerrajeria(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string MaterialCerraj_);
 
     ~Cerrajeria();
     
     string get_MaterialCerraj();
-    
-    /**
-     * @param string
-     */
+ 
     void set_MaterialCerraj(string NuevoEstado);
 
 };

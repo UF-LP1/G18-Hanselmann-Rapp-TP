@@ -11,6 +11,7 @@
 #include <list>
 #include <algorithm>
 #include <iterator>
+#include <forward_list>
 
 using namespace std;
 
@@ -27,11 +28,11 @@ protected:
 
 public: 
 
-    Persona(string, string, const string, TipoSexo);
+    Persona(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_);
 
     ~Persona();
     
-    string get_Nombre();
+    virtual string get_Nombre() = 0;
     
     string get_Apellido();
     
@@ -39,19 +40,10 @@ public:
     
     TipoSexo get_Sexo();
     
-    /**
-     * @param string
-     */
     void set_Nombre(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
+   
     void set_Apellido(string NuevoEstado);
-    
-    /**
-     * @param TipoSexo
-     */
+   
     void set_Sexo(TipoSexo NuevoEstado);
 };
 

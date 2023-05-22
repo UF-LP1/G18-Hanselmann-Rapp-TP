@@ -1,6 +1,4 @@
-/**
- * Project Untitled
- */
+#define _CRT_SECURE_NO_WARNINGS
 
 #include "Horario.h"
 #include "Articulo.h"
@@ -13,7 +11,7 @@ class Ferreteria
 {
 public: 
 
-    Ferreteria(const string, const string, const string, const string, MetodoPago, list<string>, list<int>, unsigned int, unsigned int, unsigned int);
+    Ferreteria(const string Nombre_, const string Direccion_, const string Telefono_, const string Mail_, MetodoPago MetodoPagoFerreteria_);
 
     ~Ferreteria();
     
@@ -26,49 +24,12 @@ public:
     const string get_Mail();
     
     MetodoPago get_MetodoPagoFerreteria();
-  
-    list <string> get_ArticulosTotales();
-
-    list<int> get_CantArtTotales();
-
-    unsigned int get_AlquilerLocal();
-
-    unsigned int get_ExpensasLocal();
-
-    unsigned int get_PrecioCargamento();
-    
-    /**
-     * @param string
-     */
+      
     void set_MetodoPagoFerreteria(MetodoPago NuevoEstado);
-            
-    void set_ArticulosTotales(list <string> NuevoEstado);
+      
+    bool abrir(Horario hor);
 
-    void set_CantArtTotales(list <int> NuevoEstado);
-
-    void set_AlquilerLocal(unsigned int NuevoEstado);
-
-    void set_ExpensasLocal(unsigned int NuevoEstado);
-
-    void set_PrecioCargamento(unsigned int NuevoEstado);
-
-    /**
-     * @param Horario
-     */
-    bool abrir(Horario hora);
-        
-    /**
-     * @param Cliente
-     */
-    bool dar_ArticuloCliente(Cliente cli, Articulo art);
-    
-    /**
-     * @param Articulo
-     * @param Empleado
-     */
-    bool dar_ArticuloEmpleado(Articulo art, Empleado emp);
-
-    int generar_Presupuesto(Articulo art, Cliente cli);
+    int generar_Presupuesto(Cliente cli);
 
 
 private: 
@@ -77,10 +38,5 @@ private:
     const string Telefono;
     const string Mail;
     MetodoPago MetodoPagoFerreteria;
-    list <string> ArticulosTotales;
-    list <int> CantArtTotales;
-    unsigned int AlquilerLocal;
-    unsigned int ExpensasLocal;
-    unsigned int PrecioCargamento;
 };
 #endif //_FERRETERIA_H

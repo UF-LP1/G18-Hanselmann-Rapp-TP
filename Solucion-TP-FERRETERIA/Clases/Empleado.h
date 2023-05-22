@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _EMPLEADO_H
 #define _EMPLEADO_H
 
@@ -13,34 +9,25 @@ class Empleado: public Persona
 protected:
     unsigned int Salario;
     string TipoTransporte;
-    time_t TiempoTrabajado;
+    unsigned int TiempoTrabajado;
 
 public: 
 
-    Empleado(string, string, string, TipoSexo, unsigned int, string, time_t);
+    Empleado(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, unsigned int Salario_, string TipoTransporte_, unsigned int TiempoTrabajado_);
 
     ~Empleado();
-    
+   
     unsigned int get_Salario();
     
     string get_TipoTransporte();
     
-    time_t get_TiempoTrabajado();
+    unsigned int get_TiempoTrabajado();
     
-    /**
-     * @param unsigned float
-     */
     void set_Salario(unsigned int NuevoEstado);
-    
-    /**
-     * @param string
-     */
+ 
     void set_TipoTransporte(string NuevoEstado);
-     
-    /**
-     * @param time_t
-     */
-    void set_TiempoTrabajado(time_t NuevoEstado);
+
+    void set_TiempoTrabajado(unsigned int NuevoEstado);
 };
 
 #endif //_EMPLEADO_H

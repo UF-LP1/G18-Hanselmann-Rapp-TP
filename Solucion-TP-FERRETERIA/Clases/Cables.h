@@ -22,19 +22,10 @@ public:
     
     string get_Cubierta();
     
-    /**
-     * @param TipoConductor
-     */
     void set_Conductores(TipoConductor NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_Aislamiento(string NuevoEstado);
     
-    /**
-     * @param string
-     */
     void set_Cubierta(string NuevoEstado);
 
 private: 

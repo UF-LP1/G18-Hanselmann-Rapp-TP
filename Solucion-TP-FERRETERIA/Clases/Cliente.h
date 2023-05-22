@@ -10,60 +10,104 @@
 #include "HerramientasAlquiler.h"
 #include "Empleado.h"
 #include "Articulo.h"
+#include "FotoArtRoto.h"
+
+#include "Tornillos.h"
+#include "Tarugos.h"
+#include "Clavos.h"
+#include "Herramientas.h"
+#include "Mechas.h"
+#include "Cerraduras.h"
+#include "LLaves.h"
+#include "Cerrojos.h"
+#include "Cables.h"
+#include "Portalamparas.h"
+#include "Lamparas.h"
+#include "Enchufes.h"
+#include "Utencillos.h"
+#include "Ollas.h"
+#include "TendederosRopa.h"
+#include "TablasPlanchar.h"
+#include "TapasInodoro.h"
+#include "BarralesCortina.h"
+#include "EscobillasBanio.h"
 
 class Cliente: public Persona 
 {
 public: 
 
-    Cliente(string, string, const string, TipoSexo, string, MetodoPago, vector<Articulo*>, const string, const string, bool);
+    Cliente(const string DNI_, string Nombre_, string Apellido_, TipoSexo Sexo_, TipoFotArt fotinartin_, string Direccion_, MetodoPago MetodoPagoCli_, list<Articulo> Articulos_, bool EnvoltorioIntaco_, list<HerramientasAlquiler> Herr_Alquiler_, bool EnvioDomicilio_, bool duplicadollave_, bool DeseaCambiarArt_);
 
     ~Cliente();
+
+
+    string get_Nombre();
     
     string get_Direccion();
     
     MetodoPago get_MetodoPagoCli();
     
-    vector <Articulo*> get_Articulos();
+    list <Articulo> get_Articulos();
         
-    const string get_Foto();
-    
-    const string get_ArtRoto();
+    TipoFotArt get_fotinartin();
     
     bool get_EnvoltorioIntacto();
+
+    list <HerramientasAlquiler> get_Herr_Alquiler();
+
+    bool get_EnvioDomicilio();
+
+    bool get_Dupllaves();
+
+    bool get_DeseaCambiarArt();
     
-    /**
-     * @param MetodoPago
-     */
     void set_MetodoPagoCli(MetodoPago NuevoEstado);
 
+    void set_fotinartin(TipoFotArt NuevoEstado);
+
     void set_Direccion(string NuevoEstado);
-    
-    /**
-     * @param string
-     */
-    void set_Articulos(vector <Articulo*> NuevoEstado);
+
+    void set_Articulos(list <Articulo> NuevoEstado);
     
     void set_EnvoltorioIntacto(bool NuevoEstado);
 
-    
-    void MostrarFoto();
-    
-    void MostrarArtRoto();
-    
-    void MostrarEnvoltorioInt();
-    
-    /**
-     * @param Precio
-     */
-    void elegir_art(Articulo art); 
+    int elegir_art(Articulo& art); 
+
+    void set_Herr_Alquiler(list <HerramientasAlquiler> NuevoEstado);
+
+    void set_EnvioDomicilio(bool NuevoEstado);
+
+    void set_Dupllaves(bool NuevoEstado);
+
+    void set_DeseaCambiarArt(bool NuevoEstado);
+
+    void Menu_Principal();
+
+    void imprimir_MenuAgregar_Carrito(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech, Cerrojos cerro, Cerraduras cerra, LLaves llav, Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port, Ollas oll, Utencillos ute, TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin, BarralesCortina barr, EscobillasBanio esco);
+
+    void Imprimir_Menu_ArtFerreteriaAgregarCarri(Tornillos torni, Clavos clavi, Herramientas herri, Tarugos tar, Mechas mech);
+
+    void Imprimir_Menu_Cerrajeria(Cerrojos cerro, Cerraduras cerra, LLaves llav);
+
+    void Imprimir_Menu_Electricidad(Cables cab, Lamparas lamp, Enchufes enchu, Portalamparas port);
+
+    void Imprimir_Menu_Cocina(Ollas oll, Utencillos ute);
+
+    void Imprimir_Menu_Bazar(TendederosRopa tendrop, TablasPlanchar tabpla, TapasInodoro tapin);
+
+    void Imprimir_Menu_Banio(BarralesCortina barr, EscobillasBanio esco);
 
 private: 
+    
+    TipoFotArt fotinartin;
     string Direccion;
     MetodoPago MetodoPagoCli;
-    vector <Articulo*> Articulos;
-    const string Foto;
-    const string ArtRoto;
+    list <Articulo> Articulos; //*Articulos
+    list <HerramientasAlquiler> Herr_Alquiler;
     bool EnvoltorioIntacto;
+    bool EnvioDomicilio;
+    bool duplicadollave;
+    bool DeseaCambiarArt;
 };
 
 #endif //_CLIENTE_H

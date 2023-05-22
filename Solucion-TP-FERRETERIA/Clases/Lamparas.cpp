@@ -19,35 +19,21 @@ Lamparas::~Lamparas()
 
 }
 
-/**
- * @return TipoLampara
- */
 TipoLampara Lamparas::get_Lamp() 
 {
     return this->Lamp;
 }
 
-/**
- * @return string
- */
 string Lamparas::get_Disenio() 
 {
     return this->Disenio;
 }
 
-/**
- * @param TipoLampara
- * @return void
- */
 void Lamparas::set_Lamp(TipoLampara NuevoEstado)
 {
     this->Lamp = NuevoEstado;
 }
 
-/**
- * @param string
- * @return void
- */
 void Lamparas::set_Disenio(string NuevoEstado)
 {
     this->Disenio = NuevoEstado;

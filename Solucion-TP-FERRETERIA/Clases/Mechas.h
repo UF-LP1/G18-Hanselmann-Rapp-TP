@@ -1,7 +1,3 @@
-/**
- * Project Untitled
- */
-
 #ifndef _MECHAS_H
 #define _MECHAS_H
 
@@ -12,21 +8,16 @@ class Mechas: public ArtFerreteria
 {
 public: 
 
-    Mechas(unsigned int, bool, string, string, float, float, float, unsigned int, string, TipoMecha, string);
+    Mechas(unsigned int Precio_, bool Cambio_, string EstadoArt_, string TipoProducto_, float Alto_, float Ancho_, float Largo_, unsigned int Cantidad_, string MaterialArtFerr_, TipoMecha Mechita_, string UtilidadMecha_);
 
     ~Mechas();
     
     TipoMecha get_Mechita();
     
     string get_UtilidadMecha();
-    /**
-     * @param TipoMecha
-     */
+
     void set_Mechita(TipoMecha NuevoEstado);
-    
-    /**
-     * @param string
-     */
+
     void set_UtilidadMecha(string NuevoEstado);
 
 private: 
